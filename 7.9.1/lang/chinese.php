@@ -3016,45 +3016,45 @@ $_LANG['store']['sitelockvpn']['world']['features']['unlimited'] = "无限";
 $_LANG['store']['sitelockvpn']['world']['features']['bandwidth'] = "流量";
 
 $_LANG['store']['noDomain'] = "不需要域名";
-$_LANG['store']['noDomainRequired'] = "此产品不需要任何域";
+$_LANG['store']['noDomainRequired'] = "此产品不需要任何域名";
 $_LANG['back'] = "返回";
 
 $_LANG['errors']['badRequest'] = "错误请求";
-$_LANG['errors']['badRequestTryAgain'] = "一个错误发生。请再试一次。";
+$_LANG['errors']['badRequestTryAgain'] = "发生意外错误。请重试。";
 
 $_LANG['paymentMethods']['iban'] = "银行账号";
-$_LANG['paymentMethods']['mandateAcceptance'] = "通过提供您的IBAN并确认此付款，您即授权我们的付款服务提供商：companyName和Stripe向您的银行发送指令以从您的帐户中扣款，并向您的银行按照这些指示从您的帐户中扣款。 根据您与银行达成的协议的条款和条件，您有权从银行获得退款。 必须从您的帐户被扣款之日起8周内要求退款。";
+$_LANG['paymentMethods']['mandateAcceptance'] = "通过提供您的银行账号并确认此付款，您即授权我们的付款服务提供商 :companyName 和 Stripe 向您的银行发送指令以从您的账户中扣款。根据您与银行达成的协议条款和条件，您有权从银行获得退款。必须从您的账户扣款之日起 8 周内要求退款。";
 
-$_LANG['metrics']['title'] = "计费";
+$_LANG['metrics']['title'] = "按量";
 $_LANG['metrics']['explanation'] = "：除了基本价格之外，该产品还有基于使用的计费方式。使用指标及其定价信息如下所示。";
-$_LANG['metrics']['from'] = '来自';
-$_LANG['metrics']['to'] = '位于';
-$_LANG['metrics']['startingQuantity'] = '开始计费';
-$_LANG['metrics']['unit'] = '价格';
+$_LANG['metrics']['from'] = '从';
+$_LANG['metrics']['to'] = '到';
+$_LANG['metrics']['startingQuantity'] = '起始数量';
+$_LANG['metrics']['unit'] = '单位';
 $_LANG['metrics']['pricePerUnit'] = '单价';
 $_LANG['metrics']['pricePer'] = '单价';
 $_LANG['metrics']['viewPricing'] = '查看价格';
-$_LANG['metrics']['pricing'] = '定价';
-$_LANG['metrics']['startingFrom'] = '文章从';
+$_LANG['metrics']['pricing'] = '价格';
+$_LANG['metrics']['startingFrom'] = '开始';
 $_LANG['metrics']['pricingschema']['simple']['info'] = '这个项目有一个单一的价格结构';
 $_LANG['metrics']['pricingschema']['simple']['detail'] = '无论数量多少，单价都是一致的。';
 $_LANG['metrics']['pricingschema']['grad']['info'] = '这个项目有一个分级定价结构。';
 $_LANG['metrics']['pricingschema']['grad']['detail'] = '每单位价格是每个消耗范围。 总费用是范围计算的总和。';
 $_LANG['metrics']['pricingschema']['flat']['info'] = '这个项目有一个单位量的价格结构。';
 $_LANG['metrics']['pricingschema']['flat']['detail'] = '单价是由消费总量决定的。';
-$_LANG['metrics']['previousUsage'] = "之前使用";
-$_LANG['metrics']['currentUsage'] = "当前使用情况";
+$_LANG['metrics']['previousUsage'] = "往期用量";
+$_LANG['metrics']['currentUsage'] = "当前用量";
 $_LANG['metrics']['lastUpdated'] = "最后更新";
-$_LANG['metrics']['metric'] = "度量";
+$_LANG['metrics']['metric'] = "按量";
 $_LANG['metrics']['billing'] = "记帐";
 $_LANG['metrics']['includedNotCounted'] = "包括";
 $_LANG['metrics']['includedInBase'] = "包括在基本价格中";
 
-$_LANG['metrics']['invoiceitem']['perunit'] = "：已消耗：度量名称@：价格每：perUnitName";
-$_LANG['metrics']['invoiceitem']['included'] = ":包括 :metricname 在内";
+$_LANG['metrics']['invoiceitem']['perunit'] = ":consumed :metricname @ :price 每 :perUnitName";
+$_LANG['metrics']['invoiceitem']['included'] = "包含 :included :metricname";
 
 $_LANG['bankPaymentDeclined'] = "您输入的银行账户信息被拒绝。请尝试一个不同的帐户或联系支持。";
-$_LANG['invoicePaymentInitiated'] = "谢谢你！您的支付已经成功启动。付款完成后，您将收到一封确认邮件。";
+$_LANG['invoicePaymentInitiated'] = "谢谢！您的支付已经成功启动。付款完成后，您将收到一封确认邮件。";
 
 $_LANG['sitelockvpn']['loginPanelText'] = "登录到设置和管理您的VPN用户凭证和下载VPN客户端。";
 $_LANG['store']['save'] = "保存 :保存%";
@@ -3076,6 +3076,6 @@ $_LANG['marketConnect']['weebly']['buildWebsite'] = "生成您网站";
 $_LANG['creditCardHolderName'] = "信用卡持有者姓名";
 
 $_LANG['redirectingToCompleteCheckout'] = "您以完成结帐，正在跳转。请耐心等待...";
-$_LANG['paypalEmailAddress'] = "PayPal电子邮件地址";
+$_LANG['paypalEmailAddress'] = "PayPal邮件地址";
 
 ////////// End of zh-CN language file.  Do not place any translation strings below this line!
