@@ -1,5 +1,5 @@
 <?php
-// @by AS-php 傲世网 WHMCS7.9.2 zh-CN
+// @by AS-php 傲世网 WHMCS7.9.3 zh-CN
 if (!defined("WHMCS")) die("This file cannot be accessed directly");
 
 $_ADMINLANG['locale'] = "zh_CN";
@@ -4099,7 +4099,7 @@ $_ADMINLANG['healthCheck']['updaterVersionMemoryLimit'] = "自动更新至 :upda
 $_ADMINLANG['healthCheck']['updaterSuccess'] = "您的环境似乎符合自动更新所需的最低要求。为更新您必须确保您的磁盘空间至少为 250MB。";
 $_ADMINLANG['healthCheck']['updaterIoncubeLoaderMismatch'] = "您的系统已安装的 ionCube Loader 版本为：:loaderVersionInstalled。请安装 :loaderVersionRequired 或更高版本的 ionCube Loader 才能升级到 WHMCS :updateVersion 版本。<a href=\"https://docs.whmcs.com/System_Environment_Guide#IonCube_Version\">了解更多信息</a>";
 $_ADMINLANG['healthCheck']['phpCronMismatch'] = "Cron PHP版本不匹配";
-$_ADMINLANG['healthCheck']['phpCronMismatchDescription'] = "您的环境似乎正在为System Cron运行与当前加载的PHP版本（<strong>：currentPhp </ strong>）不同的PHP版本（<strong>：cronPhp </ strong>）。 这可能会导致运行系统Cron的问题。";
+$_ADMINLANG['healthCheck']['phpCronMismatchDescription'] = "您的环境似乎正在为System Cron运行与当前加载的PHP版本（<strong>:currentPhp </strong>）不同的PHP版本（<strong>:cronPhp </strong>）。 这可能会导致运行系统Cron的问题。";
 
 $_ADMINLANG['healthCheck']['webserverSupportCheck'] = "Web服务器支持检查";
 $_ADMINLANG['healthCheck']['supportedWebserver'] = "您的系统正在运行 \":server\" 服务器。";
@@ -4933,9 +4933,9 @@ $_ADMINLANG['apps']['info']['startFreeTrial'] = "开始免费试用";
 
 $_ADMINLANG['utilities']['serverSync']['title'] ="服务器同步";
 $_ADMINLANG['utilities']['serverSync']['results'] ="发生以下结果：";
-$_ADMINLANG['utilities']['serverSync']['imported'] ="：已成功导入：selected记录中的完成。";
-$_ADMINLANG['utilities']['serverSync']['synced'] ="：已完成：selected记录中的已成功同步。";
-$_ADMINLANG['utilities']['serverSync']['terminated'] ="：已完成：选定记录的状态已更新为已终止。";
+$_ADMINLANG['utilities']['serverSync']['imported'] ="：已成功导入:selected记录中的完成。";
+$_ADMINLANG['utilities']['serverSync']['synced'] ="：已完成:selected记录中的已成功同步。";
+$_ADMINLANG['utilities']['serverSync']['terminated'] ="：已完成:selected的状态已更新为已终止。";
 $_ADMINLANG['utilities']['serverSync']['seeActivityLog'] ="请参考活动日志以获取更多信息。";
 $_ADMINLANG['utilities']['serverSync']['unableToConnect'] ="无法连接到远程服务器";
 

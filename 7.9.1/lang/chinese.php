@@ -1988,8 +1988,8 @@ $_LANG['orderForm']['close'] = "关闭";
 $_LANG['orderForm']['totals'] = "合计";
 $_LANG['orderForm']['includedWithPlans'] = "包含至每个套餐";
 $_LANG['orderForm']['whatIsIncluded'] = "包含哪些？";
-$_LANG['orderForm']['errorNoProductGroup'] = "无法加载任何产品组";
-$_LANG['orderForm']['errorNoProducts'] = "产品组不包含任何可见的产品";
+$_LANG['orderForm']['errorNoProductGroup'] = "暂未添加任何产品组，敬请期待";
+$_LANG['orderForm']['errorNoProducts'] = "产品正在准备中, 尚未开放购买";
 
 $_LANG['cloudSlider']['feature01Title'] = "最大运行时间";
 $_LANG['cloudSlider']['feature01Description'] = "服务器运行时间是所有企业的关键 - 文件和数据库服务器，电子邮件和 Web 服务器是大多数业务流程中不可或缺的一部分，宕机直接对生产率，销售，员工和客户满意度产生负面影响。 这就是为什么对我们来说确保服务器最大正常运行时间是这么的重要 - 我们要确保您的业务流程运行良好，这样顾客才会对您更满意。";
@@ -3075,7 +3075,7 @@ $_LANG['marketConnect']['weebly']['buildWebsite'] = "生成您网站";
 
 $_LANG['creditCardHolderName'] = "信用卡持有者姓名";
 
-$_LANG['redirectingToCompleteCheckout'] = "您以完成结帐，正在跳转。请耐心等待...";
+$_LANG['redirectingToCompleteCheckout'] = "您已完成结帐,正在跳转。请耐心等待...";
 $_LANG['paypalEmailAddress'] = "PayPal邮件地址";
 
 ////////// End of zh-CN language file.  Do not place any translation strings below this line!
