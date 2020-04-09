@@ -17,7 +17,7 @@
  * @license    https://www.whmcs.com/license/ WHMCS Eula
  * @version    $Id$
  * @link       https://www.whmcs.com/
- * @by         AS-php 傲世网 WHMCS7.9.1 zh-CN
+ * @by         AS-php 傲世网 WHMCS7.10.0 zh-CN
  */
 
 if (!defined("WHMCS")) die("This file cannot be accessed directly");
@@ -122,7 +122,7 @@ $_LANG['clientareaaddress2'] = "街道地址第二行";
 $_LANG['clientareabwlimit'] = "流量限制";
 $_LANG['clientareabwusage'] = "已用流量";
 $_LANG['clientareacancel'] = "请求取消产品";
-$_LANG['clientareacancelconfirmation'] = "您的取消请求已经被提交。如果您错误地执行了此操作，请立刻提交工单通知我们，否则您的账户可能会被终止。";
+$_LANG['clientareacancelconfirmation'] = "您的取消请求已经被提交。如果您错误地执行了此操作，请立刻提交工单通知我们，否则您的服务可能会被终止。";
 $_LANG['clientareacancelinvalid'] = "此账户已经提交了一个取消请求，所以无法提交另一个取消请求。";
 $_LANG['clientareacancellationendofbillingperiod'] = "账单周期结束";
 $_LANG['clientareacancellationimmediate'] = "立即";
@@ -153,7 +153,7 @@ $_LANG['clientareadescription'] = "查看及更新您的账户详细资料";
 $_LANG['clientareadisklimit'] = "空间限制";
 $_LANG['clientareadiskusage'] = "已用空间";
 $_LANG['clientareadomainexpirydate'] = "到期日期";
-$_LANG['clientareadomainnone'] = "没有在我们这里注册域名";
+$_LANG['clientareadomainnone'] = "您没有在我们这里注册域名";
 $_LANG['clientareaemail'] = "邮件地址";
 $_LANG['clientareaemails'] = "我的邮件";
 $_LANG['clientareaemailsdate'] = "发送日期";
@@ -263,7 +263,7 @@ $_LANG['contactsubject'] = "主题";
 $_LANG['contacttitle'] = "售前咨询";
 $_LANG['continueshopping'] = "继续购物";
 $_LANG['creditcard'] = "信用卡支付";
-$_LANG['creditcard3dsecure'] = "作为我们预防欺诈的措施，您现在将被要求验证 Visa 或万事达卡 SecureCode。<br /><br />请不要点击刷新或后退，否则交易可能被中断或取消。";
+$_LANG['creditcard3dsecure'] = "作为我们预防欺诈的措施，您现在将被要求验证 Visa 或万事达卡 SecureCode。<br/><br/>请不要点击刷新或后退，否则交易可能被中断或取消。";
 $_LANG['creditcardcardexpires'] = "失效日期";
 $_LANG['creditcardcardissuenum'] = "发行代码";
 $_LANG['creditcardcardnumber'] = "信用卡号码";
@@ -362,7 +362,7 @@ $_LANG['domainrenewdesc'] = "通过续订更多的年份来保护您的域名。
 $_LANG['domainsautorenew'] = "自动续订";
 $_LANG['domainsautorenewdisable'] = "关闭自动续订";
 $_LANG['domainsautorenewdisabled'] = "已关闭自动续订域名功能";
-$_LANG['domainsautorenewdisabledwarning'] = "警告！该域名已关闭自动续订。<br />除非手动续订，否则域名将在到期后失效。";
+$_LANG['domainsautorenewdisabledwarning'] = "警告！该域名已关闭自动续订。<br/>除非手动续订，否则域名将在到期后失效。";
 $_LANG['domainsautorenewenable'] = "启用自动续订";
 $_LANG['domainsautorenewenabled'] = "已开启自动续订功能";
 $_LANG['domainsautorenewstatus'] = "当前状态";
@@ -417,7 +417,7 @@ $_LANG['invoiceaddcreditdesc2'] = "账户余额可以用来支付本账单。";
 $_LANG['invoiceaddcreditoverbalance'] = "您使用的余额不能超过应付的金额";
 $_LANG['invoiceaddcreditovercredit'] = "您使用的余额不能超过账户余额";
 $_LANG['invoicenumber'] = "账单编号 #";
-$_LANG['invoiceofflinepaid'] = "离线信用卡支付已被手工处理。<br />当您的支付请求处理完毕后您将会收到一封确认邮件。";
+$_LANG['invoiceofflinepaid'] = "离线信用卡支付已被手工处理。<br/>当您的支付请求处理完毕后您将会收到一封确认邮件。";
 $_LANG['invoicerefnum'] = "参考号码";
 $_LANG['invoices'] = "我的账单";
 $_LANG['invoicesamount'] = "金额";
@@ -503,7 +503,7 @@ $_LANG['maxmind_callingnow'] = "我们将自动拨打电话。这是我们防止
 $_LANG['maxmind_countrymismatch'] = "您的 IP 地址与填写的资料里的国家不匹配，所以我们不能接受您的订单。";
 $_LANG['maxmind_error'] = "错误";
 $_LANG['maxmind_faileddescription'] = "您输入的代码是不正确的，如果您觉得系统有误请尽快联络我们的支持部门。";
-$_LANG['maxmind_highfraudriskscore'] = "我们的系统察觉您订单欺诈的风险很大因此需要人工审核。<br /><br />如果您认为此信息有误，请接收我们的道歉并向客服部门 <a href=\"submitticket.php\">提交工单</a>，感谢您的理解。";
+$_LANG['maxmind_highfraudriskscore'] = "我们的系统察觉您订单欺诈的风险很大因此需要人工审核。<br/><br/>如果您认为此信息有误，请接收我们的道歉并向客服部门 <a href=\"submitticket.php\">提交工单</a>，感谢您的理解。";
 $_LANG['maxmind_highriskcountry'] = "我们不能接受来自您的国家的订购因为诈骗的风险很大。";
 $_LANG['maxmind_incorrectcode'] = "错误的代码";
 $_LANG['maxmind_pincode'] = "PIN 码";
@@ -556,7 +556,7 @@ $_LANG['ordercheckout'] = "结账";
 $_LANG['orderchooseaddons'] = "选择产品附加服务";
 $_LANG['orderchooseapackage'] = "选择方案";
 $_LANG['ordercodenotfound'] = "您输入的优惠码不存在";
-$_LANG['ordercompletebutnotpaid'] = "注意！您的订购已经完成，但是您还没有付款，所以产品不会激活。<br />点击下面的链接查看您的账单并付款。";
+$_LANG['ordercompletebutnotpaid'] = "注意！您的订购已经完成，但是您还没有付款，所以产品不会激活。<br/>点击下面的链接查看您的账单并付款。";
 $_LANG['orderconfigpackage'] = "配置选项";
 $_LANG['orderconfigure'] = "配置";
 $_LANG['orderconfirmation'] = "订单确认";
@@ -875,14 +875,14 @@ $_LANG['creditcarddeleteconfirmation'] = "保存的信用卡信息已从您的�
 $_LANG['creditcardupdatenotpossible'] = "信用卡信息目前无法更新，请稍后再试。";
 
 $_LANG['invoicepaymentsuccessconfirmation'] = "感谢！您已付款成功！";
-$_LANG['invoicepaymentfailedconfirmation'] = "尝试付款未成功。<br />请再试一次或者联系我们。";
+$_LANG['invoicepaymentfailedconfirmation'] = "尝试付款未成功。<br/>请再试一次或者联系我们。";
 
 # Version 4.2
 
 $_LANG['promoappliedbutnodiscount'] = "您输入的优惠码已应用，但购物车中没有任何产品适用于此优惠码 - 请检查优惠条款。";
 
-$_LANG['upgradeerroroverdueinvoice'] = "您无法升级或降级此产品，因为续费账单已经生成。<br /><br />如需继续，请先支付续费账单，当账单支付后，您才可以升级或降级产品。";
-$_LANG['upgradeexistingupgradeinvoice'] = "您无法升级或降级此产品，因为升级或降级已经在进行中。<br /><br />如需继续，请先支付未付账单，当账单支付后，您才可以升级/降级产品。<br/><br/>如果您认为您此消息有误，请提交故障工单给我们。";
+$_LANG['upgradeerroroverdueinvoice'] = "您无法升级或降级此产品，因为续费账单已经生成。<br/><br/>如需继续，请先支付续费账单，当账单支付后，您才可以升级或降级产品。";
+$_LANG['upgradeexistingupgradeinvoice'] = "您无法升级或降级此产品，因为升级或降级已经在进行中。<br/><br/>如需继续，请先支付未付账单，当账单支付后，您才可以升级/降级产品。<br/><br/>如果您认为您此消息有误，请提交故障工单给我们。";
 
 $_LANG['subaccountactivate'] = "开通子账户";
 $_LANG['subaccountactivatedesc'] = "设置子账户访问权限";
@@ -975,7 +975,7 @@ $_LANG['domainreleasetag'] = "新注册标签";
 $_LANG['orderformtitle'] = "订购表单";
 
 $_LANG['signup'] = "注册";
-$_LANG['loading'] = "正在加载…";
+$_LANG['loading'] = "加载中…";
 
 $_LANG['ordersummarybegin'] = "请选择产品然后开始订购";
 
@@ -1030,7 +1030,7 @@ $_LANG['quotedownload'] = "查看/下载";
 $_LANG['quoteacceptbtn'] = "接受报价";
 $_LANG['quotedlpdfbtn'] = "下载 PDF";
 $_LANG['quotediscountheading'] = "优惠(%)";
-$_LANG['noquotes'] = "目前您的账户没报价单。<br />如果您需要请求报价，请提交工单。";
+$_LANG['noquotes'] = "目前您的账户没报价单。<br/>如果您需要请求报价，请提交工单。";
 $_LANG['quotenumber'] = "报价单 #";
 $_LANG['quotesubject'] = "报价主题";
 $_LANG['quotedatecreated'] = "创建日期";
@@ -1055,7 +1055,7 @@ $_LANG['quotefinalpayment'] = "从账户余额扣款";
 $_LANG['invoiceoneoffpayment'] = "使用子账户付款";
 $_LANG['invoicesubscriptionpayment'] = "创建自动续费订阅";
 
-$_LANG['invoicepaymentpendingreview'] = "谢谢您！您的付款已经成功，您的付款已成功完成，并在 2CheckOut 的审核流程完成后立即应用于您的账单。<br /><br />这可能需要几个小时，感谢您的耐心等待。";
+$_LANG['invoicepaymentpendingreview'] = "谢谢您！您的付款已经成功，您的付款已成功完成，并在 2CheckOut 的审核流程完成后立即应用于您的账单。<br/><br/>这可能需要几个小时，感谢您的耐心等待。";
 
 $_LANG['step'] = "步骤 %s";
 $_LANG['cartdomainexists'] = "此域名已经存在于我们的数据库";
@@ -1093,7 +1093,7 @@ $_LANG['existingcustomer'] = "老用户";
 $_LANG['newcustomersignup'] = "<strong>还未注册？</strong>请 %s点这里注册…%s";
 
 $_LANG['upgradeonselectedoptions'] = "（对指定的选项）";
-$_LANG['recurringpromodesc'] = "此优惠码还包含了循环折扣<br />（该产品今后续费依旧享受此优惠价格）";
+$_LANG['recurringpromodesc'] = "此优惠码还包含了循环折扣<br/>（该产品今后续费依旧享受此优惠价格）";
 
 # Version 4.5.2
 
@@ -1104,7 +1104,7 @@ $_LANG['ajaxcartconfigreqnotice'] = "请绑定域名，更多的域名绑定可�
 # Version 5.0.0
 
 $_LANG['cancelrequestdomain'] = "取消域名续费？";
-$_LANG['cancelrequestdomaindesc'] = "You also have an active domain registration for the domain associated with this product<br />This domain is due to renew on %s at a cost of %s for %s Year/s<br /><br />If you would like to cancel the domain as well, and let it expire at the end of the current registration, then simply tick the box below.";
+$_LANG['cancelrequestdomaindesc'] = "You also have an active domain registration for the domain associated with this product<br/>This domain is due to renew on %s at a cost of %s for %s Year/s<br/><br/>If you would like to cancel the domain as well, and let it expire at the end of the current registration, then simply tick the box below.";
 $_LANG['cancelrequestdomainconfirm'] = "我确认我不想再为此域名续费";
 
 $_LANG['startingfrom'] = "起价";
@@ -1466,7 +1466,7 @@ $_LANG['twofabackupcodeexpl'] = "在纸上写下来并妥善保管。<br/>如果
 $_LANG['twofaconfirmpw'] = "输入您的密码";
 $_LANG['twofa2ndfactorreq'] = "您需要输入两步验证代码来完成登录";
 $_LANG['twofa2ndfactorincorrect'] = "您提供的两步验证不正确。请再试一次。";
-$_LANG['twofabackupcodereset'] = "通过备份码登录成功<br />备份码只可使用一次，现在将重置。";
+$_LANG['twofabackupcodereset'] = "通过备份码登录成功<br/>备份码只可使用一次，现在将重置。";
 $_LANG['twofacantaccess2ndfactor'] = "无法访问您的两步验证设备？";
 $_LANG['twofaloginusingbackupcode'] = "使用备用代码登录";
 $_LANG['twofageneralerror'] = "加载该模块时出错。请再试一次";
@@ -1651,7 +1651,7 @@ $_LANG['readyforquestions'] = "我们已经准备好回答您的问题";
 $_LANG['restrictedpage'] = "此页面已加密";
 $_LANG['enteremail'] = "输入邮箱";
 
-$_LANG['passwordtips'] = "<strong>如何设置一个高强度的密码：</strong><br />同时使用大小写字符<br />至少使用一个符号（# $ ! % &amp; 等等…）<br />不要使用连续字符";
+$_LANG['passwordtips'] = "<strong>如何设置一个高强度的密码：</strong><br/>同时使用大小写字符<br/>至少使用一个符号（# $ ! % &amp; 等等…）<br/>不要使用连续字符";
 
 $_LANG['regdate'] = "注册日期";
 $_LANG['nextdue'] = "到期时间";
@@ -2072,14 +2072,14 @@ $_LANG['markdown']['spanningMultipleLines'] = "代码可跨越多行显示…";
 $_LANG['markdown']['saved'] = "已保存";
 $_LANG['markdown']['saving'] = "自动保存";
 
-$_LANG['oauth']['authoriseAppToAccess'] = "授权 :appName<br />访问您的账户？";
+$_LANG['oauth']['authoriseAppToAccess'] = "授权 :appName<br/>访问您的账户？";
 $_LANG['oauth']['willBeAbleTo'] = "此应用将会";
 $_LANG['oauth']['authorise'] = "授权";
 $_LANG['oauth']['currentlyLoggedInAs'] = "您当前已作为 :lastName :firstName 登录";
 $_LANG['oauth']['notYou'] = "不是您？";
 $_LANG['oauth']['returnToApp'] = "返回到 :appName";
 $_LANG['oauth']['copyrightFooter'] = "版权所有 &copy; :dateYear :companyName 保留所有权利。";
-$_LANG['oauth']['loginToGrantApp'] = "登录授予 :appName<br />访问您的账户";
+$_LANG['oauth']['loginToGrantApp'] = "登录授予 :appName<br/>访问您的账户";
 $_LANG['oauth']['redirectDescriptionOne'] = "将您重定向回应用程序。这可能会花费一段时间";
 $_LANG['oauth']['redirectDescriptionTwo'] = "假如您的浏览器没有跳转，请";
 $_LANG['oauth']['redirectDescriptionThree'] = "点此继续";
@@ -2455,7 +2455,7 @@ $_LANG['orderErrorServerNameserversInvalid'] = "域名服务器前缀无效。";
 $_LANG['checkAll'] = "全选";
 $_LANG['uncheckAll'] = "反选";
 
-$_LANG['maxmind']['manualReview'] = "您的订单已经进行人工审核。<br /><br />如果您认为本信息有错误，请谅解并通过 <a href=\"submitticket.php\">提交支持工单</a> 联系客户服务团队，谢谢。";
+$_LANG['maxmind']['manualReview'] = "您的订单已经进行人工审核。<br/><br/>如果您认为本信息有错误，请谅解并通过 <a href=\"submitticket.php\">提交支持工单</a> 联系客户服务团队，谢谢。";
 
 $_LANG['nodomain'] = "未指定域名";
 
@@ -2599,8 +2599,8 @@ $_LANG['tax']['errorInvalid'] = "提供的 :taxLabel 无效。";
 $_LANG['fraud']['checkConfiguration'] = "欺诈检查发生错误。 请联系支持。";
 $_LANG['fraud']['title'] = "欺诈检查";
 $_LANG['fraud']['error'] = "错误";
-$_LANG['fraud']['manualReview'] = "您的订单已经进行人工审核。<br /><br />如果您认为错误地收到了此消息，请接受我们的道歉并 <a href=\"submitticket.php\">提交支持工单</a> 联系我们的客户服务支持团队。谢谢。";
-$_LANG['fraud']['highFraudRiskScore'] = "您的订单已被标记为潜在的高风险，因此已经进行人工审核。<br /><br />如果您认为错误地收到了此消息，请接受我们的道歉并 <a href=\"submitticket.php\">提交支持工单</a> 联系我们的客户服务支持团队。谢谢。";
+$_LANG['fraud']['manualReview'] = "您的订单已经进行人工审核。<br/><br/>如果您认为错误地收到了此消息，请接受我们的道歉并 <a href=\"submitticket.php\">提交支持工单</a> 联系我们的客户服务支持团队。谢谢。";
+$_LANG['fraud']['highFraudRiskScore'] = "您的订单已被标记为潜在的高风险，因此已经进行人工审核。<br/><br/>如果您认为错误地收到了此消息，请接受我们的道歉并 <a href=\"submitticket.php\">提交支持工单</a> 联系我们的客户服务支持团队。谢谢。";
 $_LANG['fraud']['countryMismatch'] = "您的 IP 地址所在的国家/地区与您输入的账单地址国家/地区不符，因此我们无法接受您的订单";
 $_LANG['fraud']['highRiskCountry'] = "很遗憾，我们无法接受您的订单，因为您所在的国家/地区存在大量欺诈活动。如果您想安排其它付款方式，请与我们联系。";
 $_LANG['fraud']['anonymousProxy'] = "我们不允许使用匿名代理发出订单";
@@ -3077,5 +3077,82 @@ $_LANG['creditCardHolderName'] = "信用卡持有者姓名";
 
 $_LANG['redirectingToCompleteCheckout'] = "您已完成结帐,正在跳转。请耐心等待...";
 $_LANG['paypalEmailAddress'] = "PayPal邮件地址";
+
+$_LANG['fromJust'] = "请求中";
+$_LANG['remoteTransError'] = "远程事务失败,请联系客服。";
+
+$_LANG['imageUnavailable'] = "图片不可用";
+
+$_LANG['emailPreferences']['affiliate'] = "推广联盟电子邮件 - 接收推广联盟通知";
+$_LANG['emailPreferences']['domain'] = "域名电子邮件 - 注册/转移确认和续订通知";
+$_LANG['emailPreferences']['general'] = "一般电子邮件 - 所有与帐户相关的电子邮件";
+$_LANG['emailPreferences']['invoice'] = "账单电子邮件 - 新账单,提醒和过期通知";
+$_LANG['emailPreferences']['product'] = "产品电子邮件 - 开通,暂停和其他周期通知";
+$_LANG['emailPreferences']['support'] = "工单电子邮件 - 接收所有工单的抄送";
+
+$_LANG['navMarketConnectService']['marketgoo'] = 'SEO 优化工具';
+$_LANG['store']['marketgoo']['title'] = 'Marketgoo SEO 优化工具';
+$_LANG['store']['marketgoo']['headline'] = "改善您网站的访问量";
+$_LANG['store']['marketgoo']['tagline'] = "和通过 marketgoo <em>发展您的业务</em>";
+$_LANG['store']['marketgoo']['tab']['how'] = "它是如何工作的？";
+$_LANG['store']['marketgoo']['tab']['features'] = "功能与价格";
+$_LANG['store']['marketgoo']['tab']['testimonials'] = "使用者反馈";
+$_LANG['store']['marketgoo']['tab']['faqs'] = "常见问题及支持";
+$_LANG['store']['marketgoo']['features']['1'] = "注册并获得SEO优化报告";
+$_LANG['store']['marketgoo']['features']['2'] = "获得简单的SEO计划";
+$_LANG['store']['marketgoo']['features']['3'] = "按照简单的步骤操作";
+$_LANG['store']['marketgoo']['features']['4'] = "开始改善";
+$_LANG['store']['marketgoo']['featuresdetail']['4'] = "将您的SEO计划运行起来，并获得每月进度报告";
+$_LANG['store']['marketgoo']['features']['5'] = "跟踪和监控";
+$_LANG['store']['marketgoo']['featuresdetail']['5'] = "查看竞争对手对你关注的关键字的排名，并跟踪他们网站的受欢迎程度";
+$_LANG['store']['marketgoo']['featurematrix']['1'] = "搜索引擎提交";
+$_LANG['store']['marketgoo']['featurematrix']['2'] = "连接Google Analytics（分析）";
+$_LANG['store']['marketgoo']['featurematrix']['3'] = "将SEO报告下载为PDF";
+$_LANG['store']['marketgoo']['featurematrix']['4'] = "页面扫描";
+$_LANG['store']['marketgoo']['featurematrix']['5'] = "竞争对手追踪";
+$_LANG['store']['marketgoo']['featurematrix']['6'] = "关键字追踪和优化";
+$_LANG['store']['marketgoo']['featurematrix']['7'] = "更新报告和计划";
+$_LANG['store']['marketgoo']['featurematrix']['8'] = "自定义SEO计划";
+$_LANG['store']['marketgoo']['featurematrix']['9'] = "每月进度报告";
+$_LANG['store']['marketgoo']['completeStepByStep'] = "<span>完成</span>（包含分步指南）";
+$_LANG['store']['marketgoo']['signup'] = "立即注册";
+$_LANG['store']['marketgoo']['testimonials']['casestudy'] = "阅读案例研究";
+$_LANG['store']['marketgoo']['faqs']['title'] = "常见问题及支持";
+$_LANG['store']['marketgoo']['faqs']['q1'] = "我应该选择普通版还是专业版？";
+$_LANG['store']['marketgoo']['faqs']['a1'] = "通过视频了解对比";
+$_LANG['store']['marketgoo']['faqs']['q2'] = "marketgoo做推荐的变更，还是我做?";
+$_LANG['store']['marketgoo']['faqs']['a2'] = "marketgoo是一个自己动手的工具，因此，尽管我们可以帮助您分析网站并提供建议以及用于优化网站的任务和说明，但我们不会为您做出这些更改。";
+$_LANG['store']['marketgoo']['faqs']['q3'] = "为什么需要做SEO优化？";
+$_LANG['store']['marketgoo']['faqs']['a3'] = "您从事SEO的优化是为了提高您的网站在搜索结果中的排名。 这样可以吸引更多的流量-理想情况下，可以将流量转化为客户和潜在客户。";
+$_LANG['store']['marketgoo']['adminPreview'] = "您激活的Marketgoo计划将在此处显示";
+
+$_LANG['upTo'] = "到 :num";
+$_LANG['weekly'] = "每周";
+$_LANG['daily'] = "每天";
+$_LANG['limited'] = "限定";
+
+$_LANG['marketConnect']['marketgoo']['manageSEO'] = "Marketgoo SEO";
+$_LANG['marketConnect']['marketgoo']['manage'] = "登录到仪表板";
+
+$_LANG['store']['marketgoo']['cartTitle'] = "Marketgoo SEO 优化工具";
+$_LANG['store']['marketgoo']['cartShortDescription'] = "使用来自Marketgoo的自定义搜索引擎优化工具，提高您网站的流量，发展您的业务。";
+
+$_LANG['store']['marketgoo']['promo']['sidebar']['title'] = "Marketgoo SEO 优化工具";
+$_LANG['store']['marketgoo']['promo']['sidebar']['body'] = "改善您网站的访问量并发展业务";
+
+$_LANG['emailPreferences']['oneRequired'] = "您必须至少启用一个电子邮件地址才能接收ICANN要求的与域名相关的通知。";
+$_LANG['emailPreferences']['domainContactRequired'] = "要禁用域名通知，请为主要帐户持有人或其他联系人启用域名通知。";
+$_LANG['emailPreferences']['domainClientRequired'] = "要禁用域名通知，请创建一个设置为接收它们的替代联系人。";
+
+$_LANG['twoFactor']['duosecurity']['friendlyName'] = "双重安全";
+$_LANG['twoFactor']['duosecurity']['description'] = "通过Duo Push、短信或电话回拨获取代码。";
+$_LANG['twoFactor']['totp']['friendlyName'] = "时间令牌";
+$_LANG['twoFactor']['totp']['description'] = "从Google Authenticator或Duo等应用程序获取代码。";
+$_LANG['twoFactor']['yubico']['friendlyName'] = "Yubico";
+$_LANG['twoFactor']['yubico']['description'] = "使用YubiKey硬件设备生成代码。";
+
+$_LANG['orderForm']['selectCategory'] = "请从侧栏菜单中选择一个类别";
+
+$_LANG['store']['sampleProduct'] = "这是一个样品。";
 
 ////////// End of zh-CN language file.  Do not place any translation strings below this line!

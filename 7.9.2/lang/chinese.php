@@ -17,7 +17,7 @@
  * @license    https://www.whmcs.com/license/ WHMCS Eula
  * @version    $Id$
  * @link       https://www.whmcs.com/
- * @by         AS-php 傲世网 WHMCS7.9.2 zh-CN
+ * @by         AS-php 傲世网 WHMCS7.9.3 zh-CN
  */
 
 if (!defined("WHMCS")) die("This file cannot be accessed directly");
@@ -122,7 +122,7 @@ $_LANG['clientareaaddress2'] = "街道地址第二行";
 $_LANG['clientareabwlimit'] = "流量限制";
 $_LANG['clientareabwusage'] = "已用流量";
 $_LANG['clientareacancel'] = "请求取消产品";
-$_LANG['clientareacancelconfirmation'] = "您的取消请求已经被提交。如果您错误地执行了此操作，请立刻提交工单通知我们，否则您的账户可能会被终止。";
+$_LANG['clientareacancelconfirmation'] = "您的取消请求已经被提交。如果您错误地执行了此操作，请立刻提交工单通知我们，否则您的服务可能会被终止。";
 $_LANG['clientareacancelinvalid'] = "此账户已经提交了一个取消请求，所以无法提交另一个取消请求。";
 $_LANG['clientareacancellationendofbillingperiod'] = "账单周期结束";
 $_LANG['clientareacancellationimmediate'] = "立即";
@@ -153,7 +153,7 @@ $_LANG['clientareadescription'] = "查看及更新您的账户详细资料";
 $_LANG['clientareadisklimit'] = "空间限制";
 $_LANG['clientareadiskusage'] = "已用空间";
 $_LANG['clientareadomainexpirydate'] = "到期日期";
-$_LANG['clientareadomainnone'] = "没有在我们这里注册域名";
+$_LANG['clientareadomainnone'] = "您没有在我们这里注册域名";
 $_LANG['clientareaemail'] = "邮件地址";
 $_LANG['clientareaemails'] = "我的邮件";
 $_LANG['clientareaemailsdate'] = "发送日期";
@@ -263,7 +263,7 @@ $_LANG['contactsubject'] = "主题";
 $_LANG['contacttitle'] = "售前咨询";
 $_LANG['continueshopping'] = "继续购物";
 $_LANG['creditcard'] = "信用卡支付";
-$_LANG['creditcard3dsecure'] = "作为我们预防欺诈的措施，您现在将被要求验证 Visa 或万事达卡 SecureCode。<br /><br />请不要点击刷新或后退，否则交易可能被中断或取消。";
+$_LANG['creditcard3dsecure'] = "作为我们预防欺诈的措施，您现在将被要求验证 Visa 或万事达卡 SecureCode。<br/><br/>请不要点击刷新或后退，否则交易可能被中断或取消。";
 $_LANG['creditcardcardexpires'] = "失效日期";
 $_LANG['creditcardcardissuenum'] = "发行代码";
 $_LANG['creditcardcardnumber'] = "信用卡号码";
@@ -362,7 +362,7 @@ $_LANG['domainrenewdesc'] = "通过续订更多的年份来保护您的域名。
 $_LANG['domainsautorenew'] = "自动续订";
 $_LANG['domainsautorenewdisable'] = "关闭自动续订";
 $_LANG['domainsautorenewdisabled'] = "已关闭自动续订域名功能";
-$_LANG['domainsautorenewdisabledwarning'] = "警告！该域名已关闭自动续订。<br />除非手动续订，否则域名将在到期后失效。";
+$_LANG['domainsautorenewdisabledwarning'] = "警告！该域名已关闭自动续订。<br/>除非手动续订，否则域名将在到期后失效。";
 $_LANG['domainsautorenewenable'] = "启用自动续订";
 $_LANG['domainsautorenewenabled'] = "已开启自动续订功能";
 $_LANG['domainsautorenewstatus'] = "当前状态";
@@ -417,7 +417,7 @@ $_LANG['invoiceaddcreditdesc2'] = "账户余额可以用来支付本账单。";
 $_LANG['invoiceaddcreditoverbalance'] = "您使用的余额不能超过应付的金额";
 $_LANG['invoiceaddcreditovercredit'] = "您使用的余额不能超过账户余额";
 $_LANG['invoicenumber'] = "账单编号 #";
-$_LANG['invoiceofflinepaid'] = "离线信用卡支付已被手工处理。<br />当您的支付请求处理完毕后您将会收到一封确认邮件。";
+$_LANG['invoiceofflinepaid'] = "离线信用卡支付已被手工处理。<br/>当您的支付请求处理完毕后您将会收到一封确认邮件。";
 $_LANG['invoicerefnum'] = "参考号码";
 $_LANG['invoices'] = "我的账单";
 $_LANG['invoicesamount'] = "金额";
@@ -503,7 +503,7 @@ $_LANG['maxmind_callingnow'] = "我们将自动拨打电话。这是我们防止
 $_LANG['maxmind_countrymismatch'] = "您的 IP 地址与填写的资料里的国家不匹配，所以我们不能接受您的订单。";
 $_LANG['maxmind_error'] = "错误";
 $_LANG['maxmind_faileddescription'] = "您输入的代码是不正确的，如果您觉得系统有误请尽快联络我们的支持部门。";
-$_LANG['maxmind_highfraudriskscore'] = "我们的系统察觉您订单欺诈的风险很大因此需要人工审核。<br /><br />如果您认为此信息有误，请接收我们的道歉并向客服部门 <a href=\"submitticket.php\">提交工单</a>，感谢您的理解。";
+$_LANG['maxmind_highfraudriskscore'] = "我们的系统察觉您订单欺诈的风险很大因此需要人工审核。<br/><br/>如果您认为此信息有误，请接收我们的道歉并向客服部门 <a href=\"submitticket.php\">提交工单</a>，感谢您的理解。";
 $_LANG['maxmind_highriskcountry'] = "我们不能接受来自您的国家的订购因为诈骗的风险很大。";
 $_LANG['maxmind_incorrectcode'] = "错误的代码";
 $_LANG['maxmind_pincode'] = "PIN 码";
@@ -556,7 +556,7 @@ $_LANG['ordercheckout'] = "结账";
 $_LANG['orderchooseaddons'] = "选择产品附加服务";
 $_LANG['orderchooseapackage'] = "选择方案";
 $_LANG['ordercodenotfound'] = "您输入的优惠码不存在";
-$_LANG['ordercompletebutnotpaid'] = "注意！您的订购已经完成，但是您还没有付款，所以产品不会激活。<br />点击下面的链接查看您的账单并付款。";
+$_LANG['ordercompletebutnotpaid'] = "注意！您的订购已经完成，但是您还没有付款，所以产品不会激活。<br/>点击下面的链接查看您的账单并付款。";
 $_LANG['orderconfigpackage'] = "配置选项";
 $_LANG['orderconfigure'] = "配置";
 $_LANG['orderconfirmation'] = "订单确认";
@@ -875,14 +875,14 @@ $_LANG['creditcarddeleteconfirmation'] = "保存的信用卡信息已从您的�
 $_LANG['creditcardupdatenotpossible'] = "信用卡信息目前无法更新，请稍后再试。";
 
 $_LANG['invoicepaymentsuccessconfirmation'] = "感谢！您已付款成功！";
-$_LANG['invoicepaymentfailedconfirmation'] = "尝试付款未成功。<br />请再试一次或者联系我们。";
+$_LANG['invoicepaymentfailedconfirmation'] = "尝试付款未成功。<br/>请再试一次或者联系我们。";
 
 # Version 4.2
 
 $_LANG['promoappliedbutnodiscount'] = "您输入的优惠码已应用，但购物车中没有任何产品适用于此优惠码 - 请检查优惠条款。";
 
-$_LANG['upgradeerroroverdueinvoice'] = "您无法升级或降级此产品，因为续费账单已经生成。<br /><br />如需继续，请先支付续费账单，当账单支付后，您才可以升级或降级产品。";
-$_LANG['upgradeexistingupgradeinvoice'] = "您无法升级或降级此产品，因为升级或降级已经在进行中。<br /><br />如需继续，请先支付未付账单，当账单支付后，您才可以升级/降级产品。<br/><br/>如果您认为您此消息有误，请提交故障工单给我们。";
+$_LANG['upgradeerroroverdueinvoice'] = "您无法升级或降级此产品，因为续费账单已经生成。<br/><br/>如需继续，请先支付续费账单，当账单支付后，您才可以升级或降级产品。";
+$_LANG['upgradeexistingupgradeinvoice'] = "您无法升级或降级此产品，因为升级或降级已经在进行中。<br/><br/>如需继续，请先支付未付账单，当账单支付后，您才可以升级/降级产品。<br/><br/>如果您认为您此消息有误，请提交故障工单给我们。";
 
 $_LANG['subaccountactivate'] = "开通子账户";
 $_LANG['subaccountactivatedesc'] = "设置子账户访问权限";
@@ -975,7 +975,7 @@ $_LANG['domainreleasetag'] = "新注册标签";
 $_LANG['orderformtitle'] = "订购表单";
 
 $_LANG['signup'] = "注册";
-$_LANG['loading'] = "正在加载…";
+$_LANG['loading'] = "加载中…";
 
 $_LANG['ordersummarybegin'] = "请选择产品然后开始订购";
 
@@ -1030,7 +1030,7 @@ $_LANG['quotedownload'] = "查看/下载";
 $_LANG['quoteacceptbtn'] = "接受报价";
 $_LANG['quotedlpdfbtn'] = "下载 PDF";
 $_LANG['quotediscountheading'] = "优惠(%)";
-$_LANG['noquotes'] = "目前您的账户没报价单。<br />如果您需要请求报价，请提交工单。";
+$_LANG['noquotes'] = "目前您的账户没报价单。<br/>如果您需要请求报价，请提交工单。";
 $_LANG['quotenumber'] = "报价单 #";
 $_LANG['quotesubject'] = "报价主题";
 $_LANG['quotedatecreated'] = "创建日期";
@@ -1055,7 +1055,7 @@ $_LANG['quotefinalpayment'] = "从账户余额扣款";
 $_LANG['invoiceoneoffpayment'] = "使用子账户付款";
 $_LANG['invoicesubscriptionpayment'] = "创建自动续费订阅";
 
-$_LANG['invoicepaymentpendingreview'] = "谢谢您！您的付款已经成功，您的付款已成功完成，并在 2CheckOut 的审核流程完成后立即应用于您的账单。<br /><br />这可能需要几个小时，感谢您的耐心等待。";
+$_LANG['invoicepaymentpendingreview'] = "谢谢您！您的付款已经成功，您的付款已成功完成，并在 2CheckOut 的审核流程完成后立即应用于您的账单。<br/><br/>这可能需要几个小时，感谢您的耐心等待。";
 
 $_LANG['step'] = "步骤 %s";
 $_LANG['cartdomainexists'] = "此域名已经存在于我们的数据库";
@@ -1093,7 +1093,7 @@ $_LANG['existingcustomer'] = "老用户";
 $_LANG['newcustomersignup'] = "<strong>还未注册？</strong>请 %s点这里注册…%s";
 
 $_LANG['upgradeonselectedoptions'] = "（对指定的选项）";
-$_LANG['recurringpromodesc'] = "此优惠码还包含了循环折扣<br />（该产品今后续费依旧享受此优惠价格）";
+$_LANG['recurringpromodesc'] = "此优惠码还包含了循环折扣<br/>（该产品今后续费依旧享受此优惠价格）";
 
 # Version 4.5.2
 
@@ -1104,7 +1104,7 @@ $_LANG['ajaxcartconfigreqnotice'] = "请绑定域名，更多的域名绑定可�
 # Version 5.0.0
 
 $_LANG['cancelrequestdomain'] = "取消域名续费？";
-$_LANG['cancelrequestdomaindesc'] = "You also have an active domain registration for the domain associated with this product<br />This domain is due to renew on %s at a cost of %s for %s Year/s<br /><br />If you would like to cancel the domain as well, and let it expire at the end of the current registration, then simply tick the box below.";
+$_LANG['cancelrequestdomaindesc'] = "You also have an active domain registration for the domain associated with this product<br/>This domain is due to renew on %s at a cost of %s for %s Year/s<br/><br/>If you would like to cancel the domain as well, and let it expire at the end of the current registration, then simply tick the box below.";
 $_LANG['cancelrequestdomainconfirm'] = "我确认我不想再为此域名续费";
 
 $_LANG['startingfrom'] = "起价";
@@ -1466,7 +1466,7 @@ $_LANG['twofabackupcodeexpl'] = "在纸上写下来并妥善保管。<br/>如果
 $_LANG['twofaconfirmpw'] = "输入您的密码";
 $_LANG['twofa2ndfactorreq'] = "您需要输入两步验证代码来完成登录";
 $_LANG['twofa2ndfactorincorrect'] = "您提供的两步验证不正确。请再试一次。";
-$_LANG['twofabackupcodereset'] = "通过备份码登录成功<br />备份码只可使用一次，现在将重置。";
+$_LANG['twofabackupcodereset'] = "通过备份码登录成功<br/>备份码只可使用一次，现在将重置。";
 $_LANG['twofacantaccess2ndfactor'] = "无法访问您的两步验证设备？";
 $_LANG['twofaloginusingbackupcode'] = "使用备用代码登录";
 $_LANG['twofageneralerror'] = "加载该模块时出错。请再试一次";
@@ -1651,7 +1651,7 @@ $_LANG['readyforquestions'] = "我们已经准备好回答您的问题";
 $_LANG['restrictedpage'] = "此页面已加密";
 $_LANG['enteremail'] = "输入邮箱";
 
-$_LANG['passwordtips'] = "<strong>如何设置一个高强度的密码：</strong><br />同时使用大小写字符<br />至少使用一个符号（# $ ! % &amp; 等等…）<br />不要使用连续字符";
+$_LANG['passwordtips'] = "<strong>如何设置一个高强度的密码：</strong><br/>同时使用大小写字符<br/>至少使用一个符号（# $ ! % &amp; 等等…）<br/>不要使用连续字符";
 
 $_LANG['regdate'] = "注册日期";
 $_LANG['nextdue'] = "到期时间";
@@ -1988,8 +1988,8 @@ $_LANG['orderForm']['close'] = "关闭";
 $_LANG['orderForm']['totals'] = "合计";
 $_LANG['orderForm']['includedWithPlans'] = "包含至每个套餐";
 $_LANG['orderForm']['whatIsIncluded'] = "包含哪些？";
-$_LANG['orderForm']['errorNoProductGroup'] = "无法加载任何产品组";
-$_LANG['orderForm']['errorNoProducts'] = "产品组不包含任何可见的产品";
+$_LANG['orderForm']['errorNoProductGroup'] = "暂未添加任何产品组，敬请期待";
+$_LANG['orderForm']['errorNoProducts'] = "产品正在准备中, 尚未开放购买";
 
 $_LANG['cloudSlider']['feature01Title'] = "最大运行时间";
 $_LANG['cloudSlider']['feature01Description'] = "服务器运行时间是所有企业的关键 - 文件和数据库服务器，电子邮件和 Web 服务器是大多数业务流程中不可或缺的一部分，宕机直接对生产率，销售，员工和客户满意度产生负面影响。 这就是为什么对我们来说确保服务器最大正常运行时间是这么的重要 - 我们要确保您的业务流程运行良好，这样顾客才会对您更满意。";
@@ -2072,14 +2072,14 @@ $_LANG['markdown']['spanningMultipleLines'] = "代码可跨越多行显示…";
 $_LANG['markdown']['saved'] = "已保存";
 $_LANG['markdown']['saving'] = "自动保存";
 
-$_LANG['oauth']['authoriseAppToAccess'] = "授权 :appName<br />访问您的账户？";
+$_LANG['oauth']['authoriseAppToAccess'] = "授权 :appName<br/>访问您的账户？";
 $_LANG['oauth']['willBeAbleTo'] = "此应用将会";
 $_LANG['oauth']['authorise'] = "授权";
 $_LANG['oauth']['currentlyLoggedInAs'] = "您当前已作为 :lastName :firstName 登录";
 $_LANG['oauth']['notYou'] = "不是您？";
 $_LANG['oauth']['returnToApp'] = "返回到 :appName";
 $_LANG['oauth']['copyrightFooter'] = "版权所有 &copy; :dateYear :companyName 保留所有权利。";
-$_LANG['oauth']['loginToGrantApp'] = "登录授予 :appName<br />访问您的账户";
+$_LANG['oauth']['loginToGrantApp'] = "登录授予 :appName<br/>访问您的账户";
 $_LANG['oauth']['redirectDescriptionOne'] = "将您重定向回应用程序。这可能会花费一段时间";
 $_LANG['oauth']['redirectDescriptionTwo'] = "假如您的浏览器没有跳转，请";
 $_LANG['oauth']['redirectDescriptionThree'] = "点此继续";
@@ -2455,7 +2455,7 @@ $_LANG['orderErrorServerNameserversInvalid'] = "域名服务器前缀无效。";
 $_LANG['checkAll'] = "全选";
 $_LANG['uncheckAll'] = "反选";
 
-$_LANG['maxmind']['manualReview'] = "您的订单已经进行人工审核。<br /><br />如果您认为本信息有错误，请谅解并通过 <a href=\"submitticket.php\">提交支持工单</a> 联系客户服务团队，谢谢。";
+$_LANG['maxmind']['manualReview'] = "您的订单已经进行人工审核。<br/><br/>如果您认为本信息有错误，请谅解并通过 <a href=\"submitticket.php\">提交支持工单</a> 联系客户服务团队，谢谢。";
 
 $_LANG['nodomain'] = "未指定域名";
 
@@ -2599,8 +2599,8 @@ $_LANG['tax']['errorInvalid'] = "提供的 :taxLabel 无效。";
 $_LANG['fraud']['checkConfiguration'] = "欺诈检查发生错误。 请联系支持。";
 $_LANG['fraud']['title'] = "欺诈检查";
 $_LANG['fraud']['error'] = "错误";
-$_LANG['fraud']['manualReview'] = "您的订单已经进行人工审核。<br /><br />如果您认为错误地收到了此消息，请接受我们的道歉并 <a href=\"submitticket.php\">提交支持工单</a> 联系我们的客户服务支持团队。谢谢。";
-$_LANG['fraud']['highFraudRiskScore'] = "您的订单已被标记为潜在的高风险，因此已经进行人工审核。<br /><br />如果您认为错误地收到了此消息，请接受我们的道歉并 <a href=\"submitticket.php\">提交支持工单</a> 联系我们的客户服务支持团队。谢谢。";
+$_LANG['fraud']['manualReview'] = "您的订单已经进行人工审核。<br/><br/>如果您认为错误地收到了此消息，请接受我们的道歉并 <a href=\"submitticket.php\">提交支持工单</a> 联系我们的客户服务支持团队。谢谢。";
+$_LANG['fraud']['highFraudRiskScore'] = "您的订单已被标记为潜在的高风险，因此已经进行人工审核。<br/><br/>如果您认为错误地收到了此消息，请接受我们的道歉并 <a href=\"submitticket.php\">提交支持工单</a> 联系我们的客户服务支持团队。谢谢。";
 $_LANG['fraud']['countryMismatch'] = "您的 IP 地址所在的国家/地区与您输入的账单地址国家/地区不符，因此我们无法接受您的订单";
 $_LANG['fraud']['highRiskCountry'] = "很遗憾，我们无法接受您的订单，因为您所在的国家/地区存在大量欺诈活动。如果您想安排其它付款方式，请与我们联系。";
 $_LANG['fraud']['anonymousProxy'] = "我们不允许使用匿名代理发出订单";
@@ -3075,7 +3075,7 @@ $_LANG['marketConnect']['weebly']['buildWebsite'] = "生成您网站";
 
 $_LANG['creditCardHolderName'] = "信用卡持有者姓名";
 
-$_LANG['redirectingToCompleteCheckout'] = "您以完成结帐,正在跳转。请耐心等待...";
+$_LANG['redirectingToCompleteCheckout'] = "您已完成结帐,正在跳转。请耐心等待...";
 $_LANG['paypalEmailAddress'] = "PayPal邮件地址";
 
 $_LANG['fromJust'] = "请求中";

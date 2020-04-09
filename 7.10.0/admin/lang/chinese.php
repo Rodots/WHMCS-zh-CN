@@ -1,5 +1,5 @@
 <?php
-// @by AS-php 傲世网 WHMCS7.9.3 zh-CN
+// @by AS-php 傲世网 WHMCS7.10.0 zh-CN
 if (!defined("WHMCS")) die("This file cannot be accessed directly");
 
 $_ADMINLANG['locale'] = "zh_CN";
@@ -168,7 +168,7 @@ $_ADMINLANG['global']['stepOfStep'] = "步骤<span class=\"step\">:step</span> �
 $_ADMINLANG['global']['finish'] = "完成";
 $_ADMINLANG['global']['required'] = "必填";
 $_ADMINLANG['global']['saved'] = "已保存!";
-$_ADMINLANG['global']['operationCompletedSuccessfully'] = "操作成功完成.";
+$_ADMINLANG['global']['operationCompletedSuccessfully'] = "操作成功完成。";
 $_ADMINLANG['global']['refresh'] = "刷新";
 $_ADMINLANG['global']['notAvailable'] = "不可用";
 $_ADMINLANG['global']['clipboardCopy'] = "复制到剪贴板";
@@ -177,6 +177,15 @@ $_ADMINLANG['global']['gateway'] = "网关";
 $_ADMINLANG['global']['invalidTemplate'] = "无法找到您的帐户\":template\"的模板集。因此，您的帐户已更新为使用下一个可用的模板。您可以在下面修改这个选项。";
 $_ADMINLANG['global']['getSubscriptionInfo'] = "得到订阅信息";
 $_ADMINLANG['global']['actionRequired'] = "需要采取的行动";
+$_ADMINLANG['global']['noChanges'] = "未做任何更改";
+$_ADMINLANG['global']['register'] = "注册";
+$_ADMINLANG['global']['renew'] = "更新";
+$_ADMINLANG['global']['grace'] = "宽限";
+$_ADMINLANG['global']['redemption'] = "赎回";
+$_ADMINLANG['global']['transfer'] = "迁移";
+$_ADMINLANG['global']['percentage'] = "比例";
+$_ADMINLANG['global']['fixedAmount'] = "固定金额";
+$_ADMINLANG['global']['deprecated'] = "弃用";
 
 # Home
 $_ADMINLANG['home']['title'] = "后台首页";
@@ -479,7 +488,7 @@ $_ADMINLANG['services']['cancelSubscription'] = "取消订阅";
 $_ADMINLANG['services']['cancelSubscriptionSure'] = "您确定要请求取消订阅？";
 $_ADMINLANG['services']['cancelSubscriptionSuccess'] = "订阅已成功退订。";
 $_ADMINLANG['services']['cancelSubscriptionFailed'] = "退订失败。请检查接口日志。";
-$_ADMINLANG['services']['renewSure'] = "远程服务提供商可能会收取本产品的续订费用。<br><br>您确定要对此产品执行续订操作吗？";
+$_ADMINLANG['services']['renewSure'] = "远程服务提供商可能会对此产品的续订收费。<br/><br/>您确定要对此产品执行续订操作吗？";
 $_ADMINLANG['services']['keepDnsZone'] = "终止时保留 DNS 区域";
 $_ADMINLANG['services']['invoiceUsage'] = "生成度量使用发票";
 
@@ -736,6 +745,44 @@ $_ADMINLANG['domains']['releasedAndDeleted'] = "域名 ':domain' 已成功发布
 $_ADMINLANG['domains']['noNameservers'] = "尚未提交名称服务器。请添加名称服务器，然后重试.";
 $_ADMINLANG['domains']['noNameserversWithServer'] = "没有为该域分配的服务器定义名称服务器。请更正并重试.";
 $_ADMINLANG['domains']['noNameserversWithoutServer'] = "在 设置>常规设置>域 中未定义默认名称服务器。请更正并重试.";
+$_ADMINLANG['domains']['tldImport']['description'] = "首先，请选择一个域名注册商来获取顶级域名和定价信息。";
+$_ADMINLANG['domains']['tldImport']['importCountTlds'] = "导入 :count TLDs";
+$_ADMINLANG['domains']['tldImport']['marginType'] = "保证金类型";
+$_ADMINLANG['domains']['tldImport']['fixedOrPercentage'] = "选择加价类型以应用于成本价格";
+$_ADMINLANG['domains']['tldImport']['importComplete'] = "导入完成";
+$_ADMINLANG['domains']['tldImport']['noRegistrars'] = "没有活动的域名注册商模块支持TLD导入和定价同步";
+$_ADMINLANG['domains']['tldImport']['profitMargin'] = "利率";
+$_ADMINLANG['domains']['tldImport']['profitMarginDescription'] = "加价金额适用于成本价格";
+$_ADMINLANG['domains']['tldImport']['rounding'] = "四舍五入到下一个";
+$_ADMINLANG['domains']['tldImport']['roundingDescription'] = "用于将价格四舍五入为一个常见的人性化数字";
+$_ADMINLANG['domains']['tldImport']['syncRedemption'] = "同步兑换/宽限费";
+$_ADMINLANG['domains']['tldImport']['syncRedemptionDescription'] = "启用以使用相同的加价同步兑换和宽限期费用";
+$_ADMINLANG['domains']['tldImport']['setAutoRegistrar'] = "自动注册";
+$_ADMINLANG['domains']['tldImport']['setAutoRegistrarDescription'] = "为同步TLD启用付款时自动注册";
+$_ADMINLANG['domains']['tldImport']['existingTld'] = "现有的 TLD";
+$_ADMINLANG['domains']['tldImport']['autoRegisterWithRegistrar'] = "使用此注册器启用自动注册 (:registrar)";
+$_ADMINLANG['domains']['tldImport']['autoRegisterOtherRegistrar'] = "已启用与其他注册商的自动注册 (:registrar)";
+$_ADMINLANG['domains']['tldImport']['autoRegisterNotEnabled'] = "自动注册已禁用";
+$_ADMINLANG['domains']['tldImport']['cost'] = "花费";
+$_ADMINLANG['domains']['tldImport']['local'] = "目前";
+$_ADMINLANG['domains']['tldImport']['margin'] = "数量";
+$_ADMINLANG['domains']['tldImport']['noRounding'] = "不进行四舍五入";
+$_ADMINLANG['domains']['tldImport']['noTldsSelected'] = "在继续之前，您必须至少选择1个TLD";
+$_ADMINLANG['domains']['tldImport']['errorOnImport'] = "导入以下TLD时出错";
+$_ADMINLANG['domains']['tldImport']['selectRegistrar'] = "自动选择与注册器关联的TLD";
+$_ADMINLANG['domains']['tldImport']['deselectRegistrar'] = "取消选择与注册器关联的TLD";
+$_ADMINLANG['domains']['tldImport']['loading'] = "获取TLD和定价信息。这可能需要长达一分钟的时间。请稍等.。";
+$_ADMINLANG['domains']['tldImport']['successes'] = "以下TLD已成功同步";
+$_ADMINLANG['domains']['tldImport']['failures'] = "以下TLD同步失败";
+$_ADMINLANG['domains']['tldImport']['supported'] = "您已启用支持自动TLD和定价同步的注册商";
+$_ADMINLANG['domains']['tldImport']['lastSync'] = "上次同步是在以下日期执行的 :dateTime";
+$_ADMINLANG['domains']['tldImport']['noSync'] = "尚未执行任何同步";
+$_ADMINLANG['domains']['tldImport']['syncNow'] = "单击此处立即同步";
+$_ADMINLANG['domains']['tldImport']['noCurrency'] = "无法显示TLD成本定价，因为货币 ':currencyCode' 未定义汇率。";
+$_ADMINLANG['domains']['tldImport']['noCurrencyDefined'] = "无法显示TLD成本定价，因为未定义货币。";
+$_ADMINLANG['domains']['tldImport']['autoRegisterOtherRegistrarWarning'] = "以下选定的TLD设置为自动注册到另一家注册商。您确定要更新这些TLD以自动注册到 :registrar?";
+$_ADMINLANG['domains']['tldImport']['defaultCurrency'] = "下面的所有价格都显示为您的系统默认货币 :currency.";
+$_ADMINLANG['domains']['tldImport']['additionalCurrencies'] = "选定的注册商以以下货币返回定价：:currencies.";
 
 # Orders
 $_ADMINLANG['orders']['title'] = "订单管理";
@@ -1252,7 +1299,6 @@ $_ADMINLANG['support']['addbilling'] = "添加收费项目";
 $_ADMINLANG['support']['toinvoicedes'] = "要生成账单，请填写账单描述";
 $_ADMINLANG['support']['addresponse'] = "添加回复";
 $_ADMINLANG['support']['nocustomfields'] = "当前客服部门没有设置自定义字段";
-$_ADMINLANG['support']['flag'] = "标记";
 $_ADMINLANG['support']['ccrecipients'] = "抄送收件人";
 $_ADMINLANG['support']['mergeticket'] = "合并工单";
 $_ADMINLANG['support']['notocombine'] = "不要输入#号";
@@ -1335,6 +1381,8 @@ $_ADMINLANG['support']['numberOfTickets'] = "工单数量";
 $_ADMINLANG['support']['timeframe'] = "大体时间";
 $_ADMINLANG['support']['averageFirstReplyTime'] = "平均首次回复时间";
 $_ADMINLANG['support']['attachmentsRemoved'] = "由于票证不活跃而被删除";
+$_ADMINLANG['support']['associateService'] = "更改关联服务";
+$_ADMINLANG['support']['selectClientServices'] = "请选择客户端查看相关服务";
 
 # Network Issues
 $_ADMINLANG['networkissues']['title'] = "网络维护";
@@ -1404,6 +1452,7 @@ $_ADMINLANG['currencies']['addCurrencyFailed'] = "添加币种失败";
 $_ADMINLANG['currencies']['currencyConversionNotNumeric'] = "您必须填写货币转换率";
 $_ADMINLANG['currencies']['currencyConversionZero'] = "您必须填写不为 0 的货币转换率";
 $_ADMINLANG['currencies']['currencyCodeInvalid'] = "请提供有效的货币代码";
+$_ADMINLANG['currencies']['editCurrencyFailed'] = "编辑币种失败";
 
 # Affiliates
 $_ADMINLANG['affiliates']['title'] = "推介管理";
@@ -1479,6 +1528,7 @@ $_ADMINLANG['utilities']['logs'] = "日志记录";
 $_ADMINLANG['utilities']['activitylog'] = "系统日志";
 $_ADMINLANG['utilities']['modulelog'] = "模块日志";
 $_ADMINLANG['utilities']['moduleQueue'] = "模块队列";
+$_ADMINLANG['utilities']['tldImport'] = "注册商TLD同步";
 $_ADMINLANG['utilities']['adminlog'] = "管理员日志";
 $_ADMINLANG['utilities']['emaillog'] = "电子邮件日志";
 $_ADMINLANG['utilities']['ticketmaillog'] = "邮件导入工单日志";
@@ -1502,6 +1552,93 @@ $_ADMINLANG['utilities']['linkTracking']['clicksDescription'] = "链接点击次
 $_ADMINLANG['utilities']['linkTracking']['conversionDescription'] = "链接访问者下的订单数量";
 $_ADMINLANG['utilities']['linkTracking']['linkUrl'] = "链接/URL";
 $_ADMINLANG['utilities']['linkTracking']['linkUrlDescription'] = "要共享以进行跟踪的URL";
+$_ADMINLANG['utilities']['emailMarketer']['description'] = "电子邮件营销者工具允许您计划在满足特定事件和/或标准时自动发送电子邮件给您的客户。";
+$_ADMINLANG['utilities']['emailMarketer']['createNew'] = "创建新规则";
+$_ADMINLANG['utilities']['emailMarketer']['manageRule'] = "管理规则";
+$_ADMINLANG['utilities']['emailMarketer']['ruleName'] = "名称";
+$_ADMINLANG['utilities']['emailMarketer']['internalUseOnly'] = "(仅限私人管理员使用)";
+$_ADMINLANG['utilities']['emailMarketer']['ruleType'] = "类别";
+$_ADMINLANG['utilities']['emailMarketer']['ruleTypeClient'] = "与客户端相关";
+$_ADMINLANG['utilities']['emailMarketer']['ruleTypeService'] = "与产品/服务相关";
+$_ADMINLANG['utilities']['emailMarketer']['marketing'] = "营销电子邮件";
+$_ADMINLANG['utilities']['emailMarketer']['marketingDescription'] = "请勿将此电子邮件发送给选择退出营销电子邮件的客户";
+$_ADMINLANG['utilities']['emailMarketer']['disabled'] = "禁用";
+$_ADMINLANG['utilities']['emailMarketer']['disabledDescription'] = "勾选此框可暂时禁用此营销规则";
+$_ADMINLANG['utilities']['emailMarketer']['criteria'] = "条件选项";
+$_ADMINLANG['utilities']['emailMarketer']['criteriaDescription1'] = "可以在下面定义发送电子邮件的时间标准。";
+$_ADMINLANG['utilities']['emailMarketer']['criteriaDescription2'] = "可用的条件取决于上面选择的电子邮件类型。";
+$_ADMINLANG['utilities']['emailMarketer']['emailTemplates'] = "邮件模板";
+$_ADMINLANG['utilities']['emailMarketer']['updated'] = "电子邮件营销规则已更新";
+$_ADMINLANG['utilities']['emailMarketer']['client']['daysSinceRegistration'] = "自注册以来的天数";
+$_ADMINLANG['utilities']['emailMarketer']['client']['minimumServices'] = "服务的最小数量/有效产品";
+$_ADMINLANG['utilities']['emailMarketer']['client']['maximumServices'] = "服务的最大数量/有效产品";
+$_ADMINLANG['utilities']['emailMarketer']['service']['productService'] = "产品/服务";
+$_ADMINLANG['utilities']['emailMarketer']['service']['productAddon'] = "插件";
+$_ADMINLANG['utilities']['emailMarketer']['service']['status'] = "产品/服务状态";
+$_ADMINLANG['utilities']['emailMarketer']['service']['cycle'] = "产品/服务计费周期";
+$_ADMINLANG['utilities']['emailMarketer']['service']['numberOfDays'] = "天数";
+$_ADMINLANG['utilities']['emailMarketer']['service']['afterOrder'] = "订购时间";
+$_ADMINLANG['utilities']['emailMarketer']['service']['beforeDue'] = "在下一个到期日之前";
+$_ADMINLANG['utilities']['emailMarketer']['service']['afterDue'] = "下一个到期日之后";
+$_ADMINLANG['utilities']['emailMarketer']['service']['withoutProduct'] = "没有产品/服务";
+$_ADMINLANG['utilities']['emailMarketer']['service']['withoutAddon'] = "没有插件";
+$_ADMINLANG['utilities']['emailMarketer']['notFound'] = "未找到电子邮件营销规则";
+$_ADMINLANG['utilities']['automationStatusDetail']['info'] = "单击某个块可查看有关该任务操作的详细信息";
+$_ADMINLANG['utilities']['automationStatusDetail']['createInvoices']['success']['detail'] = "成功生成发票";
+$_ADMINLANG['utilities']['automationStatusDetail']['createInvoices']['noSuccess'] = "没有成功生成发票的记录";
+$_ADMINLANG['utilities']['automationStatusDetail']['autoSuspensions']['success']['detail'] = "成功挂起";
+$_ADMINLANG['utilities']['automationStatusDetail']['autoSuspensions']['noSuccess'] = "没有成功挂起的记录";
+$_ADMINLANG['utilities']['automationStatusDetail']['autoSuspensions']['failure']['detail'] = "暂停失败";
+$_ADMINLANG['utilities']['automationStatusDetail']['autoSuspensions']['noFailure'] = "没有暂停失败的记录";
+$_ADMINLANG['utilities']['automationStatusDetail']['processCreditCardPayments']['success']['detail'] = "成功的付款";
+$_ADMINLANG['utilities']['automationStatusDetail']['processCreditCardPayments']['noSuccess'] = "没有成功的付款的记录";
+$_ADMINLANG['utilities']['automationStatusDetail']['processCreditCardPayments']['failure']['detail'] = "失败的付款";
+$_ADMINLANG['utilities']['automationStatusDetail']['processCreditCardPayments']['noFailure'] = "没有失败付款的记录";
+$_ADMINLANG['utilities']['automationStatusDetail']['autoTerminations']['success']['detail'] = "成功终止";
+$_ADMINLANG['utilities']['automationStatusDetail']['autoTerminations']['noSuccess'] = "没有成功终止的记录";
+$_ADMINLANG['utilities']['automationStatusDetail']['autoTerminations']['failure']['detail'] = "终止失败";
+$_ADMINLANG['utilities']['automationStatusDetail']['autoTerminations']['noFailure'] = "没有终止失败的记录";
+$_ADMINLANG['utilities']['automationStatusDetail']['cancellationRequests']['success']['detail'] = "成功取消";
+$_ADMINLANG['utilities']['automationStatusDetail']['cancellationRequests']['noSuccess'] = "没有成功取消的记录";
+$_ADMINLANG['utilities']['automationStatusDetail']['cancellationRequests']['failure']['detail'] = "取消失败";
+$_ADMINLANG['utilities']['automationStatusDetail']['cancellationRequests']['noFailure'] = "没有取消失败的记录";
+$_ADMINLANG['utilities']['automationStatusDetail']['fixedTermTerminations']['success']['detail'] = "终止订单成功";
+$_ADMINLANG['utilities']['automationStatusDetail']['fixedTermTerminations']['noSuccess'] = "没有终止订单成功的记录";
+$_ADMINLANG['utilities']['automationStatusDetail']['fixedTermTerminations']['failure']['detail'] = "终止订单失败";
+$_ADMINLANG['utilities']['automationStatusDetail']['fixedTermTerminations']['noFailure'] = "没有终止订单失败的记录";
+$_ADMINLANG['utilities']['automationStatusDetail']['autoClientStatusSync']['success']['detail'] = "重新激活客户";
+$_ADMINLANG['utilities']['automationStatusDetail']['autoClientStatusSync']['noSuccess'] = "没有重新激活客户的记录";
+$_ADMINLANG['utilities']['automationStatusDetail']['autoClientStatusSync']['failure']['detail'] = "停用客户";
+$_ADMINLANG['utilities']['automationStatusDetail']['autoClientStatusSync']['noFailure'] = "没有停用客户的记录";
+$_ADMINLANG['utilities']['automationStatusDetail']['invoiceReminders']['unpaid']['detail'] = "未付款账单";
+$_ADMINLANG['utilities']['automationStatusDetail']['invoiceReminders']['noUnpaid'] = "没有发送未付账单提醒";
+$_ADMINLANG['utilities']['automationStatusDetail']['invoiceReminders']['first']['detail'] = "第1次逾期";
+$_ADMINLANG['utilities']['automationStatusDetail']['invoiceReminders']['noFirst'] = "没有发送任何第1次逾期提醒";
+$_ADMINLANG['utilities']['automationStatusDetail']['invoiceReminders']['second']['detail'] = "第2次逾期";
+$_ADMINLANG['utilities']['automationStatusDetail']['invoiceReminders']['noSecond'] = "没有发送任何第2次逾期提醒";
+$_ADMINLANG['utilities']['automationStatusDetail']['invoiceReminders']['third']['detail'] = "第3次逾期";
+$_ADMINLANG['utilities']['automationStatusDetail']['invoiceReminders']['noThird'] = "没有发送任何第3次逾期提醒";
+$_ADMINLANG['utilities']['automationStatusDetail']['invoiceReminders']['fourth']['detail'] = "第4次逾期";
+$_ADMINLANG['utilities']['automationStatusDetail']['invoiceReminders']['noFourth'] = "没有发送任何第4次逾期提醒";
+$_ADMINLANG['utilities']['automationStatusDetail']['addLateFees']['success']['detail'] = "添加滞纳金";
+$_ADMINLANG['utilities']['automationStatusDetail']['addLateFees']['noSuccess'] = "没有添加滞纳金";
+$_ADMINLANG['utilities']['automationStatusDetail']['domainRenewalNotices']['first']['detail'] = "第1次域名续订";
+$_ADMINLANG['utilities']['automationStatusDetail']['domainRenewalNotices']['noFirst'] = "没有发送任何第1次域名续订提醒";
+$_ADMINLANG['utilities']['automationStatusDetail']['domainRenewalNotices']['second']['detail'] = "第2次域名续订";
+$_ADMINLANG['utilities']['automationStatusDetail']['domainRenewalNotices']['noSecond'] = "没有发送任何第2次域名续订提醒";
+$_ADMINLANG['utilities']['automationStatusDetail']['domainRenewalNotices']['third']['detail'] = "第3次域名续订";
+$_ADMINLANG['utilities']['automationStatusDetail']['domainRenewalNotices']['noThird'] = "没有发送任何第3次域名续订提醒";
+$_ADMINLANG['utilities']['automationStatusDetail']['domainRenewalNotices']['fourth']['detail'] = "第4次域名续订";
+$_ADMINLANG['utilities']['automationStatusDetail']['domainRenewalNotices']['noFourth'] = "没有发送任何第4次域名续订提醒";
+$_ADMINLANG['utilities']['automationStatusDetail']['domainRenewalNotices']['fifth']['detail'] = "第5次域名续订";
+$_ADMINLANG['utilities']['automationStatusDetail']['domainRenewalNotices']['noFifth'] = "没有发送任何第5次域名续订提醒";
+$_ADMINLANG['utilities']['automationStatusDetail']['domainRenewalNotices']['failed']['detail'] = "域名续订失败";
+$_ADMINLANG['utilities']['automationStatusDetail']['domainRenewalNotices']['noFailed'] = "没有失败的域名续订提醒";
+$_ADMINLANG['utilities']['automationStatusDetail']['closeInactiveTickets']['success']['detail'] = "关闭工单";
+$_ADMINLANG['utilities']['automationStatusDetail']['closeInactiveTickets']['noSuccess'] = "没有因超时而关闭的工单";
+$_ADMINLANG['utilities']['automationStatusDetail']['viewModuleQueue'] = "查看模块队列";
+$_ADMINLANG['utilities']['automationStatusDetail']['noModuleQueue'] = "没有模块队列";
+
 
 # Setup
 $_ADMINLANG['setup']['title'] = "系统设置";
@@ -1552,6 +1689,7 @@ $_ADMINLANG['setup']['notifications'] = "通知";
 $_ADMINLANG['setup']['roles'] = "管理员角色与权限";
 $_ADMINLANG['setup']['promotions'] = "优惠和促销";
 $_ADMINLANG['setup']['storage'] = "存储设置";
+$_ADMINLANG['setup']['tldImport'] = "TLD导入和定价同步";
 
 $_ADMINLANG['setupDescription']['general'] = "常规设置和配置";
 $_ADMINLANG['setupDescription']['automation'] = "定时和自动化设置";
@@ -1784,6 +1922,15 @@ $_ADMINLANG['fields']['parentdomain'] = "父域";
 $_ADMINLANG['fields']['cardName'] = "信用卡持有者姓名";
 $_ADMINLANG['fields']['dateRefunded'] = "已退款日期";
 $_ADMINLANG['fields']['dateCancelled'] = "已取消日期";
+$_ADMINLANG['fields']['updated'] = "最近更新时间";
+$_ADMINLANG['fields']['enabled'] = "启用";
+$_ADMINLANG['fields']['errorMessage'] = "错误信息";
+$_ADMINLANG['fields']['serviceAddonId'] = "服务/插件ID";
+$_ADMINLANG['fields']['clientStatus'] = "客户状态";
+$_ADMINLANG['fields']['invoiceStatus'] = "账单状态";
+$_ADMINLANG['fields']['serviceAddonStatus'] = "服务/插件状态";
+$_ADMINLANG['fields']['domainId'] = "域名 ID";
+$_ADMINLANG['fields']['domainStatus'] = "域名状态";
 
 # Contact Permissions
 $_ADMINLANG['contactpermissions']['permprofile'] = "修改主账户资料";
@@ -2541,6 +2688,8 @@ $_ADMINLANG['automation']['domainTransferSyncFrequency'] = "域名待转同步�
 $_ADMINLANG['automation']['domainTransferSyncFrequencyInfo'] = "（小时）挂起的传输同步作为cron的一部分运行的频率。0将使用默认值4小时";
 $_ADMINLANG['automation']['pruneTicketAttachments'] = "修剪票据附件";
 $_ADMINLANG['automation']['pruneTicketAttachmentsInfo'] = "在关闭的票证内的最后一个活动之后，应保留票证附件的时间长度.";
+$_ADMINLANG['automation']['cronLabel'] = "系统Cron负责自动化WHMCS中的任务，并且必须配置为由托管WHMCS安装的服务器环境定期运行。";
+$_ADMINLANG['automation']['cronSample'] = "为了方便起见，下面提供了cron命令。 您应该使用服务器cron实用程序或网络托管控制面板内的以下命令，将cron任务配置为每5分钟运行一次。";
 
 # Payment Gateways
 $_ADMINLANG['gateways']['intro'] = "这是您提供给客户的付款方式/网关接口配置。如果此处未列出您要使用的网关，那么您可以为 WHMCS 建立您自己的模块 - 您可以参考文档@";
@@ -2621,6 +2770,7 @@ $_ADMINLANG['backups']['emailBackupEmailInfo'] = "请输入要将备份发送到
 $_ADMINLANG['backups']['testingConnection'] = "正在测试连接…";
 $_ADMINLANG['backups']['confirmDeactivate'] = "确认停用";
 $_ADMINLANG['backups']['deactivateAreYouSure'] = "您确定要停用此备份类型吗？";
+$_ADMINLANG['backups']['largeBackups'] = "对于大型数据库，由于系统内存或执行时间限制，此备份选项可能无法成功完成。对于较大的安装，我们建议使用cPanel备份或其他备份解决方案。";
 
 # System
 $_ADMINLANG['system']['activitylog'] = "系统日志";
@@ -2959,6 +3109,9 @@ $_ADMINLANG['mergefields']['notificationAttributesUrl'] = "该属性的 URL（�
 $_ADMINLANG['mergefields']['notificationAttributesStyle'] = "该属性的类别（如果可用）";
 $_ADMINLANG['mergefields']['notificationAttributesIcon'] = "该属性的图标（如果可用）";
 $_ADMINLANG['mergefields']['nextPaymentAttempt'] = "下次自动付款尝试日期";
+$_ADMINLANG['mergefields']['serviceSubscriptionId'] = "服务订阅ID";
+$_ADMINLANG['mergefields']['domainSubscriptionId'] = "域名订阅ID";
+$_ADMINLANG['mergefields']['addonSubscriptionId'] = "插件订阅ID";
 
 # Config Fraud
 $_ADMINLANG['fraud']['title'] = "欺诈保护";
@@ -3358,6 +3511,11 @@ $_ADMINLANG['general']['forbrugsforeningen'] ="Forbrugsforeningen";
 $_ADMINLANG['general']['unionpay'] ="银联";
 $_ADMINLANG['general']['acceptedCardTypes'] ="接受的信用卡类型";
 $_ADMINLANG['general']['acceptedCardTypesInfo'] ="使用Ctrl +单击以选择多种卡类型";
+$_ADMINLANG['general']['allowautoauth'] = "允许自动验证";
+$_ADMINLANG['general']['allowautoauthinfo'] = "AutoAuth允许从您自己的受信任第三方代码自动登录客户端";
+
+$_ADMINLANG['general']['clientEmailPreferences'] = "客户端电子邮件首选项";
+$_ADMINLANG['general']['clientEmailPreferencesDescription'] = "勾选此框可允许客户自定义他们收到的电子邮件通知类型";
 
 # Config Tax
 $_ADMINLANG['taxconfig']['taxrulestitle'] = "征税规则";
@@ -4155,6 +4313,10 @@ $_ADMINLANG['healthCheck']['purchaseSsl'] = "在此处购买 SSL 证书。";
 $_ADMINLANG['healthCheck']['caSslNotDetected'] = "检测到您网站 :site 的 SSL 证书未通过证书颁发机构的验证。";
 $_ADMINLANG['healthCheck']['caSslDetectedOk'] = "检测到您网站上的 SSL 证书已通过验证。";
 
+$_ADMINLANG['healthCheck']['sensitiveDirsCheck'] = "敏感目录检查";
+$_ADMINLANG['healthCheck']['sensitiveDirsNotAccessible'] = "无法从web访问敏感目录。";
+$_ADMINLANG['healthCheck']['sensitiveDirsAccessible'] = "<p>可从网上访问一个或多个敏感目录：</p><ul>:accessiblePaths</ul><p>请参考我们的 <a href=\":href\">进一步完善安全措施</a> 供参考。</p>";
+
 $_ADMINLANG['healthCheck']['phpTimezone'] = "PHP 时区";
 $_ADMINLANG['healthCheck']['phpTimezoneOk'] = "您的 PHP 环境正使用有效的时区。";
 $_ADMINLANG['healthCheck']['phpTimezoneNotSet'] = "您的 PHP 环境没有有效的时区设置。请设置 php.ini 中的 date.timezone 以确保正确的处理日期和时间。如果您已经在 php.ini 中设置了 date.timezone，但仍显示此警告，请检查时区标识符拼写是否正确。";
@@ -4390,6 +4552,7 @@ $_ADMINLANG['notifications']['validationEventRequired'] = '请选择事件。';
 $_ADMINLANG['notifications']['validationProviderRequired'] = '请选择通知提供商。';
 $_ADMINLANG['notifications']['validationProviderFieldRequired'] = '以下通知设置字段是必须的：';
 $_ADMINLANG['notifications']['providerDisabledConfirmation'] = '通知提供商已禁用';
+$_ADMINLANG['notifications']['needActiveProvider'] = '必须首先激活至少一个通知提供商。';
 
 $_ADMINLANG['notifications']['ticket']['opened'] = "新的支持工单已开启。";
 $_ADMINLANG['notifications']['ticket']['reply_cust'] = "客户已发出了新的回复。";
@@ -4486,6 +4649,8 @@ $_ADMINLANG['storage']['migration']['switchOk'] = '此资源类型已经成功�
 $_ADMINLANG['storage']['migration']['cancelConfirm'] = '要取消此迁移吗？ 将使用先前选择的配置。';
 $_ADMINLANG['storage']['migration']['cancelOk'] = '本迁移已经取消。现在将使用先前选择的配置。';
 $_ADMINLANG['storage']['migration']['willContinueOnceFixed'] = '问题解决后，迁移将自动继续。';
+$_ADMINLANG['storage']['assetTypes']['kb_images'] = '知识库图片';
+$_ADMINLANG['storage']['assetTypes']['email_images'] = '电子邮件图像';
 
 $_ADMINLANG['moduleQueue']['unknownError'] = "发生未知错误。要诊断该问题，请启用模块调试日志，然后重试。";
 
@@ -4771,6 +4936,7 @@ $_ADMINLANG['marketConnect']['perMonth'] = ":num/month";
 $_ADMINLANG['marketConnect']['perMo'] = ":num/mo";
 $_ADMINLANG['marketConnect']['weebly']['learn']['tab']['about'] = "关于";
 $_ADMINLANG['marketConnect']['weebly']['learn']['tab']['features'] = "特性";
+$_ADMINLANG['marketConnect']['weebly']['learn']['tab']['freeplan'] = "免费计划";
 $_ADMINLANG['marketConnect']['weebly']['learn']['tab']['pricing'] = "价格";
 $_ADMINLANG['marketConnect']['weebly']['learn']['tab']['faq'] = "常见问题";
 $_ADMINLANG['marketConnect']['weebly']['learn']['headline'] = "强大直观的网站构建工具";
@@ -4797,7 +4963,22 @@ $_ADMINLANG['marketConnect']['weebly']['learn']['features']['videoDescription'] 
 $_ADMINLANG['marketConnect']['weebly']['learn']['features']['seo'] = "SEO";
 $_ADMINLANG['marketConnect']['weebly']['learn']['features']['seoDescription'] = "强大的 SEO 工具帮助搜索引擎找到您";
 $_ADMINLANG['marketConnect']['weebly']['learn']['weeblyCom'] = "打开 weebly.com 了解更多";
+$_ADMINLANG['marketConnect']['weebly']['learn']['free']['headline'] = "weebly免费计划";
+$_ADMINLANG['marketConnect']['weebly']['learn']['free']['subheadline'] = "免费提供功能强大的网站生成器，帮助您的客户上网";
+$_ADMINLANG['marketConnect']['weebly']['learn']['free']['intro'] = "Weeble免费计划让每个人都可以使用Weeble强大的拖放网站生成器创建网站，使客户比以往任何时候都能更快、更容易地上网。";
+$_ADMINLANG['marketConnect']['weebly']['learn']['free']['unlimitedPages'] = "不限页数";
+$_ADMINLANG['marketConnect']['weebly']['learn']['free']['unlimitedPagesInfo'] = "对用户可以创建的页面数量没有限制";
+$_ADMINLANG['marketConnect']['weebly']['learn']['free']['themes'] = "预制主题";
+$_ADMINLANG['marketConnect']['weebly']['learn']['free']['themesInfo'] = "可以访问多种预制主题以进行选择";
+$_ADMINLANG['marketConnect']['weebly']['learn']['free']['storage'] = "500MB存储";
+$_ADMINLANG['marketConnect']['weebly']['learn']['free']['storageInfo'] = "存储图像，视频和其他内容";
+$_ADMINLANG['marketConnect']['weebly']['learn']['free']['tools'] = "基本工具";
+$_ADMINLANG['marketConnect']['weebly']['learn']['free']['toolsInfo'] = "内置搜索引擎优化工具和潜在客户捕获表单";
+$_ADMINLANG['marketConnect']['weebly']['learn']['free']['outro1'] = "免费计划是由网站页脚显示的Powered by Weeble告示支持的广告。用户可以随时升级到Starter plan*或更高版本，以删除品牌宣传。";
+$_ADMINLANG['marketConnect']['weebly']['learn']['free']['outro2'] = "要获得Weeble免费计划的资格，您还必须向您的客户提供至少一个付费Weeble计划。";
+$_ADMINLANG['marketConnect']['weebly']['learn']['free']['availableIn'] = "WHMCS 7.10及更高版本中提供了Weeble免费计划。";
 $_ADMINLANG['marketConnect']['weebly']['pricing']['feature'] = "特性";
+$_ADMINLANG['marketConnect']['weebly']['pricing']['free'] = "Free";
 $_ADMINLANG['marketConnect']['weebly']['pricing']['lite'] = "Lite";
 $_ADMINLANG['marketConnect']['weebly']['pricing']['starter'] = "Starter";
 $_ADMINLANG['marketConnect']['weebly']['pricing']['pro'] = "Pro";
@@ -5032,3 +5213,24 @@ $_ADMINLANG['usagebilling']['metricType']['snapshot'] = "快照";
 
 $_ADMINLANG['paypalCheckout']['linkAccount'] = '连接到PayPal账户';
 $_ADMINLANG['paypalCheckout']['unlinkAccount'] = '取消连接PayPal账户';
+
+$_ADMINLANG['emailPreferences']['affiliate'] = "推广联盟电子邮件 - 接收推广联盟通知";
+$_ADMINLANG['emailPreferences']['domain'] = "域名电子邮件 - 注册/转移确认和续订通知";
+$_ADMINLANG['emailPreferences']['general'] = "一般电子邮件 - 所有帐户相关的电子邮件";
+$_ADMINLANG['emailPreferences']['invoice'] = "账单电子邮件 - 新账单,提醒和过期通知";
+$_ADMINLANG['emailPreferences']['product'] = "产品电子邮件 - 开通,暂停和其他周期通知";
+$_ADMINLANG['emailPreferences']['support'] = "工单电子邮件 - 接收所有工单的抄送";
+$_ADMINLANG['emailPreferences']['supportContact'] = "工单电子邮件 - 接收由上级帐户持有人创建的所有工单的副本";
+$_ADMINLANG['emailPreferences']['oneRequired'] = "您必须至少启用一个电子邮件地址才能接收ICANN要求的与域相关的通知。";
+$_ADMINLANG['emailPreferences']['domainContactRequired'] = "要禁用域名通知，请为主要帐户持有人或其他联系人启用域名通知。";
+$_ADMINLANG['emailPreferences']['domainClientRequired'] = "要禁用域名通知，请创建一个设置为接收它们的替代联系人。";
+
+$_ADMINLANG['hooksDebugModeWarning']['title'] = "Hooks调试模式已启用";
+$_ADMINLANG['hooksDebugModeWarning']['description'] = "Hooks调试模式将导致大量活动日志条目，因此应谨慎使用。 不再需要时应将其关闭。";
+
+$_ADMINLANG['twoFactor']['duosecurity']['friendlyName'] = "双重安全";
+$_ADMINLANG['twoFactor']['duosecurity']['description'] = "通过Duo Push、短信或电话回拨获取代码。";
+$_ADMINLANG['twoFactor']['totp']['friendlyName'] = "时间令牌";
+$_ADMINLANG['twoFactor']['totp']['description'] = "从Google Authenticator或Duo等应用程序获取代码。";
+$_ADMINLANG['twoFactor']['yubico']['friendlyName'] = "Yubico";
+$_ADMINLANG['twoFactor']['yubico']['description'] = "使用YubiKey硬件设备生成代码。";
