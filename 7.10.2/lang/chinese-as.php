@@ -16,8 +16,9 @@
  * @copyright  Copyright (c) WHMCS Limited 2005-2020
  * @license    https://www.whmcs.com/license/ WHMCS Eula
  * @version    $Id$
- * @link       https://www.whmcs.com/
- * @by         AS-php 傲世网 WHMCS7.10.0 zh-CN
+ * @link       https://www.asphp.net/
+ * @ad         https://www.Gatherso.com/ 聚搜网
+ * @by         AS-php 傲世网 WHMCS7.10.2 zh-CN
  */
 
 if (!defined("WHMCS")) die("This file cannot be accessed directly");

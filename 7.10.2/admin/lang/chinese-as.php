@@ -1,5 +1,5 @@
 <?php
-// @by AS-php 傲世网 WHMCS7.10.0 zh-CN
+// @by AS-php 傲世网 WHMCS7.10.2 zh-CN
 if (!defined("WHMCS")) die("This file cannot be accessed directly");
 
 $_ADMINLANG['locale'] = "zh_CN";
@@ -492,7 +492,7 @@ $_ADMINLANG['services']['renewSure'] = "远程服务提供商可能会对此产�
 $_ADMINLANG['services']['keepDnsZone'] = "终止时保留 DNS 区域";
 $_ADMINLANG['services']['invoiceUsage'] = "生成度量使用发票";
 $_ADMINLANG['services']['recurCount'] = "重新计算";
-
+// 聚搜网 www.Gatherso.com
 $_ADMINLANG['sso']['fatalerror'] = "发生致命错误。请查看活动日志获取更多详情。";
 $_ADMINLANG['sso']['servicelogin'] = "登录控制面板";
 $_ADMINLANG['sso']['adminlogin'] = "登录控制面板";
