@@ -1,8 +1,6 @@
 # WHMCS前后台中文语言包/Simplified Chinese Translations
-WHMCS系统7.10.2前后台简体中文汉化
-```
-您当前访问的是简体中文版说明 [【点我切换到繁体中文版说明】]
-```
+WHMCS系统7.10.2前后台简体中文汉化 [【点我切换到繁体中文版说明】](https://github.com/AS-php/WHMCS-zh-CN/Traditional-README.md)
+
 @by AS-php 傲世网 WHMCS7.10.2 WHMCS-zh-CN
 
 本项目内汉化文件均已全部经过排查，已做到基本0遗漏(没有一行是多余的哦)
@@ -34,5 +32,3 @@ WHMCS系统7.10.2前后台简体中文汉化
 
 # 翻译改进
 如您在使用过程中发现翻译错误，请与我联系，欢迎大家一起来完善这个翻译哦！
-
-[【点我切换到繁体中文版说明】]: https://github.com/AS-php/WHMCS-zh-CN/Traditional-README.md
