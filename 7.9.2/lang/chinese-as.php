@@ -1,7 +1,7 @@
 <?php
 /**
  * WHMCS Language File
- * Chinese (zh-CM)
+ * Simplified Chinese (zh_CN)
  *
  * Please Note: These language files are overwritten during software updates
  * and therefore editing of these files directly is not advised. Instead we
@@ -12,12 +12,11 @@
  *   https://developers.whmcs.com/languages/overrides/
  *
  * @package    WHMCS
- * @author     WHMCS Limited <development@whmcs.com>
+ * @author     AS-php <cp@gatherso.com>
  * @copyright  Copyright (c) WHMCS Limited 2005-2020
  * @license    https://www.whmcs.com/license/ WHMCS Eula
  * @version    $Id$
- * @link       https://www.whmcs.com/
- * @by         AS-php 傲世网 WHMCS7.9.3 zh-CN
+ * @link       https://www.asphp.net/
  */
 
 if (!defined("WHMCS")) die("This file cannot be accessed directly");
@@ -3081,4 +3080,4 @@ $_LANG['paypalEmailAddress'] = "PayPal邮件地址";
 $_LANG['fromJust'] = "请求中";
 $_LANG['remoteTransError'] = "远程事务失败,请联系客服。";
 
-////////// End of zh-CN language file.  Do not place any translation strings below this line!
+////////// End of chinese language file.  Do not place any translation strings below this line! AS-php 傲世网 WHMCS7.9.2 WHMCS-zh-CN
