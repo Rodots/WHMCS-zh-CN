@@ -1,7 +1,7 @@
 <?php
 /**
  * WHMCS Language File
- * Chinese (zh-CM)
+ * Simplified Chinese (zh_CN)
  *
  * Please Note: These language files are overwritten during software updates
  * and therefore editing of these files directly is not advised. Instead we
@@ -12,13 +12,11 @@
  *   https://developers.whmcs.com/languages/overrides/
  *
  * @package    WHMCS
- * @author     WHMCS Limited <development@whmcs.com>
+ * @author     AS-php <cp@gatherso.com>
  * @copyright  Copyright (c) WHMCS Limited 2005-2020
  * @license    https://www.whmcs.com/license/ WHMCS Eula
  * @version    $Id$
  * @link       https://www.asphp.net/
- * @ad         https://www.Gatherso.com/ 聚搜网
- * @by         AS-php 傲世网 WHMCS7.10.2 zh-CN
  */
 
 if (!defined("WHMCS")) die("This file cannot be accessed directly");
@@ -765,7 +763,7 @@ $_LANG['supportticketsfilenotallowed'] = "您试图上传的文件不被允许�
 $_LANG['supportticketsheader'] = "您可以在此提交您遇到的问题，客服人员在收到后会尽快回答。<br/><br/><b>使用说明：</b><br/>1. 请先阅读『帮助中心』的文档，并合理使用搜索引擎，您的问题也许很普遍，已经在网上被回答了很多次，直接找到答案会更加节省您的时间。<br/>2. 请选择正确的部门提交您的问题，每个部门所处理的具体事项在部门名称后有具体说明。<br/>3. 各部门的工作时间为每天 9:00-23:00。<br/><br/><b>服务承诺：</b><br/>您在工作时间内提交的问题，将在 6 小时内答复，24 小时内解决。非工作时间提交的问题，由值班人员尽快答复。<br/><br/><b>请在此选择受理您的提问的部门：</b><br/>";
 $_LANG['supportticketsnotfound'] = "未找到工单";
 $_LANG['supportticketsopentickets'] = "开启的工单";
-$_LANG['supportticketspagetitle'] = "工单";
+$_LANG['supportticketspagetitle'] = "提交工单";
 $_LANG['supportticketsposted'] = "已提交";
 $_LANG['supportticketsreply'] = "回复";
 $_LANG['supportticketsstaff'] = "客服";
@@ -2662,6 +2660,7 @@ $_LANG['store']['codeGuard']['faq']['q8'] ="什么是文件更改预警？";
 $_LANG['store']['codeGuard']['faq']['a8'] ="当您的网站发生变化时，CodeGuard 可以通过电子邮件监控并通知您，以提醒您注意新的威胁和恶意软件。";
 $_LANG['store']['codeGuard']['faq']['q9'] ="如果我的网站被感染会怎样？";
 $_LANG['store']['codeGuard']['faq']['a9'] ="使用 CodeGuard 的每日快照，如果您的网站受到攻击，您可以随时恢复到以前未受感染的版本。";
+$_LANG['store']['codeGuard']['adminPreview'] = "您激活的CodeGuard计划将显示在此处";
 
 $_LANG['store']['codeguard']['promo']['sidebar']['title'] = "添加网站备份";
 $_LANG['store']['codeguard']['promo']['sidebar']['body'] = "使用每日自动备份保护您的网站";
@@ -3156,4 +3155,4 @@ $_LANG['orderForm']['selectCategory'] = "请从侧栏菜单中选择一个类别
 
 $_LANG['store']['sampleProduct'] = "这是一个样品。";
 
-////////// End of zh-CN language file.  Do not place any translation strings below this line!
+////////// End of chinese language file.  Do not place any translation strings below this line! AS-php 傲世网 WHMCS7.10.2 WHMCS-zh-CN
