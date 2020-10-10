@@ -1,5 +1,5 @@
 <?php
-// @by AS-php 傲世网 WHMCS8.0.0 WHMCS-zh-CN
+// @by AS-php 傲世网 WHMCS8.0.2 WHMCS-zh-CN
 if (!defined("WHMCS")) die("This file cannot be accessed directly");
 
 $_ADMINLANG['locale'] = "zh_CN";
@@ -5481,4 +5481,4 @@ $_ADMINLANG['healthCheck']['cronTimeZone'] = "Cron PHP时区";
 $_ADMINLANG['healthCheck']['cronTimeZoneAligned'] = "WHMCS cron计划任务使用的时区与WHMCS系统匹配。";
 $_ADMINLANG['healthCheck']['cronTimeZoneMisAligned'] = "WHMCS cron计划任务使用的时区 ':crontimezone', 与WHMCS系统使用的时区有 :diff 小时差。要详细了解这些PHP环境设置的重要性，请参阅cron <a :href>文档</a>.";
 
-// @by AS-php 傲世网 WHMCS8.0.0 WHMCS-zh-CN
+// @by AS-php 傲世网 WHMCS8.0.2 WHMCS-zh-CN

@@ -140,7 +140,7 @@ $_LANG['clientareaconfirmpassword'] = "确认密码";
 $_LANG['clientareacontactsemails'] = "邮件首选项";
 $_LANG['clientareacontactsemailsdomain'] = "域名邮件 - 接收更新公告，登记确认等。";
 $_LANG['clientareacontactsemailsgeneral'] = "一般邮件 - 接收一般公告和密码提醒等。";
-$_LANG['clientareacontactsemailsinvoice'] = "账单邮件 - 接收发票及账单提醒等。";
+$_LANG['clientareacontactsemailsinvoice'] = "账单邮件 - 接收账单及账单提醒等。";
 $_LANG['clientareacontactsemailsproduct'] = "产品邮件 - 接收订单明细，欢迎邮件等。";
 $_LANG['clientareacontactsemailssupport'] = "支持邮件 - 接收工单通知等。";
 $_LANG['clientareacountry'] = "国家";
@@ -2715,9 +2715,9 @@ $_LANG['invoicePaymentPendingCleared'] = "您的付款正在处理中，结算�
 $_LANG['invoicePaymentAutoWhenDue'] = "您的付款将在到期时自动请求.";
 
 $_LANG['support']['attachmentsRemoved'] = "由于票证不活动而删除";
-$_LANG['unpaidInvoiceAlert'] = "您有未付发票,立即付款以避免服务中断.";
-$_LANG['overdueInvoiceAlert'] = "您的发票过期.";
-$_LANG['payInvoice'] = "付款发票";
+$_LANG['unpaidInvoiceAlert'] = "您有未付账单,立即付款以避免服务中断.";
+$_LANG['overdueInvoiceAlert'] = "您的账单过期.";
+$_LANG['payInvoice'] = "付款账单";
 
 $_LANG['close'] = "关闭";
 $_LANG['submit'] = "提交";
@@ -2794,8 +2794,7 @@ $_LANG['store']['ssl']['shared']['warrantyValue'] = "保修价值";
 $_LANG['store']['ssl']['shared']['siteSeal'] = "信任站点密封";
 $_LANG['store']['ssl']['shared']['freeReissues'] = "免费补发";
 $_LANG['store']['ssl']['shared']['browserSupport'] = "浏览器支持";
-$_LANG['store']['ssl']['shared']['oneYear'] = "1 年";
-$_LANG['store']['ssl']['shared']['twoYears'] = "2 年";
+$_LANG['store']['ssl']['shared']['price'] = "价格";
 $_LANG['store']['ssl']['shared']['noProducts'] = "此处将显示您激活的SSL证书产品";
 $_LANG['store']['ssl']['shared']['helpMeChoose'] = "不确定要选择哪个?让我们帮你决定";
 $_LANG['store']['ssl']['shared']['ev']['visualVerification'] = "绿色地址栏";
@@ -2966,7 +2965,7 @@ $_LANG['subscription']['manual'] = "你仍然可以手动支付，但这可能�
 $_LANG['subscription']['moreDetails'] = "更多细节";
 $_LANG['subscription']['makePayment'] = "付款";
 $_LANG['subscription']['paypalDetails'] = "PayPal订阅细节";
-$_LANG['subscription']['subscriptionWarning'] = "下面的任何活动订阅将自动应用于此发票。如果订阅付款导致超额支付，您将收到一个自动应用到您的下一个发票的信用。";
+$_LANG['subscription']['subscriptionWarning'] = "下面的任何活动订阅将自动应用于此账单。如果订阅付款导致超额支付，您将收到一个自动应用到您的下一个账单的信用。";
 $_LANG['subscription']['subscriptionid'] = "订阅号";
 $_LANG['subscription']['status'] = "订阅状态";
 $_LANG['subscription']['lastpayment'] = "余款";
@@ -3352,7 +3351,7 @@ $_LANG['permissions']['descriptions']['manageproducts'] = "允许重置密码和
 $_LANG['permissions']['descriptions']['productsso'] = "允许单点登录服务";
 $_LANG['permissions']['descriptions']['domains'] = "查看对域名注册的访问权限";
 $_LANG['permissions']['descriptions']['managedomains'] = "允许管理域名，例如，名称服务器/域名/转移/域名";
-$_LANG['permissions']['descriptions']['invoices'] = "查看和付款发票";
+$_LANG['permissions']['descriptions']['invoices'] = "查看和付款账单";
 $_LANG['permissions']['descriptions']['quotes'] = "查看和接受报价的权限";
 $_LANG['permissions']['descriptions']['tickets'] = "打开，响应和管理支持票的权限";
 $_LANG['permissions']['descriptions']['affiliates'] = "查看和请求提款的权限";
@@ -3623,5 +3622,8 @@ $_LANG['orderForm']['upgradeQuantityCannotBeLowerThanMinimum'] = "服务数量�
 $_LANG['orderForm']['upgradeQuantityMustChange'] = "您必须选择计划升级或更改数量。";
 $_LANG['orderForm']['downgradeNotPossible'] = "无法降级该产品。请为此服务下新订单。";
 $_LANG['unavailable'] = "不可用";
+$_LANG['orderForm']['idnNotEnabled'] = "我们目前不支持国际域名。请尝试使用其他域名。";
 
-////////// End of chinese language file.  Do not place any translation strings below this line! AS-php 傲世网 WHMCS8.0.0 WHMCS-zh-CN
+$_LANG['store']['ssl']['landingPage']['secureInMinutes'] = "通过我们的全自动配置和部署在几分钟内保护您的网站";
+
+////////// End of chinese language file.  Do not place any translation strings below this line! AS-php 傲世网 WHMCS8.0.2 WHMCS-zh-CN
