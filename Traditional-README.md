@@ -1,7 +1,7 @@
 # WHMCS前後臺中文語言包/Simplified Chinese Translations
-WHMCS系統8.0.4前後臺簡體中文漢化 [【点我切换到简体中文版说明】](https://github.com/AS-php/WHMCS-zh-CN)
+WHMCS系統8.1.0前後臺簡體中文漢化 [【点我切换到简体中文版说明】](https://github.com/AS-php/WHMCS-zh-CN)
 
-@by AS-php 傲世網 WHMCS8.0.4 WHMCS-zh-CN
+@by AS-php 傲世網 WHMCS8.1.0 WHMCS-zh-CN
 
 本項目內漢化文件均已全部經過排查，實現與官方同步0遺漏
 
@@ -14,6 +14,8 @@ WHMCS系統8.0.4前後臺簡體中文漢化 [【点我切换到简体中文版�
 2020年5月20日：更進v7.10.2，更改翻譯包名為chinese-as.php 避免與官方的繁體漢化沖突覆蓋，完善一項翻譯錯誤，移除v7.9.1翻譯，以後只保留大版本中最新版，新版可兼容舊版
 
 2020年12月23日：更進v8.0.4，從本次更新起，更新日誌只保留當前大版本最近一次改進
+
+2021年1月26日：更進v8.1.0
 
 # 使用方法
 根據您的WHMCS版本選擇對應的漢化文件並下載
