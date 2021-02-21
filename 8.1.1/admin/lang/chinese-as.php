@@ -1,5 +1,5 @@
 <?php
-// @by AS-php 傲世网 WHMCS8.1.0 WHMCS-zh-CN
+// @by AS-php 傲世网 WHMCS8.1.1 WHMCS-zh-CN
 if (!defined("WHMCS")) die("This file cannot be accessed directly");
 
 $_ADMINLANG['locale'] = "zh_CN";
@@ -3749,7 +3749,7 @@ $_ADMINLANG['taxconfig']['taxvalidationerrorcountry'] = "必须选择一个国�
 $_ADMINLANG['taxconfig']['level'] = "级别";
 $_ADMINLANG['taxconfig']['addrule'] = "新增规则";
 $_ADMINLANG['taxconfig']['euTaxValidation'] = "VAT 号码验证";
-$_ADMINLANG['taxconfig']['euTaxValidationDescription'] = "在注册和结帐期间使用 VIES Web 服务验证 VAT 号码";
+$_ADMINLANG['taxconfig']['euTaxValidationDescription'] = "在登记和结账期间验证增值税编号";
 $_ADMINLANG['taxconfig']['vatCustomField'] = "VAT 号码自定义字段";
 $_ADMINLANG['taxconfig']['homeCountry'] = "您的国家";
 $_ADMINLANG['taxconfig']['homeCountryDescription'] = "您所在的国家/地区";
@@ -3797,6 +3797,12 @@ $_ADMINLANG['taxconfig']['createRules'] = "创建规则";
 $_ADMINLANG['taxconfig']['enableTaxIdField'] = "客户税号/VAT 号码";
 $_ADMINLANG['taxconfig']['taxIdFieldDescription'] = "在注册和客户配置文件中启用输入和存储";
 $_ADMINLANG['taxconfig']['fieldDecimalPlaces'] = "最多支持3位小数";
+$_ADMINLANG['taxconfig']['hmrcConfigurationTitle'] = '英国增值税编号验证';
+$_ADMINLANG['taxconfig']['hmrcConfigurationDescription'] = '使用英国HMRC增值税编号验证服务需要API凭证。欧盟增值税编号验证不需要进一步配置。';
+$_ADMINLANG['taxconfig']['hmrcClientId'] = "客户端ID";
+$_ADMINLANG['taxconfig']['hmrcSecretId'] = "客户端机密";
+$_ADMINLANG['taxconfig']['hmrcClientDescription'] = "英国HMRC的客户ID\"检查英国增值税号码\"服务。";
+$_ADMINLANG['taxconfig']['hmrcSecretDescription'] = "英国HMRC的客户机密\"检查英国增值税号码\"服务。";
 
 # Support Ticket Departments
 $_ADMINLANG['supportticketdepts']['supportticketdeptstitle'] = "支持工单部门";
@@ -3808,7 +3814,7 @@ $_ADMINLANG['supportticketdepts']['changessavesuccess'] = "更改保存成功！
 $_ADMINLANG['supportticketdepts']['changessavesuccessdesc'] = "对支持部门所做的更改已保存。";
 $_ADMINLANG['supportticketdepts']['supportticketdeptsconfigheredesc'] = "这是您配置的支持工单部门。您输入的邮件地址将用于检测发送到该部门，所有该部门的邮件也将用此邮件地址发出。邮件管道(Email Piping)允许通过邮件回复或开启工单，并可以使用以下方式之一设置。";
 $_ADMINLANG['supportticketdepts']['ticketimportusingef'] = "使用邮件转发导入工单";
-$_ADMINLANG['supportticketdepts']['ticketimportusingpop3imap'] = "使用 POP3 导入工单（服务器上需要安装 IMAP）";
+$_ADMINLANG['supportticketdepts']['ticketimportusingpop3imap'] = "使用邮件导入(POP3/IMAP)导入工单";
 $_ADMINLANG['supportticketdepts']['delsuredept'] = "您确定要删除此部门吗？";
 $_ADMINLANG['supportticketdepts']['addnewdept'] = "添加新部门";
 $_ADMINLANG['supportticketdepts']['editdept'] = "编辑部门";
@@ -3817,7 +3823,7 @@ $_ADMINLANG['supportticketdepts']['deptname'] = "部门名称";
 $_ADMINLANG['supportticketdepts']['deptemail'] = "邮件地址";
 $_ADMINLANG['supportticketdepts']['assignedadmins'] = "已指派的管理员";
 $_ADMINLANG['supportticketdepts']['clientsonly'] = "仅客户";
-$_ADMINLANG['supportticketdepts']['clientsonlydesc'] = "只允许已注册的客户在此部门打开工单";
+$_ADMINLANG['supportticketdepts']['clientsonlydesc'] = "仅当发件人的地址与注册的客户端、用户或具有工单权限的联系人相关联时，才允许创建工单或回复";
 $_ADMINLANG['supportticketdepts']['piperepliesonly'] = "仅管道回复";
 $_ADMINLANG['supportticketdepts']['ticketsclientareaonlydesc'] = "所有工单需要从用户中心打开";
 $_ADMINLANG['supportticketdepts']['noautoresponder'] = "无自动回复";
@@ -3925,6 +3931,9 @@ $_ADMINLANG['sendmessage']['loadMessage'] = "载入消息";
 $_ADMINLANG['sendmessage']['noSaveNameEntered'] = "您必须输入一个名称才能保存信息并作为邮件模板";
 $_ADMINLANG['sendmessage']['uniqueSaveNameRequired'] = "邮件模板的保存必须是唯一的";
 $_ADMINLANG['sendmessage']['bcc'] = "密送";
+$_ADMINLANG['sendmessage']['noFilter'] = "无过滤";
+$_ADMINLANG['sendmessage']['checkedOnly'] = "仅选中";
+$_ADMINLANG['sendmessage']['uncheckedOnly'] = "仅未选中";
 
 # Support Ticket Spam Control
 $_ADMINLANG['stspamcontrol']['stspamcontroltitle'] = "支持工单垃圾邮件控制";
@@ -5482,8 +5491,8 @@ $_ADMINLANG['user']['updated'] = "用户已更新";
 $_ADMINLANG['user']['manageUserEmail'] = "管理用户：:email";
 $_ADMINLANG['user']['alreadyInvited'] = "一个有效的邀请已经存在：:email";
 $_ADMINLANG['user']['associateInviteUser'] = "关联或邀请用户";
-$_ADMINLANG['user']['chooseUser'] = "请选择一个现有用户，或输入新的电子邮件地址以发送邀请";
-$_ADMINLANG['user']['anInviteWillBeSent'] = "当您输入新的电子邮件地址时，将发送邀请。收件人必须接受该邀请才能创建帐户。";
+$_ADMINLANG['user']['chooseUser'] = "选择现有用户或输入电子邮件地址。";
+$_ADMINLANG['user']['anInviteWillBeSent'] = "因为该电子邮件地址与现有用户没有关联，所以系统将发送邀请。收件人在接受邀请时可以创建新用户或关联现有用户。";
 $_ADMINLANG['user']['ownerPermissions'] = "此用户是帐户所有者，因此拥有所有权限。";
 $_ADMINLANG['user']['makeOwner'] = "成为所有者";
 $_ADMINLANG['user']['makeOwnerDescription'] = "选中以将 ':client' 的所有权转让给此用户。";
@@ -5579,4 +5588,4 @@ $_ADMINLANG['customAdminPathWarning']['title'] = "无效的自定义管理目录
 $_ADMINLANG['customAdminPathWarning']['description'] = "检测到与用于自动生成url路径的保留名称冲突，必须进行纠正。";
 
 $_ADMINLANG['social']['accounts'] = "社会账户";
-// @by AS-php 傲世网 WHMCS8.1.0 WHMCS-zh-CN
+// @by AS-php 傲世网 WHMCS8.1.1 WHMCS-zh-CN
