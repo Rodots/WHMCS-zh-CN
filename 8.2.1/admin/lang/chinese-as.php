@@ -1,5 +1,5 @@
 <?php
-// @by AS-php 傲世网 WHMCS8.1.1 WHMCS-zh-CN
+// @by AS-php 傲世网 WHMCS8.2.1 WHMCS-zh-CN
 if (!defined("WHMCS")) die("This file cannot be accessed directly");
 
 $_ADMINLANG['locale'] = "zh_CN";
@@ -202,11 +202,24 @@ $_ADMINLANG['global']['userSystem'] = "系统/自动";
 $_ADMINLANG['global']['never'] = "从不";
 $_ADMINLANG['global']['typeToSearchUsersAndContacts'] = "开始键入以添加或选择收件人";
 $_ADMINLANG['global']['chooseMessage'] = "选择消息";
+$_ADMINLANG['global']['openInNewWindow'] = "在新窗口中打开";
+$_ADMINLANG['global']['saving'] = "正在保存...";
+$_ADMINLANG['global']['notRecorded'] = "未记录";
+$_ADMINLANG['global']['noModule'] = "无模块";
+$_ADMINLANG['global']['popularModules'] = "流行模块";
+$_ADMINLANG['global']['otherModules'] = "所有其他模块";
+$_ADMINLANG['global']['someUnavailableForAddOnFeatures'] = "某些选项对于附加功能不可用。";
+$_ADMINLANG['global']['seeGatewayLog'] = "查看网关日志";
 
+# 错误
+$_ADMINLANG['error']['connection'] = "连接错误";
+$_ADMINLANG['error']['authentication'] = "身份验证错误";
+$_ADMINLANG['error']['widgetError'] = "小部件加载错误";
+$_ADMINLANG['error']['balanceWidgetError'] = "余额无法检索";
+$_ADMINLANG['error']['balanceWidgetDescription'] = "请参考 :moduleName 文档并检查 :moduleName 模块配置。";
 # Home
 $_ADMINLANG['home']['title'] = "后台首页";
 $_ADMINLANG['home']['quicksummary'] = "快速摘要";
-$_ADMINLANG['home']['maintenancemode'] = "维护模式已开启，请在维护结束后转至 <a href=\"configgeneral.php\">常规设置</a> 中关闭维护模式";
 $_ADMINLANG['home']['recentclientactivity'] = "最近客户登录日志";
 $_ADMINLANG['home']['recentadminactivity'] = "最近管理员登录日志";
 $_ADMINLANG['home']['recentactivity'] = "最近系统日志";
@@ -288,6 +301,7 @@ $_ADMINLANG['clients']['activatesubaccount'] = "激活的子账户";
 $_ADMINLANG['clients']['addcontact'] = "添加联系人";
 $_ADMINLANG['clients']['duplicateemail'] = "重复的电子邮件地址";
 $_ADMINLANG['clients']['duplicateemailexp'] = "您输入的电子邮件地址已经被其他用户使用了，请换个试试";
+$_ADMINLANG['clients']['duplicateemailuser'] = "输入的电子邮件地址已被其他用户使用。请使用其他电子邮件地址或将此客户端与现有用户关联。";
 $_ADMINLANG['clients']['erroremail'] = "必须输入邮件地址";
 $_ADMINLANG['clients']['erroremailinvalid'] = "电子邮件地址无效";
 $_ADMINLANG['clients']['billingcontact'] = "财务联系人";
@@ -302,6 +316,7 @@ $_ADMINLANG['clients']['creditbalance'] = "账户余额";
 $_ADMINLANG['clients']['newaccinfoemail'] = "选中复选框发送账户注册信息";
 $_ADMINLANG['clients']['addclient'] = "添加客户";
 $_ADMINLANG['clients']['moveservice'] = "移动产品/服务至其他客户";
+$_ADMINLANG['clients']['moveServiceUnpaidInvoices'] = "此服务有未付账单。这些账单将在服务转移时被取消。";
 $_ADMINLANG['clients']['mergeclient'] = "合并客户账户";
 $_ADMINLANG['clients']['mergeexplain'] = "把两个客户账户合并为一个";
 $_ADMINLANG['clients']['invalidid'] = "输入的第二个客户编号无效";
@@ -320,10 +335,11 @@ $_ADMINLANG['clients']['incorrecthash'] = "信用卡加密散列值不正确";
 $_ADMINLANG['clients']['existingccdetails'] = "现有的信用卡信息";
 $_ADMINLANG['clients']['fullviewcardno'] = "查看完整的信用卡号码";
 $_ADMINLANG['clients']['entercchash'] = "要查看完整的信用卡号码，请在下面输入信用卡加密散列值。";
+$_ADMINLANG['clients']['enterbankcchash'] = "要查看完整的银行帐号，请在下面输入CC加密哈希。";
 $_ADMINLANG['clients']['ccstoredremotely'] = "*只有信用卡的后四位存储在本地，因为正使用基于令牌的远程存储模块。";
 $_ADMINLANG['clients']['enternewcc'] = "输入新的信用卡信息";
 $_ADMINLANG['clients']['cleardetails'] = "清除信息";
-$_ADMINLANG['clients']['ccdeletesure'] = "您确定要删除存储的信用卡信息吗？";
+$_ADMINLANG['clients']['ccdeletesure'] = "您确定要删除存储的付款方式详细信息吗？";
 $_ADMINLANG['clients']['closesure'] = "您确定要关闭此账户吗？这将会取消此账户下所有的服务和待支付账单。";
 $_ADMINLANG['clients']['deletesure'] = "您确定要删除此账户吗？这将会取消所有历史记录且无法撤销更改。";
 $_ADMINLANG['clients']['deleteUsers'] = "删除仅与此客户关联的用户";
@@ -346,9 +362,17 @@ $_ADMINLANG['clients']['remoteGatewayTitle'] = "远程网关信息";
 $_ADMINLANG['clients']['marketingEmailsOptIn'] = "营销邮件订阅";
 $_ADMINLANG['clients']['invalidTaxId'] = "无效的 VAT 号码";
 $_ADMINLANG['clients']['ccUnsupported'] = "我们无法接受您输入的卡类型.请使用其他卡";
-$_ADMINLANG['clients']['existingUserAccount'] = "与现有用户关联。";
+$_ADMINLANG['clients']['existingUserAccount'] = "关联现有用户。";
 $_ADMINLANG['clients']['newUserAccount'] = "创建一个新用户。";
 $_ADMINLANG['clients']['deleteTransactions'] = "删除该客户的交易记录";
+$_ADMINLANG['generatePassword']['btnLabel'] = "生成密码";
+$_ADMINLANG['generatePassword']['btnShort'] = "生成";
+$_ADMINLANG['generatePassword']['title'] = "生成密码";
+$_ADMINLANG['generatePassword']['lengthValidationError'] = "请输入一个 8 到 64 之间的数字作为密码长度。";
+$_ADMINLANG['generatePassword']['pwLength'] = "密码长度";
+$_ADMINLANG['generatePassword']['generatedPw'] = "生成的密码";
+$_ADMINLANG['generatePassword']['generateNew'] = "生成新密码";
+$_ADMINLANG['generatePassword']['copyAndInsert'] = "复制到剪贴板并插入";
 
 # Client Summary
 $_ADMINLANG['clientsummary']['title'] = "客户配置";
@@ -512,7 +536,15 @@ $_ADMINLANG['services']['renewSure'] = "远程服务提供商可能会对此产�
 $_ADMINLANG['services']['keepDnsZone'] = "终止时保留 DNS 区域";
 $_ADMINLANG['services']['invoiceUsage'] = "生成度量使用账单";
 $_ADMINLANG['services']['recurCount'] = "重新计算";
-$_ADMINLANG['services']['upgradeUnpaidInvoice'] = "此服务存在未付款的账单。 在支付账单之前继续升级可能会导致收益没收。";
+$_ADMINLANG['services']['upgradeUnpaidInvoice'] = "此服务存在未付款的账单。 在支付账单之前继续升级可能会导致收益没收。"
+$_ADMINLANG['services']['provisionSure'] = "您确定要运行配置功能吗？";
+$_ADMINLANG['services']['suspendAddOnFeatureSure'] = "您确定要运行挂起附加功能吗？";
+$_ADMINLANG['services']['unsuspendAddOnFeatureSure'] = "您确定要运行取消挂起附加功能吗？";
+$_ADMINLANG['services']['deprovisionSure'] = "您确定要运行取消配置功能吗？";
+$_ADMINLANG['services']['provisionsuccess'] = "附加功能配置成功";
+$_ADMINLANG['services']['deprovisionsuccess'] = "附加功能取消配置成功";
+$_ADMINLANG['services']['suspend-featuresuccess'] = "附加功能挂起成功";
+$_ADMINLANG['services']['unsuspend-featuresuccess'] = "附加功能取消挂起成功";
 // 聚搜吧 www.Gatherso.com
 $_ADMINLANG['sso']['fatalerror'] = "发生致命错误。请查看活动日志获取更多详情。";
 $_ADMINLANG['sso']['servicelogin'] = "登录控制面板";
@@ -530,6 +562,9 @@ $_ADMINLANG['modulebuttons']['changepassword'] = "更改密码";
 $_ADMINLANG['modulebuttons']['register'] = "注册";
 $_ADMINLANG['modulebuttons']['renew'] = "续费";
 $_ADMINLANG['modulebuttons']['transfer'] = "转移";
+$_ADMINLANG['modulebuttons']['provision'] = "条款";
+$_ADMINLANG['modulebuttons']['deprovision'] = "取消配置";
+$_ADMINLANG['modulebuttons']['login'] = "登录";
 
 # Addons
 $_ADMINLANG['addons']['title'] = "附加服务";
@@ -581,6 +616,27 @@ $_ADMINLANG['addons']['areYouSureDelete'] = "您确定要删除此附加产品�
 $_ADMINLANG['addons']['hiddenDescription'] = "可以从客户区订购表中隐藏此插件";
 $_ADMINLANG['addons']['retired'] = "退休的";
 $_ADMINLANG['addons']['retiredDescription'] = "已停用的插件将不再出现在管理区域内（请注意，您仍然可以查看和管理现有的购买交易）";
+$_ADMINLANG['addons']['duplicateAddon'] = "复制一个插件";
+$_ADMINLANG['addons']['existingAddon'] = "现有插件";
+$_ADMINLANG['addons']['newAddonName'] = "新插件名称";
+$_ADMINLANG['addons']['duplicable'] = "可复制的插件";
+$_ADMINLANG['addons']['nonDuplicable'] = "不可重复的插件";
+$_ADMINLANG['addons']['nonDuplicableWarn'] = "某些插件，例如 MarketConnect 服务，不能被复制。";
+$_ADMINLANG['addons']['prorata'] = "按比例计费";
+$_ADMINLANG['addons']['prorataDescription'] = "勾选以将插件截止日期与订单上的父服务截止日期同步。";
+$_ADMINLANG['addons']['independent'] = "独立产品";
+$_ADMINLANG['addons']['addOnFeature'] = "附加功能";
+$_ADMINLANG['addons']['notAvailableForStyle'] = "不适用于附加功能";
+$_ADMINLANG['addons']['addonTypeDescription'] = "定义 WHMCS 如何管理项目";
+$_ADMINLANG['addons']['nameDescription'] = "新插件的默认显示名称";
+$_ADMINLANG['addons']['autoAssign'] = "自动分配到产品";
+$_ADMINLANG['addons']['autoAssignDescription'] = "自动分配给所有适用的产品";
+$_ADMINLANG['addons']['independentDescription'] = "使用所选模块提供独立服务";
+$_ADMINLANG['addons']['addOnFeatureDescription'] = "为具有相同模块的父服务提供附加功能";
+$_ADMINLANG['addons']['predefinedHeading'] = "预定义插件";
+$_ADMINLANG['addons']['predefinedNotice'] = "您正在创建一个预定义的插件，配置设置将被预填充。继续配置插件定价。";
+$_ADMINLANG['addons']['predefinedSuccessInfo'] = "您的预定义插件已成功添加，并且已为您配置设置。请配置定价并保存更改。";
+$_ADMINLANG['addons']['predefinedActive'] = "激活";
 // 傲世网 www.Asphp.net
 
 # Domains
@@ -899,6 +955,7 @@ $_ADMINLANG['orders']['createpromoinfo'] = "在此处将会创建动态优惠码
 $_ADMINLANG['orders']['createPromoNeedPerms'] = "您必须具有\”在订单上使用任何促销代码\“管理员权限，才能为该订单创建自定义促销代码.";
 $_ADMINLANG['orders']['sendMessage'] = "您确定要为这些订单发送信息？";
 $_ADMINLANG['orders']['noDelete'] = "订单在删除前必须为「已取消」或「有欺诈」状态";
+$_ADMINLANG['orders']['deleteSuccess'] = "订单已成功删除";
 $_ADMINLANG['orders']['massDeleteError'] = "一些订单无法删除。订单在删除前必须为「已取消」或「有欺诈」状态";
 $_ADMINLANG['orders']['confirmCancelDelete'] = "您确定要取消并删除此订单？系统会删除任何已激活的产品/服务，并删除所有相关的产品/服务和账单。";
 $_ADMINLANG['orders']['noItemsSelected'] = "未选择项目";
@@ -922,6 +979,8 @@ $_ADMINLANG['orders']['requiredFieldIndication'] = "*表示需要的字段";
 $_ADMINLANG['orders']['errors']['requiredDomainFieldsTitle'] = "缺少所需的域字段";
 $_ADMINLANG['orders']['errors']['requiredDomainFieldsMsg'] = "一个或多个必需的域字段被留空。缺少此信息可能导致域注册失败。";
 $_ADMINLANG['orders']['errors']['requiredDomainFieldsAction'] = "如你想不顾此警告继续订购，请按“提交订单”按钮。";
+$_ADMINLANG['orders']['placedBy'] = "下单者";
+$_ADMINLANG['orders']['addonFeature'] = "附加功能";
 // 傲世网 Pjax.vip
 
 
@@ -949,6 +1008,7 @@ $_ADMINLANG['billing']['gatewaylog'] = "接口日志";
 $_ADMINLANG['billing']['grossRevenue'] = "总收入";
 $_ADMINLANG['billing']['netIncome'] = "净收入";
 $_ADMINLANG['billing']['clientExpenses'] = "客户支出";
+$_ADMINLANG['billing']['gatewayBalances'] = "网关余额";
 
 # Invoices
 $_ADMINLANG['invoices']['title'] = "账单管理";
@@ -1070,6 +1130,7 @@ $_ADMINLANG['invoices']['invoiceIsDraft'] = "这是一个账单草稿。";
 $_ADMINLANG['invoices']['reverse'] = "反向付款";
 $_ADMINLANG['invoices']['reverseDescription'] = "撤销本次交易触发的自动操作 - 当功能可用时。";
 $_ADMINLANG['invoices']['transactionsHistory'] = "交易历史";
+$_ADMINLANG['invoices']['transactionsHistoryTooltip'] = "查看网关日志";
 $_ADMINLANG['invoices']['cancelPayment'] = "取消付款";
 $_ADMINLANG['invoices']['deleteConfirm'] = "您要继续操作吗？";
 
@@ -1115,6 +1176,8 @@ $_ADMINLANG['billableitems']['relatedinvoices'] = "关联账单";
 $_ADMINLANG['billableitems']['addentries'] = "新增条目";
 $_ADMINLANG['billableitems']['hours'] = "小时";
 $_ADMINLANG['billableitems']['hour'] = "小时";
+$_ADMINLANG['billableitems']['qty'] = "数量";
+$_ADMINLANG['billableitems']['each'] = "每个";
 $_ADMINLANG['billableitems']['invoiceitems'] = "账单项目";
 $_ADMINLANG['billableitems']['itemswillinvoice'] = "所选的项目将不会在下次自动任务执行时产生账单";
 $_ADMINLANG['billableitems']['invoiceimmediately'] = "立即产生账单";
@@ -1423,7 +1486,7 @@ $_ADMINLANG['support']['selectClientServices'] = "请选择客户端查看相关
 $_ADMINLANG['support']['requestor']['operator'] = "操作员";
 $_ADMINLANG['support']['requestor']['owner'] = "所有者";
 $_ADMINLANG['support']['requestor']['authorizeduser'] = "授权用户";
-$_ADMINLANG['support']['requestor']['externaluser'] = "外部用户";
+$_ADMINLANG['support']['requestor']['registereduser'] = "注册用户";
 $_ADMINLANG['support']['requestor']['subaccount'] = "子帐户";
 $_ADMINLANG['support']['requestor']['guest'] = "访客";
 
@@ -2075,6 +2138,8 @@ $_ADMINLANG['fields']['inviteSenderName'] = "邀请发件人名称";
 $_ADMINLANG['fields']['inviteAcceptUrl'] = "邀请接受URL";
 $_ADMINLANG['fields']['inviteSentByAdmin'] = "由管理员邀请";
 $_ADMINLANG['fields']['2fa'] = "二次验证";
+$_ADMINLANG['fields']['addonProvisioningType'] = "插件类型";
+$_ADMINLANG['fields']['addonType'] = "插件类型";
 
 # Contact Permissions
 $_ADMINLANG['contactpermissions']['permprofile'] = "修改主账户资料";
@@ -2194,6 +2259,7 @@ $_ADMINLANG['permissions']['27'] = "添加新订单";
 $_ADMINLANG['permissions']['130'] = "在订单中使用优惠码";
 $_ADMINLANG['permissions']['28'] = "交易清单";
 $_ADMINLANG['permissions']['94'] = "查看入款";
+$_ADMINLANG['permissions']['154'] = "查看网关余额";
 $_ADMINLANG['permissions']['29'] = "添加交易流水信息";
 $_ADMINLANG['permissions']['30'] = "编辑交易流水信息";
 $_ADMINLANG['permissions']['31'] = "删除交易流水信息";
@@ -2515,6 +2581,28 @@ $_ADMINLANG['transactions']['invoiceIDAndCreditInvalid'] = "您不能使用添�
 $_ADMINLANG['transactions']['duplicateTransaction'] = "交易编号已存在";
 $_ADMINLANG['transactions']['forceDuplicateTransaction'] = "输入的交易编号已存在。这可能表示交易已重复。<br/>您确定要继续吗？";
 $_ADMINLANG['transactions']['amountInAndOutSpecified'] = "您指定了入帐和出帐。您只能指定这些值之一。";
+$_ADMINLANG['transactions']['information']['transactionId'] = "交易ID";
+$_ADMINLANG['transactions']['information']['amount'] = "数量";
+$_ADMINLANG['transactions']['information']['type'] = "交易类型";
+$_ADMINLANG['transactions']['information']['currency'] = "交易货币";
+$_ADMINLANG['transactions']['information']['description'] = "描述";
+$_ADMINLANG['transactions']['information']['fee'] = "交易费用";
+$_ADMINLANG['transactions']['information']['status'] = "状态";
+$_ADMINLANG['transactions']['information']['created'] = "创建日期";
+$_ADMINLANG['transactions']['information']['availableOn'] = "可用日期";
+$_ADMINLANG['transactions']['information']['originalAmount'] = "原始金额";
+$_ADMINLANG['transactions']['information']['capturedAmount'] = "捕获金额";
+$_ADMINLANG['transactions']['information']['refundedAmount'] = "退款金额";
+$_ADMINLANG['transactions']['information']['originalCurrency'] = "原始货币";
+$_ADMINLANG['transactions']['information']['paymentIntent'] = "付款意向 ID";
+$_ADMINLANG['transactions']['information']['receiptUrl'] = "客户收据";
+$_ADMINLANG['transactions']['information']['title'] = "交易信息";
+$_ADMINLANG['transactions']['information']['tooltip'] = "查看交易详情。";
+$_ADMINLANG['transactions']['information']['gateway'] = "支付网关";
+$_ADMINLANG['transactions']['information']['disputed'] = "交易有争议";
+$_ADMINLANG['transactions']['information']['disputeReason'] = "争议原因";
+$_ADMINLANG['transactions']['information']['disputeStatus'] = "争议状态";
+$_ADMINLANG['transactions']['information']['exchangeRate'] = "汇率";
 
 # Products
 $_ADMINLANG['products']['productTypeDescription'] = "定义 WHMCS 如何管理项目。<br>看不到您要找的产品类型？请选择 <em>其它</em>";
@@ -2529,6 +2617,9 @@ $_ADMINLANG['products']['description'] = "在这里管理您的所有产品和�
 $_ADMINLANG['products']['createnewgroup'] = "新增分组";
 $_ADMINLANG['products']['createnewproduct'] = "新增产品";
 $_ADMINLANG['products']['duplicateproduct'] = "复制产品";
+$_ADMINLANG['products']['duplicable'] = "重复产品";
+$_ADMINLANG['products']['nonDuplicable'] = "非重复产品";
+$_ADMINLANG['products']['nonDuplicableWarn'] = "某些产品，例如 MarketConnect 服务，不能复制。";
 $_ADMINLANG['products']['deleteproductconfirm'] = "您确定要删除此产品？";
 $_ADMINLANG['products']['deletegroupconfirm'] = "您确定要删除此产品组？";
 $_ADMINLANG['products']['deletecustomfieldconfirm'] = "您确定要删除此自定义选项以及相关的信息吗？";
@@ -2804,7 +2895,7 @@ $_ADMINLANG['automation']['revchangeinvoicestatus'] = "修改账单状态";
 $_ADMINLANG['automation']['revchangeinvoicestatusinfo'] = "允许逆转付款更改账单状态";
 $_ADMINLANG['automation']['revchangeduedates'] = "修改到期日期";
 $_ADMINLANG['automation']['revchangeduedatesinfo'] = "允许逆转付款更改服务到期日期";
-$_ADMINLANG['automation']['ccsettings'] = "信用卡收费设置";
+$_ADMINLANG['automation']['ccsettings'] = "付款捕捉设置";
 $_ADMINLANG['automation']['ccdaysbeforedue'] = "在到期前几天自动向信用卡收费";
 $_ADMINLANG['automation']['ccdaysbeforedueinfo'] = "请输入当账单逾期前几天开始从信用卡付费（例如 3，表示在产品到期前 3 天自动向客户保存的信用卡尝试收费）。";
 $_ADMINLANG['automation']['cconlyonce'] = "只尝试一次";
@@ -2866,6 +2957,8 @@ $_ADMINLANG['automation']['cronSample'] = "为了方便起见，下面提供了c
 $_ADMINLANG['automation']['autoDeleteInactiveClientsUsers'] = "如果用户未与任何其他客户端帐户关联，则删除关联的用户。";
 $_ADMINLANG['automation']['moduleLogPruning'] = "模块日志裁剪";
 $_ADMINLANG['automation']['moduleLogPruningOlderThan'] = "裁剪早于以下时间的记录";
+$_ADMINLANG['automation']['freeDomainReminders'] = "免费域名提醒";
+$_ADMINLANG['automation']['freeDomainRemindersDescription'] = "勾选此框以发送免费域名的提醒。";
 
 # Payment Gateways
 $_ADMINLANG['gateways']['intro'] = "这是您提供给客户的付款方式/网关接口配置。如果此处未列出您要使用的网关，那么您可以为 WHMCS 建立您自己的模块 - 您可以参考文档@";
@@ -3028,6 +3121,7 @@ $_ADMINLANG['system']['resetdebuglogging'] = "重置模块调试日志";
 $_ADMINLANG['system']['deletedAttachmentsLimitHit'] = "已达到单个批中删除附件的最大记录数。请再次重复该过程以继续.";
 $_ADMINLANG['system']['migrationInProgress'] = "正在进行文件系统迁移。请稍后再试";
 $_ADMINLANG['system']['currentTime'] = "当前时间";
+$_ADMINLANG['system']['maxFileSize'] = "最大文件大小：:fileSize";
 
 # Support Request
 $_ADMINLANG['supportreq']['title'] = "获取 WHMCS 售后支持";
@@ -3297,9 +3391,15 @@ $_ADMINLANG['mergefields']['invite'] = "邀请相关合并字段";
 # Config Fraud
 $_ADMINLANG['fraud']['title'] = "欺诈保护";
 $_ADMINLANG['fraud']['changesuccessinfo'] = "欺诈保护模块设置已保存。";
-$_ADMINLANG['fraud']['info'] = "在此处配置您要使用的欺诈保护模块。每次只能启用一个。";
+$_ADMINLANG['fraud']['info'] = "您可以在此处配置您希望使用的身份验证和欺诈保护提供程序。您一次只能启用一个身份验证提供程序和欺诈保护提供程序。";
 $_ADMINLANG['fraud']['choose'] = "选择欺诈保护模块";
 $_ADMINLANG['fraud']['changesuccess'] = "更改已成功保存！";
+$_ADMINLANG['fraud']['whatIsVerificationQ'] = "什么是身份验证提供者？";
+$_ADMINLANG['fraud']['whatIsVerificationA'] = "WHMCS 可以发起用户对文件的请求，以帮助确认用户的身份。第三方身份验证提供商（如 Validation.com）提供了一个安全平台，用户可以在其中提交请求的文件。提交后，管理员可以对其进行审查并采取行动。";
+$_ADMINLANG['fraud']['whatIsFraudQ'] = "什么是欺诈保护提供商?";
+$_ADMINLANG['fraud']['whatIsFraudA'] = "WHMCS 可以自动对订单进行检查，以帮助确保只有有效的客户才能通过并阻止任何潜在的欺诈行为。通过与一系列提供商的集成，有多种服务可供选择可用，从检查下订单的人的详细信息到他们的帐单详细信息到自动呼叫和验证他们的身份。";
+$_ADMINLANG['fraud']['fraudProviders'] = "欺诈保护提供者";
+$_ADMINLANG['fraud']['verificationProviders'] = "身份验证提供者";
 
 # Config General
 $_ADMINLANG['general']['title'] = "常规设置";
@@ -3545,7 +3645,7 @@ $_ADMINLANG['general']['affpayamountinfo'] = "输入可申请的最小提现金�
 $_ADMINLANG['general']['affcommdelay'] = "推介佣金延迟";
 $_ADMINLANG['general']['affcommdelayinfo'] = "输入延迟订单支付的天数 - 然后只支付仍然处于激活状态的账户";
 $_ADMINLANG['general']['afflinks'] = "推介链接";
-$_ADMINLANG['general']['afflinksinfo'] = "输入当推介人自定义链接代码后应插入的 [AffiliateLinkCode]"; #禁止翻译[AffiliateLinkCode]
+$_ADMINLANG['general']['afflinksinfo'] = "输入当推介人自定义链接代码后应插入的 [AffiliateLinkCode]"; // 禁止翻译[AffiliateLinkCode]
 $_ADMINLANG['general']['afflinksinfo2'] = "使用左括号 <b><(</b> 和右括号 <b>)></b> 将 HTML 括起来，否则 HTML 将会在页面上执行";
 $_ADMINLANG['general']['captcha'] = "开启验证码";
 $_ADMINLANG['general']['captchaalwayson'] = "始终开启（5 位数的验证码）";
@@ -3678,6 +3778,8 @@ $_ADMINLANG['general']['domainGraceBillingAddToExistingInvoice'] = "向现有账
 $_ADMINLANG['general']['domainGraceBillingCreateNewInvoice'] = "为域续订生成新账单，包括任何宽限和赎回费用";
 $_ADMINLANG['general']['deleteLocalCards'] = "删除加密的信用卡数据";
 $_ADMINLANG['general']['deleteLocalCardsInfo'] = "警告：此过程将从数据库中删除所有本地存储的信用卡加密数据。这个动作是不可逆转的。您确定要继续吗?";
+$_ADMINLANG['general']['deleteLocalBanks'] = "删除加密的银行账户数据";
+$_ADMINLANG['general']['deleteLocalBanksInfo'] = "警告：此过程将从数据库中删除所有本地存储的银行帐户加密数据。此操作不可逆。您确定要继续吗？";
 $_ADMINLANG['general']['addCarbonCopyRecipients'] ="自动添加抄送收件人";
 $_ADMINLANG['general']['addCarbonCopyRecipientsDescription'] ="从通过电子邮件打开的入站电子邮件中读取并添加复本收件人。";
 $_ADMINLANG['general']['visa'] ="签证";
@@ -3797,12 +3899,6 @@ $_ADMINLANG['taxconfig']['createRules'] = "创建规则";
 $_ADMINLANG['taxconfig']['enableTaxIdField'] = "客户税号/VAT 号码";
 $_ADMINLANG['taxconfig']['taxIdFieldDescription'] = "在注册和客户配置文件中启用输入和存储";
 $_ADMINLANG['taxconfig']['fieldDecimalPlaces'] = "最多支持3位小数";
-$_ADMINLANG['taxconfig']['hmrcConfigurationTitle'] = '英国增值税编号验证';
-$_ADMINLANG['taxconfig']['hmrcConfigurationDescription'] = '使用英国HMRC增值税编号验证服务需要API凭证。欧盟增值税编号验证不需要进一步配置。';
-$_ADMINLANG['taxconfig']['hmrcClientId'] = "客户端ID";
-$_ADMINLANG['taxconfig']['hmrcSecretId'] = "客户端机密";
-$_ADMINLANG['taxconfig']['hmrcClientDescription'] = "英国HMRC的客户ID\"检查英国增值税号码\"服务。";
-$_ADMINLANG['taxconfig']['hmrcSecretDescription'] = "英国HMRC的客户机密\"检查英国增值税号码\"服务。";
 
 # Support Ticket Departments
 $_ADMINLANG['supportticketdepts']['supportticketdeptstitle'] = "支持工单部门";
@@ -3843,6 +3939,7 @@ $_ADMINLANG['supportticketdepts']['pop3oauthsetupinstructions']['Google'] = "<h1
 $_ADMINLANG['supportticketdepts']['feedbackRequest'] = "反馈请求";
 $_ADMINLANG['supportticketdepts']['feedbackRequestDescription'] = "当工单结束后发送反馈请求评价/审核工单";
 $_ADMINLANG['supportticketdepts']['emailCannotBeAdmin'] = "邮件地址已被管理员用户使用。请提供一个不同的邮件地址。";
+$_ADMINLANG['supportticketdepts']['supportTicketsUploadTooLarge'] = "上传的文件太大。请尝试上传较小的文件。";
 
 # Support Ticket Escalations
 $_ADMINLANG['supportticketescalations']['supportticketescalationstitle'] = "支持工单升级";
@@ -4461,11 +4558,15 @@ $_ADMINLANG['healthCheck']['updaterVersionMemoryLimit'] = "自动更新至 :upda
 $_ADMINLANG['healthCheck']['updaterSuccess'] = "您的环境似乎符合自动更新所需的最低要求。为更新您必须确保您的磁盘空间至少为 250MB。";
 $_ADMINLANG['healthCheck']['updaterIoncubeLoaderMismatch'] = "您的系统已安装的 ionCube Loader 版本为：:loaderVersionInstalled。请安装 :loaderVersionRequired 或更高版本的 ionCube Loader 才能升级到 WHMCS :updateVersion 版本。<a href=\"https://docs.whmcs.com/System_Environment_Guide#IonCube_Version\">了解更多信息</a>";
 $_ADMINLANG['healthCheck']['phpCronMismatch'] = "Cron PHP版本不匹配";
-$_ADMINLANG['healthCheck']['phpCronMismatchDescription'] = "您的环境似乎正在为System Cron运行与当前加载的PHP版本（<strong>:currentPhp </strong>）不同的PHP版本（<strong>:cronPhp </strong>）。 这可能会导致运行系统Cron的问题。";
+$_ADMINLANG['healthCheck']['phpCronMismatchDescription'] = "您的环境似乎正在为System Cron运行与当前加载的PHP版本（<strong>:currentPhp </strong>）不同的PHP版本（<strong>:cronPhp </strong>）。 这可能会导致运行系统Cron的问题。 <a href=\":learnMore\">查看更多</a>";
 
 $_ADMINLANG['healthCheck']['webserverSupportCheck'] = "Web服务器支持检查";
 $_ADMINLANG['healthCheck']['supportedWebserver'] = "您的系统正在运行 \":server\" 服务器。";
 $_ADMINLANG['healthCheck']['unsupportedWebserver'] = "您的Web服务器被检测为\":server\"。 WHMCS <a href=\":envGuideline\">系统环境准则</a>建议使用默认情况下使用.htaccess文件的网络服务器，例如Apache。 当使用备用Web服务器时，可能需要其他安全强化步骤。 <a href=\":learnMore\">了解更多</a>";
+
+$_ADMINLANG['healthCheck']['cloudLinuxMysqlCheck'] = "CloudLinux™ MySQL 扩展检查";
+$_ADMINLANG['healthCheck']['cloudLinuxMysqlFailDescription'] = "未检测到 CloudLinux 提供的 PHP 扩展 `nd_pdo_mysql`。当前加载的扩展可能会将存储的数字误解为字符串并可能导致不良行为。请使用 `nd_pdo_mysql` PHP 配置中的扩展名。:learnmorelink";
+$_ADMINLANG['healthCheck']['cloudLinuxMysqlSuccessDescription'] = "检测到 CloudLinux 提供的 PHP 扩展 `nd_pdo_mysql`。";
 
 $_ADMINLANG['updater']['failure'] = "获取更新时发生致命错误。<br/>请检查以确保您的内存限制和执行时间设置为 <a href=\"https://docs.whmcs.com/Automatic_Updater#System_Requirements\" target=\"_blank\">推荐值</a>。";
 $_ADMINLANG['appLinks']['description'] = "应用链接允许您授予第三方应用程序访问 WHMCS 的用户账户。";
@@ -5134,6 +5235,7 @@ $_ADMINLANG['maxmind']['results']['disposition']['action'] = "规则动作";
 $_ADMINLANG['maxmind']['results']['disposition']['reason'] = "规则原因";
 $_ADMINLANG['maxmind']['panels']['warnings'] = "警告";
 $_ADMINLANG['maxmind']['results']['warning'] = "警告";
+$_ADMINLANG['maxmind']['tagline'] = "检测在线欺诈并定位访客。";
 
 $_ADMINLANG['marketConnect']['loginForPricing'] = "想要查看价格，您必须先注册或登录您的市场连接账户。";
 $_ADMINLANG['marketConnect']['login'] = "登录";
@@ -5215,7 +5317,102 @@ $_ADMINLANG['marketConnect']['weebly']['faq']['q3'] = "如何发布网站？";
 $_ADMINLANG['marketConnect']['weebly']['faq']['a3'] = "当一个 Weebly 站点创建完成时，WHMCS 提供专用的 FTP 帐户*并将这些详细信息提交给 Weebly。当用户发布他们的网站时，Weebly 将通过 FTP 将该网站发布到您的主机。";
 $_ADMINLANG['marketConnect']['weebly']['faq']['q4'] = "我应该如何推广 Weebly？";
 $_ADMINLANG['marketConnect']['weebly']['faq']['a4'] = "我们给您提供了一个预置的导览页面（<a href=\":href\" target=\"_blank\">预览</a>）以及在用户中心和购物车页面显示推荐的功能。";
-$_ADMINLANG['marketConnect']['weebly']['faq']['ftp'] = "当前仅支持通过 cPanel 创建 FTP 账户。";
+$_ADMINLANG['marketConnect']['weebly']['faq']['ftp'] = "当前仅支持通过cPanel创建FTP账户。";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['tab']['about'] = "关于";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['tab']['features'] = '功能';
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['tab']['highlights'] = "亮点"；
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['tab']['freePlan'] = "开放试用";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['tab']['pricing'] = "定价";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['tab']['faq'] = "常见问题解答";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['tagline'] = "一个网站建设者平台，可称为您自己的平台。为客户提供一个自己动手做的网站建设者，利用\"用户至上 \"直观而简单的设计。";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['description'] = ":builder 是一个通用品牌、用户友好的网站构建器和电子商务平台，专门为托管和域提供商提供服务。 由 Web.com 提供支持，:builder 为客户设定了简单易用的标准。";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['solvedProblemsQ'] = "它解决了什么问题？";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['solvedProblemsA1Title'] = "网站被认为很复杂";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['solvedProblemsA1Response'] = ":builder 超级简单！任何客户都可以在几分钟内创建一个适用于任何设备的优雅网站。";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['solvedProblemsA2Title'] = "其他 DIY 解决方案通常缺乏关键功能";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['solvedProblemsA2Response'] = ":builder 包含一整套功能，可帮助客户构建任何具有专业外观的自定义网站布局。";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['solvedProblemsA3Title'] = "中小企业没有时间自己获得技能";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['solvedProblemsA3Response'] = ":builder 是基于模板和向导的。感觉像 PowerPoint，但更强大、更优雅、更简单，是客户的解决方案 将享受使用（并继续使用）。最重要的是，客户无需编码经验即可完成所有操作！";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['about'] = ":builder powered by Web.com 专为用户体验而设计。";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['features']['editor'] = "拖放编辑器";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['features']['editorDescription'] = "拖放编辑器允许客户直接在页面上添加和排列网站功能，并预测突出显示区域放置。";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['features']['building'] = "Building Features";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['features']['buildingDescription'] = "客户可以使用现成的布局元素，如文本、按钮、照片或图标来构建任何自定义具有专业外观的网站布局。";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['features']['photos'] = "库存照片集成";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['features']['photosDescription'] = "为客户网站提供超过 200,000 张高分辨率专业优质照片的选择。:builder 还包括嵌入式视频和图像优化。";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['features']['blocks'] = "预先设计的构建块";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['features']['blocksDescription'] = "客户不必浪费时间操作内容布局。350 多个内容块的集合可以帮助他们无需任何技术技能即可建立专业网站。";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['features']['mobile'] = "内置响应式";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['features']['mobileDescription'] = "客户网站在任何设备上看起来都很棒。模板100% 响应所有设备，包括智能手机，平板电脑和台式机。";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['features']['save'] = "自动保存和备份";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['features']['saveDescription'] = "通过实时保存，客户可以确保不会丢失他们的任何工作。编辑器会自动保存客户工作时的一切。";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['highlights']['headline'] = "博客包含在内，客户无需额外付费。";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['highlights']['blogSettings'] = "博客设置";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['highlights']['blogSettingsInfo'] = "配置发布网站上的帖子外观。";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['highlights']['postEditor'] = "帖子编辑器";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['highlights']['postEditorInfo'] = "内置帖子内容创作工具和编辑器。";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['highlights']['socialSharing'] = "社交媒体";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['highlights']['socialSharingInfo'] = "分享博客文章并与关注者互动。";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['highlights']['isolatedPosting'] = "孤立发布";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['highlights']['isolatedPostingInfo'] = "独立发布动态内容。";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['highlights']['blogPage'] = "博客页面";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['highlights']['blogPageInfo'] = "样式布局选项和首选项。";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['highlights']['draftPost'] = "草稿";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['highlights']['draftPostInfo'] = "现在创建，稍后发布。";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['highlights']['storeOptions']['title'] = "具有统包电子商务功能的商店选项";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['highlights']['storeOptions']['products'] = "10、50 和 500 个产品的计划";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['highlights']['storeOptions']['securePayments'] = "安全并保存付款";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['highlights']['storeOptions']['quickCheckout'] = "轻松快速结账";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['highlights']['storeOptions']['marketplaceIntegration'] = "Marketplace Integration";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['highlights']['storeOptions']['productListing'] = "产品列表和管理";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['highlights']['storeOptions']['promotions'] = "促销、折扣和优惠券";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['highlights']['storeOptions']['stockManagement'] = "股票管理";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['highlights']['storeOptions']['worldwideShipping'] = "全球运输和付款";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['highlights']['storeOptions']['taxes'] = "本地和国际增值税或税收";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['highlights']['storeOptions']['orderManagement'] = "订单管理和跟踪";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['free']['freeTrial'] = "免费开放试用";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['free']['freeTrialInfo'] = ":builder 为您和您的客户提供免费开放试用。它允许客户开始构建网站建设者无需支付任何费用，直到他们的新网站准备好发布。";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['free']['stockPhotos'] = "库存照片";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['free']['stockPhotosInfo'] = "200,000 多张免费的高分辨率专业优质照片。";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['free']['templates'] = "模板";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['free']['templatesInfo'] = "150+ 专业品质网站模板";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['free']['blocks'] = "Building Blocks";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['free']['blocksInfo'] = "350+ 预先设计的内容块";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['free']['mobileFriendly'] = "移动友好";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['free']['mobileFriendlyInfo'] = "100% 响应所有设备";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['free']['outro'] = "要获得 :builder 公开试用的资格，您还必须提供至少一个付费 :builder 计划你的客户。";
+$_ADMINLANG['marketConnect']['siteBuilder']['faq']['q1'] = "什么是\"用户至上\"设计？";
+$_ADMINLANG['marketConnect']['siteBuilder']['faq']['a1'] = "它专为所有技能水平而设计。简单易用意味着更高的客户满意度得分 (CSAT) 分数和更好的用户经验。";
+$_ADMINLANG['marketConnect']['siteBuilder']['faq']['q2'] = "它在移动设备上有响应吗？";
+$_ADMINLANG['marketConnect']['siteBuilder']['faq']['a2'] = "是的 - :builder 在创建适用于所有设备的网站时将节省大量时间和精力。";
+$_ADMINLANG['marketConnect']['siteBuilder']['faq']['q3'] = "是否需要任何编码？";
+$_ADMINLANG['marketConnect']['siteBuilder']['faq']['a3'] = "不——这不是针对专业编码人员。:builder的目标是为中小企业提供“用户至上”的设计任何人都可以用它在几分钟内创建优雅的网站。:builder 包括一整套构建功能，客户可以使用这些功能构建任何自定义的专业外观网站布局。";
+$_ADMINLANG['marketConnect']['siteBuilder']['faq']['q4'] = "什么是\"开放试用\"？";
+$_ADMINLANG['marketConnect']['siteBuilder']['faq']['a4'] = "通过开放试用，您的客户可以免费试用 :builder 并构建他们的新网站，您或他们都无需支付前期费用. 在客户准备好发布之前无需支付任何费用！";
+$_ADMINLANG['marketConnect']['siteBuilder']['pricing']['trialInfo'] = "在客户的网站准备好发布之前，免费开放试用不需要预先付款。一旦准备好，客户将升级到该计划满足他们的需求。";
+$_ADMINLANG['marketConnect']['siteBuilder']['pricing']['onePage'] = "一页";
+$_ADMINLANG['marketConnect']['siteBuilder']['pricing']['unlimited'] = "无限制"；
+$_ADMINLANG['marketConnect']['siteBuilder']['pricing']['store'] = '商店';
+$_ADMINLANG['marketConnect']['siteBuilder']['pricing']['storePlus'] = "商店高级版";
+$_ADMINLANG['marketConnect']['siteBuilder']['pricing']['storePremium'] = "商店至尊版";
+$_ADMINLANG['marketConnect']['siteBuilder']['pricing']['feature'] = '功能';
+$_ADMINLANG['marketConnect']['siteBuilder']['pricing']['templates'] = "专业质量网站模板";
+$_ADMINLANG['marketConnect']['siteBuilder']['pricing']['userFirst'] = "\"用户至上\"所有技能水平的设计";
+$_ADMINLANG['marketConnect']['siteBuilder']['pricing']['ddEditing'] = "轻松拖放编辑";
+$_ADMINLANG['marketConnect']['siteBuilder']['pricing']['responsive'] = "响应移动设备";
+$_ADMINLANG['marketConnect']['siteBuilder']['pricing']['gallery'] = "免费图片库";
+$_ADMINLANG['marketConnect']['siteBuilder']['pricing']['blocks'] = "基于组件的构建块";
+$_ADMINLANG['marketConnect']['siteBuilder']['pricing']['blog'] = "博客页面和管理";
+$_ADMINLANG['marketConnect']['siteBuilder']['pricing']['layouts'] = "比例间距的自动布局";
+$_ADMINLANG['marketConnect']['siteBuilder']['pricing']['contactForm'] = "联系表单构建";
+$_ADMINLANG['marketConnect']['siteBuilder']['pricing']['restore'] = "恢复网站";
+$_ADMINLANG['marketConnect']['siteBuilder']['pricing']['inheritance'] = "主题继承";
+$_ADMINLANG['marketConnect']['siteBuilder']['pricing']['socials'] = "社交媒体整合";
+$_ADMINLANG['marketConnect']['siteBuilder']['pricing']['seo'] = "友好的SEO";
+$_ADMINLANG['marketConnect']['siteBuilder']['pricing']['analytics'] = "内置分析";
+$_ADMINLANG['marketConnect']['siteBuilder']['pricing']['pages'] = "页面";
+$_ADMINLANG['marketConnect']['siteBuilder']['pricing']['products'] = "电子商务产品";
+$_ADMINLANG['marketConnect']['siteBuilder']['pricing']['rrp'] = "建议零售价";
 
 $_ADMINLANG['maxmind']['missingUser'] = "您必须设置您的用户 ID 来使用最新的 MaxMind API。<a href=\"configfraud.php\" class=\"autoLinked\">点击此处</a> 设置。";
 
@@ -5266,6 +5463,7 @@ $_ADMINLANG['fraudlabs']['results']['fraudlabspro_distribution'] = "分配风险
 $_ADMINLANG['fraudlabs']['results']['fraudlabspro_status'] = "自定义规则状态";
 $_ADMINLANG['fraudlabs']['results']['fraudlabspro_version'] = "欺诈引擎版本";
 $_ADMINLANG['fraudlabs']['results']['fraudlabspro_credits'] = "剩余点数";
+$_ADMINLANG['fraudlabs']['tagline'] = "保护您的企业免遭拒付欺诈。";
 
 $_ADMINLANG['sslState']['sslInactive'] = "未检测到 SSL。";
 $_ADMINLANG['sslState']['sslActive'] = "已检测到 SSL。将于 :expiry 过期";
@@ -5418,6 +5616,16 @@ $_ADMINLANG['usagebilling']['metricType']['day'] = "每日";
 $_ADMINLANG['usagebilling']['metricType']['month'] = "每月";
 $_ADMINLANG['usagebilling']['metricType']['snapshot'] = "快照";
 
+$_ADMINLANG['usagebilling']['metric']['diskSpace'] = "磁盘空间";
+$_ADMINLANG['usagebilling']['metric']['bandwidth'] = "带宽";
+$_ADMINLANG['usagebilling']['metric']['emailAccounts'] = "电子邮件帐户";
+$_ADMINLANG['usagebilling']['metric']['addonDomains'] = "附加域名";
+$_ADMINLANG['usagebilling']['metric']['parkedDomains'] = "域名停放";
+$_ADMINLANG['usagebilling']['metric']['subDomains'] = "子域";
+$_ADMINLANG['usagebilling']['metric']['mysqlDatabases'] = "MySQL 数据库";
+$_ADMINLANG['usagebilling']['metric']['mysqlDiskUsage'] = "MySQL 磁盘使用情况";
+$_ADMINLANG['usagebilling']['metric']['subAccounts'] = "子账户";
+
 $_ADMINLANG['paypalCheckout']['linkAccount'] = '连接到PayPal账户';
 $_ADMINLANG['paypalCheckout']['unlinkAccount'] = '取消连接PayPal账户';
 $_ADMINLANG['paypalCheckout']['linkSandboxAccount'] = '连接Sandbox账户';
@@ -5439,6 +5647,8 @@ $_ADMINLANG['hooksDebugModeWarning']['title'] = "Hooks调试模式已启用";
 $_ADMINLANG['hooksDebugModeWarning']['description'] = "Hooks调试模式将导致大量活动日志条目，因此应谨慎使用。 不再需要时应将其关闭。";
 $_ADMINLANG['emailSendingModeWarning']['title'] = "电子邮件发送已禁用";
 $_ADMINLANG['emailSendingModeWarning']['description'] = "电子邮件发送已禁用，这意味着将不发送外发邮件。您可以在“配置”>“常规设置”>“邮件”中重新启用电子邮件。";
+$_ADMINLANG['maintenanceModeWarning']['description'] = "维护模式已开启。在禁用之前，只有登录的员工才能访问您的客户区。:link。";
+$_ADMINLANG['maintenanceModeWarning']['disableLinkText'] = "在常规设置中禁用此功能";
 
 $_ADMINLANG['twoFactor']['duosecurity']['friendlyName'] = "双重安全";
 $_ADMINLANG['twoFactor']['duosecurity']['description'] = "通过Duo Push、短信或电话回拨获取代码。";
@@ -5588,4 +5798,50 @@ $_ADMINLANG['customAdminPathWarning']['title'] = "无效的自定义管理目录
 $_ADMINLANG['customAdminPathWarning']['description'] = "检测到与用于自动生成url路径的保留名称冲突，必须进行纠正。";
 
 $_ADMINLANG['social']['accounts'] = "社会账户";
-// @by AS-php 傲世网 WHMCS8.1.1 WHMCS-zh-CN
+
+$_ADMINLANG['configOptions']['optionGroupDelete'] = "已成功删除选项组！";
+$_ADMINLANG['configOptions']['optionGroupDuplicated'] = "选项组复制成功！";
+
+# Validation.com
+$_ADMINLANG['validationCom']['identityVerificationFor'] = "用户 ID 的验证状态";
+$_ADMINLANG['validationCom']['lastUpdated'] = "已更新";
+$_ADMINLANG['validationCom']['viewDetails'] = "查看详情";
+$_ADMINLANG['validationCom']['clearStatus'] = "重置验证";
+$_ADMINLANG['validationCom']['initiateRequest'] = "发起请求";
+$_ADMINLANG['validationCom']['validationStatus'] = "ID 验证状态";
+$_ADMINLANG['validationCom']['status']['notRequested'] = "未启动";
+$_ADMINLANG['validationCom']['status']['notReviewed'] = "已启动";
+$_ADMINLANG['validationCom']['status']['reviewRequested'] = "等待审核";
+$_ADMINLANG['validationCom']['status']['failed'] = "失败";
+$_ADMINLANG['validationCom']['status']['validated'] = "已验证";
+$_ADMINLANG['validationCom']['tooltip']['notRequested'] = "用户没有被要求提交进一步验证的文件。";
+$_ADMINLANG['validationCom']['tooltip']['notReviewed'] = "已要求用户提交文档以进行进一步验证。";
+$_ADMINLANG['validationCom']['tooltip']['reviewRequested'] = "请求的文件已经提交，正在等待审核。";
+$_ADMINLANG['validationCom']['tooltip']['failed'] = "提交的文档已经过审核并标记为失败。";
+$_ADMINLANG['validationCom']['tooltip']['validated'] = "提交的文档已经过审核并标记为已验证。";
+$_ADMINLANG['validationCom']['tagline'] = "使用 Validation.com，您可以像亲自验证一样在线验证人员。";
+$_ADMINLANG['validationCom']['apiKey'] = "API 密钥";
+$_ADMINLANG['validationCom']['apiSecret'] = "API 秘密";
+$_ADMINLANG['validationCom']['identityVerification'] = "身份验证";
+$_ADMINLANG['validationCom']['identityVerificationDesc'] = "在客户端和管理区域启用所有身份验证功能。";
+$_ADMINLANG['validationCom']['autoRequests'] = "自动请求";
+$_ADMINLANG['validationCom']['autoRequestsDesc'] = "在结账过程中欺诈检查失败时发起身份验证请求。";
+$_ADMINLANG['validationCom']['error']['clearStatus'] = "无法清除验证状态。";
+$_ADMINLANG['validationCom']['error']['licenseData'] = "系统无法验证许可证数据。强制更新许可证并重新尝试注册过程。";
+$_ADMINLANG['validationCom']['error']['signupUrl'] = "系统无法检索注册 URL。确保通过定义的系统 URL 访问安装。";
+$_ADMINLANG['validationCom']['linkSuccess'] = "Validation.com 帐户已成功关联";
+$_ADMINLANG['validationCom']['photoId'] = "照片 ID";
+$_ADMINLANG['validationCom']['passport'] = "护照";
+$_ADMINLANG['validationCom']['selfie'] = "自拍";
+$_ADMINLANG['validationCom']['utilityBill'] = "公用事业账单";
+$_ADMINLANG['validationCom']['creditCardFrontOnly'] = "仅限信用卡正面";
+$_ADMINLANG['validationCom']['photoIdFrontOnly'] = "仅限正面照片 ID";
+$_ADMINLANG['validationCom']['companyId'] = "公司 ID";
+$_ADMINLANG['validationCom']['businessCard'] = "名片";
+$_ADMINLANG['validationCom']['driversLicense'] = "驾照";
+$_ADMINLANG['validationCom']['driversLicenseFrontOnly'] = "仅限驾驶执照正面";
+$_ADMINLANG['validationCom']['secondPhotoId'] = "第二张照片 ID";
+$_ADMINLANG['validationCom']['secondPhotoIdFrontOnly'] = "第二张照片身份证正面";
+$_ADMINLANG['validationCom']['proofOfPayment'] = "付款证明";
+$_ADMINLANG['validationCom']['topHalfUtility'] = "上半部分实用程序";
+// @by AS-php 傲世网 WHMCS8.2.1 WHMCS-zh-CN
