@@ -12,7 +12,7 @@
  *   https://developers.whmcs.com/languages/overrides/
  *
  * @package    WHMCS
- * @author     AS-php <cp@gatherso.com>
+ * @author     Rodots <cp@gatherso.com>
  * @copyright  Copyright (c) WHMCS Limited 2005-2020
  * @license    https://www.whmcs.com/license/ WHMCS Eula
  * @version    $Id$
@@ -3626,4 +3626,4 @@ $_LANG['orderForm']['idnNotEnabled'] = "我们目前不支持国际域名。请�
 
 $_LANG['store']['ssl']['landingPage']['secureInMinutes'] = "通过我们的全自动配置和部署在几分钟内保护您的网站";
 
-////////// End of chinese language file.  Do not place any translation strings below this line! AS-php 傲世网 WHMCS8.0.2 WHMCS-zh-CN
+////////// End of chinese language file.  Do not place any translation strings below this line! Rodots 傲世 WHMCS8.0.2 WHMCS-zh-CN

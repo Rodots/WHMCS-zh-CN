@@ -1,5 +1,5 @@
 <?php
-// @by AS-php 傲世网 WHMCS7.9.2 WHMCS-zh-CN
+// @by Rodots 傲世 WHMCS7.9.2 WHMCS-zh-CN
 if (!defined("WHMCS")) die("This file cannot be accessed directly");
 
 $_ADMINLANG['locale'] = "zh_CN";

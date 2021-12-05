@@ -1,5 +1,5 @@
 <?php
-// @by AS-php 傲世网 WHMCS8.0.2 WHMCS-zh-CN
+// @by Rodots 傲世 WHMCS8.0.2 WHMCS-zh-CN
 if (!defined("WHMCS")) die("This file cannot be accessed directly");
 
 $_ADMINLANG['locale'] = "zh_CN";
@@ -506,7 +506,7 @@ $_ADMINLANG['services']['renewSure'] = "远程服务提供商可能会对此产�
 $_ADMINLANG['services']['keepDnsZone'] = "终止时保留 DNS 区域";
 $_ADMINLANG['services']['invoiceUsage'] = "生成度量使用账单";
 $_ADMINLANG['services']['recurCount'] = "重新计算";
-// 聚搜吧 www.Gatherso.com
+// 氢快搜索 www.Gatherso.com
 $_ADMINLANG['sso']['fatalerror'] = "发生致命错误。请查看活动日志获取更多详情。";
 $_ADMINLANG['sso']['servicelogin'] = "登录控制面板";
 $_ADMINLANG['sso']['adminlogin'] = "登录控制面板";
@@ -574,7 +574,7 @@ $_ADMINLANG['addons']['areYouSureDelete'] = "您确定要删除此附加产品�
 $_ADMINLANG['addons']['hiddenDescription'] = "可以从客户区订购表中隐藏此插件";
 $_ADMINLANG['addons']['retired'] = "退休的";
 $_ADMINLANG['addons']['retiredDescription'] = "已停用的插件将不再出现在管理区域内（请注意，您仍然可以查看和管理现有的购买交易）";
-// 傲世网 www.Asphp.net
+// 傲世 www.Asphp.net
 
 # Domains
 $_ADMINLANG['domains']['title'] = "域名";
@@ -2075,7 +2075,7 @@ $_ADMINLANG['contactpermissions']['permemails'] = "查看电子邮件";
 $_ADMINLANG['contactpermissions']['permorders'] = "新购/升级/取消";
 $_ADMINLANG['contactpermissions']['permquotes'] = "查看/接受报价";
 $_ADMINLANG['contactpermissions']['permproductsso'] = "允许单点登录";
-// 聚搜吧 www.Gatherso.com
+// 氢快搜索 www.Gatherso.com
 
 # Statuses
 $_ADMINLANG['status']['active'] = "已激活";
@@ -5481,4 +5481,4 @@ $_ADMINLANG['healthCheck']['cronTimeZone'] = "Cron PHP时区";
 $_ADMINLANG['healthCheck']['cronTimeZoneAligned'] = "WHMCS cron计划任务使用的时区与WHMCS系统匹配。";
 $_ADMINLANG['healthCheck']['cronTimeZoneMisAligned'] = "WHMCS cron计划任务使用的时区 ':crontimezone', 与WHMCS系统使用的时区有 :diff 小时差。要详细了解这些PHP环境设置的重要性，请参阅cron <a :href>文档</a>.";
 
-// @by AS-php 傲世网 WHMCS8.0.2 WHMCS-zh-CN
+// @by Rodots 傲世 WHMCS8.0.2 WHMCS-zh-CN
