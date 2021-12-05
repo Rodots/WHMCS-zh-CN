@@ -12,7 +12,7 @@
  *   https://developers.whmcs.com/languages/overrides/
  *
  * @package    WHMCS
- * @author     AS-php <cp@gatherso.com>
+ * @author     Rodots <cp@gatherso.com>
  * @copyright  Copyright (c) WHMCS Limited 2005-2020
  * @license    https://www.whmcs.com/license/ WHMCS Eula
  * @version    $Id$
@@ -3755,4 +3755,4 @@ $_LANG['requestor'] = "提交人";
 
 $_LANG['facebook']['notAuthorized'] = "您没有授权使用Facebook进行身份验证。我们无法使用它登录。";
 
-////////// End of chinese language file.  Do not place any translation strings below this line! AS-php 傲世网 WHMCS8.1.3 WHMCS-zh-CN
+////////// End of chinese language file.  Do not place any translation strings below this line! Rodots 傲世 WHMCS8.1.3 WHMCS-zh-CN

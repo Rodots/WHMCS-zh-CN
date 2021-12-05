@@ -12,7 +12,7 @@
  *   https://developers.whmcs.com/languages/overrides/
  *
  * @package    WHMCS
- * @author     AS-php <cp@gatherso.com>
+ * @author     Rodots <cp@gatherso.com>
  * @copyright  Copyright (c) WHMCS Limited 2005-2020
  * @license    https://www.whmcs.com/license/ WHMCS Eula
  * @version    $Id$
@@ -4048,4 +4048,4 @@ $_LANG['cPanel']['wptk'] = "WordPress 工具包";
 
 $_LANG['api']['client']['countryError'] = "需要有效的国家/地区";
 
-////////// End of chinese language file.  Do not place any translation strings below this line! AS-php 傲世网 WHMCS8.2.1 WHMCS-zh-CN
+////////// End of chinese language file.  Do not place any translation strings below this line! Rodots 傲世 WHMCS8.2.1 WHMCS-zh-CN

@@ -12,7 +12,7 @@
  *   https://developers.whmcs.com/languages/overrides/
  *
  * @package    WHMCS
- * @author     AS-php <cp@gatherso.com>
+ * @author     Rodots <admin@h2fast.cn>
  * @copyright  Copyright (c) WHMCS Limited 2005-2020
  * @license    https://www.whmcs.com/license/ WHMCS Eula
  * @version    $Id$
@@ -3080,4 +3080,4 @@ $_LANG['paypalEmailAddress'] = "PayPal邮件地址";
 $_LANG['fromJust'] = "请求中";
 $_LANG['remoteTransError'] = "远程事务失败,请联系客服。";
 
-////////// End of chinese language file.  Do not place any translation strings below this line! AS-php 傲世网 WHMCS7.9.2 WHMCS-zh-CN
+////////// End of chinese language file.  Do not place any translation strings below this line! Rodots 傲世 WHMCS7.9.2 WHMCS-zh-CN

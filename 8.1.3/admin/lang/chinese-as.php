@@ -1,5 +1,5 @@
 <?php
-// @by AS-php 傲世网 WHMCS8.1.3 WHMCS-zh-CN
+// @by Rodots 傲世 WHMCS8.1.3 WHMCS-zh-CN
 if (!defined("WHMCS")) die("This file cannot be accessed directly");
 
 $_ADMINLANG['locale'] = "zh_CN";
@@ -513,7 +513,7 @@ $_ADMINLANG['services']['keepDnsZone'] = "终止时保留 DNS 区域";
 $_ADMINLANG['services']['invoiceUsage'] = "生成度量使用账单";
 $_ADMINLANG['services']['recurCount'] = "重新计算";
 $_ADMINLANG['services']['upgradeUnpaidInvoice'] = "此服务存在未付款的账单。 在支付账单之前继续升级可能会导致收益没收。";
-// 聚搜吧 www.Gatherso.com
+// 氢快搜索 www.Gatherso.com
 $_ADMINLANG['sso']['fatalerror'] = "发生致命错误。请查看活动日志获取更多详情。";
 $_ADMINLANG['sso']['servicelogin'] = "登录控制面板";
 $_ADMINLANG['sso']['adminlogin'] = "登录控制面板";
@@ -581,7 +581,7 @@ $_ADMINLANG['addons']['areYouSureDelete'] = "您确定要删除此附加产品�
 $_ADMINLANG['addons']['hiddenDescription'] = "可以从客户区订购表中隐藏此插件";
 $_ADMINLANG['addons']['retired'] = "退休的";
 $_ADMINLANG['addons']['retiredDescription'] = "已停用的插件将不再出现在管理区域内（请注意，您仍然可以查看和管理现有的购买交易）";
-// 傲世网 www.Asphp.net
+// 傲世 www.Asphp.net
 
 # Domains
 $_ADMINLANG['domains']['title'] = "域名";
@@ -2090,7 +2090,7 @@ $_ADMINLANG['contactpermissions']['permemails'] = "查看电子邮件";
 $_ADMINLANG['contactpermissions']['permorders'] = "新购/升级/取消";
 $_ADMINLANG['contactpermissions']['permquotes'] = "查看/接受报价";
 $_ADMINLANG['contactpermissions']['permproductsso'] = "允许单点登录";
-// 聚搜吧 www.Gatherso.com
+// 氢快搜索 www.Gatherso.com
 
 # Statuses
 $_ADMINLANG['status']['active'] = "已激活";
@@ -5588,4 +5588,4 @@ $_ADMINLANG['customAdminPathWarning']['title'] = "无效的自定义管理目录
 $_ADMINLANG['customAdminPathWarning']['description'] = "检测到与用于自动生成url路径的保留名称冲突，必须进行纠正。";
 
 $_ADMINLANG['social']['accounts'] = "社会账户";
-// @by AS-php 傲世网 WHMCS8.1.3 WHMCS-zh-CN
+// @by Rodots 傲世 WHMCS8.1.3 WHMCS-zh-CN

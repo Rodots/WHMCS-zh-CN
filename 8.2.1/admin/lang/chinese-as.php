@@ -1,5 +1,5 @@
 <?php
-// @by AS-php 傲世网 WHMCS8.2.1 WHMCS-zh-CN
+// @by Rodots 傲世 WHMCS8.2.1 WHMCS-zh-CN
 if (!defined("WHMCS")) die("This file cannot be accessed directly");
 
 $_ADMINLANG['locale'] = "zh_CN";
@@ -545,7 +545,7 @@ $_ADMINLANG['services']['provisionsuccess'] = "附加功能配置成功";
 $_ADMINLANG['services']['deprovisionsuccess'] = "附加功能取消配置成功";
 $_ADMINLANG['services']['suspend-featuresuccess'] = "附加功能挂起成功";
 $_ADMINLANG['services']['unsuspend-featuresuccess'] = "附加功能取消挂起成功";
-// 聚搜吧 www.Gatherso.com
+// 氢快搜索 www.Gatherso.com
 $_ADMINLANG['sso']['fatalerror'] = "发生致命错误。请查看活动日志获取更多详情。";
 $_ADMINLANG['sso']['servicelogin'] = "登录控制面板";
 $_ADMINLANG['sso']['adminlogin'] = "登录控制面板";
@@ -637,7 +637,7 @@ $_ADMINLANG['addons']['predefinedHeading'] = "预定义插件";
 $_ADMINLANG['addons']['predefinedNotice'] = "您正在创建一个预定义的插件，配置设置将被预填充。继续配置插件定价。";
 $_ADMINLANG['addons']['predefinedSuccessInfo'] = "您的预定义插件已成功添加，并且已为您配置设置。请配置定价并保存更改。";
 $_ADMINLANG['addons']['predefinedActive'] = "激活";
-// 傲世网 www.Asphp.net
+// 傲世 www.Asphp.net
 
 # Domains
 $_ADMINLANG['domains']['title'] = "域名";
@@ -2155,7 +2155,7 @@ $_ADMINLANG['contactpermissions']['permemails'] = "查看电子邮件";
 $_ADMINLANG['contactpermissions']['permorders'] = "新购/升级/取消";
 $_ADMINLANG['contactpermissions']['permquotes'] = "查看/接受报价";
 $_ADMINLANG['contactpermissions']['permproductsso'] = "允许单点登录";
-// 聚搜吧 www.Gatherso.com
+// 氢快搜索 www.Gatherso.com
 
 # Statuses
 $_ADMINLANG['status']['active'] = "已激活";
@@ -5844,4 +5844,4 @@ $_ADMINLANG['validationCom']['secondPhotoId'] = "第二张照片 ID";
 $_ADMINLANG['validationCom']['secondPhotoIdFrontOnly'] = "第二张照片身份证正面";
 $_ADMINLANG['validationCom']['proofOfPayment'] = "付款证明";
 $_ADMINLANG['validationCom']['topHalfUtility'] = "上半部分实用程序";
-// @by AS-php 傲世网 WHMCS8.2.1 WHMCS-zh-CN
+// @by Rodots 傲世 WHMCS8.2.1 WHMCS-zh-CN

@@ -12,7 +12,7 @@
  *   https://developers.whmcs.com/languages/overrides/
  *
  * @package    WHMCS
- * @author     AS-php <cp@gatherso.com>
+ * @author     Rodots <admin@h2fast.cn>
  * @copyright  Copyright (c) WHMCS Limited 2005-2020
  * @license    https://www.whmcs.com/license/ WHMCS Eula
  * @version    $Id$
@@ -3155,4 +3155,4 @@ $_LANG['orderForm']['selectCategory'] = "请从侧栏菜单中选择一个类别
 
 $_LANG['store']['sampleProduct'] = "这是一个样品。";
 
-////////// End of chinese language file.  Do not place any translation strings below this line! AS-php 傲世网 WHMCS7.10.2 WHMCS-zh-CN
+////////// End of chinese language file.  Do not place any translation strings below this line! Rodots 傲世 WHMCS7.10.2 WHMCS-zh-CN
