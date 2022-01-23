@@ -1,7 +1,7 @@
 # WHMCS前后台中文语言包/Simplified Chinese Translations
-WHMCS系统8.3.x前后台简体中文汉化 [【點我切換到簡體中文版說明】](https://github.com/Rodots/WHMCS-zh-CN/blob/master/Traditional-README.md)
+WHMCS系统8.4.x前后台简体中文汉化 [【點我切換到簡體中文版說明】](https://github.com/Rodots/WHMCS-zh-CN/blob/master/Traditional-README.md)
 
-@by Rodots 傲世 WHMCS8.3.x WHMCS-zh-CN
+@by Rodots 傲世 WHMCS8.4.x WHMCS-zh-CN
 
 本项目内汉化文件均已全部经过人工排查，实现与官方同步0遗漏，译文大部分由机翻后人工二次修改。
 
@@ -21,6 +21,8 @@ WHMCS系统8.3.x前后台简体中文汉化 [【點我切換到簡體中文版�
 
 2021年12月06日：跟进v8.3.2
 
+2022年01月23日：跟进v8.4.0
+
 # 使用方法
 根据您的WHMCS版本选择对应的汉化文件并下载
 
@@ -33,4 +35,4 @@ WHMCS系统8.3.x前后台简体中文汉化 [【點我切換到簡體中文版�
 3.转到“系统设置>常规设置(Setup>General Settings)”，单击“本地化(Localisation)”选项卡，将“默认语言(Default Language)”设置为中文(chinese-as)，最后单击“保存更改(Save Changes)”按钮。
 
 # 翻译改进
-如您在使用过程中发现翻译错误，请与我联系，欢迎大家一起来完善这个翻译哦！我会尽量做到与官方同步更新的，如果官方有版本更新了可以来提醒一下我！
+如您在使用过程中发现翻译错误或翻译不妥当，请与我联系，欢迎大家一起来完善这个翻译哦！我会尽量做到与官方同步更新的，如果官方有版本更新了可以来提醒一下我！
