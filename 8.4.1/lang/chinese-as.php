@@ -4129,4 +4129,4 @@ $_LANG['idna']['labelTooLong'] = "域标签已超过最大长度。";
 $_LANG['idna']['domainTooLong'] = "域名已超过最大长度。";
 $_LANG['idna']['invalidDomain'] = "域名无效。";
 $_LANG['idna']['unknownError'] = "发生未知错误。";
-////////// End of chinese language file.  Do not place any translation strings below this line! Rodots 傲世 WHMCS8.4.0 WHMCS-zh-CN
+////////// End of chinese language file.  Do not place any translation strings below this line! Rodots 傲世 WHMCS8.4.1 WHMCS-zh-CN

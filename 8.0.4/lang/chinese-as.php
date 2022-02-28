@@ -1485,12 +1485,12 @@ $_LANG['quoteacceptancewarning'] = "请注意，接受报价单认为是签订�
 
 $_LANG['contactform'] = "联系表单";
 
-$_LANG['twoipconnect'] = '连接你的应用';
-$_LANG['twoipinstruct'] = '使用%s或%s这样的认证应用程序，扫描下面的二维码。扫描代码有困难?手动输入代码';
-$_LANG['twoipverificationstepmsg'] = '输入应用程序生成的6位数代码来验证和完成设置。';
-$_LANG['twoipenterauth'] = '输入验证码';
-$_LANG['twoipgoogleauth'] = '谷歌身份验证';
-$_LANG['twoipduo'] = 'Duo';
+$_LANG['twoipconnect'] = "连接你的应用";
+$_LANG['twoipinstruct'] = "使用%s或%s这样的认证应用程序，扫描下面的二维码。扫描代码有困难?手动输入代码";
+$_LANG['twoipverificationstepmsg'] = "输入应用程序生成的6位数代码来验证和完成设置。";
+$_LANG['twoipenterauth'] = "输入验证码";
+$_LANG['twoipgoogleauth'] = "谷歌身份验证";
+$_LANG['twoipduo'] = "Duo";
 $_LANG['twoipcodemissmatch'] = "您输入的代码与预期不符。请再试一次。";
 $_LANG['twoipgdmissing'] = "GD 库未安装，无法生成图像";
 
@@ -1901,7 +1901,7 @@ $_LANG['quotes'] = "报价";
 $_LANG['productMustBeActiveForModuleCmds'] = "产品必须激活才能执行此操作";
 $_LANG['domainCannotBeManagedUnlessActive'] = "该域名目前尚未激活。直至激活之前您无法管理域名。";
 
-$_LANG['actionRequiresAtLeastOneDomainSelected'] = '请至少选择一个域名来执行所选的操作。';
+$_LANG['actionRequiresAtLeastOneDomainSelected'] = "请至少选择一个域名来执行所选的操作。";
 
 $_LANG['clientAreaProductDownloadsAvailable'] = "您的产品/服务可下载下面的项目";
 $_LANG['clientAreaProductAddonsAvailable'] = "您的产品/服务可使用插件 <a href=\"cart.php?gid=addons\">点此查看并购买 &raquo;</a>";
@@ -2007,7 +2007,7 @@ $_LANG['cloudSlider']['feature03Description'] = "我们提供 24/7 安全监控�
 $_LANG['cloudSlider']['feature03DescriptionTwo'] = "可提供给您广泛的安全工具，包括 SSL 证书，防火墙配置，安全监控服务，VPN 访问等等。";
 $_LANG['cloudSlider']['selectProductLevel'] = "选择最适合您的等级！";
 
-$_LANG['domainChecker.additionalPricingOptions'] = '附加价格选项 :domain';
+$_LANG['domainChecker.additionalPricingOptions'] = "附加价格选项 :domain";
 
 $_LANG['orderpaymenttermfree'] = "免费";
 
@@ -2018,8 +2018,8 @@ $_LANG['insufficientstockmessage'] = "我们已经降低了某些项目的库存
 $_LANG['only'] = "仅";
 $_LANG['startingat'] = "开始于";
 
-$_LANG['yourdomainplaceholder'] = 'example';
-$_LANG['yourtldplaceholder'] = 'com';
+$_LANG['yourdomainplaceholder'] = "example";
+$_LANG['yourtldplaceholder'] = "com";
 
 $_LANG['subaccountpermsproductsso'] = "执行单点登录";
 
@@ -2034,8 +2034,8 @@ $_LANG['oauth']['badTwoFactorAuthModule'] = "两步验证模块损坏。请联�
 $_LANG['oauth']['permAccessNameAndEmail'] = "访问您的姓名和邮件地址";
 
 $_LANG['errorButTryAgain'] = "发生错误。请重试。";
-$_LANG['emailSent'] = '邮件发送';
-$_LANG['resendEmail'] = '重新发送验证电子邮件';
+$_LANG['emailSent'] = "邮件发送";
+$_LANG['resendEmail'] = "重新发送验证电子邮件";
 
 // Markdown Editor Help
 $_LANG['markdown']['title']= "Markdown 使用教程";
@@ -2110,19 +2110,19 @@ $_LANG['orderForm']['authCodeTooltip'] = "如果您要转移域名，您需要�
 $_LANG['orderForm']['help'] = "帮助";
 $_LANG['orderForm']['required'] = "必填";
 
-$_LANG['orderForm']['checkingAvailability'] = '检查可用性';
-$_LANG['orderForm']['verifyingTransferEligibility'] = '验证转移资格';
-$_LANG['orderForm']['verifyingDomain'] = '验证您的域名';
-$_LANG['orderForm']['transferEligible'] = '您的域名可以转移';
-$_LANG['orderForm']['transferUnlockBeforeContinuing'] = '请确认您已经在当前的注册商那解锁了您的域名，然后再继续。';
-$_LANG['orderForm']['transferNotEligible'] = '无法转移';
-$_LANG['orderForm']['transferNotRegistered'] = '您输入的域名似乎没有被注册。';
-$_LANG['orderForm']['trasnferRecentlyRegistered'] = '如果域名是最近注册的，您可能需要稍后重试。';
-$_LANG['orderForm']['transferAlternativelyRegister'] = '或者，您可以执行搜索注册此域名。';
-$_LANG['orderForm']['domainInvalid'] = '域名无效';
-$_LANG['orderForm']['domainInvalidCheckEntry'] = '请检查您输入的域名然后重试';
-$_LANG['orderForm']['domainPriceRegisterLabel'] = '继续注册此域名：';
-$_LANG['orderForm']['domainPriceTransferLabel'] = '转移并延长 1 年使用期为';
+$_LANG['orderForm']['checkingAvailability'] = "检查可用性";
+$_LANG['orderForm']['verifyingTransferEligibility'] = "验证转移资格";
+$_LANG['orderForm']['verifyingDomain'] = "验证您的域名";
+$_LANG['orderForm']['transferEligible'] = "您的域名可以转移";
+$_LANG['orderForm']['transferUnlockBeforeContinuing'] = "请确认您已经在当前的注册商那解锁了您的域名，然后再继续。";
+$_LANG['orderForm']['transferNotEligible'] = "无法转移";
+$_LANG['orderForm']['transferNotRegistered'] = "您输入的域名似乎没有被注册。";
+$_LANG['orderForm']['trasnferRecentlyRegistered'] = "如果域名是最近注册的，您可能需要稍后重试。";
+$_LANG['orderForm']['transferAlternativelyRegister'] = "或者，您可以执行搜索注册此域名。";
+$_LANG['orderForm']['domainInvalid'] = "域名无效";
+$_LANG['orderForm']['domainInvalidCheckEntry'] = "请检查您输入的域名然后重试";
+$_LANG['orderForm']['domainPriceRegisterLabel'] = "继续注册此域名：";
+$_LANG['orderForm']['domainPriceTransferLabel'] = "转移并延长 1 年使用期为";
 
 $_LANG['change'] = "更改";
 
@@ -2243,37 +2243,37 @@ $_LANG['upgradeCreditDescription'] = "基于 :daysRemaining 未用日期 :totalD
 $_LANG['orderForm']['domainExtensionTransferNotSupported'] = "您的域名当前不支持转移到我们这里，请尝试其它域名。";
 $_LANG['orderForm']['domainExtensionTransferPricingNotConfigured'] = "您的域名不满足转移到我们这里的条件，请尝试其它域名。";
 
-$_LANG['remoteAuthn']['success'] = '成功！';
-$_LANG['remoteAuthn']['errorExclamation'] = '错误！';
-$_LANG['remoteAuthn']['error'] = '错误';
-$_LANG['remoteAuthn']['linkInitiated'] = '链接已启动！';
-$_LANG['remoteAuthn']['areYouSure'] = '您确定吗？';
-$_LANG['remoteAuthn']['yesUnlinkIt'] = '是的，取消链接！';
-$_LANG['remoteAuthn']['unlinked'] = '已取消链接！';
-$_LANG['remoteAuthn']['unavailable'] = '目前无法使用。请稍后重试。';
-$_LANG['remoteAuthn']['connectError'] = '我们无法连接您的账户。请联系您的系统管理员。';
-$_LANG['remoteAuthn']['completeSignIn'] = '请使用您选择的服务提供商完成登录。';
-$_LANG['remoteAuthn']['redirecting'] = '自动登录成功！正在重定向…';
-$_LANG['remoteAuthn']['accountNowLinked'] = '您的账户现在与您的 :displayName 账户关联。';
-$_LANG['remoteAuthn']['oneTimeAuthRequired'] = '请完成登录，将此服务与现有的账户关联。您只需要操作一次。';
-$_LANG['remoteAuthn']['completeRegistrationForm'] = '请填写下面的注册表格。';
-$_LANG['remoteAuthn']['completeNewAccountForm'] = '请完善您的新账户信息。';
-$_LANG['remoteAuthn']['linkedToAnotherClient'] = '此账户已经链接到我们的现有账户。请在第三方认证提供商处选择不同的账户。';
-$_LANG['remoteAuthn']['alreadyLinkedToYou'] = '此账户已经连接到我们的账户。请在第三方认证提供商处选择不同的账户。';
-$_LANG['remoteAuthn']['saveTimeByLinking'] = '通过以下您已使用的任意服务注册，以节省您的时间。';
-$_LANG['remoteAuthn']['unlinkDesc'] = '这将永久解除与授权账户的关联。';
-$_LANG['remoteAuthn']['mayHaveMultipleLinks'] = '将您的账户与以下的任意服务关联，以简化您的登录体验。我们只需要使用此信息来验证您的账户，绝不会以您的身份发布任何信息。';
-$_LANG['remoteAuthn']['titleSignUpVerb'] = '以第三方服务注册';
-$_LANG['remoteAuthn']['titleOr'] = '或';
-$_LANG['remoteAuthn']['titleLinkedAccounts'] = '已链接的账户';
-$_LANG['remoteAuthn']['provider'] = '提供商';
-$_LANG['remoteAuthn']['name'] = '名称';
-$_LANG['remoteAuthn']['emailAddress'] = '邮件地址';
-$_LANG['remoteAuthn']['actions'] = '操作';
-$_LANG['remoteAuthn']['noLinkedAccounts'] = '未找到已链接的账户';
-$_LANG['remoteAuthn']['signInWith'] = '以 :provider 登录';
-$_LANG['remoteAuthn']['connectWith'] = '连接至 :provider';
-$_LANG['remoteAuthn']['signUpWith'] = '以 :provider 注册';
+$_LANG['remoteAuthn']['success'] = "成功！";
+$_LANG['remoteAuthn']['errorExclamation'] = "错误！";
+$_LANG['remoteAuthn']['error'] = "错误";
+$_LANG['remoteAuthn']['linkInitiated'] = "链接已启动！";
+$_LANG['remoteAuthn']['areYouSure'] = "您确定吗？";
+$_LANG['remoteAuthn']['yesUnlinkIt'] = "是的，取消链接！";
+$_LANG['remoteAuthn']['unlinked'] = "已取消链接！";
+$_LANG['remoteAuthn']['unavailable'] = "目前无法使用。请稍后重试。";
+$_LANG['remoteAuthn']['connectError'] = "我们无法连接您的账户。请联系您的系统管理员。";
+$_LANG['remoteAuthn']['completeSignIn'] = "请使用您选择的服务提供商完成登录。";
+$_LANG['remoteAuthn']['redirecting'] = "自动登录成功！正在重定向…";
+$_LANG['remoteAuthn']['accountNowLinked'] = "您的账户现在与您的 :displayName 账户关联。";
+$_LANG['remoteAuthn']['oneTimeAuthRequired'] = "请完成登录，将此服务与现有的账户关联。您只需要操作一次。";
+$_LANG['remoteAuthn']['completeRegistrationForm'] = "请填写下面的注册表格。";
+$_LANG['remoteAuthn']['completeNewAccountForm'] = "请完善您的新账户信息。";
+$_LANG['remoteAuthn']['linkedToAnotherClient'] = "此账户已经链接到我们的现有账户。请在第三方认证提供商处选择不同的账户。";
+$_LANG['remoteAuthn']['alreadyLinkedToYou'] = "此账户已经连接到我们的账户。请在第三方认证提供商处选择不同的账户。";
+$_LANG['remoteAuthn']['saveTimeByLinking'] = "通过以下您已使用的任意服务注册，以节省您的时间。";
+$_LANG['remoteAuthn']['unlinkDesc'] = "这将永久解除与授权账户的关联。";
+$_LANG['remoteAuthn']['mayHaveMultipleLinks'] = "将您的账户与以下的任意服务关联，以简化您的登录体验。我们只需要使用此信息来验证您的账户，绝不会以您的身份发布任何信息。";
+$_LANG['remoteAuthn']['titleSignUpVerb'] = "以第三方服务注册";
+$_LANG['remoteAuthn']['titleOr'] = "或";
+$_LANG['remoteAuthn']['titleLinkedAccounts'] = "已链接的账户";
+$_LANG['remoteAuthn']['provider'] = "提供商";
+$_LANG['remoteAuthn']['name'] = "名称";
+$_LANG['remoteAuthn']['emailAddress'] = "邮件地址";
+$_LANG['remoteAuthn']['actions'] = "操作";
+$_LANG['remoteAuthn']['noLinkedAccounts'] = "未找到已链接的账户";
+$_LANG['remoteAuthn']['signInWith'] = "以 :provider 登录";
+$_LANG['remoteAuthn']['connectWith'] = "连接至 :provider";
+$_LANG['remoteAuthn']['signUpWith'] = "以 :provider 注册";
 
 $_LANG['unlink'] = "取消链接";
 
@@ -3046,21 +3046,21 @@ $_LANG['paymentMethods']['mandateAcceptance'] = "通过提供您的银行账号�
 
 $_LANG['metrics']['title'] = "按量";
 $_LANG['metrics']['explanation'] = "除基本价格外，此产品还包含基于使用情况的计费费用。 使用情况指标及其定价信息如下所示。";
-$_LANG['metrics']['from'] = '从';
-$_LANG['metrics']['to'] = '到';
-$_LANG['metrics']['startingQuantity'] = '起始数量';
-$_LANG['metrics']['unit'] = '单位';
-$_LANG['metrics']['pricePerUnit'] = '单价';
-$_LANG['metrics']['pricePer'] = '单价';
-$_LANG['metrics']['viewPricing'] = '查看价格';
-$_LANG['metrics']['pricing'] = '价格';
-$_LANG['metrics']['startingFrom'] = '开始';
-$_LANG['metrics']['pricingschema']['simple']['info'] = '这个项目有一个单一的价格结构';
-$_LANG['metrics']['pricingschema']['simple']['detail'] = '无论数量多少，单价都是一致的。';
-$_LANG['metrics']['pricingschema']['grad']['info'] = '这个项目有一个分级定价结构。';
-$_LANG['metrics']['pricingschema']['grad']['detail'] = '每单位价格是每个消耗范围。 总费用是范围计算的总和。';
-$_LANG['metrics']['pricingschema']['flat']['info'] = '这个项目有一个单位量的价格结构。';
-$_LANG['metrics']['pricingschema']['flat']['detail'] = '单价是由消费总量决定的。';
+$_LANG['metrics']['from'] = "从";
+$_LANG['metrics']['to'] = "到";
+$_LANG['metrics']['startingQuantity'] = "起始数量";
+$_LANG['metrics']['unit'] = "单位";
+$_LANG['metrics']['pricePerUnit'] = "单价";
+$_LANG['metrics']['pricePer'] = "单价";
+$_LANG['metrics']['viewPricing'] = "查看价格";
+$_LANG['metrics']['pricing'] = "价格";
+$_LANG['metrics']['startingFrom'] = "开始";
+$_LANG['metrics']['pricingschema']['simple']['info'] = "这个项目有一个单一的价格结构";
+$_LANG['metrics']['pricingschema']['simple']['detail'] = "无论数量多少，单价都是一致的。";
+$_LANG['metrics']['pricingschema']['grad']['info'] = "这个项目有一个分级定价结构。";
+$_LANG['metrics']['pricingschema']['grad']['detail'] = "每单位价格是每个消耗范围。 总费用是范围计算的总和。";
+$_LANG['metrics']['pricingschema']['flat']['info'] = "这个项目有一个单位量的价格结构。";
+$_LANG['metrics']['pricingschema']['flat']['detail'] = "单价是由消费总量决定的。";
 $_LANG['metrics']['previousUsage'] = "往期用量";
 $_LANG['metrics']['currentUsage'] = "当前用量";
 $_LANG['metrics']['lastUpdated'] = "最后更新";
@@ -3110,8 +3110,8 @@ $_LANG['emailPreferences']['invoice'] = "账单电子邮件 - 新账单,提醒�
 $_LANG['emailPreferences']['product'] = "产品电子邮件 - 开通,暂停和其他周期通知";
 $_LANG['emailPreferences']['support'] = "工单电子邮件 - 接收所有工单的抄送";
 
-$_LANG['navMarketConnectService']['marketgoo'] = 'SEO 优化工具';
-$_LANG['store']['marketgoo']['title'] = 'Marketgoo SEO 优化工具';
+$_LANG['navMarketConnectService']['marketgoo'] = "SEO 优化工具";
+$_LANG['store']['marketgoo']['title'] = "Marketgoo SEO 优化工具";
 $_LANG['store']['marketgoo']['headline'] = "改善您网站的访问量";
 $_LANG['store']['marketgoo']['tagline'] = "和通过 marketgoo <em>发展您的业务</em>";
 $_LANG['store']['marketgoo']['tab']['how'] = "它是如何工作的？";
@@ -3272,7 +3272,7 @@ $_LANG['navAccountSecurity'] = "账户安全";
 $_LANG['never'] = "从不";
 
 $_LANG['yourProfile'] = "您的个人资料";
-$_LANG['verifyEmailAddress'] = '请检查您的电子邮件并点击链接以验证您的电子邮件地址。';
+$_LANG['verifyEmailAddress'] = "请检查您的电子邮件并点击链接以验证您的电子邮件地址。";
 
 $_LANG['emailVerification']['title'] = "电子邮件验证";
 $_LANG['emailVerification']['success'] = "您的电子邮件地址已通过验证";
