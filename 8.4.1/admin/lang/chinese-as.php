@@ -1,5 +1,5 @@
 <?php
-// @by Rodots 傲世 WHMCS8.4.0 WHMCS-zh-CN
+// @by Rodots 傲世 WHMCS8.4.1 WHMCS-zh-CN
 if (!defined("WHMCS")) die("This file cannot be accessed directly");
 
 $_ADMINLANG['locale'] = "zh_CN";
@@ -6158,4 +6158,4 @@ $_ADMINLANG['idna']['labelTooLong'] = "域标签已超过最大长度。";
 $_ADMINLANG['idna']['domainTooLong'] = "域名已超过最大长度。";
 $_ADMINLANG['idna']['invalidDomain'] = "域名无效。";
 $_ADMINLANG['idna']['unknownError'] = "发生未知错误。";
-// @by Rodots 傲世 WHMCS8.4.0 WHMCS-zh-CN
+// @by Rodots 傲世 WHMCS8.4.1 WHMCS-zh-CN
