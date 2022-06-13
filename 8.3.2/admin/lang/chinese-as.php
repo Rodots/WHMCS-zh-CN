@@ -538,7 +538,7 @@ $_ADMINLANG['services']['renewSure'] = "远程服务提供商可能会对此产�
 $_ADMINLANG['services']['keepDnsZone'] = "终止时保留 DNS 区域";
 $_ADMINLANG['services']['invoiceUsage'] = "生成度量使用账单";
 $_ADMINLANG['services']['recurCount'] = "重新计算";
-$_ADMINLANG['services']['upgradeUnpaidInvoice'] = "此服务存在未付款的账单。 在支付账单之前继续升级可能会导致收益没收。";
+$_ADMINLANG['services']['upgradeUnpaidInvoice'] = "此服务存在未付款的账单。在支付账单之前继续升级可能会导致收益没收。";
 $_ADMINLANG['services']['provisionSure'] = "您确定要运行配置功能吗？";
 $_ADMINLANG['services']['suspendAddOnFeatureSure'] = "您确定要运行挂起附加功能吗？";
 $_ADMINLANG['services']['unsuspendAddOnFeatureSure'] = "您确定要运行取消挂起附加功能吗？";
@@ -2976,12 +2976,12 @@ $_ADMINLANG['automation']['warningRemoveCustomerData'] = "这将不可撤销地�
 $_ADMINLANG['automation']['inactiveClientExplanation'] = "非激活状态的用户是指无已激活的产品、服务、附加服务或域名的用户。";
 $_ADMINLANG['automation']['domainSync'] = "域名同步设置";
 $_ADMINLANG['automation']['domainStatusSyncFrequency'] = "域名到期同步频率";
-$_ADMINLANG['automation']['domainStatusSyncFrequencyInfo'] = "cron 自动任务多长时间（小时）进行一次域名到期同步。 填写 0 则为默认的 4 小时";
+$_ADMINLANG['automation']['domainStatusSyncFrequencyInfo'] = "cron 自动任务多长时间（小时）进行一次域名到期同步。填写 0 则为默认的 4 小时";
 $_ADMINLANG['automation']['domainTransferSyncFrequency'] = "域名待转同步频率";
 $_ADMINLANG['automation']['domainTransferSyncFrequencyInfo'] = "（小时）挂起的传输同步作为cron的一部分运行的频率。0将使用默认值4小时";
 $_ADMINLANG['automation']['pruneTicketAttachments'] = "修剪工单附件";
 $_ADMINLANG['automation']['pruneTicketAttachmentsInfo'] = "在关闭的工单内的最后一个活动之后，应保留工单附件的时间长度.";
-$_ADMINLANG['automation']['cronSample'] = "为了方便起见，下面提供了cron命令。 您应该使用服务器cron实用程序或网络托管控制面板内的以下命令，将cron任务配置为每5分钟运行一次。";
+$_ADMINLANG['automation']['cronSample'] = "为了方便起见，下面提供了cron命令。您应该使用服务器cron实用程序或网络托管控制面板内的以下命令，将cron任务配置为每5分钟运行一次。";
 $_ADMINLANG['automation']['autoDeleteInactiveClientsUsers'] = "如果用户未与任何其他客户端帐户关联，则删除关联的用户。";
 $_ADMINLANG['automation']['moduleLogPruning'] = "模块日志裁剪";
 $_ADMINLANG['automation']['moduleLogPruningOlderThan'] = "裁剪早于以下时间的记录";
@@ -4512,7 +4512,7 @@ $_ADMINLANG['healthCheck']['updateNews'] = "更新消息";
 $_ADMINLANG['healthCheck']['permissionCheck'] = "不安全权限检查";
 $_ADMINLANG['healthCheck']['permissionCheckSuccess'] = "您的配置文件的权限已正确的限制。";
 $_ADMINLANG['healthCheck']['permissionCheckConfigFileWritable'] = "您的配置文件为可写。这可能会造成安全隐患。我们建议您设置权限为只读。";
-$_ADMINLANG['healthCheck']['permissionCheckUnownedDirectories'] = "如下目录所有者设置了和执行 WHMCS 不同的用户。 这是一个潜在的不安全配置：";
+$_ADMINLANG['healthCheck']['permissionCheckUnownedDirectories'] = "如下目录所有者设置了和执行 WHMCS 不同的用户。这是一个潜在的不安全配置：";
 $_ADMINLANG['healthCheck']['permissionCheckUnownedDirectories2'] = "您可以查看我们的 <a :href>文档</a> 了解更多信息。";
 $_ADMINLANG['healthCheck']['customTemplates'] = "默认模板的使用";
 $_ADMINLANG['healthCheck']['customTemplatesSuccess'] = "您的 WHMCS 正使用自定义模板，将不会在升级时覆盖。";
@@ -4539,7 +4539,7 @@ $_ADMINLANG['healthCheck']['requiredPhpFunctionsFailure2'] = "这些已在您的
 $_ADMINLANG['healthCheck']['menuTitle'] = "健康状况";
 $_ADMINLANG['healthCheck']['readMore'] = "了解更多";
 $_ADMINLANG['healthCheck']['phpMemory'] = "PHP 内存限制";
-$_ADMINLANG['healthCheck']['phpMemoryTooLow'] = "您的 PHP memory_limit 值 <strong>:memory_limit</strong> 太小。 WHMCS 需要最小限制为 64M。您可以通过 <a :href>set_ini 命令</a> 更改您的 php.ini。";
+$_ADMINLANG['healthCheck']['phpMemoryTooLow'] = "您的 PHP memory_limit 值 <strong>:memory_limit</strong> 太小。WHMCS 需要最小限制为 64M。您可以通过 <a :href>set_ini 命令</a> 更改您的 php.ini。";
 $_ADMINLANG['healthCheck']['phpMemoryLow'] = "您的 PHP memory_limit 值为 <strong>:memory_limit</strong> 低于推荐值。WHMCS 建议您至少设置为 128M 限制，并且必须大于最小的 64M 限制。您可以通过 <a :href>set_ini 命令</a> 更改您的 php.ini。";
 $_ADMINLANG['healthCheck']['phpMemorySuccess'] = "您的 PHP memory_limit 值为 <strong>:memory_limit</strong>，满足 128M 的推荐值。";
 $_ADMINLANG['healthCheck']['news'] = "近期新闻和通知";
@@ -4577,7 +4577,7 @@ $_ADMINLANG['healthCheck']['dbMinorVersionUpgradeRequired'] = "您正在使用�
 
 $_ADMINLANG['healthCheck']['dbCollationsTitle'] = "数据库排序规则";
 $_ADMINLANG['healthCheck']['dbCollationsOk'] = "所有的数据库表和列已使用推荐的相同排序规则 (:collationsText)。";
-$_ADMINLANG['healthCheck']['dbCollationsNotOk'] = "一个或多个数据表或列使用了旧的或不匹配的排序规则。 我们推荐您所有的数据表或列使用统一的 <strong>:collationsText</strong> 排序规则以确保功能正常。了解更多信息请参阅我们的 <a :href>文档</a>。";
+$_ADMINLANG['healthCheck']['dbCollationsNotOk'] = "一个或多个数据表或列使用了旧的或不匹配的排序规则。我们推荐您所有的数据表或列使用统一的 <strong>:collationsText</strong> 排序规则以确保功能正常。了解更多信息请参阅我们的 <a :href>文档</a>。";
 $_ADMINLANG['healthCheck']['updaterTitle'] = "自动更新要求";
 $_ADMINLANG['healthCheck']['updaterFopen'] = "自动更新需要您在 PHP 配置中启用 allow_url_fopen 函数。";
 $_ADMINLANG['healthCheck']['maxExecutionTime'] = "自动更新需要您在 PHP 配置中将 max_execution_time 设置设置为 :required_value 秒或更长时间。";
@@ -4593,11 +4593,11 @@ $_ADMINLANG['healthCheck']['updaterVersionMemoryLimit'] = "自动更新至 :upda
 $_ADMINLANG['healthCheck']['updaterSuccess'] = "您的环境似乎符合自动更新所需的最低要求。为更新您必须确保您的磁盘空间至少为 250MB。";
 $_ADMINLANG['healthCheck']['updaterIoncubeLoaderMismatch'] = "您的系统已安装的 ionCube Loader 版本为：:loaderVersionInstalled。请安装 :loaderVersionRequired 或更高版本的 ionCube Loader 才能升级到 WHMCS :updateVersion 版本。<a href=\"https://docs.whmcs.com/System_Environment_Guide#IonCube_Version\">了解更多信息</a>";
 $_ADMINLANG['healthCheck']['phpCronMismatch'] = "Cron PHP版本不匹配";
-$_ADMINLANG['healthCheck']['phpCronMismatchDescription'] = "您的环境似乎正在为System Cron运行与当前加载的PHP版本（<strong>:currentPhp </strong>）不同的PHP版本（<strong>:cronPhp </strong>）。 这可能会导致运行系统Cron的问题。 <a href=\":learnMore\">查看更多</a>";
+$_ADMINLANG['healthCheck']['phpCronMismatchDescription'] = "您的环境似乎正在为System Cron运行与当前加载的PHP版本（<strong>:currentPhp </strong>）不同的PHP版本（<strong>:cronPhp </strong>）。这可能会导致运行系统Cron的问题。<a href=\":learnMore\">查看更多</a>";
 
 $_ADMINLANG['healthCheck']['webserverSupportCheck'] = "Web服务器支持检查";
 $_ADMINLANG['healthCheck']['supportedWebserver'] = "您的系统正在运行 \":server\" 服务器。";
-$_ADMINLANG['healthCheck']['unsupportedWebserver'] = "您的Web服务器被检测为\":server\"。 WHMCS <a href=\":envGuideline\">系统环境准则</a>建议使用默认情况下使用.htaccess文件的网络服务器，例如Apache。 当使用备用Web服务器时，可能需要其他安全强化步骤。 <a href=\":learnMore\">了解更多</a>";
+$_ADMINLANG['healthCheck']['unsupportedWebserver'] = "您的Web服务器被检测为\":server\"。WHMCS <a href=\":envGuideline\">系统环境准则</a>建议使用默认情况下使用.htaccess文件的网络服务器，例如Apache。当使用备用Web服务器时，可能需要其他安全强化步骤。<a href=\":learnMore\">了解更多</a>";
 
 $_ADMINLANG['healthCheck']['cloudLinuxMysqlCheck'] = "CloudLinux™ MySQL 扩展检查";
 $_ADMINLANG['healthCheck']['cloudLinuxMysqlFailDescription'] = "未检测到 CloudLinux 提供的 PHP 扩展 `nd_pdo_mysql`。当前加载的扩展可能会将存储的数字误解为字符串并可能导致不良行为。请使用 `nd_pdo_mysql` PHP 配置中的扩展名。:learnmorelink";
@@ -5003,7 +5003,7 @@ $_ADMINLANG['storage']['createNewConfiguration'] = "添加新配置";
 $_ADMINLANG['storage']['editConfiguration'] = "编辑配置";
 $_ADMINLANG['storage']['inUseConfigChangeRestricted'] = "此配置正在使用。关键设置将会被锁定。如果要更改这些，请创建新的存储配置并执行迁移或切换。";
 $_ADMINLANG['storage']['changeRequiresMigration'] = "更改现有存储方法需要迁移才能在后台运行。根据文件的数量，这可能需要一些时间才能完成。";
-$_ADMINLANG['storage']['sameConfigAlreadyExists'] = "已存在具有相同设置的存储配置。 请使用不同的配置值。";
+$_ADMINLANG['storage']['sameConfigAlreadyExists'] = "已存在具有相同设置的存储配置。请使用不同的配置值。";
 $_ADMINLANG['storage']['config']['confirmSave'] = "配置设置保存成功。";
 $_ADMINLANG['storage']['config']['confirmDelete'] = "存储配置删除成功。";
 $_ADMINLANG['storage']['configTestOk'] = "配置设置测试成功。";
@@ -5336,7 +5336,7 @@ $_ADMINLANG['marketConnect']['weebly']['learn']['description1'] = "通过 Weebly
 $_ADMINLANG['marketConnect']['weebly']['learn']['description2'] = "通过各种现代和响应式主题，您的客户可以创建一个在所有设备上都很棒的在线商店、博客或网站。";
 $_ADMINLANG['marketConnect']['weebly']['learn']['description3'] = "Weebly 使您能够通过网站建设者进入市场，这将有助于加快您将大型线下市场转变为在线付费客户的成功。";
 $_ADMINLANG['marketConnect']['weebly']['learn']['aboutWeebly'] = "关于 Weebly";
-$_ADMINLANG['marketConnect']['weebly']['learn']['aboutWeeblyDescription'] = "Weebly 成立于 2007 年，是一个总部位于旧金山的全球平台，可让人们轻松创建独特的网站，博客或在线商店。 凭借强大的在线拖放编辑器以及适用于所有主要移动设备的应用程序，如今超过 4 千万人和小型企业使用 Weebly 来构建其在线业务。";
+$_ADMINLANG['marketConnect']['weebly']['learn']['aboutWeeblyDescription'] = "Weebly 成立于 2007 年，是一个总部位于旧金山的全球平台，可让人们轻松创建独特的网站，博客或在线商店。凭借强大的在线拖放编辑器以及适用于所有主要移动设备的应用程序，如今超过 4 千万人和小型企业使用 Weebly 来构建其在线业务。";
 $_ADMINLANG['marketConnect']['weebly']['learn']['features']['builder'] = "构建工具";
 $_ADMINLANG['marketConnect']['weebly']['learn']['features']['builderDescription'] = "使用强大的拖放工具创建完美的网站";
 $_ADMINLANG['marketConnect']['weebly']['learn']['features']['ecommerce'] = "电子商务";
@@ -5408,7 +5408,7 @@ $_ADMINLANG['marketConnect']['siteBuilder']['learn']['tab']['freePlan'] = "开�
 $_ADMINLANG['marketConnect']['siteBuilder']['learn']['tab']['pricing'] = "定价";
 $_ADMINLANG['marketConnect']['siteBuilder']['learn']['tab']['faq'] = "常见问题解答";
 $_ADMINLANG['marketConnect']['siteBuilder']['learn']['tagline'] = "一个网站建设者平台，可称为您自己的平台。为客户提供一个自己动手做的网站建设者，利用\"用户至上 \"直观而简单的设计。";
-$_ADMINLANG['marketConnect']['siteBuilder']['learn']['description'] = ":builder 是一个通用品牌、用户友好的网站构建器和电子商务平台，专门为托管和域提供商提供服务。 由 Web.com 提供支持，:builder 为客户设定了简单易用的标准。";
+$_ADMINLANG['marketConnect']['siteBuilder']['learn']['description'] = ":builder 是一个通用品牌、用户友好的网站构建器和电子商务平台，专门为托管和域提供商提供服务。由 Web.com 提供支持，:builder 为客户设定了简单易用的标准。";
 $_ADMINLANG['marketConnect']['siteBuilder']['learn']['solvedProblemsQ'] = "它解决了什么问题？";
 $_ADMINLANG['marketConnect']['siteBuilder']['learn']['solvedProblemsA1Title'] = "网站被认为很复杂";
 $_ADMINLANG['marketConnect']['siteBuilder']['learn']['solvedProblemsA1Response'] = ":builder 超级简单！任何客户都可以在几分钟内创建一个适用于任何设备的优雅网站。";
@@ -5727,7 +5727,7 @@ $_ADMINLANG['emailPreferences']['domainContactRequired'] = "要禁用域名通�
 $_ADMINLANG['emailPreferences']['domainClientRequired'] = "要禁用域名通知，请创建一个设置为接收它们的替代联系人。";
 
 $_ADMINLANG['hooksDebugModeWarning']['title'] = "Hooks调试模式已启用";
-$_ADMINLANG['hooksDebugModeWarning']['description'] = "Hooks调试模式将导致大量活动日志条目，因此应谨慎使用。 不再需要时应将其关闭。";
+$_ADMINLANG['hooksDebugModeWarning']['description'] = "Hooks调试模式将导致大量活动日志条目，因此应谨慎使用。不再需要时应将其关闭。";
 $_ADMINLANG['emailSendingModeWarning']['title'] = "电子邮件发送已禁用";
 $_ADMINLANG['emailSendingModeWarning']['description'] = "电子邮件发送已禁用，这意味着将不发送外发邮件。您可以在“配置”>“常规设置”>“邮件”中重新启用电子邮件。";
 $_ADMINLANG['maintenanceModeWarning']['description'] = "维护模式已开启。在禁用之前，只有登录的员工才能访问您的客户区。:link。";
@@ -5835,7 +5835,7 @@ $_ADMINLANG['healthCheck']['cronMemoryLimitBelowMinimum'] = "您的Cron计划任
 $_ADMINLANG['healthCheck']['cronMemoryLimitBelowRecommended'] = "您的Cron计划任务的PHP memory_limit 设置为 <strong>:memorylimit</strong>. 这高于建议的最低要求，但我们建议设置<strong> :recommendedlimit </strong><br/>:learnmorelink";
 $_ADMINLANG['healthCheck']['cronMemoryLimit'] = "Cron PHP内存限制(memory_limit)";
 $_ADMINLANG['healthCheck']['mysqlVariableCheck'] = "MySQL服务器配置检查 ";
-$_ADMINLANG['healthCheck']['mysqlVariableCheckErrorBody'] = "MySQL配置中的一项或多项设置可能会降低WHMCS的性能。 如果需要帮助，请联系系统管理员。 ";
+$_ADMINLANG['healthCheck']['mysqlVariableCheckErrorBody'] = "MySQL配置中的一项或多项设置可能会降低WHMCS的性能。如果需要帮助，请联系系统管理员。";
 $_ADMINLANG['healthCheck']['mysqlVariableCheckError'] = "您的 <strong>:variable</strong> 设置为 :value. 我们建议设置为 :recommendedvalue.";
 
 # Login
