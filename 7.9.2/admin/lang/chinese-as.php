@@ -2536,7 +2536,7 @@ $_ADMINLANG['automation']['warningRemoveCustomerData'] = "这将不可撤销地�
 $_ADMINLANG['automation']['inactiveClientExplanation'] = "非激活状态的用户是指无已激活的产品、服务、附加服务或域名的用户。";
 $_ADMINLANG['automation']['domainSync'] = "域名同步设置";
 $_ADMINLANG['automation']['domainStatusSyncFrequency'] = "域名到期同步频率";
-$_ADMINLANG['automation']['domainStatusSyncFrequencyInfo'] = "cron 自动任务多长时间（小时）进行一次域名到期同步。 填写 0 则为默认的 4 小时";
+$_ADMINLANG['automation']['domainStatusSyncFrequencyInfo'] = "cron 自动任务多长时间（小时）进行一次域名到期同步。填写 0 则为默认的 4 小时";
 $_ADMINLANG['automation']['domainTransferSyncFrequency'] = "域名待转同步频率";
 $_ADMINLANG['automation']['domainTransferSyncFrequencyInfo'] = "（小时）挂起的传输同步作为cron的一部分运行的频率。0将使用默认值4小时";
 $_ADMINLANG['automation']['pruneTicketAttachments'] = "修剪票据附件";
@@ -4018,7 +4018,7 @@ $_ADMINLANG['healthCheck']['updateNews'] = "更新消息";
 $_ADMINLANG['healthCheck']['permissionCheck'] = "不安全权限检查";
 $_ADMINLANG['healthCheck']['permissionCheckSuccess'] = "您的配置文件的权限已正确的限制。";
 $_ADMINLANG['healthCheck']['permissionCheckConfigFileWritable'] = "您的配置文件为可写。这可能会造成安全隐患。我们建议您设置权限为只读。";
-$_ADMINLANG['healthCheck']['permissionCheckUnownedDirectories'] = "如下目录所有者设置了和执行 WHMCS 不同的用户。 这是一个潜在的不安全配置：";
+$_ADMINLANG['healthCheck']['permissionCheckUnownedDirectories'] = "如下目录所有者设置了和执行 WHMCS 不同的用户。这是一个潜在的不安全配置：";
 $_ADMINLANG['healthCheck']['permissionCheckUnownedDirectories2'] = "您可以查看我们的 <a :href>文档</a> 了解更多信息。";
 $_ADMINLANG['healthCheck']['customTemplates'] = "默认模板的使用";
 $_ADMINLANG['healthCheck']['customTemplatesSuccess'] = "您的 WHMCS 正使用自定义模板，将不会在升级时覆盖。";
@@ -4045,7 +4045,7 @@ $_ADMINLANG['healthCheck']['requiredPhpFunctionsFailure2'] = "这些已在您的
 $_ADMINLANG['healthCheck']['menuTitle'] = "健康状况";
 $_ADMINLANG['healthCheck']['readMore'] = "了解更多";
 $_ADMINLANG['healthCheck']['phpMemory'] = "PHP 内存限制";
-$_ADMINLANG['healthCheck']['phpMemoryTooLow'] = "您的 PHP memory_limit 值 <strong>:memory_limit</strong> 太小。 WHMCS 需要最小限制为 64M。您可以通过 <a :href>set_ini 命令</a> 更改您的 php.ini。";
+$_ADMINLANG['healthCheck']['phpMemoryTooLow'] = "您的 PHP memory_limit 值 <strong>:memory_limit</strong> 太小。WHMCS 需要最小限制为 64M。您可以通过 <a :href>set_ini 命令</a> 更改您的 php.ini。";
 $_ADMINLANG['healthCheck']['phpMemoryLow'] = "您的 PHP memory_limit 值为 <strong>:memory_limit</strong> 低于推荐值。WHMCS 建议您至少设置为 128M 限制，并且必须大于最小的 64M 限制。您可以通过 <a :href>set_ini 命令</a> 更改您的 php.ini。";
 $_ADMINLANG['healthCheck']['phpMemorySuccess'] = "您的 PHP memory_limit 值为 <strong>:memory_limit</strong>，满足 128M 的推荐值。";
 $_ADMINLANG['healthCheck']['news'] = "近期新闻和通知";
@@ -4083,7 +4083,7 @@ $_ADMINLANG['healthCheck']['dbMinorVersionUpgradeRequired'] = "您正在使用�
 
 $_ADMINLANG['healthCheck']['dbCollationsTitle'] = "数据库排序规则";
 $_ADMINLANG['healthCheck']['dbCollationsOk'] = "所有的数据库表和列已使用推荐的相同排序规则 (:collationsText)。";
-$_ADMINLANG['healthCheck']['dbCollationsNotOk'] = "一个或多个数据表或列使用了旧的或不匹配的排序规则。 我们推荐您所有的数据表或列使用统一的 <strong>:collationsText</strong> 排序规则以确保功能正常。了解更多信息请参阅我们的 <a :href>文档</a>。";
+$_ADMINLANG['healthCheck']['dbCollationsNotOk'] = "一个或多个数据表或列使用了旧的或不匹配的排序规则。我们推荐您所有的数据表或列使用统一的 <strong>:collationsText</strong> 排序规则以确保功能正常。了解更多信息请参阅我们的 <a :href>文档</a>。";
 $_ADMINLANG['healthCheck']['updaterTitle'] = "自动更新要求";
 $_ADMINLANG['healthCheck']['updaterFopen'] = "自动更新需要您在 PHP 配置中启用 allow_url_fopen 函数。";
 $_ADMINLANG['healthCheck']['maxExecutionTime'] = "自动更新需要您在 PHP 配置中将 max_execution_time 设置设置为 :required_value 秒或更长时间。";
@@ -4099,11 +4099,11 @@ $_ADMINLANG['healthCheck']['updaterVersionMemoryLimit'] = "自动更新至 :upda
 $_ADMINLANG['healthCheck']['updaterSuccess'] = "您的环境似乎符合自动更新所需的最低要求。为更新您必须确保您的磁盘空间至少为 250MB。";
 $_ADMINLANG['healthCheck']['updaterIoncubeLoaderMismatch'] = "您的系统已安装的 ionCube Loader 版本为：:loaderVersionInstalled。请安装 :loaderVersionRequired 或更高版本的 ionCube Loader 才能升级到 WHMCS :updateVersion 版本。<a href=\"https://docs.whmcs.com/System_Environment_Guide#IonCube_Version\">了解更多信息</a>";
 $_ADMINLANG['healthCheck']['phpCronMismatch'] = "Cron PHP版本不匹配";
-$_ADMINLANG['healthCheck']['phpCronMismatchDescription'] = "您的环境似乎正在为System Cron运行与当前加载的PHP版本（<strong>:currentPhp </strong>）不同的PHP版本（<strong>:cronPhp </strong>）。 这可能会导致运行系统Cron的问题。";
+$_ADMINLANG['healthCheck']['phpCronMismatchDescription'] = "您的环境似乎正在为System Cron运行与当前加载的PHP版本（<strong>:currentPhp </strong>）不同的PHP版本（<strong>:cronPhp </strong>）。这可能会导致运行系统Cron的问题。";
 
 $_ADMINLANG['healthCheck']['webserverSupportCheck'] = "Web服务器支持检查";
 $_ADMINLANG['healthCheck']['supportedWebserver'] = "您的系统正在运行 \":server\" 服务器。";
-$_ADMINLANG['healthCheck']['unsupportedWebserver'] = "您的Web服务器被检测为\":server\"。 WHMCS <a href=\":envGuideline\">系统环境准则</a>建议使用默认情况下使用.htaccess文件的网络服务器，例如Apache。 当使用备用Web服务器时，可能需要其他安全强化步骤。 <a href=\":learnMore\">了解更多</a>";
+$_ADMINLANG['healthCheck']['unsupportedWebserver'] = "您的Web服务器被检测为\":server\"。WHMCS <a href=\":envGuideline\">系统环境准则</a>建议使用默认情况下使用.htaccess文件的网络服务器，例如Apache。当使用备用Web服务器时，可能需要其他安全强化步骤。<a href=\":learnMore\">了解更多</a>";
 
 $_ADMINLANG['appLinks']['description'] = "应用链接允许您授予第三方应用程序访问 WHMCS 的用户账户。";
 $_ADMINLANG['appLinks']['description2'] = "已在下面列出所有支持应用链接的应用，可通过下面的开关简单的启用/禁用。启用应用链接将会在后台队列中创建初始的应用链接。请等待 30 分钟后才可以对所有产品/服务生效。";
@@ -4450,7 +4450,7 @@ $_ADMINLANG['storage']['createNewConfiguration'] = "添加新配置";
 $_ADMINLANG['storage']['editConfiguration'] = "编辑配置";
 $_ADMINLANG['storage']['inUseConfigChangeRestricted'] = "此配置正在使用。关键设置将会被锁定。如果要更改这些，请创建新的存储配置并执行迁移或切换。";
 $_ADMINLANG['storage']['changeRequiresMigration'] = "更改现有存储方法需要迁移才能在后台运行。根据文件的数量，这可能需要一些时间才能完成。";
-$_ADMINLANG['storage']['sameConfigAlreadyExists'] = "已存在具有相同设置的存储配置。 请使用不同的配置值。";
+$_ADMINLANG['storage']['sameConfigAlreadyExists'] = "已存在具有相同设置的存储配置。请使用不同的配置值。";
 $_ADMINLANG['storage']['config']['confirmSave'] = "配置设置保存成功。";
 $_ADMINLANG['storage']['config']['confirmDelete'] = "存储配置删除成功。";
 $_ADMINLANG['storage']['configTestOk'] = "配置设置测试成功。";
@@ -4779,7 +4779,7 @@ $_ADMINLANG['marketConnect']['weebly']['learn']['description1'] = "通过 Weebly
 $_ADMINLANG['marketConnect']['weebly']['learn']['description2'] = "通过各种现代和响应式主题，您的客户可以创建一个在所有设备上都很棒的在线商店、博客或网站。";
 $_ADMINLANG['marketConnect']['weebly']['learn']['description3'] = "Weebly 使您能够通过网站建设者进入市场，这将有助于加快您将大型线下市场转变为在线付费客户的成功。";
 $_ADMINLANG['marketConnect']['weebly']['learn']['aboutWeebly'] = "关于 Weebly";
-$_ADMINLANG['marketConnect']['weebly']['learn']['aboutWeeblyDescription'] = "Weebly 成立于 2007 年，是一个总部位于旧金山的全球平台，可让人们轻松创建独特的网站，博客或在线商店。 凭借强大的在线拖放编辑器以及适用于所有主要移动设备的应用程序，如今超过 4 千万人和小型企业使用 Weebly 来构建其在线业务。";
+$_ADMINLANG['marketConnect']['weebly']['learn']['aboutWeeblyDescription'] = "Weebly 成立于 2007 年，是一个总部位于旧金山的全球平台，可让人们轻松创建独特的网站，博客或在线商店。凭借强大的在线拖放编辑器以及适用于所有主要移动设备的应用程序，如今超过 4 千万人和小型企业使用 Weebly 来构建其在线业务。";
 $_ADMINLANG['marketConnect']['weebly']['learn']['features']['builder'] = "构建工具";
 $_ADMINLANG['marketConnect']['weebly']['learn']['features']['builderDescription'] = "使用强大的拖放工具创建完美的网站";
 $_ADMINLANG['marketConnect']['weebly']['learn']['features']['ecommerce'] = "电子商务";
