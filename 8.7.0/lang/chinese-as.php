@@ -16,7 +16,7 @@
  * @copyright  Copyright (c) WHMCS Limited 2005-2020
  * @license    https://www.whmcs.com/license/ WHMCS Eula
  * @version    $Id$
- * @link       https://www.asphp.net/
+ * @link       https://www.h2fast.cn/
  */
 
 if (!defined("WHMCS")) die("This file cannot be accessed directly");
@@ -60,6 +60,7 @@ $_LANG['affiliatesstatus'] = "状态";
 $_LANG['affiliatestitle'] = "用户推广";
 $_LANG['affiliatesvisitorsreferred'] = "推荐的访问者数量";
 $_LANG['affiliateswithdrawalrequestsuccessful'] = "您的提现请求已经提交，我们会很快联系您。";
+$_LANG['affiliatesWithdrawalRequestUnsuccessful'] = "您的提现请求不成功，请稍后再试。";
 $_LANG['affiliateswithdrawn'] = "已提现的佣金总额";
 $_LANG['all'] = "全部";
 $_LANG['alreadyregistered'] = "已经注册？";
@@ -183,6 +184,7 @@ $_LANG['clientareaerrorpostcode'] = "您没有输入您的邮编";
 $_LANG['clientareaerrorpostcode2'] = "邮编只能包含字母、数字和空格";
 $_LANG['clientareaerrors'] = "发生以下错误：";
 $_LANG['clientareaerrorstate'] = "您没有输入您的省份";
+$_LANG['clientareaerrorlanguage'] = "未提供有效的语言";
 $_LANG['clientareaexpired'] = "已过期";
 $_LANG['clientareafirstname'] = "名字";
 $_LANG['clientareafraud'] = "欺诈";
@@ -243,6 +245,7 @@ $_LANG['clientareaupdateyourdetails'] = "更新账户资料";
 $_LANG['clientareaused'] = "已使用";
 $_LANG['clientareaviewaddons'] = "附加服务";
 $_LANG['clientareaviewdetails'] = "查看详情";
+$_LANG['clientarealanguage'] = "语言";
 $_LANG['clientlogin'] = "用户登录";
 $_LANG['clientregisterheadertext'] = "请填写下列内容以注册一个新账户。";
 $_LANG['clientregistertitle'] = "注册";
@@ -294,8 +297,7 @@ $_LANG['seconds'] = "秒";
 $_LANG['defaultbillingcontact'] = "默认账单联系人";
 $_LANG['domainalternatives'] = "试一下这些选项：";
 $_LANG['domainavailable'] = "没有被注册，立即抢先注册！";
-$_LANG['domainavailable1'] = "恭喜！";
-$_LANG['domainavailable2'] = "可以注册！";
+$_LANG['domainavailablemessage'] = "<strong>:domain</strong> 可以使用."; //Strong tag is required here
 $_LANG['domainavailableexplanation'] = "点下面链接注册域名";
 $_LANG['domainbulksearch'] = "批量域名查询";
 $_LANG['domainbulksearchintro'] = "批量域名查询允许您一次查询最多 20 个域名。请在下面输入域名，每行一个 - 无需在前面输入 www 或 http://";
@@ -343,7 +345,7 @@ $_LANG['domainregisterns'] = "注册域名服务器";
 $_LANG['domainregisternscurrentip'] = "当前IP地址";
 $_LANG['domainregisternsdel'] = "删除域名服务器";
 $_LANG['domainregisternsdelsuccess'] = "成功删除域名服务器";
-$_LANG['domainregisternsexplanation'] = "您可以创建和管理自定义名称的域名服务器（例如：NS1.yourdomain.com，NS2.yourdomain.com…）。";
+$_LANG['domainregisternsexplanation'] = "您可以创建和管理自定义名称的域名服务器（例如：NS1.example.com，NS2.example.com…）。";
 $_LANG['domainregisternsip'] = "IP 地址";
 $_LANG['domainregisternsmod'] = "修改域名服务器 IP";
 $_LANG['domainregisternsmodsuccess'] = "成功修改域名服务器 IP";
@@ -386,6 +388,18 @@ $_LANG['domainreserved'] = "已保留";
 $_LANG['domainreserved1'] = "域名";
 $_LANG['domainreserved2'] = "可用，但已被保留。";
 $_LANG['domainviewwhois'] = "查看 whois 信息";
+$_LANG['domainDnsSec']['management'] = "DNSSEC 管理";
+$_LANG['domainDnsSec']['dsRecords'] = "DS 记录";
+$_LANG['domainDnsSec']['keyTag'] = "密钥标签";
+$_LANG['domainDnsSec']['算法'] = "算法";
+$_LANG['domainDnsSec']['digestType'] = "摘要类型";
+$_LANG['domainDnsSec']['digest'] = "摘要";
+$_LANG['domainDnsSec']['keyRecords'] = "KEY 记录";
+$_LANG['domainDnsSec']['flags'] = "标志";
+$_LANG['domainDnsSec']['protocol'] = "协议";
+$_LANG['domainDnsSec']['publicKey'] = "公钥";
+$_LANG['domainDnsSec']['publicKeyNoSpace'] = "公钥不应该有任何空格。";
+$_LANG['domainDnsSec']['warning'] = "警告：不正确的 DNSSEC 设置可能导致您的域无法访问。";
 $_LANG['downloaddescription'] = "描述";
 $_LANG['downloadloginrequired'] = "拒绝访问 - 您必须登录才能下载此文件";
 $_LANG['downloadname'] = "下载";
@@ -647,7 +661,7 @@ $_LANG['ordersecure'] = "此订单可以被安全的使用，以防诈骗，您�
 $_LANG['ordersecure2'] = "已经记录到日志中。";
 $_LANG['orderserverhostname'] = "主机名";
 $_LANG['orderservernameservers'] = "域名服务器";
-$_LANG['orderservernameserversdescription'] = "您在这儿输入的前缀将决定本服务器的默认域名服务器，例如：ns1.yourdomain.com 和 ns2.yourdomain.com";
+$_LANG['orderservernameserversdescription'] = "您在这儿输入的前缀将决定本服务器的默认域名服务器，例如：ns1.example.com 和 ns2.example.com";
 $_LANG['orderservernameserversprefix1'] = "前缀 1";
 $_LANG['orderservernameserversprefix2'] = "前缀 2";
 $_LANG['orderserverrootpassword'] = "Root 密码";
@@ -695,6 +709,7 @@ $_LANG['registerdomainname'] = "注册域名";
 $_LANG['relatedservice'] = "相关服务";
 $_LANG['rssfeed'] = "订阅";
 $_LANG['securityanswerrequired'] = "您必须输入安全答案";
+$_LANG['securityquestionrequired'] = "您必须选择一个安全问题";
 $_LANG['securitybothnotmatch'] = "您的答案和确认答案不一致";
 $_LANG['securitycurrentincorrect'] = "您当前的问题和答案不正确";
 $_LANG['serverchangepassword'] = "修改密码";
@@ -706,7 +721,6 @@ $_LANG['serverchangepasswordsuccessful'] = "修改密码成功！";
 $_LANG['serverchangepasswordupdate'] = "更新";
 $_LANG['serverhostname'] = "主机名";
 $_LANG['serverlogindetails'] = "登录详情";
-$_LANG['servername'] = "服务器";
 $_LANG['serverns1prefix'] = "NS1 前缀";
 $_LANG['serverns2prefix'] = "NS2 前缀";
 $_LANG['serverpassword'] = "密码";
@@ -723,24 +737,22 @@ $_LANG['serverstatusuptime'] = "运行时间";
 $_LANG['serverusername'] = "用户名";
 $_LANG['show'] = "显示";
 $_LANG['ssladmininfo'] = "管理员联系信息";
-$_LANG['ssladmininfodetails'] = "以下联络资料将不会显示在证书上 - 它仅于本订单联系您。此 SSL 证书和未来更新提醒我们将发送到以下指定的电子邮件地址。";
-$_LANG['sslcertapproveremail'] = "证书审批邮件";
-$_LANG['sslcertapproveremaildetails'] = "您必须从下面的选项选择您希望发送到证书审批的邮箱地址。";
+$_LANG['ssladmininfodetails'] = "此信息将用于在证书颁发和续订期间与您联系，但不会在证书中使用。";
 $_LANG['sslcertinfo'] = "SSL 证书详情";
 $_LANG['pleasechooseone'] = "请选择一个…";
 $_LANG['sslcerttype'] = "证书类型";
 $_LANG['sslconfigcomplete'] = "配置完成";
-$_LANG['sslconfigcompletedetails'] = "您的 SSL 证书的配置已经完成并送交认证机构进行验证。您应该会收到一封电子邮件，他们很快予以批准。";
 $_LANG['sslconfsslcertificate'] = "配置 SSL 证书";
-$_LANG['sslcsr'] = "CSR";
+$_LANG['sslcsr'] = "证书签名请求(CSR)";
 $_LANG['sslerrorapproveremail'] = "您必须选择一个审批的电子邮件地址";
 $_LANG['sslerrorentercsr'] = "您必须输入您的证书签发请求(CSR)";
 $_LANG['sslerrorselectserver'] = "您必须选择服务器类型";
 $_LANG['sslinvalidlink'] = "无效链接";
 $_LANG['sslorderdate'] = "订购日期";
 $_LANG['sslserverinfo'] = "服务器信息";
-$_LANG['sslserverinfodetails'] = "您必须拥有一个有效的“CSR”（证书签发请求）去配置您的 SSL 证书。CSR 是一段由要安装 SSL 证书的 Web 服务器生成的加密文本。如果您还没有 CSR，您必须创建一个或者让您的虚拟主机提供商给您创建一个。";
-$_LANG['sslservertype'] = "Web 服务器类型";
+$_LANG['sslserverinfodetails'] = "使用服务器软件生成证书签名请求，其中包括要为其颁发证书的域。从列表中选择关系最密切的服务器，以接收与您的服务器兼容的证书格式。";
+$_LANG['sslservertype'] = "服务器类型";
+$_LANG['ssl']['selectWebserver'] = ":serverType";
 $_LANG['sslstatus'] = "配置状态";
 $_LANG['sslawaitingconfig'] = "等待配置";
 $_LANG['sslconfigure'] = "配置";
@@ -748,6 +760,7 @@ $_LANG['ssldomain'] = "域名";
 $_LANG['sslproduct'] = "SSL 订单";
 $_LANG['sslrenewaldate'] = "续约日期";
 $_LANG['sslresendmail'] = "重发邮件";
+$_LANG['sslinstantissuancebenefit'] = "您的订单受益于即时签发";
 $_LANG['statscreditbalance'] = "账户余额";
 $_LANG['statsdueinvoicesbalance'] = "应付账单余额";
 $_LANG['statsnumdomains'] = "域名数量";
@@ -852,6 +865,8 @@ $_LANG['yourdetails'] = "您的详情";
 $_LANG['user'] = "用户";
 $_LANG['loggedInAs'] = "登录身份";
 $_LANG['viewAllPricing'] = "查看所有定价";
+$_LANG['default'] = "默认";
+$_LANG['maxFileSize'] = "最大文件大小：:fileSize";
 
 # Version 4.1
 
@@ -878,8 +893,6 @@ $_LANG['overagestotalbwusage'] = "总带宽使用量";
 
 $_LANG['affiliatescommissionspending'] = "即将到期的佣金";
 $_LANG['affiliatescommissionsavailable'] = "有效的佣金金额";
-$_LANG['affiliatessignups'] = "注册数";
-$_LANG['affiliatesconversionrate'] = "转化率";
 
 $_LANG['configoptionqtyminmax'] = "%s 要求最小不能低于 %s 和最大不能超过 %s";
 
@@ -991,8 +1004,6 @@ $_LANG['orderformtitle'] = "订购表单";
 $_LANG['signup'] = "注册";
 $_LANG['loading'] = "加载中…";
 
-$_LANG['ordersummarybegin'] = "请选择产品然后开始订购";
-
 $_LANG['cartchooseproduct'] = "选择产品";
 $_LANG['cartconfigurationoptions'] = "配置设置";
 
@@ -1101,6 +1112,7 @@ $_LANG['cartchooseanothercategory'] = "选择其它分类";
 $_LANG['carttryanotherdomain'] = "尝试其它域名";
 $_LANG['cartmakedomainselection'] = "请向我们提供您希望使用的域名。";
 $_LANG['cartfraudcheck'] = "欺诈检查";
+$_LANG['cartapifailedtoloadcart'] = "系统无法加载您请求的购物车。<strong><a href=\"cart.php\">点击此处</a></strong>重新下单。";
 
 $_LANG['newcustomer'] = "新用户";
 $_LANG['existingcustomer'] = "老用户";
@@ -1112,7 +1124,6 @@ $_LANG['recurringpromodesc'] = "此优惠码还包含了循环折扣<br/>（该�
 # Version 4.5.2
 
 $_LANG['ajaxcartcheckout'] = "直接跳转至结账 &raquo;";
-$_LANG['ordersummarybegin'] = "购物车是空的<br/>请选择要开始订购产品或域名…";
 $_LANG['ajaxcartconfigreqnotice'] = "请绑定域名，更多的域名绑定可在控制面板操作！如果您没有域名，请注册一个新域名";
 
 # Version 5.0.0
@@ -1257,13 +1268,11 @@ $_LANG['clientareahomeloginbtn'] = "登录用户中心";
 $_LANG['clientareaproductsintro'] = "您账户下的产品列表";
 $_LANG['clientareaproductdetailsintro'] = "下面是您的产品/服务概览";
 $_LANG['clientareadomainsintro'] = "您账户下的域名列表";
-$_LANG['invoicesintro'] = "您可以查看所有的订单历史以及在此支付未付款账单";
 $_LANG['quotesintro'] = "此处为我们为您生成的所有报价单";
 $_LANG['emailstagline'] = "您可以查看我们发送给您的邮件备份存档";
 $_LANG['supportticketsintro'] = "您可以在这里提交、查看和回复您的工单";
 $_LANG['addfundsintro'] = "您可以预先充值资金至账户余额中";
 $_LANG['registerintro'] = "注册账户…";
-$_LANG['masspayintro'] = "通过选择付款方式，在一个简单的交易中支付下面列出的所有账单";
 $_LANG['networkstatusintro'] = "您可以查看服务器在线状态和网络维护公告";
 
 $_LANG['creditcardyourinfo'] = "账单信息";
@@ -1286,6 +1295,7 @@ $_LANG['pwstrengthenter'] = "请输入密码";
 $_LANG['pwstrengthweak'] = "弱（请务必使用复杂密码以提高安全性）";
 $_LANG['pwstrengthmoderate'] = "一般（请尽量使用复杂密码以提高安全性）";
 $_LANG['pwstrengthstrong'] = "安全（请您妥善保管您的密码）";
+$_LANG['pwstrengthrating'] = "新密码评级";
 
 $_LANG['managing'] = "管理";
 $_LANG['information'] = "信息";
@@ -1318,7 +1328,7 @@ $_LANG['creditcardexpirydateinvalid'] = "到期日格式必须为 MM/YY，且不
 
 $_LANG['domaincheckerchoosedomain'] = "选择域名…";
 $_LANG['domaincheckerchecknewdomain'] = "查询域名是否被注册";
-$_LANG['domaincheckerdomainexample'] = "例如：yourdomain.com";
+$_LANG['domaincheckerdomainexample'] = "例如：example.com";
 $_LANG['domaincheckerhostingonly'] = "前往购买服务";
 $_LANG['domaincheckerenterdomain'] = "通过输入您想注册的域名，转让或直接购买以下主机，开始您的网络托管体验…";
 
@@ -1335,7 +1345,7 @@ $_LANG['supportticketsticketlastupdated'] = "最后更新";
 $_LANG['upgradedowngradepackage'] = "升级/降级";
 $_LANG['upgradedowngradechooseproduct'] = "选择产品";
 
-$_LANG['jobtitlereqforcompany'] = "（如果设置了组织名称需要填写这里）";
+$_LANG['jobtitlereqforcompany'] = "（如果设置了组织名称则必须填写这里）";
 
 $_LANG['downloadproductrequired'] = "下载此项目需要您拥有下列已激活的产品/服务实例：";
 
@@ -1357,11 +1367,11 @@ $_LANG['cpanellogin'] = "登录到 cPanel";
 $_LANG['cpanelwhmlogin'] = "登录到 WHM";
 $_LANG['cpanelwebmaillogin'] = "登录到 Webmail";
 $_LANG['enkompasslogin'] = "登录到 Enkompass";
-$_LANG['plesklogin'] = "登录到 Plesk 控制面板";
-$_LANG['helmlogin'] = "登录到 Helm 控制面板";
+$_LANG['plesklogin'] = "登录到 Plesk";
+$_LANG['helmlogin'] = "登录到 Helm";
 $_LANG['hypervmrestart'] = "重启 VPS 服务器";
-$_LANG['siteworxlogin'] = "登录到 SiteWorx 控制面板";
-$_LANG['nodeworxlogin'] = "登录到 NodeWorx 控制面板";
+$_LANG['siteworxlogin'] = "登录到 SiteWorx";
+$_LANG['nodeworxlogin'] = "登录到 NodeWorx";
 $_LANG['veportallogin'] = "登录到 vePortal";
 $_LANG['virtualminlogin'] = "登录到控制面板";
 $_LANG['websitepanellogin'] = "登录到控制面板";
@@ -1389,6 +1399,8 @@ $_LANG['clientareaprojects'] = "我的项目";
 $_LANG['clientgroupdiscount'] = "用户优惠";
 $_LANG['billableitemshours'] = "小时";
 $_LANG['billableitemshour'] = "小时";
+$_LANG['billableitemsquantity'] = "数量";
+$_LANG['billableitemseach'] = "每个";
 
 $_LANG['invoicefilename'] = "账单-";
 $_LANG['quotefilename'] = "报价单-";
@@ -1531,9 +1543,9 @@ $_LANG['domaincontactdetails']['Phone Number'] = "手机号码";
 $_LANG['domaincontactdetails']['Fax'] = "传真";
 $_LANG['domaincontactdetails']['Phone Country Code'] = "电话国家代码";
 
-$_LANG['serverhostnameexample'] = "例如：server1(.yourdomain.com)";
-$_LANG['serverns1prefixexample'] = "例如：ns1(.yourdomain.com)";
-$_LANG['serverns2prefixexample'] = "例如：ns2(.yourdomain.com)";
+$_LANG['serverhostnameexample'] = "例如：server1(.example.com)";
+$_LANG['serverns1prefixexample'] = "例如：ns1(.example.com)";
+$_LANG['serverns2prefixexample'] = "例如：ns2(.example.com)";
 
 $_LANG['hosting'] = "托管";
 
@@ -1556,6 +1568,9 @@ $_LANG['maxmind_invalidip'] = "IP 地址无效或为本地地址，请联系技�
 
 $_LANG['ssounabletologin'] = "自动登录失败，请联系技术支持。";
 $_LANG['ssofatalerror'] = "发生致命错误，请联系技术支持。";
+
+$_LANG['customActionGenericError'] = "无法执行操作。请联系支持。";
+$_LANG['customActionException'] = "发生异常。请联系支持。";
 
 # Version 6.0
 
@@ -1648,7 +1663,7 @@ $_LANG['nodomainextensions'] = "此处当前没有配置用于购买的域名扩
 
 $_LANG['homebegin'] = "寻找您心仪的域名…";
 $_LANG['howcanwehelp'] = "今天我们有什么可帮到您的？";
-$_LANG['exampledomain'] = "例如：yourdomain.com";
+$_LANG['exampledomain'] = "例如：example.com";
 $_LANG['buyadomain'] = "购买域名";
 $_LANG['orderhosting'] = "购买服务";
 $_LANG['makepayment'] = "创建订单";
@@ -1664,6 +1679,7 @@ $_LANG['readyforquestions'] = "我们已经准备好回答您的问题";
 
 $_LANG['restrictedpage'] = "此页面已加密";
 $_LANG['enteremail'] = "输入邮箱";
+$_LANG['restricted'] = "加密的";
 
 $_LANG['passwordtips'] = "<strong>如何设置一个高强度的密码：</strong><br/>同时使用大小写字符<br/>至少使用一个符号（# $ ! % &amp; 等等…）<br/>不要使用连续字符";
 
@@ -1868,28 +1884,28 @@ $_LANG['projectManagement']['activeProjects'] = "您已激活的项目";
 
 # cPanel Module
 
-$_LANG['cPanel']['packageDomain'] = "套餐/域名";
-$_LANG['cPanel']['addonsExtras'] = "插件和扩展";
-$_LANG['cPanel']['purchaseActivate'] = "购买和激活";
+$_LANG['packageDomain'] = "套餐/域名";
+$_LANG['addonsExtras'] = "插件和扩展";
+$_LANG['purchaseActivate'] = "购买和激活";
 
-$_LANG['cPanel']['usageStats'] = "使用统计";
-$_LANG['cPanel']['diskUsage'] = "磁盘使用";
-$_LANG['cPanel']['bandwidthUsage'] = "带宽使用";
-$_LANG['cPanel']['usageStatsBwLimitNear'] = "您已接近带宽限制";
-$_LANG['cPanel']['usageStatsDiskLimitNear'] = "您已接近磁盘空间限制";
-$_LANG['cPanel']['usageUpgradeNow'] = "立即升级";
-$_LANG['cPanel']['usageLastUpdated'] = "最后更新";
+$_LANG['usageStats'] = "使用统计";
+$_LANG['diskUsage'] = "磁盘使用";
+$_LANG['bandwidthUsage'] = "带宽使用";
+$_LANG['usageStatsBwLimitNear'] = "您已接近带宽限制";
+$_LANG['usageStatsDiskLimitNear'] = "您已接近磁盘空间限制";
+$_LANG['usageUpgradeNow'] = "立即升级";
+$_LANG['usageLastUpdated'] = "最后更新";
 
-$_LANG['cPanel']['quickShortcuts'] = "快照";
+$_LANG['quickShortcuts'] = "快照";
 $_LANG['cPanel']['emailAccounts'] = "邮箱账户";
 $_LANG['cPanel']['forwarders'] = "代理";
 $_LANG['cPanel']['autoresponders'] = "自动回复";
-$_LANG['cPanel']['fileManager'] = "文件管理";
+$_LANG['fileManager'] = "文件管理";
 $_LANG['cPanel']['backup'] = "备份";
 $_LANG['cPanel']['subdomains'] = "子域名";
 $_LANG['cPanel']['addonDomains'] = "域名指向";
 $_LANG['cPanel']['cronJobs'] = "计划任务";
-$_LANG['cPanel']['mysqlDatabases'] = "MySQL 数据库";
+$_LANG['mysqlDatabases'] = "MySQL 数据库";
 $_LANG['cPanel']['phpMyAdmin'] = "phpMyAdmin";
 $_LANG['cPanel']['awstats'] = "Awstats";
 
@@ -1904,7 +1920,9 @@ $_LANG['cPanel']['packageNotActive'] = "此主机套餐当前";
 $_LANG['cPanel']['statusPendingNotice'] = "直至激活之前您无法使用此主机账户。";
 $_LANG['cPanel']['statusSuspendedNotice'] = "直至重新激活之前您无法使用或管理此套餐。";
 
-$_LANG['cPanel']['billingOverview'] = "结算概述";
+$_LANG['wordpress']['invalidPath'] = "提供的路径无效。";
+
+$_LANG['billingOverview'] = "结算概述";
 
 $_LANG['liveHelp']['chatNow'] = "立即交谈";
 
@@ -1918,6 +1936,7 @@ $_LANG['actionRequiresAtLeastOneDomainSelected'] = "请至少选择一个域名�
 $_LANG['clientAreaProductDownloadsAvailable'] = "您的产品/服务可下载下面的项目";
 $_LANG['clientAreaProductAddonsAvailable'] = "您的产品/服务可使用插件 <a href=\"cart.php?gid=addons\">点此查看并购买 &raquo;</a>";
 $_LANG['clientAreaSecurityTwoFactorAuthRecommendation'] = "我们强烈建议您启用两步验证来增加安全性";
+$_LANG['clientAreaSecurityTwoFactorAuthRequired'] = "为确保您的账户安全，您必须配置双因素身份认证。";
 $_LANG['clientAreaSecurityNoSecurityQuestions'] = "设置安全问题和答案可以帮助保护您的账户防止未经授权的密码重置，并且当请求更改账户时允许我们验证您的身份。";
 $_LANG['clientAreaSecuritySecurityQuestionOtherError'] = "安全问题和答案可以帮助保护您的账户防止未经授权的密码重置，并且当请求更改账户时允许我们验证您的身份。";
 
@@ -1938,7 +1957,6 @@ $_LANG['shoppingCartProductPerYear'] = "<span>:price</span>/:countyr";
 $_LANG['orderForm']['findNewDomain'] = "寻找您心仪的域名。在下面输入您的名字或关键词检查是否可用。";
 $_LANG['orderForm']['transferExistingDomain'] = "转移您的域名到我们这里并保存。";
 $_LANG['orderForm']['www'] = "www.";
-$_LANG['orderForm']['check'] = "检查";
 $_LANG['orderForm']['returnToClientArea'] = "返回用户中心";
 $_LANG['orderForm']['checkout'] = "结账";
 $_LANG['orderForm']['alreadyRegistered'] = "已经注册？";
@@ -2007,6 +2025,7 @@ $_LANG['orderForm']['errorNoProductGroup'] = "暂未添加任何产品组，敬�
 $_LANG['orderForm']['errorNoProducts'] = "产品正在准备中, 尚未开放购买";
 $_LANG['orderForm']['errorNoGateways'] = "没有可用的支付方式，因此您无法继续下单";
 $_LANG['orderForm']['errorUnavailableGateway'] = "所选支付方式不可用。请尝试更换支付方式。";
+$_LANG['orderForm']['requiredField'] = "(必填字段用*标记)";
 
 $_LANG['cloudSlider']['feature01Title'] = "最大运行时间";
 $_LANG['cloudSlider']['feature01Description'] = "服务器运行时间是所有企业的关键 - 文件和数据库服务器，电子邮件和 Web 服务器是大多数业务流程中不可或缺的一部分，宕机直接对生产率，销售，员工和客户满意度产生负面影响。这就是为什么对我们来说确保服务器最大正常运行时间是这么的重要 - 我们要确保您的业务流程运行良好，这样顾客才会对您更满意。";
@@ -2023,8 +2042,8 @@ $_LANG['domainChecker.additionalPricingOptions'] = "附加价格选项 :domain";
 
 $_LANG['orderpaymenttermfree'] = "免费";
 
-$_LANG['cPanel']['usageStatsBwOverLimit'] = "您已经超出带宽限制。";
-$_LANG['cPanel']['usageStatsDiskOverLimit'] = "您已经超出了磁盘空间限制。";
+$_LANG['usageStatsBwOverLimit'] = "您已经超出带宽限制。";
+$_LANG['usageStatsDiskOverLimit'] = "您已经超出了磁盘空间限制。";
 $_LANG['insufficientstockmessage'] = "我们已经降低了某些项目的库存，可购买的数量已经做了相应的调整。";
 
 $_LANG['only'] = "仅";
@@ -2103,6 +2122,7 @@ $_LANG['orderForm']['years'] = "年";
 $_LANG['orderForm']['domainOrKeyword'] = "请输入域名或关键词";
 $_LANG['orderForm']['searching'] = "正在搜索";
 $_LANG['orderForm']['domainIsUnavailable'] = "<strong>:domain</strong> 不可用"; //Strong tag is required here
+$_LANG['orderForm']['domainHasUnavailableTld'] = "<strong>:tld</strong> 域当前不可用。"; //Strong tag is required here
 $_LANG['orderForm']['add'] = "添加";
 $_LANG['orderForm']['suggestedDomains'] = "建议的域名";
 $_LANG['orderForm']['generatingSuggestions'] = "为您生成建议";
@@ -2175,7 +2195,7 @@ $_LANG['navBrowseProductsServices'] = "浏览全部";
 
 $_LANG['navWebsiteSecurity'] = "网站与安全";
 $_LANG['navMarketConnectService']['symantec'] = "SSL 证书";
-$_LANG['navMarketConnectService']['weebly'] = "网站构建工具";
+$_LANG['navMarketConnectService']['weebly'] = "Site Builder";
 $_LANG['navMarketConnectService']['spamexperts'] = "电子邮件服务";
 
 $_LANG['store']['emailServices']['title'] = "电子邮件服务";
@@ -2184,7 +2204,7 @@ $_LANG['store']['ssl']['dv']['title'] = "域名验证型 SSL";
 $_LANG['store']['ssl']['ov']['title'] = "组织验证型 SSL";
 $_LANG['store']['ssl']['ev']['title'] = "扩展验证型 SSL";
 $_LANG['store']['ssl']['wildcard']['title'] = "通配型 SSL";
-$_LANG['store']['websiteBuilder']['title'] = "网站构建工具";
+$_LANG['store']['websiteBuilder']['title'] = "Site Builder";
 $_LANG['store']['configure']['configureProduct'] = "配置产品";
 
 $_LANG['store']['ssl']['dv']['tagline'] = "保护您的网站仅仅需要几分钟！";
@@ -2201,11 +2221,11 @@ $_LANG['store']['ssl']['ev']['descriptionContent'] = "<p>EV SSL 是一种扩展�
 
 $_LANG['store']['ssl']['wildcard']['tagline'] = "使用单个证书保护无限个子域名。";
 $_LANG['store']['ssl']['wildcard']['descriptionTitle'] = "什么是通配型 SSL 证书？";
-$_LANG['store']['ssl']['wildcard']['descriptionContent'] = "<p>通配型 SSL 允许您使用单个证书保护无限个子域名。对于托管或管理同一域上存在的多个站点或页面的任何人来说，这是一个很好的解决方案。证书的一次性费用将会涵盖您将来可能添加的其它子域名。</p><p>不像一般的仅为单个合格的域名签发的 SSL 证书那样，例如 www.yourdomain.com，当其签发后它只能用于保护确切的域名，通配型 SSL 证书将会签发为 *.yourdomain.com，星号代表所有可能的子域名。</p><p>通配型 SSL 可用于 DV 和 OV 证书。</p>";
+$_LANG['store']['ssl']['wildcard']['descriptionContent'] = "<p>通配型 SSL 允许您使用单个证书保护无限个子域名。对于托管或管理同一域上存在的多个站点或页面的任何人来说，这是一个很好的解决方案。证书的一次性费用将会涵盖您将来可能添加的其它子域名。</p><p>不像一般的仅为单个合格的域名签发的 SSL 证书那样，例如 www.example.com，当其签发后它只能用于保护确切的域名，通配型 SSL 证书将会签发为 *.example.com，星号代表所有可能的子域名。</p><p>通配型 SSL 可用于 DV 和 OV 证书。</p>";
 
 $_LANG['store']['websiteBuilder']['headline'] = "建设一个网站从未如此简单";
 $_LANG['store']['websiteBuilder']['tagline'] = "使用强大的拖放工具建设完美的网站";
-$_LANG['store']['websiteBuilder']['introduction'] = "Weebly 的拖放网站构建工具可以轻松的创建一个功能强大、专业的网站，而无需任何专业技能，超过 400 万的中小型企业已经使用 Weebly 来创建他们的网站、博客或商店。";
+$_LANG['store']['websiteBuilder']['introduction'] = "Weebly 的拖放Site Builder可以轻松的创建一个功能强大、专业的网站，而无需任何专业技能，超过 400 万的中小型企业已经使用 Weebly 来创建他们的网站、博客或商店。";
 
 $_LANG['store']['emailServices']['headline'] = "为您建设安全的电子邮件";
 $_LANG['store']['emailServices']['tagline'] = "收回您收件箱的控制权";
@@ -2242,12 +2262,45 @@ $_LANG['pricingCycleLong']['biennially'] = "2 年";
 $_LANG['pricingCycleLong']['triennially'] = "3 年";
 
 $_LANG['navManageSsl'] = "管理 SSL 证书";
+$_LANG['almostDone'] = "快完成了";
 
 $_LANG['invoicesPaymentPending'] = "待付款";
 
 $_LANG['ssl']['changeApproverEmail'] = "更改审批者邮件地址";
 $_LANG['ssl']['reissueCertificate'] = "重新签发证书";
 $_LANG['ssl']['retrieveCertificate'] = "检索证书";
+$_LANG['ssl']['selectValidation'] = "选择验证方法";
+$_LANG['ssl']['dnsMethod'] = "DNS";
+$_LANG['ssl']['emailMethod'] = "电子邮件";
+$_LANG['ssl']['fileMethod'] = "HTTP 文件";
+$_LANG['ssl']['emailMethodDescription'] = "证书颁发机构将通过向您在下方选择的地址发送一封包含进一步说明的电子邮件来执行验证。";
+$_LANG['ssl']['dnsMethodDescription'] = "证书颁发机构将检查域的 DNS 记录，寻找具有唯一值的特定记录。确保您有权管理域的 DNS 设置。DNS完成配置过程后会提供记录信息。";
+$_LANG['ssl']['fileMethodDescription'] = "证书颁发机构将向域内托管的路径发出 HTTP 请求，并期望响应包含唯一值。路径和值将在您完成后提供配置过程。";
+$_LANG['ssl']['selectEmail'] = "选择一个电子邮件地址";
+$_LANG['ssl']['nextSteps'] = "下一步是什么";
+$_LANG['ssl']['emailSteps'] = "证书颁发机构将向您选择的电子邮件地址发送进一步说明以验证域所有权。完成这些步骤后，将颁发证书。";
+$_LANG['ssl']['fileSteps'] = "证书颁发机构现在将向以下 URL 发出请求以验证响应是否为提供的值。检测到具有指定值的响应后，将颁发证书。";
+$_LANG['ssl']['dnsSteps'] = "证书颁发机构现在将查询域的 DNS 记录以获取与以下信息匹配的记录。访问您域的 DNS 设置并创建记录。找到该记录后， 将颁发证书。";
+$_LANG['ssl']['url'] = "URL";
+$_LANG['ssl']['value'] = "值";
+$_LANG['ssl']['type'] = "类型";
+$_LANG['ssl']['host'] = "主机";
+$_LANG['ssl']['dnsRecordInformation'] = "DNS 记录信息";
+$_LANG['ssl']['fileInformation'] = "文件信息";
+$_LANG['ssl']['emailInformation'] = "电子邮件信息";
+$_LANG['ssl']['dcv'] = "域名控制权验证";
+$_LANG['ssl']['defaultcontacts'] = "域名默认联系人";
+$_LANG['ssl']['reissueInfo1'] = "如果您丢失了证书、需要移动服务器或安装有问题，您可以重新颁发证书以生成新证书。";
+$_LANG['ssl']['reissueInfo2'] = "重新颁发证书时，不能更改域名，必须保持完全相同。";
+$_LANG['ssl']['reissueSuccess'] = "重发请求提交成功！";
+$_LANG['ssl']['reissueSuccessInfo'] = "<p>您重新颁发证书的请求已提交给证书颁发机构。</p><p>您将很快收到一封电子邮件至<em>:approverEmail </em> 以批准证书。</p><p>如果您没有收到邮件，请检查任何垃圾邮件过滤器和病毒防护文件夹，以防邮件已被隔离。如果仍然找不到， 请<a href=\"submitticket.php\">联系支持人员</a>。</p>";
+$_LANG['ssl']['approverEmailUpdateSuccess'] = "审批人邮箱更新成功！";
+$_LANG['ssl']['approverEmailUpdateInfo'] = "<p>您将很快收到一封发送至 <em>:newApproverEmail</em> 的电子邮件以批准证书。</p><p>如果您没有收到电子邮件，请检查任何垃圾邮件过滤器和病毒防护文件夹，以防电子邮件已被隔离。如果您仍然找不到它，请<a href=\"submitticket.php\">联系支持人员</a>。</p>";
+$_LANG['ssl']['disableWhoisPrivacy'] = "请在继续之前禁用任何 WHOIS 隐私服务。";
+$_LANG['ssl']['selectDcvEmail'] = "从下面的列表中选择一个有效的电子邮件地址。您将收到一封电子邮件以批准 SSL 证书。";
+$_LANG['ssl']['approverEmailProcess'] = "<h4>关于批准者电子邮件流程</h4><p>为了颁发 SSL 证书，证书颁发机构必须验证证书订单的真实性以确保 请求是合法的，并且来自域的授权所有者。</p><p>基于电子邮件的域验证是证书订单最常见的证书验证机制。证书颁发机构使用通用的管理工具编制已批准的电子邮件地址列表 电子邮件地址（例如，管理员或网站管理员）与域的公共 WHOIS 数据相结合。您只能使用这些电子邮件地址之一来确认所有权。</p>";
+
+
 
 $_LANG['upgradeCredit'] = "更新余额";
 $_LANG['upgradeCreditDescription'] = "基于 :daysRemaining 未用日期 :totalDays 总日期计算在当前账单周期。";
@@ -2299,12 +2352,12 @@ $_LANG['errorPage']['404']['submitTicket'] = "联系支持";
 
 $_LANG['creditCard']['removeDescription'] = "您确定要移除信用卡详细信息吗？";
 
-$_LANG['marketConnect']['weebly']['ftpHost'] = "FTP 主机";
-$_LANG['marketConnect']['weebly']['ftpUsername'] = "FTP 用户名";
-$_LANG['marketConnect']['weebly']['ftpPassword'] = "FTP 密码";
-$_LANG['marketConnect']['weebly']['ftpPath'] = "FTP 路径";
-$_LANG['marketConnect']['weebly']['updateFtp'] = "更新 FTP 凭据";
-$_LANG['marketConnect']['weebly']['manage'] = "登录至 Weebly Site Builder";
+$_LANG['marketConnect']['websiteBuilder']['ftpHost'] = "FTP 主机";
+$_LANG['marketConnect']['websiteBuilder']['ftpUsername'] = "FTP 用户名";
+$_LANG['marketConnect']['websiteBuilder']['ftpPassword'] = "FTP 密码";
+$_LANG['marketConnect']['websiteBuilder']['ftpPath'] = "FTP 路径";
+$_LANG['marketConnect']['websiteBuilder']['updateFtp'] = "更新 FTP 凭据";
+$_LANG['marketConnect']['websiteBuilder']['manage'] = "登录至 Weebly Site Builder";
 
 $_LANG['domainChecker']['contactSupport'] = "联系技术支持购买";
 
@@ -2335,7 +2388,6 @@ $_LANG['dateTime']['january'] = "一月";
 $_LANG['dateTime']['february'] = "二月";
 $_LANG['dateTime']['march'] = "三月";
 $_LANG['dateTime']['april'] = "四月";
-$_LANG['dateTime']['may'] = "五月";
 $_LANG['dateTime']['june'] = "六月";
 $_LANG['dateTime']['july'] = "七月";
 $_LANG['dateTime']['august'] = "八月";
@@ -2365,6 +2417,10 @@ $_LANG['dateTime']['hour'] = "小时";
 $_LANG['dateTime']['hours'] = "小时";
 $_LANG['dateTime']['minute'] = "分";
 $_LANG['dateTime']['minutes'] = "分";
+$_LANG['dateTime']['abbr']['minute'] = "分";
+$_LANG['dateTime']['abbr']['second'] = "秒";
+$_LANG['dateTime']['title']['days'] = "天";
+$_LANG['dateTime']['title']['hours'] = "小时";
 
 $_LANG['emailMarketing']['joinOurMailingList'] = "订阅我们的邮件";
 
@@ -2441,7 +2497,7 @@ $_LANG['store']['sitelock']['emergencyPlanPriorityContent'] = "有了应急包�
 $_LANG['store']['sitelock']['emergencyPlanAftercareTitle'] = "售后7天";
 $_LANG['store']['sitelock']['emergencyPlanAftercareContent'] = "我们将继续监控您的站点7天，以确保您的站点在恢复后保持无恶意软件。";
 $_LANG['store']['sitelock']['emergencyPlanUpdatesTitle'] = "实时更新";
-$_LANG['store']['sitelock']['emergencyPlanAftercareContent'] = "在清理和恢复您的站点的整个过程中，使用我们的实时更新跟踪进度。";
+$_LANG['store']['sitelock']['emergencyPlanUpdatesContent'] = "在清理和恢复您的站点的整个过程中，使用我们的实时更新跟踪进度。";
 $_LANG['store']['sitelock']['emergencyPlanPaymentTitle'] = "一次性付款";
 $_LANG['store']['sitelock']['emergencyPlanPaymentContent'] = "紧急服务只需一次性收费，没有经常性费用或订阅费。";
 $_LANG['store']['sitelock']['emergencyPlanOnlyCost'] = "7天保护仅需 :price";
@@ -2553,6 +2609,7 @@ $_LANG['validation']['url'] = ":attribute 格式无效。";
 $_LANG['orderErrorServerHostnameInvalid'] = "您的服务器主机名无效。";
 $_LANG['orderErrorServerNameserversInvalid'] = "域名服务器前缀无效。";
 
+$_LANG['toggleNav'] = "切换导航";
 $_LANG['checkAll'] = "全选";
 $_LANG['uncheckAll'] = "反选";
 
@@ -2563,7 +2620,7 @@ $_LANG['nodomain'] = "未指定域名";
 $_LANG['store']['symantec']['cartTitle'] = "通过 SSL 保护您的网站";
 $_LANG['store']['symantec']['cartShortDescription'] = "将 SSL 添加到您的虚拟主机中，让访问者相信您的网站是安全可靠的，并有助于建立信任。";
 
-$_LANG['store']['weebly']['cartTitle'] = "强大的网站构建工具";
+$_LANG['store']['weebly']['cartTitle'] = "强大的Site Builder";
 $_LANG['store']['weebly']['cartShortDescription'] = "将 Weebly 拖放式网站创建工具添加到您的主机，以帮助您创建一个很棒的网站，商店或博客。";
 
 $_LANG['store']['spamexperts']['cartTitle'] = "SpamExperts 邮件安全";
@@ -2574,7 +2631,7 @@ $_LANG['store']['sitelock']['cartTitle'] = "SiteLock 网站安全";
 $_LANG['store']['symantec']['promo']['sidebar']['title'] = "添加 SSL 到您的网站";
 $_LANG['store']['symantec']['promo']['sidebar']['body'] = "激活小绿锁图标并保护用户隐私";
 
-$_LANG['store']['weebly']['promo']['sidebar']['title'] = "强大的网站构建工具";
+$_LANG['store']['weebly']['promo']['sidebar']['title'] = "强大的Site Builder";
 $_LANG['store']['weebly']['promo']['sidebar']['body'] = "Weebly 以前所未有的速度创建一个令人惊叹的网站";
 
 $_LANG['store']['spamexperts']['promo']['sidebar']['title'] = "获取垃圾邮件保护";
@@ -2605,7 +2662,7 @@ $_LANG['domains']['resendNotificationSuccess'] = "验证邮件已经发送。";
 $_LANG['domains']['modifyPending'] = "需要验证";
 $_LANG['domains']['changePending'] = "需要验证才能完成您的更改。所有权验证邮件已经发送到 :email。请点击邮件中的链接以允许修改。";
 $_LANG['domains']['changePendingDate'] = "需要验证才能完成您的更改。所有权验证邮件已经发送到 :email。请在 :days 天内点击邮件中的链接以允许修改。";
-$_LANG['domains']['changePendingFormRequired'] = "您的注册人联系信息更改提交成功。要完成此过程，您需要填写<strong>更改注册人</ strong>表单。请查看 :form，按照说明填写表单并将其返回给我们以完成整个流程。";
+$_LANG['domains']['changePendingFormRequired'] = "您的注册人联系信息更改提交成功。要完成此过程，您需要填写<strong>更改注册人</strong>表单。请查看 :form，按照说明填写表单并将其返回给我们以完成整个流程。";
 
 $_LANG['getStartedNow'] = "立即开始";
 $_LANG['notificationsnew'] = "新";
@@ -2670,16 +2727,15 @@ $_LANG['store']['websiteBuilder']['faq']['q5'] = "我可以在我的网站上添
 $_LANG['store']['websiteBuilder']['faq']['q6'] = "我的网站可以被搜索引擎收录么？";
 $_LANG['store']['websiteBuilder']['faq']['q7'] = "是否有多种款式可供选择？";
 $_LANG['store']['websiteBuilder']['faq']['q8'] = "我可以升级么？";
-$_LANG['store']['websiteBuilder']['faq']['a1'] = "是的，网站构建工具允许您包含博客功能。";
-$_LANG['store']['websiteBuilder']['faq']['a2'] = "是的，使用 Weebly 网站构建工具创建的所有网站都针对移动设备进行了优化";
+$_LANG['store']['websiteBuilder']['faq']['a1'] = "是的，Site Builder允许您包含博客功能。";
+$_LANG['store']['websiteBuilder']['faq']['a2'] = "是的，使用 Weebly Site Builder创建的所有网站都针对移动设备进行了优化";
 $_LANG['store']['websiteBuilder']['faq']['a3'] = "是的，您可以将照片添加到您的网站，但高清视频和音频仅适用于 Pro & Business 方案。";
 $_LANG['store']['websiteBuilder']['faq']['a4'] = "是的，电子商务功能包含在所有计划中，但您可以提供的产品数量各不相同。";
-$_LANG['store']['websiteBuilder']['faq']['a5'] = "是的，通过 Weebly 网站构建工具可以很轻松地创建联系表单、RSVP 列表、问卷调查和更多。";
+$_LANG['store']['websiteBuilder']['faq']['a5'] = "是的，通过 Weebly Site Builder可以很轻松地创建联系表单、RSVP 列表、问卷调查和更多。";
 $_LANG['store']['websiteBuilder']['faq']['a6'] = "所有 Weebly 创建的网站都包括功能强大的搜索引擎优化工具，以帮助最大限度地提高您网站的的搜索引擎排名。";
 $_LANG['store']['websiteBuilder']['faq']['a7'] = "是的，有多个预先制作的模板供您选择。";
 $_LANG['store']['websiteBuilder']['faq']['a8'] = "是的，您可以随时升级。只需登录您的账户并选择升级选项即可。";
 $_LANG['store']['websiteBuilder']['trust'] = "受到全球超过 4000,0000 人的信赖";
-$_LANG['store']['toggleNav'] = "切换导航";
 $_LANG['store']['websiteBuilder']['upgrade']['title'] = "Weebly 升级";
 $_LANG['store']['websiteBuilder']['upgrade']['required'] = "需要升级";
 $_LANG['store']['websiteBuilder']['upgrade']['requiredDescription'] = "要访问您请求的功能，您需要升级 Weebly Site Builder 方案";
@@ -2696,6 +2752,7 @@ $_LANG['store']['websiteBuilder']['upgrade']['switchUser'] = "注销/切换用�
 $_LANG['tax']['taxLabel'] = "税号";
 $_LANG['tax']['vatLabel'] = "VAT 号码";
 $_LANG['tax']['errorInvalid'] = "提供的 :taxLabel 无效。";
+$_LANG['tax']['errorService'] = ":taxLabel 验证服务不可用。请稍后再试。";
 
 $_LANG['fraud']['checkConfiguration'] = "欺诈检查发生错误。请联系支持。";
 $_LANG['fraud']['title'] = "欺诈检查";
@@ -2705,6 +2762,17 @@ $_LANG['fraud']['highFraudRiskScore'] = "您的订单已被标记为潜在的高
 $_LANG['fraud']['countryMismatch'] = "您的 IP 地址所在的国家/地区与您输入的账单地址国家/地区不符，因此我们无法接受您的订单";
 $_LANG['fraud']['highRiskCountry'] = "很遗憾，我们无法接受您的订单，因为您所在的国家/地区存在大量欺诈活动。如果您想安排其它付款方式，请与我们联系。";
 $_LANG['fraud']['anonymousProxy'] = "我们不允许使用匿名代理发出订单";
+
+$_LANG['fraud']['userVerification'] = "用户验证";
+$_LANG['fraud']['furtherVal'] = "需要进一步验证才能处理您的订单。点击按钮并按照安全提交流程的步骤进行操作。您将在不到一分钟的时间内完成。";
+$_LANG['fraud']['furtherValShort'] = "需要进一步验证。点击按钮并按照提供的步骤操作。";
+$_LANG['fraud']['submitDocs'] = "提交文档";
+$_LANG['fraud']['submitSuccessMsg'] = "谢谢！文档已经提供，我们的团队会人工审核。";
+$_LANG['fraud']['status']['notRequested'] = "未请求";
+$_LANG['fraud']['status']['notReviewed'] = "未审核";
+$_LANG['fraud']['status']['reviewRequested'] = "已提交";
+$_LANG['fraud']['status']['failed'] = "失败";
+$_LANG['fraud']['status']['validated'] = "已验证";
 
 $_LANG['navMarketConnectService']['codeguard'] = "网站备份";
 $_LANG['store']['codeguard']['cartTitle'] = "CodeGuard 网站备份";
@@ -2790,8 +2858,6 @@ $_LANG['generatePassword']['generatedPw'] = "生成的密码";
 $_LANG['generatePassword']['generateNew'] = "生成新密码";
 $_LANG['generatePassword']['copyAndInsert'] = "复制到剪贴板并插入";
 
-$_LANG['close'] = "关闭";
-
 $_LANG['setupMandate'] = "设置付款授权";
 
 $_LANG['invoicePaymentPendingCleared'] = "您的付款正在处理中，结算后将自动应用.";
@@ -2874,7 +2940,6 @@ $_LANG['store']['ssl']['shared']['encryption256'] = "256-Bit 加密";
 $_LANG['store']['ssl']['shared']['issuanceTime'] = "颁发时间";
 $_LANG['store']['ssl']['shared']['greatFor'] = "非常适合";
 $_LANG['store']['ssl']['shared']['warrantyValue'] = "保修价值";
-$_LANG['store']['ssl']['shared']['siteSeal'] = "信任站点密封";
 $_LANG['store']['ssl']['shared']['freeReissues'] = "免费补发";
 $_LANG['store']['ssl']['shared']['browserSupport'] = "浏览器支持";
 $_LANG['store']['ssl']['shared']['price'] = "价格";
@@ -2984,7 +3049,7 @@ $_LANG['store']['ssl']['landingPage']['competitiveUpgrade'] = "与我们一起�
 $_LANG['store']['ssl']['landingPage']['browser']['competitiveUpgrade'] = "与我们一起升级，最多可享受12个月的免费服务.";
 $_LANG['store']['ssl']['landingPage']['evs']['upgradeTitle'] = "升级到扩展验证ssl";
 $_LANG['store']['ssl']['landingPage']['evs']['description'] = "虽然所有ssl证书都使用类似的方法来保护和验证您的数据，但它们提供的信任和断言级别是不同的.";
-$_LANG['store']['ssl']['landingPage']['evs']['whatIs'] = "<strong>扩展的验证证书</ strong>提供了最高级别的验证和信任。它们会验证并显示公司或组织的名称以及绿色地址栏，绿色地址栏是网络上最易识别的信任指标之一.";
+$_LANG['store']['ssl']['landingPage']['evs']['whatIs'] = "<strong>扩展的验证证书</strong>提供了最高级别的验证和信任。它们会验证并显示公司或组织的名称以及绿色地址栏，绿色地址栏是网络上最易识别的信任指标之一.";
 $_LANG['store']['ssl']['landingPage']['evs']['learn'] = "了解有关扩展验证SSL证书的更多信息";
 $_LANG['store']['ssl']['landingPage']['help']['title'] = "帮我选择正确的证书类型";
 $_LANG['store']['ssl']['landingPage']['help']['guide'] = "尽管普遍存在在线安全需求，但并非所有SSL证书都是一样的.以下指南旨在帮助您确定哪种证书适合您.";
@@ -3021,7 +3086,7 @@ $_LANG['store']['ssl']['landingPage']['faq']['a3'] = "SSL证书基于三种不�
 $_LANG['store']['ssl']['landingPage']['faq']['q4'] = "什么是通配符SSL证书";
 $_LANG['store']['ssl']['landingPage']['faq']['a4'] = "通配符ssl证书提供与其他ssl证书相同的加密和身份验证功能，但也可以应用于网站的无限数量的子域。通配符SSL证书支持根域（example.com）及其子域.";
 $_LANG['store']['ssl']['landingPage']['faq']['q5'] = "ev ssl证书的优点是什么?";
-$_LANG['store']['ssl']['landingPage']['faq']['a5'] = "ev，或扩展验证，是当今可用的最高级别的ssl，比其他ssl证书为您的网站提供了更多的可信度和信任。其中包括绿色地址栏和公司名称显示等功能，这些功能已被证明能增强信任和消费者信心.";
+$_LANG['store']['ssl']['landingPage']['faq']['a5'] = "EV（扩展验证）证书是可用的 SSL 中最高级别的，为您的网站提供最大的可信度和信任。 EV 可确保消费者的个人和财务信息在身份验证的最高级别下得到保护。此外，还会执行其他验证，例如企业机构记录检查、申请人联系信息和业务是否存在至少 3 年等。EV 证书最适合用于业务关键的网页。";
 $_LANG['store']['ssl']['landingPage']['faq']['q6'] = "如果我已经有了ssl证书怎么办?";
 $_LANG['store']['ssl']['landingPage']['faq']['a6'] = "您可以随时切换到我们。我们提供极具竞争力的定价，如果你已经有了现有的证书，我们将在你现有的竞争者SSL证书中添加任何剩余的有效期，最多再增加12个月.";
 
@@ -3037,6 +3102,8 @@ $_LANG['support']['successAdd'] = "抄送收件人 :email 已添加";
 $_LANG['support']['clientEmail'] = "无法将客户端电子邮件地址添加为抄送收件人";
 $_LANG['support']['emailNotPossible'] = "无法添加 :email 作为抄送收件人";
 $_LANG['support']['invalidEmail'] = "输入的电子邮件地址无效.";
+$_LANG['support']['ipAddress'] = "IP地址";
+$_LANG['support']['ticketError'] = "我们目前无法处理您的结账请求。请稍后再试。";
 
 $_LANG['confirmAndPay'] = "确认和支付";
 $_LANG['paymentPreApproved'] = "付款预先批准与:网关";
@@ -3058,7 +3125,6 @@ $_LANG['subscription']['failedpaymentscount'] = "支付失败数";
 $_LANG['subscription']['errorFetchingDetails'] = "试图获取订阅信息时出错。请联系支持。";
 
 $_LANG['navMarketConnectService']['sitelockvpn'] = "VPN";
-$_LANG['store']['sitelockvpn']['title'] = "SiteLock VPN";
 $_LANG['store']['sitelockvpn']['tagline'] = "不受隐私、内容限制或数据限制限制地无限访问互联网。";
 $_LANG['store']['sitelockvpn']['manageService'] = "管理您的SiteLock VPN服务";
 $_LANG['store']['sitelockvpn']['cartShortDescription'] = "SiteLock VPN允许在任何网络连接上进行匿名、加密的浏览会话。";
@@ -3074,7 +3140,7 @@ $_LANG['store']['sitelockvpn']['subtitle2'] = "你的网页浏览";
 $_LANG['store']['sitelockvpn']['tagline1'] = "高速、安全、简单";
 $_LANG['store']['sitelockvpn']['tagline2'] = "与即时设置一起使用。";
 $_LANG['store']['sitelockvpn']['feature1']['title'] = "获得安全、私密的互联网接入。";
-$_LANG['store']['sitelockvpn']['feature1']['subtitle'] = "<strong>保护您的个人数据</ strong>，每次您使用公共Wi-Fi，在旅途中访问个人和工作帐户时，或者只是想保留自己的浏览历史记录时，都可以放心使用。";
+$_LANG['store']['sitelockvpn']['feature1']['subtitle'] = "<strong>保护您的个人数据</strong>，每次您使用公共Wi-Fi，在旅途中访问个人和工作帐户时，或者只是想保留自己的浏览历史记录时，都可以放心使用。";
 $_LANG['store']['sitelockvpn']['feature1']['highlights']['one'] = "隐藏你的IP地址";
 $_LANG['store']['sitelockvpn']['feature1']['highlights']['two'] = "保护你的网上身份";
 $_LANG['store']['sitelockvpn']['feature1']['highlights']['three'] = "没有活动日志来跟踪浏览";
@@ -3090,8 +3156,8 @@ $_LANG['store']['sitelockvpn']['feature2']['highlights']['four'] = "玩被区域
 $_LANG['store']['sitelockvpn']['feature2']['highlights']['five'] = "在网上获得更好的交易";
 $_LANG['store']['sitelockvpn']['feature2']['highlights']['six'] = "保持隐私和匿名";
 $_LANG['store']['sitelockvpn']['feature3']['title'] = "保护你所有的设备。";
-$_LANG['store']['sitelockvpn']['feature3']['subtitle'] = "<strong>一键式设置VPN </ strong>（适用于Mac，Windows，iOS，Android和Linux）。";
-$_LANG['store']['sitelockvpn']['feature3']['subtitle2'] = "无论您使用的是计算机，智能手机还是平板电脑，都可以从任何地方访问互联网。我们的应用程序可让您不受限制地进行网上冲浪，而无需编写代码或进行复杂的设置。<strong>只需下载并连接。</ strong>";
+$_LANG['store']['sitelockvpn']['feature3']['subtitle'] = "<strong>一键式设置VPN </strong>（适用于Mac，Windows，iOS，Android和Linux）。";
+$_LANG['store']['sitelockvpn']['feature3']['subtitle2'] = "无论您使用的是计算机，智能手机还是平板电脑，都可以从任何地方访问互联网。我们的应用程序可让您不受限制地进行网上冲浪，而无需编写代码或进行复杂的设置。<strong>只需下载并连接。</strong>";
 $_LANG['store']['sitelockvpn']['feature3']['subtitle3'] = "*其他平台可以手动配置。";
 $_LANG['store']['sitelockvpn']['pricing']['oneSubscription'] = "仅一项订阅即可涵盖和保护";
 $_LANG['store']['sitelockvpn']['pricing']['fiveDevices'] = "最多同时5个设备。";
@@ -3104,7 +3170,7 @@ $_LANG['store']['sitelockvpn']['plans']['features']['noRestrictions'] = "无限�
 $_LANG['store']['sitelockvpn']['plans']['features']['highSpeed'] = "高速网络";
 $_LANG['store']['sitelockvpn']['plans']['features']['unlimited'] = "无限流量";
 $_LANG['store']['sitelockvpn']['plans']['features']['encryption'] = "256位AES加密";
-$_LANG['store']['sitelockvpn']['plans']['features']['protocol'] = "OpenVPN，L2TP-IPsec <br>和PPTP协议";
+$_LANG['store']['sitelockvpn']['plans']['features']['protocol'] = "OpenVPN，L2TP-IPsec<br>和PPTP协议";
 $_LANG['store']['sitelockvpn']['plans']['features']['simultaneous'] = "最多可同时连接5台设备";
 $_LANG['store']['sitelockvpn']['plans']['features']['apps'] = "适用于Windows，Mac，iOS，<br> Android和Linux的应用";
 $_LANG['store']['sitelockvpn']['plans']['features']['switching'] = "无限的服务器切换";
@@ -3117,12 +3183,250 @@ $_LANG['store']['sitelockvpn']['world']['features']['countries'] = "国家";
 $_LANG['store']['sitelockvpn']['world']['features']['unlimited'] = "无限";
 $_LANG['store']['sitelockvpn']['world']['features']['bandwidth'] = "流量";
 
+$_LANG['navMarketConnectService']['nordvpn'] = "VPN";
+$_LANG['store']['nordvpn']['tagline'] = "获取无限制的上网体验，不受隐私问题、内容限制或数据流量限制的束缚。";
+$_LANG['store']['nordvpn']['manageService'] = "管理您的 NordVPN 服务";
+$_LANG['store']['nordvpn']['cartShortDescription'] = "NordVPN 允许在任何网络连接上进行匿名、加密的浏览会话。";
+$_LANG['store']['nordvpn']['cartTitle'] = "NordVPN";
+$_LANG['store']['nordvpn']['promo']['sidebar']['title'] = "NordVPN 安全性";
+$_LANG['store']['nordvpn']['promo']['sidebar']['body'] = "为日常而建立的网络安全。";
+
+$_LANG['store']['nordvpn']['title'] = "NordVPN";
+$_LANG['store']['nordvpn']['shared']['get'] = "获取 NordVPN";
+$_LANG['store']['nordvpn']['hero']['title'] = "Cybersecurity.:tagBreak:tagOpenBuilt for everyday:tagClose";
+$_LANG['store']['nordvpn']['hero']['tagline'] = "保护您的连接并隐藏您的 IP。:tagBreakBlock 恶意软件、跟踪器和广告。";
+$_LANG['store']['nordvpn']['hero']['available'] = "可用";
+$_LANG['store']['nordvpn']['hero']['guarantee'] = "15 天退款保证";
+$_LANG['store']['nordvpn']['features']['icon']['title1'] = "使用VPN，您可以：";
+$_LANG['store']['nordvpn']['features']['icon']['video'] = "使用安全和私密的连接浏览、流式传输和下载内容";
+$_LANG['store']['nordvpn']['features']['icon']['global'] = "观看国内节目和国外体育节目";
+$_LANG['store']['nordvpn']['features']['icon']['hacker'] = "在不安全的网络（如公共 Wi-Fi®）上抵御黑客攻击";
+$_LANG['store']['nordvpn']['features']['icon']['property'] = "通过隐藏您的 IP 地址减少在线跟踪";
+$_LANG['store']['nordvpn']['features']['icon']['title2'] = "保持数据安全";
+$_LANG['store']['nordvpn']['features']['icon']['check1'] = "安全、高速的 VPN";
+$_LANG['store']['nordvpn']['features']['icon']['check2'] = "使用市场上最快的 VPN 加密您的互联网连接、回收数字隐私并访问您喜欢的内容 . 从 59 个国家/地区的 VPN 服务器中进行选择，同时保护多达 6 台设备。";
+$_LANG['store']['nordvpn']['features']['icon']['bug1'] = "恶意软件保护";
+$_LANG['store']['nordvpn']['features']['icon']['bug2'] = "获取有关不安全站点的警告并自动扫描所有下载的文件和附件是否存在恶意软件。如果它们不是 可以安全打开，它们会自动删除以防止对您的设备造成任何损坏。";
+$_LANG['store']['nordvpn']['features']['icon']['shield1'] = "Tracker and ad blocker";
+$_LANG['store']['nordvpn']['features']['icon']['shield2'] = "阻止烦人的广告、弹出窗口和横幅，并阻止第三方网站跟踪您的在线活动。在所有网站和每台设备上享受更安全、更流畅、更快速的浏览体验。";
+$_LANG['store']['nordvpn']['features']['comparison']['title'] = "为什么选择 NordVPN？";
+$_LANG['store']['nordvpn']['features']['comparison']['speed1'] = "连接速度*";
+$_LANG['store']['nordvpn']['features']['comparison']['speed2'] = "6730+ Mbps";
+$_LANG['store']['nordvpn']['features']['comparison']['speed3'] = "2200+ Mbps";
+$_LANG['store']['nordvpn']['features']['comparison']['speed4'] = "3320+ Mbps";
+$_LANG['store']['nordvpn']['features']['comparison']['speed5'] = "1600+ Mbps";
+$_LANG['store']['nordvpn']['features']['comparison']['speed6'] = "2320+ Mbps";
+$_LANG['store']['nordvpn']['features']['comparison']['wireguard'] = "WireGuard&reg; for top speeds";
+$_LANG['store']['nordvpn']['features']['comparison']['vpn1'] = "VPN 服务器";
+$_LANG['store']['nordvpn']['features']['comparison']['vpn2'] = "5500+";
+$_LANG['store']['nordvpn']['features']['comparison']['vpn3'] = "3000+";
+$_LANG['store']['nordvpn']['features']['comparison']['vpn4'] = "200+";
+$_LANG['store']['nordvpn']['features']['comparison']['vpn5'] = "1600+";
+$_LANG['store']['nordvpn']['features']['comparison']['vpn6'] = "6500+";
+$_LANG['store']['nordvpn']['features']['comparison']['log'] = "已验证无日志政策";
+$_LANG['store']['nordvpn']['features']['comparison']['chat'] = "实时聊天客户支持";
+$_LANG['store']['nordvpn']['features']['comparison']['asterisk'] = "*根据 AV-Test 的研究得出的整体网络性能。您可以:tagOpen阅读完整报告:tagClose . 比较日期：2021年2月17日。";
+$_LANG['store']['nordvpn']['features']['threat']['title'] = "不仅仅是一个 VPN";
+$_LANG['store']['nordvpn']['features']['threat']['tagline'] = "NordVPN 的 :tagOpenThreat Protection:tagClose 功能改变了游戏规则，提供了更多的安全优势和更好的保护 一次额外的点击。";
+$_LANG['store']['nordvpn']['features']['threat']['protection'] = ":tagOpenThreat Protection:tagClose 阻止侵入性广告和网络跟踪器，并自动扫描 URL 并阻止恶意 URL。";
+$_LANG['store']['nordvpn']['features']['threat']['malware'] = "每当您下载文件时，:tagOpenThreat Protection:tagClose 都会检查它是否存在恶意软件。";
+$_LANG['store']['nordvpn']['features']['threat']['safe'] = ":tagOpenThreat Protection:tagClose 不仅可以保护您的设备，还可以保护您自己。阻止跟踪器的功能可以帮助您 避免在线间谍和跟踪者。";
+$_LANG['store']['nordvpn']['features']['device']['title1'] = "无带宽限制";
+$_LANG['store']['nordvpn']['features']['device']['tagline1'] = "我们这边没有速度限制。享受你的全速 VPN 连接，没有任何限制。" ;
+$_LANG['store']['nordvpn']['features']['device']['title2'] = "适用于所有设备";
+$_LANG['store']['nordvpn']['features']['device']['tagline2'] = "NordVPN 兼容所有流行的平台，包括 Windows、macOS、Linux、Android 和 iOS。此外 ，您最多可以使用一个帐户保护 6 台设备，包括您的路由器。";
+$_LANG['store']['nordvpn']['features']['world']['title'] = "真正的全球 VPN 服务器网络";
+$_LANG['store']['nordvpn']['features']['world']['tagline'] = "在全球数以千计的超高速 VPN 服务器中进行选择。:tagBreak 无论您身在何处，都能享受稳定的连接。" ;
+$_LANG['store']['nordvpn']['features']['world']['bullet1'] = "VPN 服务器";
+$_LANG['store']['nordvpn']['features']['world']['count1'] = "5500+";
+$_LANG['store']['nordvpn']['features']['world']['bullet2'] = "国家";
+$_LANG['store']['nordvpn']['features']['world']['count2'] = "59";
+$_LANG['store']['nordvpn']['features']['world']['bullet3'] = "惊人的速度";
+$_LANG['store']['nordvpn']['features']['world']['bullet4'] = "无限带宽";
+$_LANG['store']['nordvpn']['features']['world']['getDeal'] = "Grab the Deal";
+$_LANG['store']['nordvpn']['features']['security']['title1'] = "使用 VPN 提高您的在线安全性";
+$_LANG['store']['nordvpn']['features']['security']['tagline1'] = "如果你想免受黑客攻击和在线监控，你可以使用虚拟专用网络让你的连接更安全 来自 NordVPN 的网络 (VPN)。";
+$_LANG['store']['nordvpn']['features']['security']['tagline2'] = ":tagOpen使用 NordVPN 加密您的在线活动：tagClose 随时随地为您提供额外的保护层' 重新连接。";
+$_LANG['store']['nordvpn']['features']['security']['title2'] = "终极安全";
+$_LANG['store']['nordvpn']['features']['security']['tagline3'] = "NordVPN 通过下一代加密保护您的连接，因此您可以登录您的账户，进行银行转账 , 并无后顾之忧地在线购物。即使是在未受保护的 Wi-Fi 上也是如此。";
+$_LANG['store']['nordvpn']['features']['security']['title3'] = "无日志政策";
+$_LANG['store']['nordvpn']['features']['security']['tagline4'] = "你在网上做什么与任何人无关。这就是为什么我们不跟踪、收集或分享你的信息 私人数据。我们无法向第三方提供有关您的任何详细信息，即使他们提出要求也是如此。";
+$_LANG['store']['nordvpn']['features']['security']['title4'] = "额外的安全功能";
+$_LANG['store']['nordvpn']['features']['security']['tagline5'] = "NordVPN 拥有广泛的功能来保护您免受网络威胁。除了 :tagOpenThreat Protection： tagClose，有一个自动 :tagOpenKill Switch:tagClose 会在您的 VPN 连接断开时阻止您的互联网连接，确保您的数据安全。:tagOpenDouble VPN:tagClose 将在由于政府审查和 严格的互联网法规。您也将受到保护，免受 :tagOpenDNS 泄漏:tagClose 的侵害。";
+$_LANG['store']['nordvpn']['features']['use']['title1'] = "用例";
+$_LANG['store']['nordvpn']['features']['use']['tagline1'] = "即使你没有什么可隐藏的，你也可能不喜欢被监视和跟踪的想法 . 互联网用户选择 VPN 服务的主要原因是在线隐私和一般安全性。:tagBreak:tagOpenHere are specific reasons WHY?:tagClose";
+$_LANG['store']['nordvpn']['features']['use']['title2'] = "公共场所的 Wi-Fi";
+$_LANG['store']['nordvpn']['features']['use']['tagline2'] = "酒店、机场和咖啡店的公共 Wi-Fi 网络是黑客的完美目标，因为 通常安全措施很低。";
+$_LANG['store']['nordvpn']['features']['use']['title3'] = "屏蔽第三方浏览";
+$_LANG['store']['nordvpn']['features']['use']['tagline3'] = "防止 Internet 服务提供商等第三方查看和跟踪您的日常在线活动。";
+$_LANG['store']['nordvpn']['features']['use']['title4'] = "随时随地访问社交媒体平台";
+$_LANG['store']['nordvpn']['features']['use']['tagline4'] = "避免对 Facebook、Twitter、WhatsApp 等平台的区域和政治限制。";
+$_LANG['store']['nordvpn']['features']['use']['title5'] = "享受在线娱乐和体育直播";
+$_LANG['store']['nordvpn']['features']['use']['tagline5'] = "尽管可以从世界任何地方访问在线平台，但某些广播、节目或体育赛事 经常受到限制。";
+$_LANG['store']['nordvpn']['features']['use']['title6'] = "保护您的设备免受恶意广告的侵害";
+$_LANG['store']['nordvpn']['features']['use']['tagline6'] = "在线广告通常会使您的浏览体验变得更糟。它们使大部分网站变得混乱，下载速度缓慢， 并且可能是恶意软件的来源。";
+$_LANG['store']['nordvpn']['features']['use']['title7'] = "保护您的智能家居设备";
+$_LANG['store']['nordvpn']['features']['use']['tagline7'] = "智能家居技术，尤其是不安全的物联网设备会为家庭网络造成漏洞。";
+$_LANG['store']['nordvpn']['features']['pricing']['title'] = "选择支付方式：";
+$_LANG['store']['nordvpn']['features']['pricing']['get'] = "开始使用";
+$_LANG['store']['nordvpn']['features']['pricing']['save'] = "Save :amount%!";
+$_LANG['store']['nordvpn']['features']['faq']['title'] = "FAQ";
+$_LANG['store']['nordvpn']['features']['faq']['question1'] = "什么是 VPN？";
+$_LANG['store']['nordvpn']['features']['faq']['answer1'] = "A :tagOpenvirtual private network:tagClose 通过安全隧道路由您的互联网流量，更改您在 这个过程。但 NordVPN 不仅仅是一个 VPN ——我们还提供强大的反恶意软件工具。";
+$_LANG['store']['nordvpn']['features']['faq']['question2'] = "什么是自动终止开关？";
+$_LANG['store']['nordvpn']['features']['faq']['answer2'] = "VPN 故障保护开关。如果 VPN 连接断开，Kill Switch 将阻止您的设备发送不安全的数据";
+$_LANG['store']['nordvpn']['features']['faq']['question3'] = "什么是 NordVPN 的威胁防护？";
+$_LANG['store']['nordvpn']['features']['faq']['answer3'] = "NordVPN 的威胁防护功能让您更安全地免受在线威胁。打开它，威胁防护 将阻止侵入性广告和跟踪器，扫描 URL 以保护您免受危险网站的侵害，并检查下载的文件是否存在恶意软件。体验没有侵入性跟踪或审查的互联网。在 Wi-Fi 网络上保持安全并阻止您的移动应用程序泄露未加密的数据。获取 只需单击一个按钮即可完成所有操作。";
+$_LANG['store']['nordvpn']['features']['faq']['question4'] = "什么是 DNS 泄漏保护？";
+$_LANG['store']['nordvpn']['features']['faq']['answer4'] = "保护您的在线活动，以防 DNS 服务器在安全 VPN 隧道之外发送未加密的查询。";
+$_LANG['store']['nordvpn']['features']['faq']['question5'] = "什么是双 VPN？";
+$_LANG['store']['nordvpn']['features']['faq']['answer5'] = "双重加密。当需要高级别的安全性和隐私时。";
+
+$_LANG['navMarketConnectService']['threesixtymonitoring'] = "站点和服务器监控";
+$_LANG['marketConnect']['threesixtymonitoring']['manage'] = "登录仪表板";
+$_LANG['store']['threesixtymonitoring']['title'] = "360监控";
+$_LANG['store']['threesixtymonitoring']['cartTitle'] = "360监控";
+$_LANG['store']['threesixtymonitoring']['cartShortDescription'] = "一个可靠且全面的多服务器和多站点监控解决方案。";
+$_LANG['store']['threesixtymonitoring']['promo']['sidebar']['title'] = "360监控";
+$_LANG['store']['threesixtymonitoring']['promo']['sidebar']['body'] = "可靠且全面的多服务器和多站点监控。";
+
+$_LANG['store']['threesixtymonitoring']['websiteHeading']['title'] = "在访问者之前发现您网站的问题！";
+$_LANG['store']['threesixtymonitoring']['websiteHeading']['tagline'] = "输入您的 URL 以快速免费评估您的网站：";
+$_LANG['store']['threesixtymonitoring']['serverHeading']['title'] = "因为正常运行时间就是金钱！";
+$_LANG['store']['threesixtymonitoring']['serverHeading']['tagline'] = "今天保护您的服务器和网站健康。";
+$_LANG['store']['threesixtymonitoring']['modal']['title'] = "测试结果：";
+$_LANG['store']['threesixtymonitoring']['modal']['subtitle'] = "测试结果";
+$_LANG['store']['threesixtymonitoring']['modal']['currentStatus'] = "当前状态";
+$_LANG['store']['threesixtymonitoring']['modal']['resolvingTime'] = "DNS 解析时间";
+$_LANG['store']['threesixtymonitoring']['modal']['connectionTime'] = "连接时间";
+$_LANG['store']['threesixtymonitoring']['modal']['totalTime'] = "所需总时间";
+$_LANG['store']['threesixtymonitoring']['modal']['positive'] = "Positive";
+$_LANG['store']['threesixtymonitoring']['modal']['concern'] = "Concern";
+$_LANG['store']['threesixtymonitoring']['modal']['negative'] = "Negative";
+$_LANG['store']['threesixtymonitoring']['button']['getStarted'] = "开始吧";
+$_LANG['store']['threesixtymonitoring']['button']['startMonitoringShort'] = "开始监控";
+$_LANG['store']['threesixtymonitoring']['button']['startMonitoringLong'] = "开始监控您的网站";
+$_LANG['store']['threesixtymonitoring']['navTab']['website'] = "网站监控";
+$_LANG['store']['threesixtymonitoring']['navTab']['server'] = "服务器监控";
+$_LANG['store']['threesixtymonitoring']['navTab']['full'] = "全站点检查";
+$_LANG['store']['threesixtymonitoring']['websiteDiscover']['title'] = "什么是360全站监控？";
+$_LANG['store']['threesixtymonitoring']['websiteDiscover']['tagline'] = "360 Site Monitoring 让不被察觉的停机成为过去！";
+$_LANG['store']['threesixtymonitoring']['websiteDiscover']['i1'] = "使用 :tagOpenregular scans:tagClose 和您可以使用的指标监控加载时间和响应。";
+$_LANG['store']['threesixtymonitoring']['websiteDiscover']['i2'] = "使用 :tagOpeninstant alerting.:tagClose 解决网站问题，最大限度地延长正常运行时间";
+$_LANG['store']['threesixtymonitoring']['websiteDiscover']['i3'] = "使用 :tagOpen360 Monitoring!:tagClose 防止停机并提高可见性和客户体验！";
+$_LANG['store']['threesixtymonitoring']['serverDiscover']['title'] = "什么是360全站监控？";
+$_LANG['store']['threesixtymonitoring']['serverDiscover']['tagline'] = "我们针对多服务器和多站点管理的一体式、面板不可知解决方案是提供您的服务的关键 让客户安心和可靠的资源监控。";
+$_LANG['store']['threesixtymonitoring']['serverDiscover']['i1'] = "360 Monitoring <strong>开源且可自定义</strong>，确保所有重要指标和资源都得到适当监控 以满足您的需求。";
+$_LANG['store']['threesixtymonitoring']['serverDiscover']['i2'] = "借助 360 Monitoring，您可以确保访问者的<strong>最佳性能</strong>，避免停机，并主动解决 任何潜在的问题。";
+$_LANG['store']['threesixtymonitoring']['websiteFeatures']['title'] = "360 监控如何帮助我的网站？";
+$_LANG['store']['threesixtymonitoring']['websiteFeatures']['i1a'] = "停机监控";
+$_LANG['store']['threesixtymonitoring']['websiteFeatures']['i1b'] = "当您的网站离线时获得即时提醒！";
+$_LANG['store']['threesixtymonitoring']['websiteFeatures']['i1c'] = "在您的客户受到负面影响和损失收入之前识别并响应问题！";
+$_LANG['store']['threesixtymonitoring']['websiteFeatures']['i2a'] = "性能监控";
+$_LANG['store']['threesixtymonitoring']['websiteFeatures']['i2b'] = "确保您的网站执行速度更快，在搜索引擎结果中排名更高！";
+$_LANG['store']['threesixtymonitoring']['websiteFeatures']['i2c'] = "检查第一个字节的时间 (TTFB)、DNS 时间、连接时间和总持续时间。";
+$_LANG['store']['threesixtymonitoring']['websiteFeatures']['i3a'] = "地理监控";
+$_LANG['store']['threesixtymonitoring']['websiteFeatures']['i3b'] = "了解您网站中的特定位置问题。";
+$_LANG['store']['threesixtymonitoring']['websiteFeatures']['i3c'] = "确保多达 26 个不同位置的可访问性和性能。";
+$_LANG['store']['threesixtymonitoring']['websiteFeatures']['i4a'] = "关键词监测";
+$_LANG['store']['threesixtymonitoring']['websiteFeatures']['i4b'] = "监控网站来源的特定单词和短语（例如，'错误'？或'停运'？并设置 为他们的存在或不存在发出警报。";
+$_LANG['store']['threesixtymonitoring']['websiteFeatures']['i5a'] = "端口监控";
+$_LANG['store']['threesixtymonitoring']['websiteFeatures']['i5b'] = "检查 HTTP/S 对 Web 流量的响应、TCP 对网络连接问题或防火墙阻塞的响应以及 ICMP (ping) 对可用性的响应";
+$_LANG['store']['threesixtymonitoring']['websiteFeatures']['i6a'] = "SSL 监控";
+$_LANG['store']['threesixtymonitoring']['websiteFeatures']['i6b'] = "获取有关 SSL/TLS 证书到期的警报，并确保您的访问者始终可以安全地访问您的网站。";
+$_LANG['store']['threesixtymonitoring']['websiteFeatures']['i7a'] = "识别失效链接";
+$_LANG['store']['threesixtymonitoring']['websiteFeatures']['i7b'] = "在损坏的链接影响您的搜索引擎排名并导致糟糕的客户体验之前找到并修复它们。";
+$_LANG['store']['threesixtymonitoring']['websiteFeatures']['i8a'] = "检测丢失的资产";
+$_LANG['store']['threesixtymonitoring']['websiteFeatures']['i8b'] = "获取有关丢失文件、丢失资源和 JavaScript 错误的警报，这些错误可能会减慢页面加载时间、导致视觉不一致并降低性能 用户体验。";
+$_LANG['store']['threesixtymonitoring']['websiteFeatures']['i9a'] = "性能影响资产";
+$_LANG['store']['threesixtymonitoring']['websiteFeatures']['i9b'] = "确定影响网站跳出率、参与度和转化率的大型文件和库。";
+$_LANG['store']['threesixtymonitoring']['websiteFeatures']['i10a'] = "扫描您的 Google® 字体以确保合规性";
+$_LANG['store']['threesixtymonitoring']['websiteFeatures']['i10b'] = "遵守隐私法，扫描 Google 字体并避免收集网站访问者的个人数据，这可能会违反数据保护法规。";
+$_LANG['store']['threesixtymonitoring']['serverFeatures']['title'] = "服务器监控功能";
+$_LANG['store']['threesixtymonitoring']['notifications']['title'] = "通过你最喜欢的应用获取提醒";
+$_LANG['store']['threesixtymonitoring']['notifications']['tagline'] = "第一个知道您的网站何时关闭或性能不佳！";
+$_LANG['store']['threesixtymonitoring']['notifications']['email'] = "Email";
+$_LANG['store']['threesixtymonitoring']['notifications']['sms'] = "SMS";
+$_LANG['store']['threesixtymonitoring']['notifications']['pushbullet'] = "Pushbullet™";
+$_LANG['store']['threesixtymonitoring']['notifications']['googlechat'] = "Google Chat™";
+$_LANG['store']['threesixtymonitoring']['notifications']['pushover'] = "Pushover";
+$_LANG['store']['threesixtymonitoring']['notifications']['discord'] = "Discord";
+$_LANG['store']['threesixtymonitoring']['notifications']['slack'] = "Slack®";
+$_LANG['store']['threesixtymonitoring']['notifications']['webhook'] = "Webhook";
+$_LANG['store']['threesixtymonitoring']['notifications']['stride'] = "Stride";
+$_LANG['store']['threesixtymonitoring']['notifications']['pagerduty'] = "PagerDuty";
+$_LANG['store']['threesixtymonitoring']['notifications']['telegram'] = "Telegram";
+$_LANG['store']['threesixtymonitoring']['notifications']['flock'] = "Flock";
+$_LANG['store']['threesixtymonitoring']['notifications']['microsoft365'] = "Microsoft 365®";
+$_LANG['store']['threesixtymonitoring']['notifications']['opsgenie'] = "OpsGenie";
+$_LANG['store']['threesixtymonitoring']['websiteMonitor']['title'] = "监控和传达您网站的状态";
+$_LANG['store']['threesixtymonitoring']['websiteMonitor']['tagline'] = "通过快速提醒用户注意问题并提供持续事件状态的更新，减少挫败感并增加用户信任。";
+$_LANG['store']['threesixtymonitoring']['serverMonitor']['title'] = "为什么选择360监控？";
+$_LANG['store']['threesixtymonitoring']['serverMonitor']['tagline'] = "因为没有人能承受停机时间！";
+$_LANG['store']['threesixtymonitoring']['serverMonitor']['lostRevenue'] = "每年因停机造成的收入损失：";
+$_LANG['store']['threesixtymonitoring']['serverMonitor']['uptime'] = "Uptime";
+$_LANG['store']['threesixtymonitoring']['serverMonitor']['perYear'] = "/year";
+$_LANG['store']['threesixtymonitoring']['serverMonitor']['asterisk'] = "* 计算基于每年产生 50 万美元收入的网站，不包括旺季活动。";
+$_LANG['store']['threesixtymonitoring']['websitePricing']['title'] = "定价";
+$_LANG['store']['threesixtymonitoring']['websitePricing']['cta'] = ":tagOpenLooking for Server Monitoring?:tagClose Metrics like CPU, network, memory, and disk usage.";
+$_LANG['store']['threesixtymonitoring']['serverPricing']['cta'] = ":tagOpenLooking for Website Monitoring?:tagClose Metrics like uptime, performance, and health.";
+$_LANG['store']['threesixtymonitoring']['comparison']['servers'] = "Servers";
+$_LANG['store']['threesixtymonitoring']['comparison']['monitors'] = "Monitors";
+$_LANG['store']['threesixtymonitoring']['comparison']['timeIntervals'] = "时间间隔";
+$_LANG['store']['threesixtymonitoring']['comparison']['alerting'] = "Alerting";
+$_LANG['store']['threesixtymonitoring']['comparison']['dataRetention'] = "数据保留";
+$_LANG['store']['threesixtymonitoring']['comparison']['fullSiteCheck'] = "全站点检查";
+$_LANG['store']['threesixtymonitoring']['comparison']['concurrentCrawls'] = "并发抓取";
+$_LANG['store']['threesixtymonitoring']['comparison']['highPriorityCrawls'] = "高优先级抓取";
+$_LANG['store']['threesixtymonitoring']['comparison']['recurringScheduledCrawls'] = "循环计划抓取";
+$_LANG['store']['threesixtymonitoring']['comparison']['crawlDepth'] = "抓取深度（URL）";
+$_LANG['store']['threesixtymonitoring']['comparison']['startingFrom'] = "开始于（每月）";
+$_LANG['store']['threesixtymonitoring']['comparison']['tagLite'] = "免费 1 个站点";
+$_LANG['store']['threesixtymonitoring']['comparison']['tagPersonal'] = "1 个站点的理想选择";
+$_LANG['store']['threesixtymonitoring']['comparison']['tagPlus'] = "3 个站点的理想选择";
+$_LANG['store']['threesixtymonitoring']['comparison']['tagAdvanced'] = "10 个站点的理想选择";
+$_LANG['store']['threesixtymonitoring']['comparison']['tagPro'] = "Growing Projects";
+$_LANG['store']['threesixtymonitoring']['comparison']['tagBusiness'] = "大工作负载";
+$_LANG['store']['threesixtymonitoring']['comparison']['tagEnterprise'] = "大规模监控";
+$_LANG['store']['threesixtymonitoring']['comparison']['emailOnly'] = "仅限电子邮件";
+$_LANG['store']['threesixtymonitoring']['comparison']['multiChannel'] = ":tagOpenmulti-channel:tagClose";
+$_LANG['store']['threesixtymonitoring']['comparison']['manual'] = "manual";
+$_LANG['store']['threesixtymonitoring']['faq']['title'] = "FAQ";
+$_LANG['store']['threesixtymonitoring']['faq']['q1'] = "什么是网站监控？";
+$_LANG['store']['threesixtymonitoring']['faq']['a1'] = "网站监控测试网站的正常运行时间、性能和整体功能。它验证您的网站已启动、运行并且可以访问 访问者。网站监控结果可让您在网站问题影响您的业务之前解决它们。";
+$_LANG['store']['threesixtymonitoring']['faq']['q2'] = "网站监控是如何工作的？";
+$_LANG['store']['threesixtymonitoring']['faq']['a2'] = "网站监控定期对您的网站进行测试（每 1、5 或 10 分钟，具体取决于您的计划）。 这些测试会检测您网站的问题。当检测到问题时，360 监控会发出警报并记录问题以供日后分析。";
+$_LANG['store']['threesixtymonitoring']['faq']['q3'] = "性能监控是如何工作的？";
+$_LANG['store']['threesixtymonitoring']['faq']['a3'] = "性能监控工具和进程通过监控系统资源（如 CPU 使用、内存消耗、磁盘使用、 输入/输出 (I/O) 性能和网络正常运行时间。360 监控会跟踪所有这些指标，以确保一切顺利运行。";
+$_LANG['store']['threesixtymonitoring']['faq']['q4'] = "为什么性能监控很重要？";
+$_LANG['store']['threesixtymonitoring']['faq']['a4'] = "性能监控对于在性能问题损害您的业务之前识别性能问题至关重要。它的系统资源调查结果还可以让您主动规划您的未来 需要。";
+$_LANG['store']['threesixtymonitoring']['faq']['q5'] = "SSL 监控如何工作？";
+$_LANG['store']['threesixtymonitoring']['faq']['a5'] = "使用 SSL 监控，您可以跟踪您的 SSL 证书并提前计划到期，确保无缝的证书管理。";
+$_LANG['store']['threesixtymonitoring']['faq']['q6'] = "哪些位置支持监控？";
+$_LANG['store']['threesixtymonitoring']['faq']['a6'] = "您可以在世界任何地方进行监控，监控地点在澳大利亚、加拿大、芬兰、法国、德国、日本、 墨西哥、荷兰、瑞典、英国和美国。";
+$_LANG['store']['threesixtymonitoring']['faq']['q7'] = "支持哪些语言？";
+$_LANG['store']['threesixtymonitoring']['faq']['a7'] = "360 监控支持英语、德语、日语、西班牙语、意大利语、巴西葡萄牙语、法语和俄语。";
+$_LANG['store']['threesixtymonitoring']['faq']['q8'] = "我可以升级我的套餐吗？";
+$_LANG['store']['threesixtymonitoring']['faq']['a8'] = "是的，您可以随时升级您的计划。";
+$_LANG['store']['threesixtymonitoring']['faq']['q9'] = "通知有额外费用吗？";
+$_LANG['store']['threesixtymonitoring']['faq']['a9'] = "所有付费计划都允许无限制的多渠道提醒。一些运营商可能会针对数据使用或 SMS 消息收取额外费用。";
+$_LANG['store']['threesixtymonitoring']['faq']['q10'] = "什么是服务器监控？";
+$_LANG['store']['threesixtymonitoring']['faq']['a10'] = "服务器监控运行定期扫描并跟踪服务器的健康状况，包括 CPU、加载时间、网络统计信息、内存、磁盘使用情况 ，以及更多帮助您快速发现和解决问题的工具。";
+$_LANG['store']['threesixtymonitoring']['faq']['q11'] = "什么是完整站点检查？";
+$_LANG['store']['threesixtymonitoring']['faq']['a11'] = "完整站点检查可保护您的在线状态免受错误影响。它会抓取您的整个网站或在线商店并识别无效链接、损坏的图像、 JavaScript 错误和更多异常，有助于避免网站问题。";
+
+$_LANG['marketConnect']['threesixtymonitoring']['clientPanel']['title'] = "360监控";
+$_LANG['marketConnect']['threesixtymonitoring']['clientPanel']['servers'] = "服务器";
+$_LANG['marketConnect']['threesixtymonitoring']['clientPanel']['monitors'] = "Monitors";
+$_LANG['marketConnect']['threesixtymonitoring']['clientPanel']['alerts'] = "Alerts";
+
 $_LANG['store']['noDomain'] = "不需要域名";
 $_LANG['store']['noDomainRequired'] = "此产品不需要任何域名";
 $_LANG['back'] = "返回";
 
 $_LANG['errors']['badRequest'] = "错误请求";
 $_LANG['errors']['badRequestTryAgain'] = "发生意外错误。请重试。";
+$_LANG['errors']['tryAgainOrSupport'] = "请稍后重试或<a href=\"submitticket.php\">联系支持</a>。";
 
 $_LANG['paymentMethods']['iban'] = "银行账号";
 $_LANG['paymentMethods']['mandateAcceptance'] = "通过提供您的银行账号并确认此付款，您即授权我们的付款服务提供商 :companyName 和 Stripe 向您的银行发送指令以从您的账户中扣款。根据您与银行达成的协议条款和条件，您有权从银行获得退款。必须从您的账户扣款之日起 8 周内要求退款。";
@@ -3172,9 +3476,22 @@ $_LANG['store']['login'] = "登录";
 $_LANG['store']['addToExistingPackage'] = "将其添加到现有的托管包中。";
 
 $_LANG['marketConnect']['sitelock']['manageSecurity'] = "管理你的安全";
+$_LANG['marketConnect']['sitelock']['ftpHost'] = "FTP 主机";
+$_LANG['marketConnect']['sitelock']['ftpUsername'] = "FTP 用户名";
+$_LANG['marketConnect']['sitelock']['ftpPassword'] = "FTP 密码";
+$_LANG['marketConnect']['sitelock']['ftpPath'] = "FTP 路径";
+$_LANG['marketConnect']['sitelock']['updateFtp'] = "更新 FTP 凭据";
+$_LANG['marketConnect']['sitelock']['manage'] = "登录到 SiteLock";
 $_LANG['marketConnect']['sitelockvpn']['manageVPN'] = "管理您的VPN";
-$_LANG['marketConnect']['spamexperts']['manageEmail'] = "管理邮件";
-$_LANG['marketConnect']['weebly']['buildWebsite'] = "生成您网站";
+$_LANG['marketConnect']['emailServices']['manageEmail'] = "管理您的电子邮件";
+$_LANG['marketConnect']['emailServices']['manage'] = "登录 SpamExperts";
+$_LANG['marketConnect']['sitelockvpn']['manage'] = "登录 SiteLock VPN";
+$_LANG['marketConnect']['websiteBuilder']['buildWebsite'] = "生成您网站";
+
+$_LANG['marketConnect']['nordvpn']['clientOutput']['1'] = '感谢您购买 NordVPN 以保护您的个人和企业数据。 您将很快收到一封来自 NordVPN 的电子邮件，其中包含您的激活链接。 如果您在收件箱中没有看到它，请检查您的垃圾邮件文件夹。';
+$_LANG['marketConnect']['nordvpn']['clientOutput']['2'] = '如果您对 NordVPN 有任何疑问或需要技术支持，请联系：anchorOpenNordVPN 支持：anchorClose。';
+$_LANG['marketConnect']['nordvpn']['clientOutput']['3'] = '如果您有订单或账单问题，请通过 :anchorOpenSubmit a Ticket:anchorClose 联系我们的支持团队。';
+$_LANG['marketConnect']['nordvpn']['clientOutput']['4'] = '如果您已经有一个帐户并想管理您的 Nord 帐户设置，请在此处：anchorOpenlog：anchorClose。';
 
 $_LANG['creditCardHolderName'] = "信用卡持有者姓名";
 
@@ -3229,6 +3546,7 @@ $_LANG['store']['marketgoo']['faqs']['a2'] = "marketgoo是一个自己动手的�
 $_LANG['store']['marketgoo']['faqs']['q3'] = "为什么需要做SEO优化？";
 $_LANG['store']['marketgoo']['faqs']['a3'] = "您从事SEO的优化是为了提高您的网站在搜索结果中的排名。这样可以吸引更多的流量-理想情况下，可以将流量转化为客户和潜在客户。";
 $_LANG['store']['marketgoo']['adminPreview'] = "您激活的Marketgoo计划将在此处显示";
+$_LANG['store']['marketgoo']['labelBestValue'] = "最优配置!";
 
 $_LANG['upTo'] = "到 :num";
 $_LANG['weekly'] = "每周";
@@ -3256,6 +3574,8 @@ $_LANG['twoFactor']['yubico']['friendlyName'] = "Yubico";
 $_LANG['twoFactor']['yubico']['description'] = "使用YubiKey硬件设备生成代码。";
 
 $_LANG['orderForm']['selectCategory'] = "请从侧栏菜单中选择一个类别";
+
+$_LANG['marketConnect']['ox']['manage'] = "登录OX App Suite";
 
 $_LANG['store']['sampleProduct'] = "这是一个样品。";
 $_LANG['store']['emailServices']['tab']['overview'] = "总览";
@@ -3395,6 +3715,7 @@ $_LANG['userManagement']['inviteEmail'] = "邀请电子邮件";
 $_LANG['userManagement']['inviteNewUserDescription'] = "邀请新用户可以将新用户邀请到您的帐户中。如果被邀请者已经有一个现有用户帐户，则他们将能够使用其现有帐户来访问您的帐户登录凭据。如果该用户还没有用户帐户，则可以创建一个。";
 $_LANG['userManagement']['allPermissions'] = "所有权限";
 $_LANG['userManagement']['choosePermissions'] = "选择权限";
+$_LANG['userManagement']['noPermissionsSelected'] = "选择至少 1 个权限。";
 $_LANG['userManagement']['sendInvite'] = "发送邀请";
 $_LANG['userManagement']['removeAccessSure'] = "确定要删除此用户的访问权限吗？";
 $_LANG['userManagement']['removeAccessInfo'] = "他们将不再能够访问或管理此帐户。";
@@ -3438,7 +3759,7 @@ $_LANG['permissions']['descriptions']['managedomains'] = "允许管理域名，�
 $_LANG['permissions']['descriptions']['invoices'] = "查看和付款账单";
 $_LANG['permissions']['descriptions']['quotes'] = "查看和接受报价的权限";
 $_LANG['permissions']['descriptions']['tickets'] = "打开，响应和管理支持票的权限";
-$_LANG['permissions']['descriptions']['affiliates'] = "查看和请求提款的权限";
+$_LANG['permissions']['descriptions']['affiliates'] = "查看和请求提现的权限";
 $_LANG['permissions']['descriptions']['emails'] = "访问查看帐户电子邮件历史记录的权限";
 $_LANG['permissions']['descriptions']['orders'] = "允许下达新订单";
 
@@ -3457,7 +3778,7 @@ $_LANG['domainDetails']['error']['deleteNs'] = "删除私人名称服务器时�
 $_LANG['domainDetails']['error']['modifyNs'] = "在修改私有名称服务器时遇到问题。请联系支持。";
 $_LANG['domainDetails']['error']['registerNs'] = "注册私有名称服务器时遇到问题。请联系支持。";
 $_LANG['domainDetails']['error']['saveRegLock'] = "更新域名锁定状态时遇到问题。请联系支持。";
-$_LANG['domainDetails']['error']['releaseDomain'] = "发布域时遇到问题。请联系支持。";
+$_LANG['domainDetails']['error']['releaseDomain'] = "释放域名时遇到问题。请验证您的输入值，然后重试。";
 $_LANG['domainDetails']['error']['resendNotification'] = "重新发送通知电子邮件时遇到问题。请与支持部门联系。";
 
 $_LANG['idnLanguage']['afr'] = "Afrikaans";
@@ -3580,7 +3901,7 @@ $_LANG['cart']['selectIdnLanguageForRegister'] = "请选择您想要注册的域
 $_LANG['support']['requestor']['operator'] = "操作者";
 $_LANG['support']['requestor']['owner'] = "所有者";
 $_LANG['support']['requestor']['authorizeduser'] = "授权用户";
-$_LANG['support']['requestor']['externaluser'] = "外部用户";
+$_LANG['support']['requestor']['registereduser'] = "注册用户";
 $_LANG['support']['requestor']['subaccount'] = "子帐户";
 $_LANG['support']['requestor']['guest'] = "访客";
 
@@ -3635,7 +3956,9 @@ $_LANG['store']['ox']['faq6']['answer'] = "OX Drive是一种在线存储解决�
 $_LANG['store']['ox']['faq7']['question'] = "什么是 OX Documents (Productivity)?";
 $_LANG['store']['ox']['faq7']['answer'] = "OX文本，OX电子表格和OX Presentation是更广泛的OX Documents中的3个应用程序。这些应用程序可用于创建以及在线编辑文本文档，电子表格和演示文稿。使用Office软件解决方案以及所有设备上熟悉的功能，可以在任何地方创建和编辑文档。";
 $_LANG['store']['ox']['faq8']['question'] = "OX App Suite支持哪些语言？";
-$_LANG['store']['ox']['faq8']['answer'] = "OX App Suite支持以下语言：英语，德语，丹麦语，捷克语，西班牙语，法语，意大利语，拉脱维亚语，匈牙利语，荷兰文，波兰文，葡萄牙文，俄文，罗马尼亚文，斯拉夫文，芬兰文，瑞典文，中文简体，中文繁体，日本语";
+$_LANG['store']['ox']['faq8']['answer'] = "OX App Suite supports the following languages: English, German, Spanish, French, Italian, Dutch, Polish, 中文 简体, 中文 繁體, 日本語 日本";
+$_LANG['store']['ox']['faq9']['question'] = "我可以从其他提供商迁移我的现有电子邮件帐户吗？";
+$_LANG['store']['ox']['faq9']['answer'] = "是的，我们提供直观且易于使用的自助式迁移工具。从所有流行的电子邮件服务(包括Apple iCloud、Gmail、Outlook.com/Windows Live/Hotmail、Yahoo Mail、GMX或T-Online)迁移，或使用IMAP/POP3或其他可用的首选协议手动输入提供商的信息。";
 $_LANG['store']['ox']['pricing']['features']['sla'] = "99.9%正常运行时间SLA";
 $_LANG['store']['ox']['pricing']['features']['antivirus'] = "高级防病毒和反垃圾邮件";
 $_LANG['store']['ox']['pricing']['features']['email'] = "email@your-domain.com";
@@ -3645,6 +3968,7 @@ $_LANG['store']['ox']['pricing']['features']['imap'] = "移动和桌面访问 (I
 $_LANG['store']['ox']['pricing']['features']['calendars'] = "共享的日历，联系人，任务";
 $_LANG['store']['ox']['pricing']['features']['caldav'] = "CardDAV 和 CalDAV";
 $_LANG['store']['ox']['pricing']['features']['portal'] = "集成门户页面";
+$_LANG['store']['ox']['pricing']['features']['migration'] = "自助迁移工具";
 $_LANG['store']['ox']['pricing']['features']['filestorage'] = "云文件存储";
 $_LANG['store']['ox']['pricing']['features']['collab'] = "文件共享与协作";
 $_LANG['store']['ox']['pricing']['features']['officeapps'] = "在线办公套件";
@@ -3656,12 +3980,90 @@ $_LANG['store']['ox']['cartShortDescription'] = "获取具有功能齐全的通�
 $_LANG['store']['ox']['promo']['sidebar']['title'] = "专业电子邮件";
 $_LANG['store']['ox']['promo']['sidebar']['body'] = "为您的小型企业提供可靠，价格合理的电子邮件";
 
-$_LANG['ox']['intro'] = "这是您可以为OX App Suite订阅创建和管理邮箱和用户的地方。";
+$_LANG['store']['addon']['wptk']['title'] = "WP工具包";
+$_LANG['store']['addon']['wptk']['pleskTitle'] = "WordPress的智能更新";
+$_LANG['store']['addon']['wptk']['pleskTagline'] = "为您的WordPress体验充电";
+$_LANG['store']['addon']['wptk']['getItNow'] = "立即获取";
+$_LANG['store']['addon']['wptk']['redefined1'] = "WordPress 管理重新定义";
+$_LANG['store']['addon']['wptk']['redefined2'] = "WP 工具包豪华版";
+$_LANG['store']['addon']['wptk']['switchCpanel'] = "正在寻找适用于 cPanel 的 WP 工具包？";
+$_LANG['store']['addon']['wptk']['switchPlesk'] = "正在寻找适用于 Plesk 的 WP 工具包？";
+$_LANG['store']['addon']['wptk']['introTitle'] = "WP Toolkit Deluxe 提供强大的 WordPress 插件 &amp; 主题管理、安全强化、自动化、克隆和备份/恢复所有这些都来自一个用户友好的仪表板。";
+$_LANG['store']['addon']['wptk']['introBody'] = "从管理 WordPress 中消除猜测和跑腿工作。除了您所期望的一切，从轻松备份和恢复到搜索引擎索引管理和一键 WordPress 登录，您还可以获得自动智能更新、登台和克隆以轻松复制或测试现有网站、一键安全加固、 还有更多！";
+$_LANG['store']['addon']['wptk']['pleskIntroTitle'] = "WP Toolkit 的智能更新识别并分析您的 WordPress 安装的任何潜在更新，然后执行更新而不会对您的 实时网站或通知您现在有潜在危险的更新可用。";
+$_LANG['store']['addon']['wptk']['pleskIntroBody'] = "Smart Updates 使用尖端的智能和自动化技术，使您的 WordPress 网站保持最新、在线，并且不会对您的核心文件、插件和主题进行任何潜在的破坏性更新。";
+$_LANG['store']['addon']['wptk']['midTitle1'] = "您唯一需要的工具包：:breaktag";
+$_LANG['store']['addon']['wptk']['featureTitle1'] = "快速创建 &amp; 容易";
+$_LANG['store']['addon']['wptk']['featureBody1'] = "安装和配置插件和主题，只需一个点击几下。";
+$_LANG['store']['addon']['wptk']['featureTitle2'] = "安全实验";
+$_LANG['store']['addon']['wptk']['featureBody2'] = "克隆任何现有的 WordPress 站点以测试设计、插件或您站点的任何方面。然后随时同步回您的实时站点 你选。";
+$_LANG['store']['addon']['wptk']['featureTitle3'] = "享受安全";
+$_LANG['store']['addon']['wptk']['featureBody3'] = "单击一个按钮将扫描并强化您的 WordPress 网站以抵御您选择的安全风险。您还可以使用密码保护特定网站 或页面。";
+$_LANG['store']['addon']['wptk']['featureTitle4'] = "自动更新";
+$_LANG['store']['addon']['wptk']['featureBody4'] = "智能更新会自动识别和分析更新的兼容性和安全性，然后安装或通知您任何问题，确保您网站的安全。";
+$_LANG['store']['addon']['wptk']['featureTitle5'] = "克隆和大规模强化";
+$_LANG['store']['addon']['wptk']['featureBody5'] = "创建您的实时站点的副本进行试验，同时只需单击一下即可保护您的所有 WordPress 站点。";
+$_LANG['store']['addon']['wptk']['featureTitle6'] = "维护模式";
+$_LANG['store']['addon']['wptk']['featureBody6'] = "在显示自定义消息时关闭您的网站。";
+$_LANG['store']['addon']['wptk']['smartUpdates']['featureTitle1'] = "它是如何工作的？";
+$_LANG['store']['addon']['wptk']['smartUpdates']['featureBody1'] = "Smart Updates 克隆并更新实时网站的副本，然后比较两个版本以确定成功。";
+$_LANG['store']['addon']['wptk']['smartUpdates']['featureTitle2'] = "如果更新是安全的怎么办？";
+$_LANG['store']['addon']['wptk']['smartUpdates']['featureBody2'] = "安全更新可以自动安装到实时网站，没有破坏或以其他方式损坏网站的风险。";
+$_LANG['store']['addon']['wptk']['smartUpdates']['featureTitle3'] = "如果更新不安全怎么办？";
+$_LANG['store']['addon']['wptk']['smartUpdates']['featureBody3'] = "网站所有者将看到一个界面来查看发现的每个问题，以确定他们是否希望继续。";
+$_LANG['store']['addon']['wptk']['plesk']['featureTitle1'] = "WordPress 简化版";
+$_LANG['store']['addon']['wptk']['plesk']['featureBody1'] = "一键安装程序从头到尾初始化和配置WordPress。一个仪表板可以批量管理多个WordPress 实例。";
+$_LANG['store']['addon']['wptk']['plesk']['featureTitle2'] = "阶段和测试";
+$_LANG['store']['addon']['wptk']['plesk']['featureBody2'] = "在将新功能和想法推向生产之前在沙箱中测试新功能和想法 – 无需插件，无需单独的服务器需要。";
+$_LANG['store']['addon']['wptk']['plesk']['featureTitle3'] = "抵御攻击";
+$_LANG['store']['addon']['wptk']['plesk']['featureBody3'] = "默认强化您的站点，使用 WP Toolkit 的安全扫描器进一步增强。无需安全专业知识。";
+$_LANG['store']['addon']['wptk']['plesk']['featureTitle4'] = "运行和自动化";
+$_LANG['store']['addon']['wptk']['plesk']['featureBody4'] = "单独或批量执行 WordPress 或其主题或插件的更新。监控并运行您所有的 WordPress 站点 从一个仪表板。";
+$_LANG['store']['addon']['wptk']['plesk']['featureTitle5'] = "降低复杂性";
+$_LANG['store']['addon']['wptk']['plesk']['featureBody5'] = "Stage、Clone、Sync、Update、Migrate 等复杂任务一键执行。不再有压力-退出开发团队，不再有高风险活动。";
+$_LANG['store']['addon']['wptk']['plesk']['featureTitle6'] = "简单，但不是业余的";
+$_LANG['store']['addon']['wptk']['plesk']['featureBody6'] = "使用 WP-CLI、维护模式、调试管理、搜索引擎索引管理等获得完全控制。";
+$_LANG['store']['addon']['wptk']['midTitle2'] = "最完整、最安全、最通用的 WordPress 工具包";
+$_LANG['store']['addon']['wptk']['screenshotDesc'] = "WP Toolkit Deluxe 提供了安装、配置、更新和保护 WordPress 网站所需的一切。今天升级到 WP Toolkit Deluxe低至：:price.";
+$_LANG['store']['addon']['wptk']['screenshotDescFree'] = "WP Toolkit Deluxe 提供了安装、配置、更新和保护 WordPress 网站所需的一切。立即升级到 WP Toolkit Deluxe。";
+$_LANG['store']['addon']['wptk']['smartUpdates']['screenshotDesc'] = "WP Toolkit 的智能更新提供了使 WordPress 网站保持最新和运行所需的一切顺利。今天以低至：:price 升级到智能更新。";
+$_LANG['store']['addon']['wptk']['smartUpdates']['screenshotDescFree'] = "WP Toolkit 的智能更新提供了使 WordPress 网站保持最新和运行所需的一切顺利。今天升级到智能更新。";
+$_LANG['store']['addon']['wptk']['getStartedToday'] = "今天开始使用 WP Toolkit Deluxe！";
+$_LANG['store']['addon']['wptk']['smartUpdates']['getStartedToday'] = "立即开始使用 WP Toolkit 的智能更新！";
+$_LANG['store']['addon']['wptk']['chooseDomains'] = "选择要添加的域名：";
+$_LANG['store']['addon']['wptk']['addAddonFor'] = "添加 :addon";
+$_LANG['store']['addon']['wptk']['unavailable'] = "不可用";
+$_LANG['store']['addon']['wptk']['for'] = "于";
+$_LANG['store']['addon']['wptk']['totalInCart'] = "购物车中的总数：";
+$_LANG['store']['addon']['wptk']['proceedToCheckout'] = "继续结帐";
+$_LANG['store']['addon']['wptk']['loginToSeePricing'] = "登录查看价格以添加到您现有的虚拟主机";
+$_LANG['store']['addon']['wptk']['loginNow'] = "立即登录";
+$_LANG['store']['addon']['wptk']['browsePackages'] = "浏览托管包";
+$_LANG['store']['addon']['wptk']['faqQ1'] = "WP Toolkit 是什么？";
+$_LANG['store']['addon']['wptk']['faqA1'] = "WP Toolkit 是来自 cPanel 和 Plesk 的 Wordpress 管理界面，允许您安装、配置和管理 WordPress 网站。";
+$_LANG['store']['addon']['wptk']['faqQ2'] = "WP Toolkit Deluxe 有什么不同？";
+$_LANG['store']['addon']['wptk']['faqA2'] = "WP Toolkit Deluxe 是付费升级，具有高级功能，包括插件和主题管理、登台、克隆、智能更新等。";
+$_LANG['store']['addon']['wptk']['faqQ3'] = "什么是智能更新？";
+$_LANG['store']['addon']['wptk']['faqA3'] = "智能更新在完全安全的环境中自动测试主题、插件、语言和 WordPress 本身的更新，对您的生活没有任何风险 网站。";
+$_LANG['store']['addon']['wptk']['faqQ4'] = "WP Toolkit 的价格是多少？";
+$_LANG['store']['addon']['wptk']['faqA4'] = "WP Toolkit Deluxe 可作为适用托管包的附加组件使用。要查看定价，请<a href=\":webRoot/login.php\">登录</a> 以查看您现有域的定价，或<a href=\":webRoot/register.php\">注册</a>成为新用户。";
+$_LANG['store']['addon']['wptk']['faqQ5'] = "我如何访问 WP Toolkit？";
+$_LANG['store']['addon']['wptk']['faqA5'] = "如果您有访问权限，您将在 cPanel 仪表板中找到一个 WP Toolkit 图标和链接。对于那些使用 WP Toolkit Deluxe 的人， 可以进入我们的<a href=\":webRoot/clientarea.php\">客户区</a>.";
+$_LANG['store']['addon']['wptk']['faqQ6'] = "智能更新的费用是多少？";
+$_LANG['store']['addon']['wptk']['faqA6'] = "智能更新可作为适用托管包的附加组件。要查看定价，请<a href=\":webRoot/login.php\">登录</a>以查看您现有域的定价，或<a href=\":webRoot/register.php\">注册</a>成为新客户。";
+$_LANG['store']['addon']['wptk']['faqQ7'] = "我如何访问 WP Toolkit？";
+$_LANG['store']['addon']['wptk']['faqA7'] = "如果您有访问权限，您将在Plesk仪表板中找到WP工具包图标和链接。只有在购买之后才能访问智能更新。";
+
+$_LANG['store']['addon']['notFound']['productUnavailable'] = "产品不可用";
+$_LANG['store']['addon']['notFound']['productUnavailableText'] = "该产品目前不可用。<br>如果您认为这是一个错误，请联系我们。";
+$_LANG['store']['addon']['notFound']['contactSupport'] = "联系支持";
+$_LANG['store']['addon']['notFound']['ref'] = "参考";
+
+$_LANG['ox']['intro'] = "在这里，您可以为您的 OX App Suite 订阅创建和管理用户、邮箱和别名。";
 $_LANG['ox']['accountCount'] = "您已创建 <span class=\"number\">:number</span> / <span class=\"limit\">:limit</span> 可用帐户。";
 $_LANG['ox']['refresh'] = "刷新";
 $_LANG['ox']['emailActions'] = "邮件管理";
 $_LANG['ox']['createUser'] = "创建用户";
-$_LANG['ox']['manageAccount'] = "管理";
 $_LANG['ox']['emailAccounts'] = "电子邮件帐户";
 $_LANG['ox']['emailAddress'] = "电子邮件地址";
 $_LANG['ox']['mailboxSize'] = "邮箱大小";
@@ -3673,7 +4075,8 @@ $_LANG['ox']['passwordRequired'] = "密码字段为必填项";
 $_LANG['ox']['deleteAccount'] = "删除帐户 <span class=\"email\"></span>?";
 $_LANG['ox']['manageAccount'] = "管理帐户 <span class=\"email\"></span>";
 $_LANG['ox']['setPasswordFor'] = "为 <span class=\"email\"></span> 设置密码";
-$_LANG['ox']['deleteAccountQuestion'] = "确定要删除此帐户吗？";
+$_LANG['ox']['deleteAccountQuestion'] = "你确定要删除这个帐号吗？";
+$_LANG['ox']['deleteAccountWithAliasesQuestion'] = "您确定要删除此帐户和任何别名吗？";
 $_LANG['ox']['settings']['retrieval'] = "电子邮件客户端设置";
 $_LANG['ox']['settings']['retrievalIntro'] = "要在电子邮件应用程序中配置您的电子邮件帐户，请使用以下信息。";
 $_LANG['ox']['settings']['usageInstructions'] = "使用说明";
@@ -3688,6 +4091,9 @@ $_LANG['ox']['settings']['davSettings'] = "日历和通讯录";
 $_LANG['ox']['settings']['davSettingsIntro'] = "要在个人设备上访问日历和联系人，您需要配置客户端以连接到日历的CalDAV和联系人的CardDAV。使用该信息下面配置您的客户端。";
 $_LANG['ox']['settings']['caldavPassword'] = "输入用于电子邮件登录的相同密码。";
 $_LANG['ox']['settings']['serverUrl'] = "服务器URL";
+$_LANG['ox']['settings']['migrationTitle'] = "迁移工具";
+$_LANG['ox']['settings']['migrationIntro'] = "从所有流行的电子邮件服务迁移，包括 Apple iCloud、Gmail、Outlook.com/Windows Live/Hotmail、Yahoo Mail、GMX 或 T-Online， 或使用 IMAP/POP3 或其他可用的首选协议手动输入您的提供商的信息。";
+$_LANG['ox']['settings']['migrationLaunch'] = "启动迁移工具";
 $_LANG['ox']['displayName'] = "显示名称";
 $_LANG['ox']['required']['displayName'] = "显示名称是必填字段。";
 $_LANG['ox']['required']['firstName'] = "名字是必填字段。";
@@ -3701,6 +4107,13 @@ $_LANG['ox']['accountDeleted'] = "帐户已成功删除。";
 $_LANG['ox']['accountCreated'] = "帐户创建成功。";
 $_LANG['ox']['accountModified'] = "帐户修改成功。";
 $_LANG['ox']['passwordChanged'] = "帐户密码已成功更改。";
+$_LANG['ox']['alias']['intro'] = "电子邮件别名充当您可以发送和接收邮件的附加电子邮件地址。";
+$_LANG['ox']['alias']['emailAliases'] = "电子邮件别名";
+$_LANG['ox']['alias']['deleteTitle'] = "删除别名<span class=\"alias\"></span>@:domain?";
+$_LANG['ox']['alias']['deleteQuestion'] = "你确定要删除这个别名吗？";
+$_LANG['ox']['alias']['deleteSuccess'] = "别名删除成功。";
+$_LANG['ox']['alias']['createButton'] = "创建";
+$_LANG['ox']['alias']['createSuccess'] = "别名创建成功。";
 
 $_LANG['orderForm']['upgradeQuantityCannotBeLowerThanMinimum'] = "服务数量不能低于最小值 (:minimum).";
 $_LANG['orderForm']['upgradeQuantityMustChange'] = "您必须选择计划升级或更改数量。";
@@ -3709,6 +4122,8 @@ $_LANG['unavailable'] = "不可用";
 $_LANG['orderForm']['idnNotEnabled'] = "我们目前不支持国际域名。请尝试使用其他域名。";
 
 $_LANG['store']['ssl']['landingPage']['secureInMinutes'] = "通过我们的全自动配置和部署在几分钟内保护您的网站";
+$_LANG['store']['fromJust'] = "只需";
+$_LANG['store']['forJust'] = "仅仅为了";
 
 $_LANG['goCardless']['paymentPending'] = "已提交付款，将在 :date 清除您的银行。<br>付款清除后，将发送付款确认电子邮件。";
 $_LANG['goCardless']['automaticPayment'] = "此帐户有自动支付设置，不需要手动支付。";
@@ -3755,4 +4170,372 @@ $_LANG['requestor'] = "提交人";
 
 $_LANG['facebook']['notAuthorized'] = "您没有授权使用Facebook进行身份验证。我们无法使用它登录。";
 
-////////// End of chinese language file.  Do not place any translation strings below this line! Rodots 傲世 WHMCS8.1.3 WHMCS-zh-CN
+$_LANG['navMarketConnectService']['siteBuilder'] = "Site Builder";
+$_LANG['marketConnect']['siteBuilder']['ftpHost'] = "FTP 主机";
+$_LANG['marketConnect']['siteBuilder']['ftpUsername'] = "FTP 用户名";
+$_LANG['marketConnect']['siteBuilder']['ftpPassword'] = "FTP 密码";
+$_LANG['marketConnect']['siteBuilder']['ftpPath'] = "FTP 路径";
+$_LANG['marketConnect']['siteBuilder']['updateFtp'] = "更新 FTP 凭证";
+$_LANG['marketConnect']['siteBuilder']['manage'] = "登录到Site Builder";
+$_LANG['store']['siteBuilder']['upgrade']['title'] = "Site Builder";
+$_LANG['store']['siteBuilder']['upgrade']['required'] = "需要升级";
+$_LANG['store']['siteBuilder']['upgrade']['requiredDescription'] = "要访问您请求的功能，您需要升级您的 Site Builder 计划。";
+$_LANG['store']['siteBuilder']['upgrade']['recommended'] = "显示推荐方案。";
+$_LANG['store']['siteBuilder']['upgrade']['login'] = "要查看可用选项，请登录。";
+$_LANG['store']['siteBuilder']['upgrade']['no'] = "无可用升级";
+$_LANG['store']['siteBuilder']['upgrade']['noUpgrade'] = "目前没有可用的升级。";
+$_LANG['store']['siteBuilder']['upgrade']['submitTicket'] = "联系支持";
+$_LANG['store']['siteBuilder']['upgrade']['to'] = "升级到 :product 适用 :amount";
+$_LANG['store']['siteBuilder']['upgrade']['noPlans'] = "未找到有效的 Site Builder 计划。";
+$_LANG['store']['siteBuilder']['upgrade']['loggedInAs'] = "您当前以 :email 身份登录";
+$_LANG['store']['siteBuilder']['upgrade']['switchUser'] = "注销/切换用户";
+
+$_LANG['domainRenewal']['freeWithService'] = "免费续订服务";
+$_LANG['domainRenewal']['freeWithServiceDesc'] = "在相关服务处于活动状态时自动提供续订，无需额外费用。";
+
+$_LANG['store']['siteBuilder']['title'] = "站点构建器";
+$_LANG['store']['siteBuilder']['introHeadline'] = "您的上云 <br class=\"hidden-xs\">从这里开始。";
+$_LANG['store']['siteBuilder']['intro1'] = "创建网络展示需要合适的平台。使用我们的拖放DIY Site Builder，您会注意到这一点。";
+$_LANG['store']['siteBuilder']['intro2'] = "无论您是想推广您自己还是您的业务，我们的网站构建器都是一个模板和基于向导的模板，其指导内容对于初学者来说足够简单，而对于专业人士来说功能丰富。感觉像PowerPoint，但更有肌肉，更优雅，更简单。一个您会喜欢使用的解决方案。";
+$_LANG['store']['siteBuilder']['featuresTitle'] = "站点构建器功能";
+$_LANG['store']['siteBuilder']['featuresEssentials'] = "必需品";
+$_LANG['store']['siteBuilder']['featuresSocial'] = "社交媒体和博客";
+$_LANG['store']['siteBuilder']['featuresStore'] = "网上商店";
+$_LANG['store']['siteBuilder']['features']['essentials']['tagline'] = "我们的网站构建器包括全套功能。";
+$_LANG['store']['siteBuilder']['features']['blog']['tagline'] = "分享你的故事让一切变得不同。通过社交媒体和您的博客与您的访问者建立联系。";
+$_LANG['store']['siteBuilder']['features']['store']['tagline'] = "在线销售可以促进您的业务。将您的网站打造为商店、精品店或商店。";
+$_LANG['store']['siteBuilder']['features']['essentials']['1'] = "拖放编辑器";
+$_LANG['store']['siteBuilder']['features']['essentials']['2'] = "构建特色";
+$_LANG['store']['siteBuilder']['features']['essentials']['3'] = "预先设计的模板";
+$_LANG['store']['siteBuilder']['features']['essentials']['4'] = "内置响应式";
+$_LANG['store']['siteBuilder']['features']['essentials']['5'] = "库存照片集成";
+$_LANG['store']['siteBuilder']['features']['essentials']['6'] = "自动保存和备份";
+$_LANG['store']['siteBuilder']['featuresdescriptions']['essentials']['1'] = "拖放编辑器允许客户直接在页面上添加和排列网站功能，并预测突出显示区域放置。";
+$_LANG['store']['siteBuilder']['featuresdescriptions']['essentials']['2'] = "您可以使用现成的布局元素，如文本、按钮、照片或图标来构建任何自定义具有专业外观的网站布局。";
+$_LANG['store']['siteBuilder']['featuresdescriptions']['essentials']['3'] = "您不必浪费时间操作内容布局。350 多个内容块的集合可以帮助他们无需任何技术技能即可建立专业网站。";
+$_LANG['store']['siteBuilder']['featuresdescriptions']['essentials']['4'] = "网站在任何设备上看起来都很棒。模板对所有设备 100% 响应，包括智能手机、平板电脑和桌面。";
+$_LANG['store']['siteBuilder']['featuresdescriptions']['essentials']['5'] = "选择超过 200,000 张高分辨率的专业优质照片为您的网站提供支持。我们的网站构建器也包括嵌入式视频和图像优化。";
+$_LANG['store']['siteBuilder']['featuresdescriptions']['essentials']['6'] = "实时保存您可以确保不会丢失任何工作。编辑器会自动保存所有内容，同时你工作。";
+$_LANG['store']['siteBuilder']['features']['blog']['1'] = "博客页面";
+$_LANG['store']['siteBuilder']['features']['blog']['2'] = "草稿";
+$_LANG['store']['siteBuilder']['features']['blog']['3'] = "帖子编辑器";
+$_LANG['store']['siteBuilder']['features']['blog']['4'] = "社交分享";
+$_LANG['store']['siteBuilder']['features']['blog']['5'] = "Facebook 评论和喜欢";
+$_LANG['store']['siteBuilder']['features']['blog']['6'] = "Instagram 和 Twitter Connect";
+$_LANG['store']['siteBuilder']['featuresdescriptions']['blog']['1'] = "通过向您的网站添加可自定义的博客，分享您的故事并与访问者建立联系。配置帖子外观您发布的网站。";
+$_LANG['store']['siteBuilder']['featuresdescriptions']['blog']['2'] = "现在创建您的博客文章以保存并稍后发布，以配合特定新闻或特别促销。";
+$_LANG['store']['siteBuilder']['featuresdescriptions']['blog']['3'] = "在使用内置的帖子内容创作工具发布后对博客帖子进行更改和编辑。";
+$_LANG['store']['siteBuilder']['featuresdescriptions']['blog']['4'] = "通过添加 Facebook、Twitter 等社交媒体平台的图标，鼓励访问者喜欢和分享您的内容、LinkedIn 和 Pinterest 到您的网站。";
+$_LANG['store']['siteBuilder']['featuresdescriptions']['blog']['5'] = "让访问者可以在不离开您的网站的情况下评论和喜欢您链接的 Facebook 页面。";
+$_LANG['store']['siteBuilder']['featuresdescriptions']['blog']['6'] = "每次发布时自动在您的网站上展示您的 Instagram 照片，并通过显示您的 Twitter 帐户的实时提要。";
+$_LANG['store']['siteBuilder']['features']['store']['1'] = "灵活的计划";
+$_LANG['store']['siteBuilder']['features']['store']['2'] = "安全和全球支付";
+$_LANG['store']['siteBuilder']['features']['store']['3'] = "轻松快速结账";
+$_LANG['store']['siteBuilder']['features']['store']['5'] = "产品列表和管理";
+$_LANG['store']['siteBuilder']['features']['store']['6'] = "促销、折扣和优惠券";
+$_LANG['store']['siteBuilder']['features']['store']['7'] = "库存管理";
+$_LANG['store']['siteBuilder']['features']['store']['8'] = "全球配送";
+$_LANG['store']['siteBuilder']['features']['store']['9'] = "税费和增值税";
+$_LANG['store']['siteBuilder']['features']['store']['10'] = "订单管理和跟踪";
+$_LANG['store']['siteBuilder']['featuresdescriptions']['store']['1'] = "无论您是精品店、商店还是全店，计划可用于 10、50 和500 种产品。";
+$_LANG['store']['siteBuilder']['featuresdescriptions']['store']['2'] = "与 Paypal、Square、Stripe 和 50 多家值得信赖的信用卡支付提供商联系，立即接受信用卡。";
+$_LANG['store']['siteBuilder']['featuresdescriptions']['store']['3'] = "通过在结账期间进行可选注册，让客户更快、更轻松地结账。提供安全的单页结账包括客户订单评论。";
+$_LANG['store']['siteBuilder']['featuresdescriptions']['store']['5'] = "从多个产品页面布局中进行选择，并根据需要自定义描述和设计。让客户更轻松通过将产品分类来查找产品。";
+$_LANG['store']['siteBuilder']['featuresdescriptions']['store']['6'] = "创建折扣优惠券或促销代码以增加销售额。通过显示常规价格和折扣价格来增加转化率。";
+$_LANG['store']['siteBuilder']['featuresdescriptions']['store']['7'] = "库存跟踪有助于了解是否需要补充产品库存以及哪些产品变体最受欢迎。";
+$_LANG['store']['siteBuilder']['featuresdescriptions']['store']['8'] = "通过将您的在线商店与运营商公司联系起来，您可以在结账时为您的客户提供实时运营商费率如美国邮政、联邦快递、UPS、澳大利亚邮政、加拿大邮政等";
+$_LANG['store']['siteBuilder']['featuresdescriptions']['store']['9'] = "对任何国家应用税收计算或定义特定区域。完全控制税收计算；设置税收每个位置，每组产品加税，或设置免税产品。";
+$_LANG['store']['siteBuilder']['featuresdescriptions']['store']['10'] = "通过电子邮件即时接收订单通知。管理和查看所有订单的概览、搜索订单、过滤他们按类别更新订单、客户信息并添加发货跟踪号。";
+$_LANG['store']['siteBuilder']['viewPricing'] = "查看价格和套餐";
+$_LANG['store']['siteBuilder']['templatesTitle'] = "业务加速模板";
+$_LANG['store']['siteBuilder']['templatesOutro'] = "使用 Site Builder 查看所有 150 多个模板，让您快速轻松地开始使用。";
+$_LANG['store']['siteBuilder']['tryFree'] = "免费试用 Site Builder";
+$_LANG['store']['siteBuilder']['tryFreeIntro'] = "通过开放试用，您可以免费试用 Site Builder 并完全构建您的新网站，无需预付费用。";
+$_LANG['store']['siteBuilder']['tryFreeIntro2'] = "在您准备好发布之前无需支付任何费用！";
+$_LANG['store']['siteBuilder']['tryFreeCta'] = "立即免费试用 Site Builder";
+$_LANG['store']['siteBuilder']['pricingTitle'] = "定价";
+$_LANG['store']['siteBuilder']['featuresLabelTitle'] = "特征";
+$_LANG['store']['siteBuilder']['featuresLabels']['0'] = "专业质量的网站模板";
+$_LANG['store']['siteBuilder']['featuresLabels']['1'] = "所有技能水平的用户至上设计";
+$_LANG['store']['siteBuilder']['featuresLabels']['2'] = "轻松拖放编辑";
+$_LANG['store']['siteBuilder']['featuresLabels']['3'] = "响应移动设备";
+$_LANG['store']['siteBuilder']['featuresLabels']['4'] = "免费图片库";
+$_LANG['store']['siteBuilder']['featuresLabels']['5'] = "基于组件的构建块";
+$_LANG['store']['siteBuilder']['featuresLabels']['6'] = "博客";
+$_LANG['store']['siteBuilder']['featuresLabels']['7'] = "比例间距自动布局";
+$_LANG['store']['siteBuilder']['featuresLabels']['8'] = "联系表单生成器";
+$_LANG['store']['siteBuilder']['featuresLabels']['9'] = "恢复网站";
+$_LANG['store']['siteBuilder']['featuresLabels']['10'] = "主题继承";
+$_LANG['store']['siteBuilder']['featuresLabels']['11'] = "社交媒体整合";
+$_LANG['store']['siteBuilder']['featuresLabels']['12'] = "友好SEO";
+$_LANG['store']['siteBuilder']['featuresLabels']['13'] = "内置分析";
+$_LANG['store']['siteBuilder']['featuresLabels']['14'] = "页面";
+$_LANG['store']['siteBuilder']['featuresLabels']['15'] = "电子商务产品";
+$_LANG['store']['siteBuilder']['compareTitle'] = "我们的Site Builder与竞争对手相比如何？";
+$_LANG['store']['siteBuilder']['compare1'] = "面向所有技能级别的用户至上设计";
+$_LANG['store']['siteBuilder']['compare1desc'] = "为简单易用而设计意味着更高的 CSS（客户满意度得分）和更好的用户体验。";
+$_LANG['store']['siteBuilder']['compare2'] = "响应移动设备";
+$_LANG['store']['siteBuilder']['compare2desc'] = "为不同的移动设备创建网站时节省了大量的时间和精力。";
+$_LANG['store']['siteBuilder']['compare3'] = "基于组件构建";
+$_LANG['store']['siteBuilder']['compare3desc'] = "预先设计的构建块将帮助您构建专业的网站，而无需浪费时间处理内容布局。";
+$_LANG['store']['siteBuilder']['compare4'] = "无需编码";
+$_LANG['store']['siteBuilder']['compare4desc'] = "SiteBuilder的目标不是专业程序员。我们的目标是为中小企业提供一个平台，任何人都可以使用它在几分钟内创建在任何设备上运行的优雅网站。";
+$_LANG['store']['siteBuilder']['compare5'] = "花更少的钱买更多的东西";
+$_LANG['store']['siteBuilder']['compare5desc'] = "其他网站构建工具的价格的一半，但可以获得所有好处和更好的功能。";
+
+$_LANG['store']['siteBuilder']['templates']['singlePage'] = "单页模板";
+$_LANG['store']['siteBuilder']['templates']['multiPage'] = "多页面模板";
+$_LANG['store']['siteBuilder']['templates']['eCommerce'] = "电子商务模板";
+$_LANG['store']['siteBuilder']['templates']['typeLabels']['single'] = "单页";
+$_LANG['store']['siteBuilder']['templates']['typeLabels']['multi'] = "多页";
+$_LANG['store']['siteBuilder']['templates']['typeLabels']['ecom'] = "电子商务";
+$_LANG['store']['siteBuilder']['templates']['barber-shop'] = "理发店";
+$_LANG['store']['siteBuilder']['templates']['bike-event'] = "自行车活动";
+$_LANG['store']['siteBuilder']['templates']['childcare'] = "幼师";
+$_LANG['store']['siteBuilder']['templates']['conference'] = "会议";
+$_LANG['store']['siteBuilder']['templates']['creative-portfolio'] = "创意组合";
+$_LANG['store']['siteBuilder']['templates']['dj'] = "DJ";
+$_LANG['store']['siteBuilder']['templates']['gardener'] = "园丁";
+$_LANG['store']['siteBuilder']['templates']['makeup-artist'] = "化妆师";
+$_LANG['store']['siteBuilder']['templates']['painters'] = "画家";
+$_LANG['store']['siteBuilder']['templates']['landscape-photographer'] = "风景摄影师";
+$_LANG['store']['siteBuilder']['templates']['rock-band'] = "摇滚乐队";
+$_LANG['store']['siteBuilder']['templates']['seafood-restaurant'] = "海鲜餐厅";
+$_LANG['store']['siteBuilder']['templates']['sushi-restaurant'] = "寿司餐厅";
+$_LANG['store']['siteBuilder']['templates']['tailor-shop'] = "裁缝店";
+$_LANG['store']['siteBuilder']['templates']['training-courses'] = "培训课程";
+$_LANG['store']['siteBuilder']['templates']['travel-tours'] = "旅行团";
+$_LANG['store']['siteBuilder']['templates']['wedding-planner'] = "婚礼策划师";
+$_LANG['store']['siteBuilder']['templates']['writer'] = "作家";
+$_LANG['store']['siteBuilder']['templates']['architect'] = "建筑师";
+$_LANG['store']['siteBuilder']['templates']['beauty-salon'] = "美容沙龙";
+$_LANG['store']['siteBuilder']['templates']['biography'] = "传记";
+$_LANG['store']['siteBuilder']['templates']['blog-page'] = "博客页面";
+$_LANG['store']['siteBuilder']['templates']['burger-cafe'] = "汉堡咖啡馆";
+$_LANG['store']['siteBuilder']['templates']['car-dealer'] = "汽车经销商";
+$_LANG['store']['siteBuilder']['templates']['餐饮服务'] = "餐饮服务";
+$_LANG['store']['siteBuilder']['templates']['city-hotel'] = "城市酒店";
+$_LANG['store']['siteBuilder']['templates']['cleaning-services'] = "清洁服务";
+$_LANG['store']['siteBuilder']['templates']['coffee-house'] = "咖啡馆";
+$_LANG['store']['siteBuilder']['templates']['crossfit'] = "健身";
+$_LANG['store']['siteBuilder']['templates']['dentist-v2'] = "牙医";
+$_LANG['store']['siteBuilder']['templates']['event-venue'] = "活动场地";
+$_LANG['store']['siteBuilder']['templates']['handyman'] = "杂务工";
+$_LANG['store']['siteBuilder']['templates']['life-coach'] = "生活教练";
+$_LANG['store']['siteBuilder']['templates']['local-cafe'] = "当地咖啡馆";
+$_LANG['store']['siteBuilder']['templates']['locksmith'] = "锁匠";
+$_LANG['store']['siteBuilder']['templates']['mobile-app'] = "移动应用";
+$_LANG['store']['siteBuilder']['templates']['mortgage-brokers'] = "抵押经纪人";
+$_LANG['store']['siteBuilder']['templates']['photographer'] = "摄影师";
+$_LANG['store']['siteBuilder']['templates']['real-estate'] = "房地产";
+$_LANG['store']['siteBuilder']['templates']['spa'] = "温泉";
+$_LANG['store']['siteBuilder']['templates']['villa-rental'] = "别墅出租";
+$_LANG['store']['siteBuilder']['templates']['wedding-event'] = "婚礼活动";
+$_LANG['store']['siteBuilder']['templates']['animal-groomers'] = "动物美容师";
+$_LANG['store']['siteBuilder']['templates']['bakery'] = "面包店";
+$_LANG['store']['siteBuilder']['templates']['beauty-store'] = "美容店";
+$_LANG['store']['siteBuilder']['templates']['blinds'] = "百叶窗";
+$_LANG['store']['siteBuilder']['templates']['bookstore'] = "书店";
+$_LANG['store']['siteBuilder']['templates']['furniture-collection'] = "家具收藏";
+$_LANG['store']['siteBuilder']['templates']['grape-farm'] = "葡萄农场";
+$_LANG['store']['siteBuilder']['templates']['grocery-store'] = "杂货店";
+$_LANG['store']['siteBuilder']['templates']['home-decor'] = "家居装饰";
+$_LANG['store']['siteBuilder']['templates']['toy-store'] = "玩具店";
+$_LANG['store']['siteBuilder']['templates']['tyre-repairs'] = "轮胎维修";
+
+$_LANG['marketConnect']['siteBuilder']['buildWebsite'] = "建立你的网站";
+$_LANG['store']['siteBuilder']['cartTitle'] = "响应式 site builder";
+$_LANG['store']['siteBuilder']['cartShortDescription'] = "将我们的网站构建器添加到您的订单中，以创建外观精美的网站、商店或博客。";
+
+$_LANG['clickHere'] = "点击这里";
+$_LANG['buy'] = "购买";
+$_LANG['viewMore'] = "查看更多...";
+
+$_LANG['store']['siteBuilder']['promo']['sidebar']['title'] = "添加站点构建器";
+$_LANG['store']['siteBuilder']['promo']['sidebar']['body'] = "使用 Site Builder 快速创建您的网站";
+
+$_LANG['cPanel']['wptk'] = "WP Toolkit";
+
+$_LANG['wptk']['goToWebsite'] = "转到网站";
+$_LANG['wptk']['goToAdmin'] = "管理员";
+$_LANG['wptk']['createNew'] = "新建";
+$_LANG['wptk']['installationSuccess'] = "<strong>成功！</strong> <a href=\"\" target=\"_blank\" id=\"newWordPressLink\">访问</a > 您的新 WordPress® 安装，或转到 <a href=\"\" target=\"_blank\" id=\"newWordPressAdminLink\">管理区域</a>。";
+$_LANG['wptk']['installWordPress'] = "安装WordPress";
+$_LANG['wptk']['installWordPressShort'] = "安装";
+
+$_LANG['api']['client']['countryError'] = "需要有效的国家/地区";
+
+$_LANG['plesk']['mail'] = "邮件";
+$_LANG['plesk']['applications'] = "应用程序";
+$_LANG['plesk']['statistics'] = "统计";
+$_LANG['plesk']['users'] = "用户";
+$_LANG['plesk']['manageDomains'] = "管理域";
+
+$_LANG['contactCreated'] = "联系人创建成功！";
+$_LANG['contactUpdated'] = "联系人更新成功！";
+$_LANG['contactDeleted'] = "联系人删除成功！";
+$_LANG['recommended'] = "推荐";
+
+$_LANG['ssl']['siteSeal'] = "站点印章";
+$_LANG['ssl']['getSiteSeal'] = "获取站点印章代码";
+$_LANG['ssl']['copyTheSiteSeal'] = "从下面的文本中复制您的站点印章代码：";
+$_LANG['ssl']['howToUseSiteSeal'] = "如何使用站点印章代码";
+$_LANG['ssl']['siteSealError1'] = "只有证书颁发机构颁发证书后，您才能检索印章HTML代码。";
+$_LANG['ssl']['sealSuccess'] = "您的站点印章代码已成功检索。";
+$_LANG['ssl']['rapidSslInstructions'] = "将 HTML 图像标签复制到您的 HTML 文档中您希望显示 RapidSSL 印章的位置。";
+$_LANG['ssl']['siteSealInstructions1'] = "复制 DigiCert Seal HTML 部分并将其粘贴到 HTML 文档中您希望站点印章显示的位置。";
+$_LANG['ssl']['siteSealInstructions2'] = "复制 DigiCert Seal Code 部分并将其粘贴到 HTML 文档的 HEAD 部分。";
+$_LANG['ssl']['certError1'] = "只有在证书颁发机构颁发证书后，您才能检索证书。";
+$_LANG['ssl']['certError2'] = "如果您最近提交了配置信息，请留出时间让证书颁发机构完成安全检查并颁发证书。对于 DV 订单，这通常在 24 小时内。OV 和EV 证书可能需要长达 3 天。";
+$_LANG['ssl']['certError3'] = "如果您继续看到此消息，<a href=\"submitticket.php\">联系支持人员</a>。";
+$_LANG['ssl']['retrived'] = "系统成功检索到您的证书。";
+$_LANG['ssl']['copyCert'] = "从下面的文本中复制您的证书：";
+$_LANG['ssl']['installing'] = "安装你的证书";
+$_LANG['ssl']['howToInstall'] = "要安装您的证书，请将上面的证书上传到您的服务器或控制面板。执行此操作的方法取决于您的托管环境。";
+$_LANG['ssl']['installFurtherInfo'] = "更多信息，请参见:anchorRapidSSL 安装支持:endAnchor 页面。";
+
+$_LANG['recommendations']['title']['generic'] = "推荐";
+$_LANG['recommendations']['title']['addedTo'] = "已加入购物车";
+$_LANG['recommendations']['title']['yourOrder'] = "根据您的订单";
+$_LANG['recommendations']['title']['yourProducts'] = "基于您的产品";
+$_LANG['recommendations']['explain']['generic'] = "根据您的订单，我们建议：";
+$_LANG['recommendations']['explain']['product'] = "基于此产品，我们推荐：";
+$_LANG['recommendations']['explain']['ordered'] = "因为您订购了<strong>:productName</strong>，我们推荐：";
+$_LANG['recommendations']['learnMore'] = "点击了解更多。";
+$_LANG['recommendations']['productAdded'] = "产品添加";
+$_LANG['recommendations']['taglinePlaceholder'] = "该产品没有描述（标语）。";
+
+$_LANG['copyToClipboard'] = "复制到剪贴板";
+
+$_LANG['usagebilling']['metric']['diskSpace'] = "磁盘空间";
+$_LANG['usagebilling']['metric']['bandwidth'] = "带宽";
+$_LANG['usagebilling']['metric']['emailAccounts'] = "电子邮件帐户";
+$_LANG['usagebilling']['metric']['addonDomains'] = "插件域";
+$_LANG['usagebilling']['metric']['parkedDomains'] = "Parked Domains";
+$_LANG['usagebilling']['metric']['subDomains'] = "子域";
+$_LANG['usagebilling']['metric']['mysqlDatabases'] = "MySQL 数据库";
+$_LANG['usagebilling']['metric']['mysqlDiskUsage'] = "MySQL 磁盘使用情况";
+$_LANG['usagebilling']['metric']['subAccounts'] = "子账户";
+
+$_LANG['idna']['emptyLabel'] = "域名输入为空。";
+$_LANG['idna']['labelTooLong'] = "域标签已超过最大长度。";
+$_LANG['idna']['domainTooLong'] = "域名已超过最大长度。";
+$_LANG['idna']['invalidDomain'] = "域名无效。";
+$_LANG['idna']['unknownError'] = "发生未知错误。";
+
+$_LANG['domains']['europeanDomainTerms'] = "关于您的联系数据的重要信息：根据合同，我们有义务与该 TLD 的注册机构共享您的个人信息。我们会将您的个人信息传输到注册机构，该注册机构可能会发布公开给 WHOIS。有关我们为何分享您的个人信息的详细信息，请查看我们的隐私政策和域名注册协议。";
+
+
+$_LANG['store']['ssl']['shared']['oneYearPrice'] = "1 年";
+$_LANG['store']['ssl']['shared']['twoYearPrice'] = "2 年";
+$_LANG['store']['ssl']['shared']['threeYearPrice'] = "3 年";
+
+$_LANG['store']['ssl']['landingPage']['multiYear']['title'] = "多年 SSL 证书";
+$_LANG['store']['ssl']['landingPage']['multiYear']['p1'] = "多年期证书让您以单一折扣价购买两到三年的 SSL 证书覆盖范围. 当您购买多年期 SSL 证书时，您将锁定一个价格，最多可享受 3 年的保障。";
+$_LANG['store']['ssl']['landingPage']['multiYear']['p2'] = "最初，您将收到一个在证书颁发机构浏览器论坛允许的最长期限内有效的证书（1年零 1 个月），有权在订单期间无限次重新颁发证书。";
+$_LANG['store']['ssl']['landingPage']['multiYear']['p3'] = "自动补发将在整个期限内自动进行，以确保您的网站得到持续保护。";
+$_LANG['store']['ssl']['landingPage']['multiYear']['p4'] = "例如，2 年 SSL 证书订单的工作方式如下：";
+$_LANG['store']['ssl']['landingPage']['multiYear']['p5'] = "SSL证书必须定期重新验证。最长证书有效期为13个月，需要每年重新验证。";
+$_LANG['store']['ssl']['landingPage']['multiYear']['benefits']['title'] = "Benefits";
+$_LANG['store']['ssl']['landingPage']['multiYear']['benefits']['b1'] = "您购买的每一年的保险都享受越来越多的折扣。";
+$_LANG['store']['ssl']['landingPage']['multiYear']['benefits']['b2'] = "免去按年计费的麻烦。";
+$_LANG['store']['ssl']['landingPage']['multiYear']['benefits']['b3'] = "年度验证。在较短的有效期证书中每年验证身份可防止潜在的欺诈和欺骗.";
+$_LANG['navMarketConnectService']['xovinow'] = "XOVI NOW";
+$_LANG['marketConnect']['xoviNow']['manage'] = "立即登录 XOVI NOW";
+$_LANG['store']['xoviNow']['title'] = 'XOVI NOW';
+$_LANG['store']['xoviNow']['tagline'] = '通过 :lineBreak XOVI NOW 在线查找';
+$_LANG['store']['xoviNow']['getStarted'] = '开始';
+$_LANG['store']['xoviNow']['productTourTitle'] = '产品之旅';
+$_LANG['store']['xoviNow']['measureResultsTitle'] = "触手可及的测量结果";
+$_LANG['store']['xoviNow']['measureResults1'] = "假设您想在明年发展您的业务。您可以先在 SEO 机构投资一些钱，但这似乎是压倒性的 没有技术技能的人的任务！";
+$_LANG['store']['xoviNow']['measureResults2'] = ":startBold 幸运的是，有一个更简单的方法 :endBold: 让我们确保人们从他们使用 cPanel 的在线搜索中找出是什么让您的公司变得如此出色 搜索引擎优化。";
+$_LANG['store']['xoviNow']['features']['keywords']['title'] = 'Keywords';
+$_LANG['store']['xoviNow']['features']['advisor']['title'] = 'Advisor';
+$_LANG['store']['xoviNow']['features']['rankTracker']['title'] = 'Rank Tracker';
+$_LANG['store']['xoviNow']['features']['siteAudit']['title'] = '网站审核';
+$_LANG['store']['xoviNow']['features']['textOptimizer']['title'] = '文本优化器';
+$_LANG['store']['xoviNow']['features']['benchmarking']['title'] = 'Benchmarking';
+$_LANG['store']['xoviNow']['features']['keywords']['line1'] = "用于研究和灵感的 53M+ 关键字数据库";
+$_LANG['store']['xoviNow']['features']['keywords']['bullet1'] = "获取全面的关键字数据";
+$_LANG['store']['xoviNow']['features']['keywords']['bullet2'] = "找出您网站的排名关键字";
+$_LANG['store']['xoviNow']['features']['keywords']['bullet3'] = "识别有前景的关键字以获得更好的流量";
+$_LANG['store']['xoviNow']['features']['keywords']['bullet4'] = "分析你的竞争对手的关键词和排名";
+$_LANG['store']['xoviNow']['features']['keywords']['bullet5'] = "比较国际市场";
+$_LANG['store']['xoviNow']['features']['keywords']['bullet6'] = "从 53M+ 关键字数据库中获利";
+$_LANG['store']['xoviNow']['features']['advisor']['line1'] = "接收、管理和解决任务以改进您的网站";
+$_LANG['store']['xoviNow']['features']['advisor']['bullet1'] = "看板式任务管理器";
+$_LANG['store']['xoviNow']['features']['advisor']['bullet2'] = "自定义和优先任务";
+$_LANG['store']['xoviNow']['features']['advisor']['bullet3'] = "详细说明和附加信息";
+$_LANG['store']['xoviNow']['features']['advisor']['bullet4'] = "无需专业知识";
+$_LANG['store']['xoviNow']['features']['advisor']['bullet5'] = "每周更新";
+$_LANG['store']['xoviNow']['features']['rankTracker']['line1'] = "监控您和竞争对手的排名";
+$_LANG['store']['xoviNow']['features']['rankTracker']['bullet1'] = "每周或每天跟踪基本排名";
+$_LANG['store']['xoviNow']['features']['rankTracker']['bullet2'] = "实体企业的本地排名";
+$_LANG['store']['xoviNow']['features']['rankTracker']['bullet3'] = "全球公司的国际排名";
+$_LANG['store']['xoviNow']['features']['rankTracker']['bullet4'] = "关注你的竞争对手";
+$_LANG['store']['xoviNow']['features']['rankTracker']['bullet5'] = "跟踪关键字排名或专用页面";
+$_LANG['store']['xoviNow']['features']['siteAudit']['line1'] = "检查您网站的技术基础";
+$_LANG['store']['xoviNow']['features']['siteAudit']['bullet1'] = "自动化的每周站点审核";
+$_LANG['store']['xoviNow']['features']['siteAudit']['bullet2'] = "技术网站检查";
+$_LANG['store']['xoviNow']['features']['siteAudit']['bullet3'] = "优先结果";
+$_LANG['store']['xoviNow']['features']['siteAudit']['bullet4'] = "显示改进";
+$_LANG['store']['xoviNow']['features']['siteAudit']['bullet5'] = "翻译结果到顾问任务";
+$_LANG['store']['xoviNow']['features']['textOptimizer']['line1'] = "通过数据驱动的内容优化提高您的排名";
+$_LANG['store']['xoviNow']['features']['textOptimizer']['bullet1'] = "将您的文本与亚马逊和谷歌的前 10 个结果进行比较";
+$_LANG['store']['xoviNow']['features']['textOptimizer']['bullet2'] = "引导式提高内容质量";
+$_LANG['store']['xoviNow']['features']['textOptimizer']['bullet3'] = "按照指示添加、增加或减少关键字";
+$_LANG['store']['xoviNow']['features']['benchmarking']['line1'] = "分析竞争对手，比较性能并提高您的 SEO";
+$_LANG['store']['xoviNow']['features']['benchmarking']['bullet1'] = "发现具有相同关键字排名的域";
+$_LANG['store']['xoviNow']['features']['benchmarking']['bullet2'] = "确定你的利基市场的领导者";
+$_LANG['store']['xoviNow']['features']['benchmarking']['bullet3'] = "比较两个或多个域的关键字排名";
+$_LANG['store']['xoviNow']['features']['benchmarking']['bullet4'] = "跟踪和比较您的竞争对手在重要关键字上的排名";
+$_LANG['store']['xoviNow']['features']['benchmarking']['bullet5'] = "跟踪和比较可见性分数";
+$_LANG['store']['xoviNow']['audience']['freelancersTitle'] = "自由职业者";
+$_LANG['store']['xoviNow']['audience']['freelancersDesc'] = "XOVI NOW 旨在为您的个人网站或客户的网站提供即时价值，从最初的网站审核到推荐改善您的搜索引擎结果。";
+$_LANG['store']['xoviNow']['audience']['smbizTitle'] = "中小企业";
+$_LANG['store']['xoviNow']['audience']['smbizDesc'] = "您不必成为 SEO 专家来提高您的业务的 Google 排名。XOVI NOW 将为您确定最佳关键字业务，同时还要关注竞争对手的表现。";
+$_LANG['store']['xoviNow']['moneyBackGuarantee'] = "灵活的定价选项：guaranteeStart 30 天退款保证：guaranteeEnd";
+$_LANG['store']['xoviNow']['featurematrix']['1'] = "项目";
+$_LANG['store']['xoviNow']['featurematrix']['2'] = "完全访问帐户";
+$_LANG['store']['xoviNow']['featurematrix']['3'] = "只读账户";
+$_LANG['store']['xoviNow']['featurematrix']['4'] = "竞争对手基准测试";
+$_LANG['store']['xoviNow']['featurematrix']['5'] = "每个项目的竞争对手";
+$_LANG['store']['xoviNow']['featurematrix']['6'] = "关键词研究";
+$_LANG['store']['xoviNow']['featurematrix']['7'] = "Rank Tracker";
+$_LANG['store']['xoviNow']['featurematrix']['8'] = "关键字抓取";
+$_LANG['store']['xoviNow']['featurematrix']['9'] = "关键字检查";
+$_LANG['store']['xoviNow']['featurematrix']['10'] = "站点审核";
+$_LANG['store']['xoviNow']['featurematrix']['11'] = "要抓取的页面";
+$_LANG['store']['xoviNow']['featurematrix']['12'] = "SEO 顾问";
+$_LANG['store']['xoviNow']['featurematrix']['13'] = "SEO 文本优化器";
+$_LANG['store']['xoviNow']['faqTitle'] = "常见问题";
+$_LANG['store']['xoviNow']['faq1'] = "什么是 SEO？";
+$_LANG['store']['xoviNow']['faq1ans'] = "<p>SEO 是 Search Engine Optimization 的首字母缩写词。它是一种重要的在线营销策略，致力于将潜在客户吸引到您的网站。它的目标是优化网站以使所选关键字在搜索引擎上获得最高位置。这一目标是通过战略性地采取措施改进网站的技术设置和内容以及从其他域获取反向链接来实现的。</p><p>SEO分为三个一般类别：</p><ol><li>关键词和排名</li><li>站内搜索引擎优化</li><li>站外搜索引擎优化</li></ol><p>搜索引擎优化专家应用措施来满足搜索引擎对每个类别的排名因素。搜索引擎使用排名因素来确定它在搜索结果中列出网站的位置。</p>";
+$_LANG['store']['xoviNow']['faq2'] = "我为什么需要 SEO？";
+$_LANG['store']['xoviNow']['faq2ans'] = "<p>每天，数百万人使用搜索引擎查找生活各个方面的信息或服务：食谱、指南、产品、航班、导航、门票、娱乐等。大多数人使用搜索引擎浏览网络，以找到问题的答案和挑战的解决方案。</p><p>一项研究表明，68% 的网络流量来自搜索引擎. 53% 的流量来源于自然搜索——不是广告的搜索结果（付费搜索），可以通过 SEO 改进。</p><img src=\":image1\"><p>在换句话说，自然搜索 (SEO) 和付费搜索（SEA，搜索结果中的广告）占据了网络流量的最大份额。</p><p>即使我们下线的地方也受到搜索引擎的显着影响：我们使用 Google 和 Apple 地图和本地搜索结果来查找地点和附近的服务，如美发店、超市、餐馆和医生。我们根据在线评论选择目的地。然后我们指示基于搜索引擎的服务引导我们到达那里，无论是开车、乘坐公共交通工具还是步行。</p><p>现在，想象一下，如果您的业务、产品和服务未在搜索结果中列出。想象一下，人们无法在网上找到您购买您的产品或找到进入您的实体店的方式。相反，他们很可能会选择你的竞争对手。</p>";
+$_LANG['store']['xoviNow']['faq3'] = "SEO 能为我做什么？";
+$_LANG['store']['xoviNow']['faq3ans'] = "<p>在 SEO 的帮助下，用户可以在线找到您的业务、产品和服务——并购买它们。如上所述，这意味着人们可以在线找到您，也可以更轻松地离线找到您。</p><p>SEO 最大限度地提高了您在对您的业务至关重要的关键字中排名靠前的机会。您的位置越好，越多的人会找到自己的方式您的网站——通常位于搜索结果的第一页（或前十）。</p><p><strong>为什么选择第一页？</strong></p><p>问得好。研究表明31.7% 的用户点击第一个自然搜索结果（排名第一）；高达 75.1% 的所有点击进入前三名搜索结果。之后，点击次数随着每个后续位置迅速减少。</p>< img src=\":image2\"><p>这种行为表明用户很少看第二页或更低的结果，更不用说点击其中任何一个了。</p><img src=\":image3\"> <p>这就是为什么企业需要出现在搜索引擎的第一页结果，至少对于相关关键字而言。</p><p>简而言之：对于自由职业者和企业主来说，拥有一个网站或任何类型的在线形象至关重要，即使他们提供他们的产品或服务离线</li><li>执行 SEO 以确保他们在相关关键字的第一页排名</li></ol>";
+$_LANG['store']['xoviNow']['faq4'] = "为什么关键词很重要？";
+$_LANG['store']['xoviNow']['faq4ans'] = "<p><em>关键字</em>是搜索查询（词、词组、句子和问题）的技术术语。帮助，用户找到可以回答他们的问题并提供解决方案的内容。简单地说，关键字是用户与您的网站之间的链接。搜索引擎将关键字与网站进行比较，寻找相关性最高的内容。</p><p>A SEO 的很大一部分在于识别有可能为您的网站带来相关流量的关键字——换句话说，吸引潜在客户。为此，您需要识别人们在搜索优惠时使用的搜索词（或关键字）喜欢您的。这个过程称为关键字研究。理想情况下，关键字研究为您提供涵盖整个客户旅程的搜索查询的关键字列表。</p>";
+$_LANG['store']['xoviNow']['faq5'] = "什么是关键词优化？";
+$_LANG['store']['xoviNow']['faq5ans'] = "<p>所以我们知道相关性是搜索结果中排名靠前的关键因素。要创建相关内容，您需要处理围绕单个子页面或 URL 上的关键字的主题和问题。然后，确保您的关键字出现在您页面上的关键位置。</p><p>假设您从事冰淇淋行业。您的关键字之一是 < em>s'mores 冰淇淋三明治</em>。现在您专注于与 <em>s'mores 冰淇淋三明治有关的所有事情</em>。</p><p>您想做什么是为 <em>s'mores 冰淇淋三明治</em>创建一个食谱页面，用户可以在其中找到易于理解的食谱、图片或视频，以及他们可能遇到的问题的答案。<em>S'mores ice cream sandwich</em> 是您的焦点关键字，应该出现在您页面的 URL、标题、标题等中。</p><p>提供专门的关键字优化页面可以让搜索引擎的第二批用户轻松使用，也无法确定您的页面的全部内容。这样，t嘿可以在相关搜索结果中的好位置列出它。</p>";
+$_LANG['store']['xoviNow']['faq6'] = "如何使用顾问";
+$_LANG['store']['xoviNow']['faq6ans'] = "<p>首先，通过单击顶部导航栏中的顾问来查看顾问板。它是一个看板，可帮助您按状态组织任务. 您的任务按重要性进行颜色编码：</p><ul><li><strong>红色：</strong>高。尽快解决。</li><li><strong>黄色：</strong>中. 尽快解决这些问题。</li><li><strong>蓝色：</strong>低。牢记它们并尽可能解决它们。</li></ul><img src=\":image1 \"><p>您可以在完成任务时拖放，将任务分配给其他用户（取决于您的计划），并按受让人过滤。</p><p>如上所述，任务是混合每周对您的网站进行自动审核时发现的标准基本 SEO 措施和问题。</p>";
+$_LANG['store']['xoviNow']['faq7'] = "我想要其他网站的顾问。如何获得？";
+$_LANG['store']['xoviNow']['faq7ans'] = "<p>请记住，您确实需要一个 <em>项目</em> 才能使顾问功能正常工作。此外，大多数顾问的任务是针对项目网站（通常是您或您客户的网站）量身定制的。如果您管理多个网站，则需要为每个网站创建一个额外的项目。</p><p>添加或切换到另一个项目，单击顶部导航栏中的 <em>项目</em> 菜单。根据您的计划，您可能需要升级它以添加另一个项目。</p>";
+$_LANG['store']['xoviNow']['faq8'] = "我如何将任务分配给其他用户？";
+$_LANG['store']['xoviNow']['faq8ans'] = "<p>要将任务分配给其他用户，您需要一个允许其他用户的计划。如果您的计划包括其他用户，您'将在您的顾问和任务中找到受让人菜单。只需选择一个用户来分配任务或过滤顾问。要添加新用户，请单击您的个人资料头像，然后单击<em>用户</em>。如果您的计划不包括其他用户，您不会在顾问或任务中看到 <em>Assignee</em> 菜单。升级您的计划以添加用户。</p>";
+$_LANG['store']['xoviNow']['faq9'] = "有些任务我已经介绍过了。为什么会弹出来？";
+$_LANG['store']['xoviNow']['faq9ans'] = "<p>您可能会看到您已经解决或涵盖的任务有两个原因。如上所述，任务是基本 SEO 的混合每周对您的网站进行自动审核时发现的措施和问题。</p><p>首先，涵盖基本 SEO 措施的任务对每个人都是相同的，并不是针对您的网站或业务量身定制的。例如，我们不知道无论您是为自己的企业创建了 Google 帐户并设置了 Search Console，还是安装了 SEO 插件。如果您已经完成了工作！只需将这些任务标记为完成即可。</p><p>第二个原因是Advisor 会根据每周自动化站点审核的结果自动更新。换句话说，如果站点审核发现与您过去完成的任务有关的任何问题，它将自动更新并在“打开”部分中弹出。</p >";
+$_LANG['store']['xoviNow']['faq10'] = "什么是项目可见性？";
+$_LANG['store']['xoviNow']['faq10ans'] = "<p>虽然可见性是一个很好的分数，可以让你了解你的整体表现并比较网站，但它并不适合你的特定关键字集。</p><p>这就是我们提供的原因<em>Project Visibility</em>。该指标的计算方式与 Visibility 相同，但不是使用 500,000 个跨行业关键字，Project Visibility 完全基于您的 Rank Tracker 中的关键字。</p><p>在换句话说，Project Visibility 是与您的业务相关的一组独特关键字的自定义可见性分数。</p><p>您可以在此处找到 Project Visibility：<em>Projects ?Rank Tracker ?Visibility</em >.</p><p>您可能已经知道，您还可以在 Rank Tracker 中跟踪竞争对手的排名。这样，您也可以获得他们的 Project Visibility，从而获得更多信息客观比较。因此，即使他们的产品或服务组合略有不同，Project Visibility 也会专门针对您实际共享的关键字。</p>";
+$_LANG['store']['xoviNow']['faq11'] = "为什么能见度分数有用？";
+$_LANG['store']['xoviNow']['faq11ans'] = "<p>使用您的可见性分数作为您的整体 SEO 性能、问题和优化潜力的指标。</p><p><strong>1. 了解您的整体 SEO 表现</strong></p><p>您可以跟踪单个关键字的排名并知道您的排名。这是一件很重要的事情。但是，排名跟踪确实不是让您鸟瞰您的排名的整体提升——但可见性确实如此。当您的 SEO 措施有效并且排名提高时，您的可见性得分也会提高。</p><p><strong>2. 诊断SEO 问题</strong></p><p>您的能见度突然下降表明您的 SEO 性能存在问题。使用“能见度”作为警报。如果它显着下降，请开始挖掘发生了什么。以下是常见原因列表：</p><ul><li>您受到了 <strong>Google 处罚</strong>。请查看 Search Console 中的通知。请务必关注 <a href=\":googleWebmasterGuidelinesUrl\" target=\"_blank\">Google 的网站管理员指南</a>。</li><li>Google 算法最近发生的变化会产生一些影响。询问最近的 <strong>Google 更新</strong> 及其内容。</li><li>您的竞争对手优化了他们的网站和内容，现在他们在竞争中胜过了您。将他们的（历史）<strong>可见性</strong>与您的进行比较。使用 <a href=\":waybackMachineUrl\" target=\"_blank\">Wayback Machine</a> 比较其内容的变化。</li><li>您重新启动网站时并未考虑 SEO。例如，检查 <em>robots.txt</em> 和 <em>.htaccess</em> 是否有意外阻止的页面、增加的 404 状态代码、错误的 301 重定向和内部链接。<br><br>您以无助于排名的方式更改了您的内容。考虑撤消更改。<br><br>您的网站存在技术问题。运行<em>站点审核</em>或检查您的<strong><em>顾问</em></strong>是否有未完成的技术任务。检查您的后端是否存在可能造成严重破坏的过时、最近更新或不兼容的<strong>插件</strong>。<br><br>原因是托管问题。询问您的主机是否最近进行了更改、是否被黑客入侵、移动了他们的服务器或遇到了技术问题。查看您的服务器是否有问题。</li></ul><p>请记住，此列表并不详尽。这些原因中的一个或多个可以同时适用，也可以同时存在其他原因。</p><p><strong>3.竞争对手比较</strong></p><p>可见性是快速比较两个或多个网站的重要指标。对照他们检查你的能见度。谁在竞争谁？过去是否有竞争对手超越您，反之亦然？谁在这个领域领先，你和你最激烈的竞争对手之间的差距有多大？回答这些问题将帮助您制定 SEO 策略，以在您的利基市场中脱颖而出（并保持）。</p><p><strong>4.使用历史数据跟踪随时间推移的可见性发展</strong></p><p>想了解网站随时间推移的表现如何？我们提供的历史数据可以追溯到 2009 年，没有季节性波动。这样，您就可以跟踪和比较历史可见性，并查看它们在很长一段时间内的发展。</p>";
+$_LANG['store']['xoviNow']['faq12'] = "我怎样才能提高我的能见度分数？";
+$_LANG['store']['xoviNow']['faq12ans'] = "<p>简答：不要将提高可见性作为您的 SEO 策略的目标。</p><p>长答案：可见性 < em>在单一指标中反映</em>您的排名质量；它不会带来更好的排名。将提高潜在客户实际用于查找与您类似的产品和服务的相关关键字的排名作为您的目标。提高您的排名也会提高您的知名度。但真正重要的是您的排名。</p><p>根据经验，如果</p><ul><li>您的域名是URL 排名靠前</li><li>您拥有大量排名良好的索引 URL</li><li>您在搜索量高的关键字中排名靠前</li></ul>";
+$_LANG['store']['xoviNow']['promo']['sidebar']['title'] = "SEO 工具";
+$_LANG['store']['xoviNow']['promo']['sidebar']['body'] = "通过准确、可靠且易于使用的网站排名、关键字和顾问。";
+$_LANG['store']['xoviNow']['cartTitle'] = "SEO 工具";
+$_LANG['store']['xoviNow']['cartShortDescription'] = "通过准确、可靠和易于使用的网站排名、关键字和顾问来提高您的网站性能。";
+
+////////// End of chinese language file.  Do not place any translation strings below this line! Rodots 傲世 WHMCS8.7.0 WHMCS-zh-CN

@@ -2327,12 +2327,12 @@ $_LANG['errorPage']['404']['submitTicket'] = "联系支持";
 
 $_LANG['creditCard']['removeDescription'] = "您确定要移除信用卡详细信息吗？";
 
-$_LANG['marketConnect']['weebly']['ftpHost'] = "FTP 主机";
-$_LANG['marketConnect']['weebly']['ftpUsername'] = "FTP 用户名";
-$_LANG['marketConnect']['weebly']['ftpPassword'] = "FTP 密码";
-$_LANG['marketConnect']['weebly']['ftpPath'] = "FTP 路径";
-$_LANG['marketConnect']['weebly']['updateFtp'] = "更新 FTP 凭据";
-$_LANG['marketConnect']['weebly']['manage'] = "登录至 Weebly Site Builder";
+$_LANG['marketConnect']['websiteBuilder']['ftpHost'] = "FTP 主机";
+$_LANG['marketConnect']['websiteBuilder']['ftpUsername'] = "FTP 用户名";
+$_LANG['marketConnect']['websiteBuilder']['ftpPassword'] = "FTP 密码";
+$_LANG['marketConnect']['websiteBuilder']['ftpPath'] = "FTP 路径";
+$_LANG['marketConnect']['websiteBuilder']['updateFtp'] = "更新 FTP 凭据";
+$_LANG['marketConnect']['websiteBuilder']['manage'] = "登录至 Weebly Site Builder";
 
 $_LANG['domainChecker']['contactSupport'] = "联系技术支持购买";
 
@@ -2355,10 +2355,10 @@ $_LANG['dateTime']['thu'] = "周四";
 $_LANG['dateTime']['fri'] = "周五";
 $_LANG['dateTime']['sat'] = "周六";
 $_LANG['dateTime']['sun'] = "周日";
-$_LANG['dateTime']['th'] = " 日";
-$_LANG['dateTime']['nd'] = " 日";
-$_LANG['dateTime']['rd'] = " 日";
-$_LANG['dateTime']['st'] = " 日";
+$_LANG['dateTime']['th'] = "日";
+$_LANG['dateTime']['nd'] = "日";
+$_LANG['dateTime']['rd'] = "日";
+$_LANG['dateTime']['st'] = "日";
 $_LANG['dateTime']['january'] = "一月";
 $_LANG['dateTime']['february'] = "二月";
 $_LANG['dateTime']['march'] = "三月";
@@ -3219,7 +3219,7 @@ $_LANG['marketConnect']['sitelockvpn']['manageVPN'] = "管理您的VPN";
 $_LANG['marketConnect']['emailServices']['manageEmail'] = "管理您的电子邮件";
 $_LANG['marketConnect']['emailServices']['manage'] = "登录 SpamExperts";
 $_LANG['marketConnect']['sitelockvpn']['manage'] = "登录 SiteLock VPN";
-$_LANG['marketConnect']['weebly']['buildWebsite'] = "生成您网站";
+$_LANG['marketConnect']['websiteBuilder']['buildWebsite'] = "生成您网站";
 
 $_LANG['creditCardHolderName'] = "信用卡持有者姓名";
 
