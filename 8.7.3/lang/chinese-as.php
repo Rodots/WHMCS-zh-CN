@@ -4540,4 +4540,4 @@ $_LANG['store']['xoviNow']['promo']['sidebar']['body'] = "通过准确、可靠�
 $_LANG['store']['xoviNow']['cartTitle'] = "SEO 工具";
 $_LANG['store']['xoviNow']['cartShortDescription'] = "通过准确、可靠和易于使用的网站排名、关键字和顾问来提高您的网站性能。";
 
-////////// End of chinese language file.  Do not place any translation strings below this line! Rodots 傲世 WHMCS8.7.2 WHMCS-zh-CN
+////////// End of chinese language file.  Do not place any translation strings below this line! Rodots 傲世 WHMCS8.7.3 WHMCS-zh-CN
