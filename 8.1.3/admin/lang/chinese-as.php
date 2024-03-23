@@ -922,7 +922,7 @@ $_ADMINLANG['orders']['requiredFieldIndication'] = "*表示需要的字段";
 $_ADMINLANG['orders']['errors']['requiredDomainFieldsTitle'] = "缺少所需的域字段";
 $_ADMINLANG['orders']['errors']['requiredDomainFieldsMsg'] = "一个或多个必需的域字段被留空。缺少此信息可能导致域注册失败。";
 $_ADMINLANG['orders']['errors']['requiredDomainFieldsAction'] = "如你想不顾此警告继续订购，请按“提交订单”按钮。";
-// 傲世网 Pjax.vip
+// 阅客网 www.recho.cn
 
 
 # Billing Cycles

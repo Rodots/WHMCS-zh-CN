@@ -997,7 +997,7 @@ $_ADMINLANG['orders']['addonFeature'] = "附加功能";
 $_ADMINLANG['orders']['invalidAffiliate'] = "无效的附属。";
 $_ADMINLANG['orders']['selfReferral'] = "自我推荐无效。";
 $_ADMINLANG['orders']['referralSuccess'] = "会员已成功分配。";
-// 傲世网 Pjax.vip
+// 阅客网 www.recho.cn
 
 
 # Billing Cycles

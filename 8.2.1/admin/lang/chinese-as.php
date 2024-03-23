@@ -981,7 +981,7 @@ $_ADMINLANG['orders']['errors']['requiredDomainFieldsMsg'] = "一个或多个必
 $_ADMINLANG['orders']['errors']['requiredDomainFieldsAction'] = "如你想不顾此警告继续订购，请按“提交订单”按钮。";
 $_ADMINLANG['orders']['placedBy'] = "下单者";
 $_ADMINLANG['orders']['addonFeature'] = "附加功能";
-// 傲世网 Pjax.vip
+// 阅客网 www.recho.cn
 
 
 # Billing Cycles
