@@ -1,7 +1,7 @@
 # WHMCS前後臺中文語言包/Simplified Chinese Translations
 WHMCS主機業務管理系統前後臺簡體中文漢化 [【点我切换到简体中文版说明】](https://github.com/Rodots/WHMCS-zh-CN)
 
-##### @by Rodots 傲世 WHMCS 8.7.x WHMCS-zh-CN
+##### @by Rodots 傲世 WHMCS 8.9.x WHMCS-zh-CN
 
 # 項目介紹
 
@@ -30,6 +30,8 @@ WHMCS主機業務管理系統前後臺簡體中文漢化 [【点我切换到简�
 2023年03月22日：跟進v8.5.2
 
 2023年07月13日：跟進v8.7.3
+
+2024年03月23日：跟進v8.9.0
 
 # 使用方法
 根據您的WHMCS版本選擇對應的漢化文件並下載
