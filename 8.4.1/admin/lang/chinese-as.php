@@ -548,7 +548,7 @@ $_ADMINLANG['services']['provisionsuccess'] = "附加功能配置成功";
 $_ADMINLANG['services']['deprovisionsuccess'] = "附加功能取消配置成功";
 $_ADMINLANG['services']['suspend-featuresuccess'] = "附加功能挂起成功";
 $_ADMINLANG['services']['unsuspend-featuresuccess'] = "附加功能取消挂起成功";
-// 氢快搜索 www.Gatherso.com
+// 阅客网 www.recho.cn
 $_ADMINLANG['sso']['fatalerror'] = "发生致命错误。请查看活动日志获取更多详情。";
 $_ADMINLANG['sso']['servicelogin'] = "登录控制面板";
 $_ADMINLANG['sso']['adminlogin'] = "登录控制面板";
@@ -2185,7 +2185,7 @@ $_ADMINLANG['contactpermissions']['permemails'] = "查看电子邮件";
 $_ADMINLANG['contactpermissions']['permorders'] = "新购/升级/取消";
 $_ADMINLANG['contactpermissions']['permquotes'] = "查看/接受报价";
 $_ADMINLANG['contactpermissions']['permproductsso'] = "允许单点登录";
-// 氢快搜索 www.Gatherso.com
+// 阅客网 www.recho.cn
 
 # Statuses
 $_ADMINLANG['status']['active'] = "已激活";
