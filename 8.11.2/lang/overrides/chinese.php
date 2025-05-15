@@ -12,7 +12,7 @@
  *   https://developers.whmcs.com/languages/overrides/
  *
  * @package    WHMCS
- * @author     Rodots <admin@h2fast.cn>
+ * @author     Rodots <support@h2fast.cn>
  * @copyright  Copyright (c) WHMCS Limited 2005-2024
  * @license    https://www.whmcs.com/license/ WHMCS Eula
  * @version    $Id$
