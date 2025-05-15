@@ -2,7 +2,7 @@
 
 WHMCS主机业务管理系统前后台简体中文汉化 [【點我切換到繁體中文版說明】](https://github.com/Rodots/WHMCS-zh-CN/blob/master/Traditional-README.md)
 
-##### @by Rodots 傲世 WHMCS 8.12.x WHMCS-zh-CN
+##### @by Rodots 傲世 WHMCS 8.13.x WHMCS-zh-CN
 
 ---
 
@@ -34,6 +34,9 @@ WHMCS主机业务管理系统前后台简体中文汉化 [【點我切換到繁�
 ---
 
 ## 更新日志
+
+### 2025年5月15日
+- 跟进v8.13.0。
 
 ### 2025年3月25日
 - 跟进v8.12.1。
