@@ -1,8 +1,12 @@
 # WHMCS前后台中文语言包 / Simplified Chinese Translations
 
-WHMCS主机业务管理系统前后台简体中文汉化 [【點我切換到繁體中文版說明】](https://github.com/Rodots/WHMCS-zh-CN/blob/master/Traditional-README.md)
+> **⚠️ 归档分支说明**
+> 当前分支 `7.x-8.x` 为**归档分支**，仅保留 WHMCS 7.x-8.x 版本的历史汉化文件，不再更新。
+> 如需获取**最新版本**（WHMCS 9.x 及后续更新），请前往主分支。
 
-##### @by Rodots 傲世 WHMCS 9.x WHMCS-zh-CN
+WHMCS主机业务管理系统前后台简体中文汉化
+
+##### @by Rodots 傲世 WHMCS 7.x-8.x WHMCS-zh-CN
 
 ---
 
@@ -34,6 +38,9 @@ WHMCS主机业务管理系统前后台简体中文汉化 [【點我切換到繁�
 ---
 
 ## 更新日志
+
+### 2026年10月17日
+- 移除v9.x相关内容，归档只保留v7.x-8.x
 
 ### 2026年5月13日
 - 跟进v9.0.4。
