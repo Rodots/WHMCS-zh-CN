@@ -1,6 +1,6 @@
 # WHMCS Simplified Chinese Language Pack
 
-[简体中文](https://github.com/Rodots/WHMCS-zh-CN/blob/master/README.md) · [繁體中文](https://github.com/Rodots/WHMCS-zh-CN/blob/master/README_zh_TW.md) · English
+[简体中文](https://github.com/Rodots/WHMCS-zh-CN/blob/main/README.md) · [繁體中文](https://github.com/Rodots/WHMCS-zh-CN/blob/main/README_zh_TW.md) · English
 
 #### Compatible with WHMCS 9.x · WHMCS-zh-CN · @Rodots
 
@@ -11,6 +11,7 @@
 - **Manually reviewed, synchronized with the official release**: All localization files in this project have been manually reviewed one by one to ensure they are fully synchronized with the official language files (no omissions, though a small number of errors may still exist).
 - **Translation approach**: Due to the enormous workload of localization, translations are first produced by AI machine translation and then manually proofread and optimized a second time. In theory, higher-version translation files are backward compatible with lower versions.
 - **Handling of special cases**: Some sentences contain too many variables to be understood clearly; in such cases, the original text is kept untranslated.
+- **Historical versions**: The current `main` branch only provides the Chinese language pack for WHMCS 9.x; if you need translation packs for v7.x or v8.x, please go to the [`7.x-8.x`](https://github.com/Rodots/WHMCS-zh-CN/tree/7.x-8.x) branch.
 
 ---
 

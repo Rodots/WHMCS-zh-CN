@@ -1,7 +1,7 @@
 # WHMCS 繁體中文語言包
 > Traditional Chinese Language Pack for WHMCS
 
-[简体中文](https://github.com/Rodots/WHMCS-zh-CN/blob/master/README.md) · 繁體中文 · [English](https://github.com/Rodots/WHMCS-zh-CN/blob/master/README_en_US.md)
+[简体中文](https://github.com/Rodots/WHMCS-zh-CN/blob/main/README.md) · 繁體中文 · [English](https://github.com/Rodots/WHMCS-zh-CN/blob/main/README_en_US.md)
 
 #### 適用於 WHMCS 9.x · WHMCS-zh-CN · @Rodots
 
@@ -12,6 +12,7 @@
 - **人工排查，與官方同步**：本專案漢化檔案均經人工逐一排查，確保與官方語言檔案完全同步（零遺漏，但不排除可能存在少量錯誤）。
 - **翻譯方式說明**：由於漢化工程量龐大，譯文統一先由 AI 機器翻譯，再經人工二次校對與優化。理論上，高版本翻譯檔案可向下相容低版本。
 - **特殊情況處理**：部分語句因變數過多而難以理解，此類情況下保留原文，不作翻譯。
+- **歷史版本**：目前 `main` 分支僅提供 WHMCS 9.x 漢化包；如需 v7.x、v8.x 版本的翻譯包，請前往 [`7.x-8.x`](https://github.com/Rodots/WHMCS-zh-CN/tree/7.x-8.x) 分支取得。
 
 ---
 
