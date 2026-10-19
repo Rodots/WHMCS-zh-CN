@@ -135,6 +135,54 @@ python scripts/terms.py   chinese.php --report .work/terms.txt
 
 完整流程、两岸用语对照表和交付清单见 `references/zh-tw-to-zh-cn.md`。
 
+### 阶段 5c — 同形词误译校验（字形转换和英译中都必跑）
+
+`validate` 看结构，`residue.py` 看字形，两者**都看不到「意思译错了」**。
+最典型的失败是英文多义词取了错误的中文义项，而且译文是规范简体、结构完美：
+
+```
+minutes   -> 会议纪要     （应为 分钟）
+tables    -> 桌子         （应为 表格）
+bold      -> 大胆         （应为 粗体）
+running   -> 跑步         （应为 运行中）
+ticket    -> 门票 / 机票  （应为 工单）
+apply     -> 申请         （应为 应用）
+keyTag    -> 钥匙标签     （应为 密钥标签）
+addfunds  -> 加值         （应为 充值）
+TXT       -> 防晒 (纯色素)（应为 TXT (文本)）
+```
+
+这些错误全部通过了 `langtool validate` 和 `residue.py`。必须单独跑：
+
+```bash
+python scripts/homograph.py chinese.php --report .work/homograph.txt
+```
+
+`hard problems` 必须为 **0**；`advisory` 逐条裁决（正常行文里「申请退款」是合法的，
+只有按钮语境才应写「应用」）。项目新增的固定译法，用 `--extra badlist.json` 追加规则：
+
+```json
+[
+  {"type": "exact",     "bad": "会议纪要", "good": "分钟", "note": "minutes"},
+  {"type": "substring", "bad": "门票",     "good": "工单", "note": "ticket"},
+  {"type": "glossary",  "key": "apply",   "good": "应用", "note": "Apply button"}
+]
+```
+
+同类高危模式，人工扫一遍这些值：
+
+- **同形异义**：`running` / `bold` / `table` / `flag` / `key` / `ticket` / `address` /
+  `current` / `host` / `port` / `bus` / `window` / `pattern` / `thread` / `platform`。
+- **专业缩写被展开成散文**：`POP3 → 流行音乐 3`、`TXT → 防晒`、`DS → 唱片`。
+  纯技术缩写（DNS 记录类型、协议名、产品名）应保留原文或「缩略语 (中文注释)」形式。
+- **整表数据被逐项机翻**：如 `idnLanguage` 的语言名应译成「日语/法语/泰语」，
+  不能译成「日本人/法国人/泰国人」；`orderpaymenttermadjectiv*` 应是「年缴/月缴/双年」，
+  不能出现「双年展」。
+- **两字词被拆错**：`展延` 是台湾用语（应为 `延长`），`排程` 应为 `计划`。
+
+`references/zh-tw-to-zh-cn.md` 的「源文常见错误」清单也适用于此——但那里的处理原则是
+「只转字形、不改语义」，而本阶段是**在用户明确要求修正翻译时**才执行修复。
+
 ### 阶段 6 — 跨分片一致性归一
 
 分片并行必然产生同源异译。先看全景：
@@ -212,12 +260,16 @@ python scripts/langtool.py lexcheck chinese.php
 
 退出码：`0` 干净 / `1` 发现问题 / `2` 用法或 IO 错误。可以直接在脚本编排里用。
 
-### residue.py / terms.py（语言，仅同语言字形转换需要）
+### residue.py / terms.py / homograph.py（语言层，结构校验看不到的）
 
 | 命令 | 用途 |
 |---|---|
 | `residue.py <src> <dst>` | 繁体残留（OpenCC 逐字）、纯英文条目被改写、竞争用语 |
 | `terms.py <dst>` | 同义竞争词计数（`candidates` 看不到的那一类） |
+| `homograph.py <dst>` | 同形词误译（详见阶段 5c），`--extra` 追加项目规则 |
+
+`homograph.py` 不依赖 OpenCC，英译中、字形转换两种任务都应跑。
+它的 `hard problems` 是**确定错误**；`advisory` 是可能合法的词（如「申请退款」），需人工裁决。
 
 两者都支持 `--report`、`--pairs-file`（自定义词表），`--pattern` 与 langtool 一致。
 `residue.py` 需要 OpenCC：设 `OPENCC_PYTHONPATH` 指向解压出来的 wheel 目录即可
@@ -242,6 +294,12 @@ python scripts/langtool.py lexcheck chinese.php
   **自述永远不能替代独立工具。**
 - **纯英文条目不是漏译**：语言包里本来就有的、尚未本地化的英文条目，
   在同语言转换任务中必须逐字节保留；误改会让交付物与源文无法对应。
+- **结构完美 ≠ 意思正确**：`validate` 与 `residue.py` 全绿的文件仍可能写着
+  「会议纪要」「桌子」「跑步」「门票」「双年展」。必须跑 `homograph.py`，
+  并对多义词（running / bold / table / flag / key / ticket / apply …）逐条看语境。
+- **一个词的正确性取决于上下文，不是一张全局替换表**：`月缴` 在账单周期里正确、
+  在 VPS 面板的「每月」标签里错误；`申请` 在「申请退款」里正确、在 Apply 按钮上错误。
+  `homograph.py` 把这类做成 `glossary`（按键名断言）而不是 `substring`，就是为了避免误伤。
 
 ## 实战验证过的证据
 
@@ -264,4 +322,17 @@ python scripts/langtool.py lexcheck chinese.php
 - `candidates` 找出 26 组同源异译，归一化改写 28 行，**0 次**触发护栏；
   其中 1 组（`停權原因`）因未写进 map 被工具默认统一错，事后改回「暂停原因」——
   这条经验已写进阶段 6。
+
+### 三、同形词误译（WHMCS 9.0.9 zh_CN，交付后被用户人工发现）
+
+结构校验、繁体残留、竞争用语三项全绿，用户仍然在自己的语言包里抓到 30 余处
+**同形词误译**（会议纪要/桌子/跑步/门票/机票/大胆/降价/唱片/旗帜/钥匙标签/加值/
+防晒/POP3/双年展/月缴/开业时间/意见书，以及 `idnLanguage` 整表把语言名译成「某国人」）。
+它们全部是合法简体、结构完整，只有「意思」错了——这正是阶段 5c 与 `homograph.py`
+存在的理由。教训：
+
+- **结构 0 = 只证明文件没坏，不证明翻译对。** 验收清单里必须有语言层检查。
+- **成表数据（语言名、周期名、DNS 记录类型）要整表核对**，不要逐条相信机器产出。
+- 用户报告的具体错例应立刻固化成 `homograph.py` 的 `EXACT_BAD` / `GLOSSARY` 规则，
+  并在下一次运行时作为回归测试——本次已把全部 32 条写进脚本。
 

@@ -115,6 +115,37 @@ SRC: Pricing
 
 ---
 
+## 判例 7：同形词误译 —— 真实缺陷，结构校验看不到
+
+```
+SRC: minutes / tables / bold / running / ticket / apply
+DST: 会议纪要 / 桌子 / 大胆 / 跑步 / 门票 / 申请
+```
+
+这些值是**合法简体、结构完整、占位符齐全**的，因此 `langtool validate` 与
+`residue.py` 都会放行。它们唯一的错误是「义项选错」。
+必须由 `scripts/homograph.py` 单独检查：
+
+```bash
+python scripts/homograph.py chinese.php
+```
+
+**判断方法**：看按键名推断语境。
+
+- `dateTime.minutes` → 时间单位，必须「分钟」；`meeting.minutes` 才是「会议纪要」。
+- `markdown.tables` → 表格；家具语境才是「桌子」。
+- `vpsnetrunning` → 运行中；运动语境才是「跑步」。
+- `feedback*` 里的 ticket → 工单；票务语境才是「门票/机票」。
+- `orderpaymenttermadjectivemonthly` → 「月缴」正确；`vpsnetmonthly` → 「每月」。
+- `idnLanguage.*` → 语言名（日语/法语/泰语），不是「日本人/法国人/泰国人」。
+- DNS 记录类型（TXT/MX/DS/CNAME）和协议名（POP3）**保留原文**，
+  不得展开成「防晒」「唱片」「流行音乐 3」。
+
+**修复时必须带上上下文验证**，不要做全局字符串替换——同一个词在不同键里可能都对。
+新增的固定译法写成 `--extra badlist.json` 的 `glossary` 规则，作为回归测试。
+
+---
+
 ## 收尾检查单
 
 - [ ] `validate` 的 hard problems = 0
@@ -123,4 +154,8 @@ SRC: Pricing
 - [ ] `possibly untranslated` 全部确认属品牌/URL/格式串
 - [ ] `lexcheck` 通过
 - [ ] 有 PHP 环境的话，`php -l` 通过
+- [ ] `homograph.py` 的 hard problems = 0，advisory 已逐条裁决
+- [ ] 多义词（running/bold/table/flag/key/ticket/apply…）已按语境核对
+- [ ] 表格类数据（语言名、周期、DNS 记录类型）整表一致
+- [ ] 用户报告过的具体错例已固化成 `homograph.py` 规则
 - [ ] 交付说明写清了：语言代码行、有意未译内容、被吸收的实体

@@ -72,6 +72,10 @@
 按「不改写原文」处理，并在交付说明里列出，让用户决定是否另行修正。
 **不要**在翻译任务里顺手修语义——那会让交付物无法与源文对应。
 
+> **例外：用户明确要求修正翻译时。** 此时不是「转换任务」，而是「纠错任务」，
+> 应当用 `scripts/homograph.py` 定位并修复，同时把每条修复写进 `--extra` 规则。
+> 本项目已修正的真实错例与新增规则见 SKILL.md 阶段 5c。
+
 ## 字形校验怎么做
 
 ```bash
@@ -101,6 +105,13 @@ OpenCC('t2s').convert(ch) != ch     # True → 该字是繁体专用字
 - `residual traditional chars` **必须为 0**（硬问题）
 - `pure-English values modified` **必须为 0**（硬问题：越界改写了英文条目）
 - `competing vocabulary` 是**提示**，逐条裁决；`目前/停用/资料` 这类不是错误
+
+字形和竞争用语都通过之后，**还要跑一次同形词检查**——繁体转简体的过程不会产生
+「会议纪要」「门票」这类错误，但源语言包可能本来就带着，而字形转换无法发现：
+
+```bash
+python scripts/homograph.py chinese.php --report .work/homograph.txt
+```
 
 ## 归一化时注意
 
